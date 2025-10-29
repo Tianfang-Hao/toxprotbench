@@ -1,0 +1,431 @@
+🚀 开始处理模型: deepseek-ri (标签: api)
+   - 清理后的模型名: deepseek-ri
+   - 创建输出目录: results/2025-10-27_12-28-14/deepseek-ri
+   - 正在运行 Bacteria exo prediction 任务...
+--- 开始执行推理任务 ---
+  模型路径: deepseek-ri
+  模型标签: api
+  输出目录: results/2025-10-27_12-28-14/deepseek-ri/Bacteria/raw
+  温度: 0.0 0.7
+  检测到 'api' 标签, 调用 API 推理脚本...
+============================================================
+🚀 开始 统一API 推理任务 (并发版 v3.3)...
+⚡ 最大并发数: 50
+ timeout=120s
+🤖 API 模型: deepseek-ri
+📂 Prompt 文件: dataset/Bacteria.jsonl
+🔥 温度列表: [0.0, 0.7]
+📝 输出目录: results/2025-10-27_12-28-14/deepseek-ri/Bacteria/raw
+============================================================
+统一 API 客户端初始化完成，模型: deepseek-ri，URL: https://api3.xhub.chat/v1
+
+🔄 -----------------------------------
+🔄 正在处理温度: 0.0...
+🔄 -----------------------------------
+Temp-0.0 Infer:   0%|          | 0/200 [00:00<?, ?it/s]Temp-0.0 Infer:   0%|          | 1/200 [00:01<05:55,  1.79s/it]Temp-0.0 Infer:   0%|          | 1/200 [00:01<05:55,  1.79s/it, inflight=199, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:   1%|          | 2/200 [00:01<05:53,  1.79s/it, inflight=198, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:   2%|▏         | 3/200 [00:01<05:51,  1.79s/it, inflight=197, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:   2%|▏         | 4/200 [00:01<05:49,  1.79s/it, inflight=196, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:   2%|▎         | 5/200 [00:01<05:48,  1.79s/it, inflight=195, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:   3%|▎         | 6/200 [00:01<00:46,  4.21it/s, inflight=195, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:   3%|▎         | 6/200 [00:01<00:46,  4.21it/s, inflight=194, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:   4%|▎         | 7/200 [00:01<00:45,  4.21it/s, inflight=193, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:   4%|▍         | 8/200 [00:01<00:45,  4.21it/s, inflight=190, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:   4%|▍         | 9/200 [00:01<00:45,  4.21it/s, inflight=190, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:   5%|▌         | 10/200 [00:01<00:45,  4.21it/s, inflight=190, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:   6%|▌         | 11/200 [00:01<00:44,  4.21it/s, inflight=189, slow=0, oldest_s=2, forced_to=0]Temp-0.0 Infer:   6%|▌         | 12/200 [00:01<00:44,  4.21it/s, inflight=188, slow=0, oldest_s=2, forced_to=0]Temp-0.0 Infer:   6%|▋         | 13/200 [00:01<00:17, 10.47it/s, inflight=188, slow=0, oldest_s=2, forced_to=0]Temp-0.0 Infer:   6%|▋         | 13/200 [00:01<00:17, 10.47it/s, inflight=187, slow=0, oldest_s=2, forced_to=0]Temp-0.0 Infer:   7%|▋         | 14/200 [00:02<00:17, 10.47it/s, inflight=186, slow=0, oldest_s=2, forced_to=0]Temp-0.0 Infer:   8%|▊         | 15/200 [00:02<00:17, 10.47it/s, inflight=185, slow=0, oldest_s=2, forced_to=0]Temp-0.0 Infer:   8%|▊         | 16/200 [00:02<00:17, 10.47it/s, inflight=184, slow=0, oldest_s=2, forced_to=0]Temp-0.0 Infer:   8%|▊         | 17/200 [00:02<00:17, 10.47it/s, inflight=183, slow=0, oldest_s=2, forced_to=0]Temp-0.0 Infer:   9%|▉         | 18/200 [00:02<00:17, 10.47it/s, inflight=182, slow=0, oldest_s=2, forced_to=0]Temp-0.0 Infer:  10%|▉         | 19/200 [00:02<00:17, 10.47it/s, inflight=181, slow=0, oldest_s=2, forced_to=0]Temp-0.0 Infer:  10%|█         | 20/200 [00:02<00:10, 17.47it/s, inflight=181, slow=0, oldest_s=2, forced_to=0]Temp-0.0 Infer:  10%|█         | 20/200 [00:02<00:10, 17.47it/s, inflight=180, slow=0, oldest_s=2, forced_to=0]Temp-0.0 Infer:  10%|█         | 21/200 [00:02<00:10, 17.47it/s, inflight=178, slow=0, oldest_s=2, forced_to=0]Temp-0.0 Infer:  11%|█         | 22/200 [00:02<00:10, 17.47it/s, inflight=178, slow=0, oldest_s=2, forced_to=0]Temp-0.0 Infer:  12%|█▏        | 23/200 [00:02<00:10, 17.47it/s, inflight=177, slow=0, oldest_s=2, forced_to=0]Temp-0.0 Infer:  12%|█▏        | 24/200 [00:02<00:10, 17.47it/s, inflight=175, slow=0, oldest_s=2, forced_to=0]Temp-0.0 Infer:  12%|█▎        | 25/200 [00:02<00:10, 17.47it/s, inflight=175, slow=0, oldest_s=2, forced_to=0]Temp-0.0 Infer:  13%|█▎        | 26/200 [00:02<00:09, 17.47it/s, inflight=174, slow=0, oldest_s=2, forced_to=0]Temp-0.0 Infer:  14%|█▎        | 27/200 [00:02<00:09, 17.47it/s, inflight=172, slow=0, oldest_s=2, forced_to=0]Temp-0.0 Infer:  14%|█▍        | 28/200 [00:02<00:09, 17.47it/s, inflight=172, slow=0, oldest_s=2, forced_to=0]Temp-0.0 Infer:  14%|█▍        | 29/200 [00:02<00:09, 17.47it/s, inflight=171, slow=0, oldest_s=2, forced_to=0]Temp-0.0 Infer:  15%|█▌        | 30/200 [00:02<00:09, 17.47it/s, inflight=170, slow=0, oldest_s=2, forced_to=0]Temp-0.0 Infer:  16%|█▌        | 31/200 [00:02<00:09, 17.47it/s, inflight=169, slow=0, oldest_s=2, forced_to=0]Temp-0.0 Infer:  16%|█▌        | 32/200 [00:02<00:05, 32.26it/s, inflight=169, slow=0, oldest_s=2, forced_to=0]Temp-0.0 Infer:  16%|█▌        | 32/200 [00:02<00:05, 32.26it/s, inflight=168, slow=0, oldest_s=2, forced_to=0]Temp-0.0 Infer:  16%|█▋        | 33/200 [00:02<00:05, 32.26it/s, inflight=167, slow=0, oldest_s=2, forced_to=0]Temp-0.0 Infer:  17%|█▋        | 34/200 [00:02<00:05, 32.26it/s, inflight=166, slow=0, oldest_s=2, forced_to=0]
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 202510271228171814130548uXAhfYt)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122817190170960x1mpeECx)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122817222837289he4RkQwJ)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122817251862047iyyP1r4a)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122817263397459SSWeM2Sl)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122817277839445m2sMsLM1)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122817294301470JvUrFOl9)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122817301129834pu5Q3jaV)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122817292289976N8bY2yqP)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122817289098659twyDTr9D)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122817319976045Q8ONIar5)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 202510271228173398083979DPXjvzB)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122817310285355hQrm0Dmd)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 2025102712281731558597348maRiL1)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122817353926060JhOSqSbt)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122817294456711SzFXsiFT)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122817371893276xgoPWBoL)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 202510271228173898980733SytUcL3)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122817332795842Dxfm57YL)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122817426505203Jjz32ROW)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122817371732412uXKnOYyq)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122817455598898Zyp1NTLS)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122817450542692G5Uextoq)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122817449300802MUsWqjqL)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 202510271228174519612449wMkg8p1)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122817479854827GyqhmqL4)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 202510271228174078622894rphvtCI)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122817420451465FsC7fFh4)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 202510271228174887194540RDubB9x)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122817366644766Voe2ZsrU)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 202510271228175104557078etZkHo7)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122817444133286lay60CQ8)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122817527502560ssIaPJrN)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122817520560311nxjjc9tb)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122817460387154VKkyIF1l)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122817526677585OnblHkTq)', 'type': 'new_api_error'}}Temp-0.0 Infer:  18%|█▊        | 35/200 [00:02<00:05, 32.26it/s, inflight=164, slow=0, oldest_s=2, forced_to=0]Temp-0.0 Infer:  18%|█▊        | 36/200 [00:02<00:05, 32.26it/s, inflight=164, slow=0, oldest_s=2, forced_to=0]Temp-0.0 Infer:  18%|█▊        | 37/200 [00:02<00:05, 32.26it/s, inflight=163, slow=0, oldest_s=2, forced_to=0]Temp-0.0 Infer:  19%|█▉        | 38/200 [00:02<00:05, 32.26it/s, inflight=162, slow=0, oldest_s=2, forced_to=0]Temp-0.0 Infer:  20%|█▉        | 39/200 [00:02<00:04, 32.26it/s, inflight=161, slow=0, oldest_s=2, forced_to=0]Temp-0.0 Infer:  20%|██        | 40/200 [00:02<00:04, 32.26it/s, inflight=160, slow=0, oldest_s=2, forced_to=0]Temp-0.0 Infer:  20%|██        | 41/200 [00:02<00:04, 32.26it/s, inflight=159, slow=0, oldest_s=2, forced_to=0]Temp-0.0 Infer:  21%|██        | 42/200 [00:02<00:04, 32.26it/s, inflight=158, slow=0, oldest_s=2, forced_to=0]Temp-0.0 Infer:  22%|██▏       | 43/200 [00:02<00:04, 32.26it/s, inflight=157, slow=0, oldest_s=2, forced_to=0]Temp-0.0 Infer:  22%|██▏       | 44/200 [00:02<00:03, 46.89it/s, inflight=157, slow=0, oldest_s=2, forced_to=0]Temp-0.0 Infer:  22%|██▏       | 44/200 [00:02<00:03, 46.89it/s, inflight=156, slow=0, oldest_s=2, forced_to=0]Temp-0.0 Infer:  22%|██▎       | 45/200 [00:02<00:03, 46.89it/s, inflight=155, slow=0, oldest_s=2, forced_to=0]Temp-0.0 Infer:  23%|██▎       | 46/200 [00:02<00:03, 46.89it/s, inflight=153, slow=0, oldest_s=2, forced_to=0]Temp-0.0 Infer:  24%|██▎       | 47/200 [00:02<00:03, 46.89it/s, inflight=153, slow=0, oldest_s=2, forced_to=0]Temp-0.0 Infer:  24%|██▍       | 48/200 [00:02<00:03, 46.89it/s, inflight=152, slow=0, oldest_s=2, forced_to=0]Temp-0.0 Infer:  24%|██▍       | 49/200 [00:02<00:03, 46.89it/s, inflight=151, slow=0, oldest_s=2, forced_to=0]Temp-0.0 Infer:  25%|██▌       | 50/200 [00:02<00:03, 46.89it/s, inflight=150, slow=0, oldest_s=2, forced_to=0]Temp-0.0 Infer:  26%|██▌       | 51/200 [00:03<00:03, 46.89it/s, inflight=149, slow=0, oldest_s=3, forced_to=0]Temp-0.0 Infer:  26%|██▌       | 52/200 [00:03<00:03, 46.89it/s, inflight=148, slow=0, oldest_s=3, forced_to=0]Temp-0.0 Infer:  26%|██▋       | 53/200 [00:03<00:08, 17.75it/s, inflight=148, slow=0, oldest_s=3, forced_to=0]Temp-0.0 Infer:  26%|██▋       | 53/200 [00:03<00:08, 17.75it/s, inflight=147, slow=0, oldest_s=3, forced_to=0]Temp-0.0 Infer:  27%|██▋       | 54/200 [00:03<00:08, 17.75it/s, inflight=145, slow=0, oldest_s=3, forced_to=0]Temp-0.0 Infer:  28%|██▊       | 55/200 [00:03<00:08, 17.75it/s, inflight=145, slow=0, oldest_s=3, forced_to=0]Temp-0.0 Infer:  28%|██▊       | 56/200 [00:03<00:08, 17.75it/s, inflight=144, slow=0, oldest_s=3, forced_to=0]Temp-0.0 Infer:  28%|██▊       | 57/200 [00:03<00:08, 17.75it/s, inflight=143, slow=0, oldest_s=3, forced_to=0]Temp-0.0 Infer:  29%|██▉       | 58/200 [00:03<00:07, 17.75it/s, inflight=142, slow=0, oldest_s=3, forced_to=0]Temp-0.0 Infer:  30%|██▉       | 59/200 [00:03<00:07, 17.75it/s, inflight=141, slow=0, oldest_s=3, forced_to=0]Temp-0.0 Infer:  30%|███       | 60/200 [00:03<00:07, 19.95it/s, inflight=141, slow=0, oldest_s=3, forced_to=0]Temp-0.0 Infer:  30%|███       | 60/200 [00:03<00:07, 19.95it/s, inflight=140, slow=0, oldest_s=3, forced_to=0]Temp-0.0 Infer:  30%|███       | 61/200 [00:03<00:06, 19.95it/s, inflight=139, slow=0, oldest_s=3, forced_to=0]Temp-0.0 Infer:  31%|███       | 62/200 [00:03<00:06, 19.95it/s, inflight=138, slow=0, oldest_s=3, forced_to=0]Temp-0.0 Infer:  32%|███▏      | 63/200 [00:03<00:06, 19.95it/s, inflight=136, slow=0, oldest_s=3, forced_to=0]Temp-0.0 Infer:  32%|███▏      | 64/200 [00:03<00:06, 19.95it/s, inflight=136, slow=0, oldest_s=3, forced_to=0]Temp-0.0 Infer:  32%|███▎      | 65/200 [00:03<00:06, 19.95it/s, inflight=135, slow=0, oldest_s=3, forced_to=0]Temp-0.0 Infer:  33%|███▎      | 66/200 [00:03<00:05, 22.56it/s, inflight=135, slow=0, oldest_s=3, forced_to=0]Temp-0.0 Infer:  33%|███▎      | 66/200 [00:03<00:05, 22.56it/s, inflight=130, slow=0, oldest_s=3, forced_to=0]Temp-0.0 Infer:  34%|███▎      | 67/200 [00:03<00:05, 22.56it/s, inflight=130, slow=0, oldest_s=3, forced_to=0]Temp-0.0 Infer:  34%|███▍      | 68/200 [00:03<00:05, 22.56it/s, inflight=130, slow=0, oldest_s=3, forced_to=0]Temp-0.0 Infer:  34%|███▍      | 69/200 [00:03<00:05, 22.56it/s, inflight=130, slow=0, oldest_s=3, forced_to=0]Temp-0.0 Infer:  35%|███▌      | 70/200 [00:03<00:05, 22.56it/s, inflight=130, slow=0, oldest_s=3, forced_to=0]Temp-0.0 Infer:  36%|███▌      | 71/200 [00:03<00:05, 22.56it/s, inflight=129, slow=0, oldest_s=3, forced_to=0]
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122817523445835n0IJMyHH)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 202510271228175330104783aRdudZr)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122817390117541zhIZyYcL)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 2025102712281746879336231eiWzfL)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122817572817452uyqWsmxh)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122817573170695mZrI7vyh)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122817591023759rLpoXy1L)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122817600214239mO8xslpg)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 202510271228176171335630XELYG4a)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 202510271228176442535380a2nJQpL)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122817550432268rHC62DAc)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122817568980303Xy4vvao4)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122817572809653Z9HDHrY7)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122817796344477jQl7BagL)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122818849971208y2JBxj2t)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122818879041190HIqKqp5m)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 202510271228188856997027SZrUmkj)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122818949024630QHc5VGIz)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122818951583425FHXnVxRp)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 202510271228189938581834yYV6uiJ)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 2025102712281938879937oeC3fUJm)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 2025102712281957522827tshxhMoe)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 2025102712281984001031gIdCqgE3)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122819109144968bQ268gIb)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122819136637541KZha4iMl)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122819183542233Aes23DBt)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122819185733845xDU280E1)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122819202448709RfJBantA)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122819206970307jUpLR3Yl)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122819210365473C7MQLeQA)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122819209256672iGfWdAqD)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122819238785913guDTXzGN)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122819247669511thd5y7w3)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122819257452010xTLG1IOC)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122819232617821CZqTyA2S)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122819248331324t13cmRWs)', 'type': 'new_api_error'}}Temp-0.0 Infer:  36%|███▌      | 72/200 [00:03<00:05, 22.56it/s, inflight=127, slow=0, oldest_s=3, forced_to=0]Temp-0.0 Infer:  36%|███▋      | 73/200 [00:03<00:05, 22.56it/s, inflight=127, slow=0, oldest_s=3, forced_to=0]Temp-0.0 Infer:  37%|███▋      | 74/200 [00:03<00:05, 22.56it/s, inflight=126, slow=0, oldest_s=3, forced_to=0]Temp-0.0 Infer:  38%|███▊      | 75/200 [00:03<00:05, 22.56it/s, inflight=125, slow=0, oldest_s=3, forced_to=0]Temp-0.0 Infer:  38%|███▊      | 76/200 [00:03<00:05, 22.56it/s, inflight=124, slow=0, oldest_s=3, forced_to=0]Temp-0.0 Infer:  38%|███▊      | 77/200 [00:03<00:05, 22.56it/s, inflight=123, slow=0, oldest_s=3, forced_to=0]Temp-0.0 Infer:  39%|███▉      | 78/200 [00:03<00:05, 22.56it/s, inflight=121, slow=0, oldest_s=3, forced_to=0]Temp-0.0 Infer:  40%|███▉      | 79/200 [00:03<00:05, 22.56it/s, inflight=121, slow=0, oldest_s=3, forced_to=0]Temp-0.0 Infer:  40%|████      | 80/200 [00:04<00:03, 34.70it/s, inflight=121, slow=0, oldest_s=3, forced_to=0]Temp-0.0 Infer:  40%|████      | 80/200 [00:04<00:03, 34.70it/s, inflight=119, slow=0, oldest_s=4, forced_to=0]Temp-0.0 Infer:  40%|████      | 81/200 [00:04<00:03, 34.70it/s, inflight=119, slow=0, oldest_s=4, forced_to=0]Temp-0.0 Infer:  41%|████      | 82/200 [00:04<00:03, 34.70it/s, inflight=118, slow=0, oldest_s=4, forced_to=0]Temp-0.0 Infer:  42%|████▏     | 83/200 [00:04<00:03, 34.70it/s, inflight=116, slow=0, oldest_s=4, forced_to=0]Temp-0.0 Infer:  42%|████▏     | 84/200 [00:04<00:03, 34.70it/s, inflight=116, slow=0, oldest_s=4, forced_to=0]Temp-0.0 Infer:  42%|████▎     | 85/200 [00:04<00:03, 34.70it/s, inflight=115, slow=0, oldest_s=4, forced_to=0]Temp-0.0 Infer:  43%|████▎     | 86/200 [00:04<00:03, 34.70it/s, inflight=114, slow=0, oldest_s=4, forced_to=0]Temp-0.0 Infer:  44%|████▎     | 87/200 [00:04<00:03, 34.70it/s, inflight=113, slow=0, oldest_s=4, forced_to=0]Temp-0.0 Infer:  44%|████▍     | 88/200 [00:04<00:03, 34.70it/s, inflight=112, slow=0, oldest_s=4, forced_to=0]Temp-0.0 Infer:  44%|████▍     | 89/200 [00:04<00:03, 34.70it/s, inflight=111, slow=0, oldest_s=4, forced_to=0]Temp-0.0 Infer:  45%|████▌     | 90/200 [00:04<00:03, 34.70it/s, inflight=109, slow=0, oldest_s=4, forced_to=0]Temp-0.0 Infer:  46%|████▌     | 91/200 [00:04<00:03, 34.70it/s, inflight=109, slow=0, oldest_s=4, forced_to=0]Temp-0.0 Infer:  46%|████▌     | 92/200 [00:04<00:02, 45.98it/s, inflight=109, slow=0, oldest_s=4, forced_to=0]Temp-0.0 Infer:  46%|████▌     | 92/200 [00:04<00:02, 45.98it/s, inflight=108, slow=0, oldest_s=4, forced_to=0]Temp-0.0 Infer:  46%|████▋     | 93/200 [00:04<00:02, 45.98it/s, inflight=107, slow=0, oldest_s=4, forced_to=0]Temp-0.0 Infer:  47%|████▋     | 94/200 [00:04<00:02, 45.98it/s, inflight=106, slow=0, oldest_s=4, forced_to=0]Temp-0.0 Infer:  48%|████▊     | 95/200 [00:04<00:02, 45.98it/s, inflight=105, slow=0, oldest_s=4, forced_to=0]Temp-0.0 Infer:  48%|████▊     | 96/200 [00:04<00:02, 45.98it/s, inflight=104, slow=0, oldest_s=4, forced_to=0]Temp-0.0 Infer:  48%|████▊     | 97/200 [00:04<00:02, 45.98it/s, inflight=103, slow=0, oldest_s=4, forced_to=0]Temp-0.0 Infer:  49%|████▉     | 98/200 [00:04<00:02, 45.98it/s, inflight=102, slow=0, oldest_s=4, forced_to=0]Temp-0.0 Infer:  50%|████▉     | 99/200 [00:04<00:02, 45.98it/s, inflight=101, slow=0, oldest_s=4, forced_to=0]Temp-0.0 Infer:  50%|█████     | 100/200 [00:04<00:02, 45.98it/s, inflight=100, slow=0, oldest_s=4, forced_to=0]Temp-0.0 Infer:  50%|█████     | 101/200 [00:05<00:04, 21.90it/s, inflight=100, slow=0, oldest_s=4, forced_to=0]Temp-0.0 Infer:  50%|█████     | 101/200 [00:05<00:04, 21.90it/s, inflight=99, slow=0, oldest_s=5, forced_to=0] Temp-0.0 Infer:  51%|█████     | 102/200 [00:05<00:04, 21.90it/s, inflight=98, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  52%|█████▏    | 103/200 [00:05<00:04, 21.90it/s, inflight=97, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  52%|█████▏    | 104/200 [00:05<00:04, 21.90it/s, inflight=96, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  52%|█████▎    | 105/200 [00:05<00:04, 21.90it/s, inflight=95, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  53%|█████▎    | 106/200 [00:05<00:04, 21.90it/s, inflight=94, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  54%|█████▎    | 107/200 [00:05<00:04, 22.25it/s, inflight=94, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  54%|█████▎    | 107/200 [00:05<00:04, 22.25it/s, inflight=93, slow=0, oldest_s=5, forced_to=0]
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122819243200188G7NmIBt0)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122819268217352wpuGdoSd)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122819262014815kgH86y9X)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122819309396571DE2688Kh)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 202510271228193260015136WFp7U2J)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122819293263417107ALvH2)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122819304745309IrbsqhZR)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 202510271228193589272119siTxQVm)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122819356288566hCnE5w7q)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122819259143289i1pIbEkT)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122819373966056LJmNsJ3r)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122819362922378vL8xgepc)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122819382886359f1TqoBW1)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122819386859049Wm4c7szn)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122819392293503ts6iEyGT)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122819411452258jTHJlCJ0)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122819413298035wPzaLDT1)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122819373492911uRijN1aH)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122819427098054UCHqGS5R)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 202510271228194284011232eMtEgQ9)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122819439246959744h8qnK)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122819435791046KQHBLfkk)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122819314480680EuXe64yu)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122819415059210jxFdp1GG)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122819377381841BaDyHkcI)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122819565170393kmxkwKIr)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 202510271228195388359458XhSzah7)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122819559073071xdJGNsJT)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122820491506941xVan7kIj)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122820498422270IeyYZR1Y)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 202510271228206186613066pkW4xNz)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122820642515000qNgCAdiH)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 202510271228207128332858zB82AtT)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122820712285800JpJjWGZP)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122820736210813xsDpLpX7)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122820764440543vhKIDNd0)', 'type': 'new_api_error'}}Temp-0.0 Infer:  54%|█████▍    | 108/200 [00:05<00:04, 22.25it/s, inflight=91, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  55%|█████▍    | 109/200 [00:05<00:04, 22.25it/s, inflight=91, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  55%|█████▌    | 110/200 [00:05<00:04, 22.25it/s, inflight=89, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  56%|█████▌    | 111/200 [00:05<00:04, 22.25it/s, inflight=89, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  56%|█████▌    | 112/200 [00:05<00:03, 22.25it/s, inflight=88, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  56%|█████▋    | 113/200 [00:05<00:03, 22.25it/s, inflight=87, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  57%|█████▋    | 114/200 [00:05<00:03, 26.93it/s, inflight=87, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  57%|█████▋    | 114/200 [00:05<00:03, 26.93it/s, inflight=86, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  57%|█████▊    | 115/200 [00:05<00:03, 26.93it/s, inflight=85, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  58%|█████▊    | 116/200 [00:05<00:03, 26.93it/s, inflight=84, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  58%|█████▊    | 117/200 [00:05<00:03, 26.93it/s, inflight=83, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  59%|█████▉    | 118/200 [00:05<00:03, 26.93it/s, inflight=82, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  60%|█████▉    | 119/200 [00:05<00:03, 26.93it/s, inflight=81, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  60%|██████    | 120/200 [00:05<00:02, 30.48it/s, inflight=81, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  60%|██████    | 120/200 [00:05<00:02, 30.48it/s, inflight=80, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  60%|██████    | 121/200 [00:05<00:02, 30.48it/s, inflight=79, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  61%|██████    | 122/200 [00:05<00:02, 30.48it/s, inflight=78, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  62%|██████▏   | 123/200 [00:05<00:02, 30.48it/s, inflight=77, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  62%|██████▏   | 124/200 [00:05<00:02, 30.48it/s, inflight=76, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  62%|██████▎   | 125/200 [00:05<00:02, 30.48it/s, inflight=75, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  63%|██████▎   | 126/200 [00:05<00:02, 33.80it/s, inflight=75, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  63%|██████▎   | 126/200 [00:05<00:02, 33.80it/s, inflight=74, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  64%|██████▎   | 127/200 [00:05<00:02, 33.80it/s, inflight=73, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  64%|██████▍   | 128/200 [00:05<00:02, 33.80it/s, inflight=72, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  64%|██████▍   | 129/200 [00:05<00:02, 33.80it/s, inflight=71, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  65%|██████▌   | 130/200 [00:05<00:02, 33.80it/s, inflight=70, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  66%|██████▌   | 131/200 [00:05<00:02, 33.80it/s, inflight=69, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  66%|██████▌   | 132/200 [00:05<00:02, 33.80it/s, inflight=66, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  66%|██████▋   | 133/200 [00:05<00:01, 33.80it/s, inflight=66, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  67%|██████▋   | 134/200 [00:05<00:01, 33.80it/s, inflight=66, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  68%|██████▊   | 135/200 [00:05<00:01, 33.80it/s, inflight=65, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  68%|██████▊   | 136/200 [00:05<00:01, 44.50it/s, inflight=65, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  68%|██████▊   | 136/200 [00:05<00:01, 44.50it/s, inflight=64, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  68%|██████▊   | 137/200 [00:05<00:01, 44.50it/s, inflight=63, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  69%|██████▉   | 138/200 [00:05<00:01, 44.50it/s, inflight=62, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  70%|██████▉   | 139/200 [00:05<00:01, 44.50it/s, inflight=61, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  70%|███████   | 140/200 [00:05<00:01, 44.50it/s, inflight=60, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  70%|███████   | 141/200 [00:05<00:01, 44.50it/s, inflight=57, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  71%|███████   | 142/200 [00:05<00:01, 44.50it/s, inflight=57, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  72%|███████▏  | 143/200 [00:05<00:01, 44.50it/s, inflight=57, slow=0, oldest_s=5, forced_to=0]
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122820765109556vYEgWfvk)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122820770157641vf8MIbAM)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122820776881301kKIZ0wmV)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 202510271228208266327971uU0bEIk)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 202510271228208295409109da5hzYm)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122820834795888UFmkKRly)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 2025102712282084245318536YX1FPN)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122820847381381jUVEvUOA)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122820878725286Qs3dYd62)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122820886329463qilW1kRW)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122820901917835auflPCIV)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122820960779863n1ud78dG)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122820982701321UAY7f0r8)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 2025102712282126210201K0etdqt5)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122821401089841gmAuGK0)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 202510271228216172549121Affa0F)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 2025102712282163444528VidfW5hC)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 2025102712282184520495QXra6Uz2)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 2025102712282193956071JJ4vGD4U)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 2025102712282194065154DM3oyOqU)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122821106949755Ls7P4Y5i)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122821110785456TPe6NsKR)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 202510271228211064362754AsplE2y)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122821128649295ANqJl9Rf)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122821139728237A4soAUcf)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122821143903081lG7hcGQz)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 202510271228211797871112QIRSHuq)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122821185373434d1Yap0g4)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122821193284526kve8Ez7q)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122821211010418cjxm1JuA)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 202510271228212239370401qy0TX6q)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122821249505726VK98iLS8)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 202510271228212487464718wFqHutG)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122821249791389Y6qcvsGe)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122821242821442noJ62ryy)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 202510271228212494746974c0osr4M)', 'type': 'new_api_error'}}Temp-0.0 Infer:  72%|███████▏  | 144/200 [00:05<00:01, 44.50it/s, inflight=56, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  72%|███████▎  | 145/200 [00:05<00:01, 44.50it/s, inflight=55, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  73%|███████▎  | 146/200 [00:05<00:00, 55.20it/s, inflight=55, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  73%|███████▎  | 146/200 [00:05<00:00, 55.20it/s, inflight=54, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  74%|███████▎  | 147/200 [00:05<00:00, 55.20it/s, inflight=53, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  74%|███████▍  | 148/200 [00:05<00:00, 55.20it/s, inflight=52, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  74%|███████▍  | 149/200 [00:05<00:00, 55.20it/s, inflight=51, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  75%|███████▌  | 150/200 [00:05<00:00, 55.20it/s, inflight=50, slow=0, oldest_s=6, forced_to=0]Temp-0.0 Infer:  76%|███████▌  | 151/200 [00:06<00:00, 55.20it/s, inflight=49, slow=0, oldest_s=6, forced_to=0]Temp-0.0 Infer:  76%|███████▌  | 152/200 [00:06<00:00, 55.20it/s, inflight=48, slow=0, oldest_s=6, forced_to=0]Temp-0.0 Infer:  76%|███████▋  | 153/200 [00:06<00:00, 55.20it/s, inflight=47, slow=0, oldest_s=6, forced_to=0]Temp-0.0 Infer:  77%|███████▋  | 154/200 [00:06<00:02, 21.76it/s, inflight=47, slow=0, oldest_s=6, forced_to=0]Temp-0.0 Infer:  77%|███████▋  | 154/200 [00:06<00:02, 21.76it/s, inflight=46, slow=0, oldest_s=6, forced_to=0]Temp-0.0 Infer:  78%|███████▊  | 155/200 [00:06<00:02, 21.76it/s, inflight=45, slow=0, oldest_s=6, forced_to=0]Temp-0.0 Infer:  78%|███████▊  | 156/200 [00:06<00:02, 21.76it/s, inflight=44, slow=0, oldest_s=6, forced_to=0]Temp-0.0 Infer:  78%|███████▊  | 157/200 [00:06<00:01, 21.76it/s, inflight=43, slow=0, oldest_s=6, forced_to=0]Temp-0.0 Infer:  79%|███████▉  | 158/200 [00:06<00:01, 21.76it/s, inflight=42, slow=0, oldest_s=6, forced_to=0]Temp-0.0 Infer:  80%|███████▉  | 159/200 [00:06<00:01, 21.76it/s, inflight=41, slow=0, oldest_s=6, forced_to=0]Temp-0.0 Infer:  80%|████████  | 160/200 [00:06<00:01, 21.76it/s, inflight=40, slow=0, oldest_s=6, forced_to=0]Temp-0.0 Infer:  80%|████████  | 161/200 [00:06<00:01, 25.64it/s, inflight=40, slow=0, oldest_s=6, forced_to=0]Temp-0.0 Infer:  80%|████████  | 161/200 [00:06<00:01, 25.64it/s, inflight=39, slow=0, oldest_s=6, forced_to=0]Temp-0.0 Infer:  81%|████████  | 162/200 [00:06<00:01, 25.64it/s, inflight=38, slow=0, oldest_s=6, forced_to=0]Temp-0.0 Infer:  82%|████████▏ | 163/200 [00:06<00:01, 25.64it/s, inflight=37, slow=0, oldest_s=7, forced_to=0]Temp-0.0 Infer:  82%|████████▏ | 164/200 [00:07<00:01, 25.64it/s, inflight=36, slow=0, oldest_s=7, forced_to=0]Temp-0.0 Infer:  82%|████████▎ | 165/200 [00:07<00:01, 25.64it/s, inflight=35, slow=0, oldest_s=7, forced_to=0]Temp-0.0 Infer:  83%|████████▎ | 166/200 [00:07<00:01, 25.64it/s, inflight=34, slow=0, oldest_s=7, forced_to=0]Temp-0.0 Infer:  84%|████████▎ | 167/200 [00:07<00:01, 25.64it/s, inflight=33, slow=0, oldest_s=7, forced_to=0]Temp-0.0 Infer:  84%|████████▍ | 168/200 [00:07<00:01, 30.67it/s, inflight=33, slow=0, oldest_s=7, forced_to=0]Temp-0.0 Infer:  84%|████████▍ | 168/200 [00:07<00:01, 30.67it/s, inflight=32, slow=0, oldest_s=7, forced_to=0]Temp-0.0 Infer:  84%|████████▍ | 169/200 [00:07<00:01, 30.67it/s, inflight=31, slow=0, oldest_s=7, forced_to=0]Temp-0.0 Infer:  85%|████████▌ | 170/200 [00:07<00:00, 30.67it/s, inflight=30, slow=0, oldest_s=7, forced_to=0]Temp-0.0 Infer:  86%|████████▌ | 171/200 [00:07<00:00, 30.67it/s, inflight=29, slow=0, oldest_s=7, forced_to=0]Temp-0.0 Infer:  86%|████████▌ | 172/200 [00:07<00:00, 30.67it/s, inflight=28, slow=0, oldest_s=7, forced_to=0]Temp-0.0 Infer:  86%|████████▋ | 173/200 [00:07<00:00, 30.67it/s, inflight=27, slow=0, oldest_s=7, forced_to=0]Temp-0.0 Infer:  87%|████████▋ | 174/200 [00:07<00:00, 32.05it/s, inflight=27, slow=0, oldest_s=7, forced_to=0]Temp-0.0 Infer:  87%|████████▋ | 174/200 [00:07<00:00, 32.05it/s, inflight=26, slow=0, oldest_s=7, forced_to=0]Temp-0.0 Infer:  88%|████████▊ | 175/200 [00:07<00:00, 32.05it/s, inflight=25, slow=0, oldest_s=7, forced_to=0]Temp-0.0 Infer:  88%|████████▊ | 176/200 [00:07<00:00, 32.05it/s, inflight=24, slow=0, oldest_s=7, forced_to=0]Temp-0.0 Infer:  88%|████████▊ | 177/200 [00:07<00:00, 32.05it/s, inflight=23, slow=0, oldest_s=7, forced_to=0]Temp-0.0 Infer:  89%|████████▉ | 178/200 [00:07<00:00, 32.05it/s, inflight=22, slow=0, oldest_s=7, forced_to=0]
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122821246848753SI9VHkDE)', 'type': 'new_api_error'}}
+
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122821278457128rCDKg7Fv)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122821290861305wnYoIN6r)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122821316509070OxkTM0Re)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122821370893136BTyupLwp)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122821381376683Gs22ASNn)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 202510271228219078315048IzMcOql)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 2025102712282258024929WzVOjAKC)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122822142539822ReplfezN)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 202510271228222196231031neMlROG)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122822229390838rHSd6fiT)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122822237040628T5sYoB2c)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122822247194938H9QIJgim)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122822278900934YZ6zKprm)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122822311601586oBbaNFVa)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122822317174583Rji0AIn5)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122822355242905A1wT7OJn)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 202510271228223631659698e4awnRG)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122822401582839IkOsn4ne)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 202510271228224045043774maJTuE1)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122822418336838HTRXfMAi)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122822431323240owiBPhFJ)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 202510271228224544044264taAfcOK)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 202510271228224671694356NnqPX1c)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122822469467418x9PsuFZ2)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122822533963081oo3aVo5t)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122822581857697dFz13cix)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122822598364959BgB8BwUG)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122822617690058LhpPcGPN)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122822624274247zAtbRDGZ)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122822633775956rRMA7VOE)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122822640887255FQOacWFV)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122822672507159nOzGviCV)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122822680425618wNa1wp2l)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122822689173114xod0OYOr)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 202510271228226931057946xPZYdaz)', 'type': 'new_api_error'}}Temp-0.0 Infer:  90%|████████▉ | 179/200 [00:07<00:00, 32.05it/s, inflight=20, slow=0, oldest_s=7, forced_to=0]Temp-0.0 Infer:  90%|█████████ | 180/200 [00:07<00:00, 32.05it/s, inflight=20, slow=0, oldest_s=7, forced_to=0]Temp-0.0 Infer:  90%|█████████ | 181/200 [00:07<00:00, 32.05it/s, inflight=19, slow=0, oldest_s=7, forced_to=0]Temp-0.0 Infer:  91%|█████████ | 182/200 [00:07<00:00, 32.05it/s, inflight=18, slow=0, oldest_s=7, forced_to=0]Temp-0.0 Infer:  92%|█████████▏| 183/200 [00:07<00:00, 32.05it/s, inflight=17, slow=0, oldest_s=7, forced_to=0]Temp-0.0 Infer:  92%|█████████▏| 184/200 [00:07<00:00, 32.05it/s, inflight=16, slow=0, oldest_s=7, forced_to=0]Temp-0.0 Infer:  92%|█████████▎| 185/200 [00:07<00:00, 43.67it/s, inflight=16, slow=0, oldest_s=7, forced_to=0]Temp-0.0 Infer:  92%|█████████▎| 185/200 [00:07<00:00, 43.67it/s, inflight=15, slow=0, oldest_s=7, forced_to=0]Temp-0.0 Infer:  93%|█████████▎| 186/200 [00:07<00:00, 43.67it/s, inflight=12, slow=0, oldest_s=7, forced_to=0]Temp-0.0 Infer:  94%|█████████▎| 187/200 [00:07<00:00, 43.67it/s, inflight=12, slow=0, oldest_s=7, forced_to=0]Temp-0.0 Infer:  94%|█████████▍| 188/200 [00:07<00:00, 43.67it/s, inflight=12, slow=0, oldest_s=7, forced_to=0]Temp-0.0 Infer:  94%|█████████▍| 189/200 [00:07<00:00, 43.67it/s, inflight=11, slow=0, oldest_s=7, forced_to=0]Temp-0.0 Infer:  95%|█████████▌| 190/200 [00:07<00:00, 43.67it/s, inflight=10, slow=0, oldest_s=7, forced_to=0]Temp-0.0 Infer:  96%|█████████▌| 191/200 [00:07<00:00, 43.67it/s, inflight=9, slow=0, oldest_s=7, forced_to=0] Temp-0.0 Infer:  96%|█████████▌| 192/200 [00:07<00:00, 43.67it/s, inflight=8, slow=0, oldest_s=7, forced_to=0]Temp-0.0 Infer:  96%|█████████▋| 193/200 [00:07<00:00, 43.67it/s, inflight=7, slow=0, oldest_s=7, forced_to=0]Temp-0.0 Infer:  97%|█████████▋| 194/200 [00:07<00:00, 51.23it/s, inflight=7, slow=0, oldest_s=7, forced_to=0]Temp-0.0 Infer:  97%|█████████▋| 194/200 [00:07<00:00, 51.23it/s, inflight=6, slow=0, oldest_s=7, forced_to=0]Temp-0.0 Infer:  98%|█████████▊| 195/200 [00:07<00:00, 51.23it/s, inflight=5, slow=0, oldest_s=7, forced_to=0]Temp-0.0 Infer:  98%|█████████▊| 196/200 [00:07<00:00, 51.23it/s, inflight=4, slow=0, oldest_s=7, forced_to=0]Temp-0.0 Infer:  98%|█████████▊| 197/200 [00:07<00:00, 51.23it/s, inflight=3, slow=0, oldest_s=7, forced_to=0]Temp-0.0 Infer:  99%|█████████▉| 198/200 [00:07<00:00, 51.23it/s, inflight=2, slow=0, oldest_s=7, forced_to=0]Temp-0.0 Infer: 100%|█████████▉| 199/200 [00:07<00:00, 51.23it/s, inflight=1, slow=0, oldest_s=7, forced_to=0]Temp-0.0 Infer: 100%|██████████| 200/200 [00:07<00:00, 51.23it/s, inflight=0, slow=0, oldest_s=0, forced_to=0]Temp-0.0 Infer: 100%|██████████| 200/200 [00:07<00:00, 26.20it/s, inflight=0, slow=0, oldest_s=0, forced_to=0]
+
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122822697425971ihoNcv8l)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 202510271228227156552762vqJ5U1C)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122822714231231u85FQl7w)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122822725961143l4nHQxKk)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122822739733365uxIicS7A)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122822738761627TYpLEDrv)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122822737951682VSGgxZFq)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122822747138808QwvrMmLl)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122822777064274wSl5UfFh)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122822789314373l7S5RmLh)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122822816564933AIXA1zci)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122822831332796Lt4eEEdW)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122822833951402tMPdvGMF)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122822846922918tDA2IGNw)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122822896991384yEkEjOix)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122822926659535ZNmTweKB)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 202510271228229456845209SdXHvUo)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122822955706023p5NeXMP1)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 20251027122822983832607FbwiDdHS)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=503): Error code: 503 - {'error': {'message': '分组 default 下模型 deepseek-ri 无可用渠道（distributor） (request id: 2025102712282339214587ZHnT9nwF)', 'type': 'new_api_error'}}
+✅ 结果已保存至: results/2025-10-27_12-28-14/deepseek-ri/Bacteria/raw/temp-0.0.jsonl
+
+🔄 -----------------------------------
+🔄 正在处理温度: 0.7...
+🔄 -----------------------------------
+Temp-0.7 Infer:   0%|          | 0/200 [00:00<?, ?it/s]

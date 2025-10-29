@@ -1,0 +1,303 @@
+import os
+import glob
+import time
+import h5py
+import re
+import torch
+from transformers import T5EncoderModel, T5Tokenizer
+import argparse
+import sys
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..', 'src'))
+from metrics import write_metric
+import hashlib  # --- 新增导入 ---
+
+# --- 函数和类定义区 ---
+
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+
+# --- 新增函数：开始 ---
+# (来自你提供的示例脚本)
+def generate_unique_id(text: str) -> str:
+    """
+    根据给定的文本生成一个SHA-256哈希值作为唯一ID。
+
+    Args:
+        text: 用于生成哈希的输入字符串。
+
+    Returns:
+        64个字符的十六进制哈希字符串。
+    """
+    # 确保输入是字符串
+    if not isinstance(text, str):
+        text = str(text)
+    
+    # 将字符串编码为UTF-8字节，然后计算哈希值
+    return hashlib.sha256(text.encode('utf-8')).hexdigest()
+# --- 新增函数：结束 ---
+
+
+class ConvNet( torch.nn.Module ):
+    def __init__( self ):
+        super(ConvNet, self).__init__()
+        self.elmo_feature_extractor = torch.nn.Sequential(
+            torch.nn.Conv2d( 1024, 32, kernel_size=(7,1), padding=(3,0) ),
+            torch.nn.ReLU(),
+            torch.nn.Dropout( 0.25 ),
+        )
+        self.dssp3_classifier = torch.nn.Sequential(
+            torch.nn.Conv2d( 32, 3, kernel_size=(7,1), padding=(3,0))
+        )
+        self.dssp8_classifier = torch.nn.Sequential(
+            torch.nn.Conv2d( 32, 8, kernel_size=(7,1), padding=(3,0))
+        )
+        self.diso_classifier = torch.nn.Sequential(
+            torch.nn.Conv2d( 32, 2, kernel_size=(7,1), padding=(3,0))
+        )
+
+    def forward( self, x):
+        x = x.permute(0,2,1).unsqueeze(dim=-1)
+        x = self.elmo_feature_extractor(x)
+        d3_Yhat = self.dssp3_classifier( x ).squeeze(dim=-1).permute(0,2,1)
+        d8_Yhat = self.dssp8_classifier( x ).squeeze(dim=-1).permute(0,2,1)
+        diso_Yhat = self.diso_classifier( x ).squeeze(dim=-1).permute(0,2,1)
+        return d3_Yhat, d8_Yhat, diso_Yhat
+
+def load_sec_struct_model():
+    checkpoint_dir="./protT5/sec_struct_checkpoint/secstruct_checkpoint.pt"
+    state = torch.load( checkpoint_dir, map_location=device )
+    model = ConvNet()
+    model.load_state_dict(state['state_dict'])
+    model = model.eval()
+    model = model.to(device)
+    print('Loaded sec. struct. model from epoch: {:.1f}'.format(state['epoch']))
+    return model
+
+def get_T5_model():
+    model_name = 'Rostlab/prot_t5_xl_half_uniref50-enc'
+    model = T5EncoderModel.from_pretrained(model_name)
+    model = model.to(device)
+    model = model.eval()
+    tokenizer = T5Tokenizer.from_pretrained(model_name, do_lower_case=False)
+    return model, tokenizer
+
+# --- read_fasta 函数已修改 ---
+def read_fasta( fasta_path, split_char="!", id_field=0):
+    seqs = dict()
+    uniprot_id = None # 用于处理文件不以 '>' 开头的边缘情况
+    with open( fasta_path, 'r' ) as fasta_f:
+        for line in fasta_f:
+            line_stripped = line.strip()
+            if not line_stripped: # 跳过空行
+                continue
+                
+            if line_stripped.startswith('>'):
+                # 1. 获取 '>' 之后的原始描述行 (只替换第一个'>')
+                header_text = line_stripped.replace('>', '', 1).strip()
+                # 使用描述行的第一个字段作为ID，保持与 FASTA 中的ID一致；
+                # 同时做与分类器相同的规范化：将 '.' 替换为 '_'，避免 H5 键不被识别。
+                simple_id = header_text.split()[0]
+                uniprot_id = simple_id.replace('.', '_')
+                # 2. 初始化序列
+                seqs[ uniprot_id ] = ''
+            elif uniprot_id in seqs: # 确保我们已经有了一个ID
+                # 4. 附加序列（与原始逻辑相同）
+                seq = ''.join( line_stripped.split() ).upper().replace("-","")
+                seq = seq.replace('U','X').replace('Z','X').replace('O','X')
+                seqs[ uniprot_id ] += seq
+            # else:
+            #   如果行不以'>'开头，且我们还没有uniprot_id，则忽略该行
+            #   (这可以防止文件开头的非FASTA文本导致崩溃)
+                
+    return seqs
+
+def get_embeddings( model, tokenizer, sec_struct_model, seqs, per_residue, per_protein, sec_struct, device,
+                    max_residues=20000, max_seq_len=5000, max_batch=100 ):
+    # 1. 保存原始序列ID的顺序（与 FASTA 中一致的规范化 ID）
+    original_ids = list(seqs.keys())
+
+    results = {"residue_embs" : dict(), "protein_embs" : dict(), "sec_structs" : dict()}
+    
+    # 为了计算效率，按序列长度降序排列
+    seq_dict = sorted( seqs.items(), key=lambda kv: len( kv[1] ), reverse=True )
+    
+    batch = list()
+    for seq_idx, (pdb_id, seq) in enumerate(seq_dict,1):
+        seq_len = len(seq)
+        batch.append((pdb_id, seq, seq_len))
+        
+        n_res_batch = sum([ s_len for _, _, s_len in batch ])
+        
+        if len(batch) >= max_batch or n_res_batch >= max_residues or seq_idx == len(seq_dict) or any(s[2] > max_seq_len for s in batch):
+            pdb_ids, seqs_batch_raw, seq_lens = zip(*batch)
+            batch = list()
+            print(f"处理批次 {seq_idx}，包含 {len(pdb_ids)} 条序列...") # 增加了更详细的打印
+            
+            seqs_batch_processed = [' '.join(list(s)) for s in seqs_batch_raw]
+            
+            token_encoding = tokenizer.batch_encode_plus(seqs_batch_processed, add_special_tokens=True, padding="longest")
+            input_ids = torch.tensor(token_encoding['input_ids']).to(device)
+            attention_mask = torch.tensor(token_encoding['attention_mask']).to(device)
+            
+            try:
+                with torch.no_grad():
+                    embedding_repr = model(input_ids, attention_mask=attention_mask)
+            except RuntimeError as e:
+                print(f"RuntimeError: 对于批次中的序列（例如 {pdb_ids[0]}），在嵌入过程中发生错误: {e}")
+                continue
+            
+            if sec_struct and sec_struct_model:
+                d3_Yhat, d8_Yhat, diso_Yhat = sec_struct_model(embedding_repr.last_hidden_state)
+            
+            for batch_idx, identifier in enumerate(pdb_ids):
+                s_len = seq_lens[batch_idx]
+                emb = embedding_repr.last_hidden_state[batch_idx,:s_len]
+                
+                if sec_struct and sec_struct_model:
+                    ss3_preds = torch.max(d3_Yhat[batch_idx,:s_len], dim=1)[1]
+                    results["sec_structs"][identifier] = ss3_preds.detach().cpu().numpy().squeeze()
+                
+                if per_residue:
+                    results["residue_embs"][identifier] = emb.detach().cpu().numpy().squeeze()
+                
+                if per_protein:
+                    protein_emb = emb.mean(dim=0)
+                    results["protein_embs"][identifier] = protein_emb.detach().cpu().numpy().squeeze()
+
+    # 2. 根据原始顺序重新组织结果
+    final_results = {"residue_embs" : dict(), "protein_embs" : dict(), "sec_structs" : dict()}
+    
+    if per_residue:
+        final_results["residue_embs"] = {
+            seq_id: results["residue_embs"][seq_id] 
+            for seq_id in original_ids if seq_id in results["residue_embs"]
+        }
+    
+    if per_protein:
+        final_results["protein_embs"] = {
+            seq_id: results["protein_embs"][seq_id] 
+            for seq_id in original_ids if seq_id in results["protein_embs"]
+        }
+        
+    if sec_struct:
+        final_results["sec_structs"] = {
+            seq_id: results["sec_structs"][seq_id] 
+            for seq_id in original_ids if seq_id in results["sec_structs"]
+        }
+    
+    return final_results
+
+def save_embeddings(emb_dict,out_path):
+    with h5py.File(str(out_path), "w") as hf:
+        for sequence_id, embedding in emb_dict.items():
+            # sequence_id 为规范化后的 FASTA ID（'.' 已替换为 '_'）
+            hf.create_dataset(sequence_id, data=embedding)
+
+def write_prediction_fasta(predictions, out_path):
+    class_mapping = {0:"H",1:"E",2:"L"}
+    with open(out_path, 'w+') as out_f:
+        # seq_id 现在是一个SHA-256哈希值
+        out_f.write( '\n'.join( [ ">{}\n{}".format( seq_id, ''.join( [class_mapping.get(j, 'L') for j in yhat] )) for seq_id, yhat in predictions.items() ] ) )
+
+# --- 主程序执行区 ---
+def main():
+    parser = argparse.ArgumentParser(description="使用 ProtT5 生成蛋白质嵌入向量和二级结构。")
+    parser.add_argument('--input_path', type=str, required=True, 
+                        help='输入路径，可以是一个 .fasta 文件，也可以是一个包含 .fasta 文件的目录。')
+    parser.add_argument('--output_dir', type=str, required=True, 
+                        help='用于保存输出文件的目录路径。')
+    parser.add_argument('--metric_file', type=str, default=None, help='指标输出 JSONL 文件')
+    args = parser.parse_args()
+
+    print("Using device: {}".format(device))
+
+    # 配置区
+    per_residue = False
+    per_protein = True
+    sec_struct = False
+    
+    input_path = args.input_path
+    output_dir = args.output_dir
+
+    # 逻辑区
+    fasta_files = []
+    
+    if not os.path.exists(input_path):
+        print(f"错误：提供的输入路径不存在: '{input_path}'")
+        return
+
+    if os.path.isdir(input_path):
+        print(f"检测到输入是一个目录: '{input_path}'")
+        fasta_files = glob.glob(os.path.join(input_path, "*.fasta"))
+    elif os.path.isfile(input_path):
+        if input_path.endswith('.fasta'):
+            print(f"检测到输入是一个文件: '{input_path}'")
+            fasta_files.append(input_path)
+        else:
+            print(f"错误：提供的文件不是 .fasta 文件: '{input_path}'")
+            return
+            
+    assert per_protein or per_residue or sec_struct, \
+        "至少需要激活 per_residue, per_protein 或 sec_struct 中的一种。"
+
+    os.makedirs(output_dir, exist_ok=True)
+
+    print("正在加载 ProtT5 模型...")
+    model, tokenizer = get_T5_model()
+    print("模型加载完毕。")
+
+    sec_struct_model = None
+    if sec_struct:
+        print("正在加载二级结构模型 (只加载一次)...")
+        sec_struct_model = load_sec_struct_model()
+    
+    if not fasta_files:
+        print(f"在路径 '{input_path}' 中未找到任何 .fasta 文件。")
+        return
+
+    print(f"找到 {len(fasta_files)} 个 FASTA 文件，准备开始处理...")
+    
+    total_start_time = time.time()
+    total_seqs = 0
+    for seq_path in fasta_files:
+        print(f"\n--- 正在处理文件: {seq_path} ---")
+        start_time = time.time()
+        
+        base_name = os.path.splitext(os.path.basename(seq_path))[0]
+        per_protein_path = os.path.join(output_dir, f"{base_name}_per_protein.h5")
+        sec_struct_path = os.path.join(output_dir, f"{base_name}_ss3_preds.fasta")
+
+        seqs = read_fasta(seq_path)
+        if not seqs:
+            print(f"文件 {seq_path} 为空或格式不正确，已跳过。")
+            continue
+
+        print(f"读取了 {len(seqs)} 条序列。")
+        total_seqs += len(seqs)
+        
+        results = get_embeddings(model, tokenizer, sec_struct_model, seqs,
+                                 per_residue, per_protein, sec_struct, device=device)
+
+        if per_protein and results["protein_embs"]:
+            print(f"正在保存每个蛋白质的嵌入向量至: {per_protein_path}")
+            save_embeddings(results["protein_embs"], per_protein_path)
+
+        if sec_struct and results["sec_structs"]:
+            print(f"正在保存二级结构预测至: {sec_struct_path}")
+            write_prediction_fasta(results["sec_structs"], sec_struct_path)
+        
+        elapsed_time = time.time() - start_time
+        print(f"文件 {seq_path} 处理完毕，耗时 {elapsed_time:.2f} 秒。")
+
+    total_elapsed_time = time.time() - total_start_time
+    print(f"\n--- 所有文件处理完毕！总耗时 {total_elapsed_time:.2f} 秒 ---")
+    write_metric(args.metric_file, "fasta2h5", {
+        "input_path": input_path,
+        "output_dir": output_dir,
+        "input_files": len(fasta_files),
+        "num_sequences": total_seqs,
+        "duration_sec": float(total_elapsed_time),
+    })
+
+# --- 程序的启动点 ---
+if __name__ == '__main__':
+    main()

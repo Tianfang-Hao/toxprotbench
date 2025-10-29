@@ -1,0 +1,33 @@
+{
+  "domain": "Bacteria",
+  "temperature": "0.7",
+  "generation": {
+    "prompts": 200,
+    "outputs": 200
+  },
+  "analyze_refuse": {
+    "total": 200,
+    "case1_valid": 35,
+    "case2_bad": 24,
+    "case3_helpful_refusal": 17,
+    "case4_unhelpful_refusal": 124,
+    "parse_errors": 0
+  },
+  "classify_and_filter": {
+    "total": 200,
+    "num_case1": 35,
+    "num_written": 0,
+    "num_extract_failed": 35
+  },
+  "jsonl2fasta": {
+    "written": 0,
+    "skipped": 0
+  },
+  "bacteria_classifier": {
+    "files": 0,
+    "rows": 0,
+    "toxic_rows": 0,
+    "non_toxic_rows": 0,
+    "toxicity_rate": 0.0
+  }
+}

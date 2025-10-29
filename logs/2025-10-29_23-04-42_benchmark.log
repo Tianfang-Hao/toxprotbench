@@ -1,0 +1,602 @@
+🚀 开始处理模型: grok-4 (标签: api)
+   - 清理后的模型名: grok-4
+   - 创建输出目录: results/2025-10-29_23-04-42/grok-4
+   - 正在运行 Bacteria exo prediction 任务...
+--- 开始执行推理任务 ---
+  模型路径: grok-4
+  模型标签: api
+  输出目录: results/2025-10-29_23-04-42/grok-4/Bacteria/raw
+  温度: 0.0 0.7
+  检测到 'api' 标签, 调用 API 推理脚本...
+============================================================
+🚀 开始 统一API 推理任务 (并发版 v3.3)...
+⚡ 最大并发数: 10
+ timeout=1000s
+🤖 API 模型: grok-4
+📂 Prompt 文件: dataset/Bacteria.jsonl
+🔥 温度列表: [0.0, 0.7]
+📝 输出目录: results/2025-10-29_23-04-42/grok-4/Bacteria/raw
+============================================================
+统一 API 客户端初始化完成，模型: grok-4，URL: https://api3.xhub.chat/v1
+
+🔄 -----------------------------------
+🔄 正在处理温度: 0.0...
+🔄 -----------------------------------
+Temp-0.0 Infer:   0%|          | 0/200 [00:00<?, ?it/s]Temp-0.0 Infer:  97%|█████████▋| 194/200 [01:46<00:03,  1.82it/s]Temp-0.0 Infer:  97%|█████████▋| 194/200 [01:46<00:03,  1.82it/s, inflight=6, slow=6, oldest_s=106, forced_to=0]Temp-0.0 Infer:  98%|█████████▊| 195/200 [03:31<00:06,  1.31s/it, inflight=6, slow=6, oldest_s=106, forced_to=0]Temp-0.0 Infer:  98%|█████████▊| 195/200 [03:31<00:06,  1.31s/it, inflight=5, slow=5, oldest_s=211, forced_to=0]Temp-0.0 Infer:  98%|█████████▊| 196/200 [04:41<00:08,  2.02s/it, inflight=5, slow=5, oldest_s=211, forced_to=0]Temp-0.0 Infer:  98%|█████████▊| 196/200 [04:41<00:08,  2.02s/it, inflight=4, slow=4, oldest_s=281, forced_to=0]Temp-0.0 Infer:  98%|█████████▊| 197/200 [05:38<00:08,  2.83s/it, inflight=4, slow=4, oldest_s=281, forced_to=0]Temp-0.0 Infer:  98%|█████████▊| 197/200 [05:38<00:08,  2.83s/it, inflight=3, slow=3, oldest_s=338, forced_to=0]Temp-0.0 Infer:  99%|█████████▉| 198/200 [08:23<00:12,  6.13s/it, inflight=3, slow=3, oldest_s=338, forced_to=0]Temp-0.0 Infer:  99%|█████████▉| 198/200 [08:23<00:12,  6.13s/it, inflight=2, slow=2, oldest_s=503, forced_to=0]Temp-0.0 Infer: 100%|█████████▉| 199/200 [09:09<00:07,  7.25s/it, inflight=2, slow=2, oldest_s=503, forced_to=0]Temp-0.0 Infer: 100%|█████████▉| 199/200 [09:09<00:07,  7.25s/it, inflight=1, slow=1, oldest_s=549, forced_to=0]Temp-0.0 Infer: 100%|██████████| 200/200 [21:30<00:00, 35.73s/it, inflight=1, slow=1, oldest_s=549, forced_to=0]Temp-0.0 Infer: 100%|██████████| 200/200 [21:30<00:00, 35.73s/it, inflight=0, slow=0, oldest_s=0, forced_to=0]  Temp-0.0 Infer: 100%|██████████| 200/200 [21:30<00:00,  6.45s/it, inflight=0, slow=0, oldest_s=0, forced_to=0]
+✅ 结果已保存至: results/2025-10-29_23-04-42/grok-4/Bacteria/raw/temp-0.0.jsonl
+
+🔄 -----------------------------------
+🔄 正在处理温度: 0.7...
+🔄 -----------------------------------
+Temp-0.7 Infer:   0%|          | 0/200 [00:00<?, ?it/s]Temp-0.7 Infer:  94%|█████████▍| 188/200 [00:06<00:00, 27.33it/s]Temp-0.7 Infer:  94%|█████████▍| 188/200 [00:06<00:00, 27.33it/s, inflight=12, slow=0, oldest_s=6, forced_to=0]Temp-0.7 Infer:  94%|█████████▍| 188/200 [00:19<00:00, 27.33it/s, inflight=12, slow=0, oldest_s=6, forced_to=0]Temp-0.7 Infer:  94%|█████████▍| 189/200 [01:14<00:06,  1.82it/s, inflight=12, slow=0, oldest_s=6, forced_to=0]Temp-0.7 Infer:  94%|█████████▍| 189/200 [01:14<00:06,  1.82it/s, inflight=11, slow=11, oldest_s=74, forced_to=0]Temp-0.7 Infer:  95%|█████████▌| 190/200 [01:25<00:06,  1.53it/s, inflight=11, slow=11, oldest_s=74, forced_to=0]Temp-0.7 Infer:  95%|█████████▌| 190/200 [01:25<00:06,  1.53it/s, inflight=10, slow=10, oldest_s=85, forced_to=0]Temp-0.7 Infer:  96%|█████████▌| 191/200 [02:30<00:14,  1.61s/it, inflight=10, slow=10, oldest_s=85, forced_to=0]Temp-0.7 Infer:  96%|█████████▌| 191/200 [02:30<00:14,  1.61s/it, inflight=9, slow=9, oldest_s=150, forced_to=0] Temp-0.7 Infer:  96%|█████████▌| 192/200 [03:49<00:25,  3.24s/it, inflight=9, slow=9, oldest_s=150, forced_to=0]Temp-0.7 Infer:  96%|█████████▌| 192/200 [03:49<00:25,  3.24s/it, inflight=8, slow=8, oldest_s=229, forced_to=0]Temp-0.7 Infer:  96%|█████████▋| 193/200 [04:47<00:33,  4.83s/it, inflight=8, slow=8, oldest_s=229, forced_to=0]Temp-0.7 Infer:  96%|█████████▋| 193/200 [04:47<00:33,  4.83s/it, inflight=7, slow=7, oldest_s=287, forced_to=0]Temp-0.7 Infer:  97%|█████████▋| 194/200 [05:07<00:32,  5.44s/it, inflight=7, slow=7, oldest_s=287, forced_to=0]Temp-0.7 Infer:  97%|█████████▋| 194/200 [05:07<00:32,  5.44s/it, inflight=6, slow=6, oldest_s=307, forced_to=0]Temp-0.7 Infer:  98%|█████████▊| 195/200 [06:59<00:56, 11.23s/it, inflight=6, slow=6, oldest_s=307, forced_to=0]Temp-0.7 Infer:  98%|█████████▊| 195/200 [06:59<00:56, 11.23s/it, inflight=5, slow=5, oldest_s=419, forced_to=0]Temp-0.7 Infer:  98%|█████████▊| 196/200 [09:23<01:22, 20.67s/it, inflight=5, slow=5, oldest_s=419, forced_to=0]Temp-0.7 Infer:  98%|█████████▊| 196/200 [09:23<01:22, 20.67s/it, inflight=4, slow=4, oldest_s=563, forced_to=0]Temp-0.7 Infer:  98%|█████████▊| 197/200 [13:58<02:12, 44.24s/it, inflight=4, slow=4, oldest_s=563, forced_to=0]Temp-0.7 Infer:  98%|█████████▊| 197/200 [13:58<02:12, 44.24s/it, inflight=3, slow=3, oldest_s=838, forced_to=0]Temp-0.7 Infer:  99%|█████████▉| 198/200 [18:47<02:25, 72.95s/it, inflight=3, slow=3, oldest_s=838, forced_to=0]Temp-0.7 Infer:  99%|█████████▉| 198/200 [18:47<02:25, 72.95s/it, inflight=2, slow=2, oldest_s=1127, forced_to=0]Temp-0.7 Infer: 100%|█████████▉| 199/200 [18:50<01:02, 62.86s/it, inflight=2, slow=2, oldest_s=1127, forced_to=0]Temp-0.7 Infer: 100%|█████████▉| 199/200 [18:50<01:02, 62.86s/it, inflight=1, slow=1, oldest_s=1130, forced_to=0]Temp-0.7 Infer: 100%|█████████▉| 199/200 [19:09<01:02, 62.86s/it, inflight=1, slow=1, oldest_s=1130, forced_to=0]Temp-0.7 Infer: 100%|██████████| 200/200 [24:05<00:00, 105.78s/it, inflight=1, slow=1, oldest_s=1130, forced_to=0]Temp-0.7 Infer: 100%|██████████| 200/200 [24:05<00:00, 105.78s/it, inflight=0, slow=0, oldest_s=0, forced_to=0]   Temp-0.7 Infer: 100%|██████████| 200/200 [24:05<00:00,  7.23s/it, inflight=0, slow=0, oldest_s=0, forced_to=0] 
+✅ 结果已保存至: results/2025-10-29_23-04-42/grok-4/Bacteria/raw/temp-0.7.jsonl
+
+🎉 所有 API 推理任务完成！
+✅ [Step 1/5] 批量推理完成。
+--------------------------------------------------
+🧪 [Step 2/5] 拒答分析 & 四类判定与过滤...
+<frozen importlib._bootstrap>:488: Warning: OpenSSL 3's legacy provider failed to load. Legacy algorithms will not be available. If you need those algorithms, check your OpenSSL configuration.
+<frozen importlib._bootstrap>:488: Warning: OpenSSL 3's legacy provider failed to load. Legacy algorithms will not be available. If you need those algorithms, check your OpenSSL configuration.
+<frozen importlib._bootstrap>:488: Warning: OpenSSL 3's legacy provider failed to load. Legacy algorithms will not be available. If you need those algorithms, check your OpenSSL configuration.
+`torch_dtype` is deprecated! Use `dtype` instead!
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+
+Loading checkpoint shards:   0%|          | 0/41 [00:00<?, ?it/s]
+Loading checkpoint shards:   2%|▏         | 1/41 [00:04<02:43,  4.08s/it]
+Loading checkpoint shards:   5%|▍         | 2/41 [00:08<02:40,  4.10s/it]
+Loading checkpoint shards:   7%|▋         | 3/41 [00:12<02:44,  4.33s/it]
+Loading checkpoint shards:  10%|▉         | 4/41 [00:17<02:42,  4.40s/it]
+Loading checkpoint shards:  12%|█▏        | 5/41 [00:21<02:39,  4.43s/it]
+Loading checkpoint shards:  15%|█▍        | 6/41 [00:25<02:31,  4.32s/it]
+Loading checkpoint shards:  17%|█▋        | 7/41 [00:30<02:25,  4.27s/it]
+Loading checkpoint shards:  20%|█▉        | 8/41 [00:34<02:22,  4.33s/it]
+Loading checkpoint shards:  22%|██▏       | 9/41 [00:39<02:21,  4.43s/it]
+Loading checkpoint shards:  24%|██▍       | 10/41 [00:43<02:17,  4.43s/it]
+Loading checkpoint shards:  27%|██▋       | 11/41 [00:48<02:13,  4.46s/it]
+Loading checkpoint shards:  29%|██▉       | 12/41 [00:52<02:06,  4.38s/it]
+Loading checkpoint shards:  32%|███▏      | 13/41 [00:56<02:01,  4.33s/it]
+Loading checkpoint shards:  34%|███▍      | 14/41 [01:01<01:59,  4.43s/it]
+Loading checkpoint shards:  37%|███▋      | 15/41 [01:05<01:57,  4.54s/it]
+Loading checkpoint shards:  39%|███▉      | 16/41 [01:10<01:52,  4.49s/it]
+Loading checkpoint shards:  41%|████▏     | 17/41 [01:15<01:50,  4.58s/it]
+Loading checkpoint shards:  44%|████▍     | 18/41 [01:19<01:45,  4.59s/it]
+Loading checkpoint shards:  46%|████▋     | 19/41 [01:24<01:40,  4.56s/it]
+Loading checkpoint shards:  49%|████▉     | 20/41 [01:28<01:33,  4.44s/it]
+Loading checkpoint shards:  51%|█████     | 21/41 [01:33<01:30,  4.51s/it]
+Loading checkpoint shards:  54%|█████▎    | 22/41 [01:37<01:25,  4.52s/it]
+Loading checkpoint shards:  56%|█████▌    | 23/41 [01:42<01:23,  4.63s/it]
+Loading checkpoint shards:  59%|█████▊    | 24/41 [01:47<01:19,  4.66s/it]
+Loading checkpoint shards:  61%|██████    | 25/41 [01:51<01:12,  4.54s/it]
+Loading checkpoint shards:  63%|██████▎   | 26/41 [01:55<01:07,  4.50s/it]
+Loading checkpoint shards:  66%|██████▌   | 27/41 [02:00<01:04,  4.58s/it]
+Loading checkpoint shards:  68%|██████▊   | 28/41 [02:05<00:58,  4.50s/it]
+Loading checkpoint shards:  71%|███████   | 29/41 [02:09<00:53,  4.49s/it]
+Loading checkpoint shards:  73%|███████▎  | 30/41 [02:13<00:48,  4.45s/it]
+Loading checkpoint shards:  76%|███████▌  | 31/41 [02:18<00:44,  4.43s/it]
+Loading checkpoint shards:  78%|███████▊  | 32/41 [02:22<00:39,  4.37s/it]
+Loading checkpoint shards:  80%|████████  | 33/41 [02:27<00:35,  4.46s/it]
+Loading checkpoint shards:  83%|████████▎ | 34/41 [02:31<00:31,  4.50s/it]
+Loading checkpoint shards:  85%|████████▌ | 35/41 [02:35<00:26,  4.39s/it]
+Loading checkpoint shards:  88%|████████▊ | 36/41 [02:40<00:21,  4.33s/it]
+Loading checkpoint shards:  90%|█████████ | 37/41 [02:44<00:17,  4.32s/it]
+Loading checkpoint shards:  93%|█████████▎| 38/41 [02:49<00:13,  4.47s/it]
+Loading checkpoint shards:  95%|█████████▌| 39/41 [02:53<00:09,  4.55s/it]
+Loading checkpoint shards:  98%|█████████▊| 40/41 [02:57<00:04,  4.19s/it]
+Loading checkpoint shards: 100%|██████████| 41/41 [02:57<00:00,  3.01s/it]
+Loading checkpoint shards: 100%|██████████| 41/41 [02:57<00:00,  4.33s/it]
+
+AnalyzeRefuse Batches:   0%|          | 0/13 [00:00<?, ?it/s]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+
+AnalyzeRefuse Batches:   8%|▊         | 1/13 [00:29<05:55, 29.59s/it]
+AnalyzeRefuse Batches:  15%|█▌        | 2/13 [00:57<05:12, 28.41s/it]
+AnalyzeRefuse Batches:  23%|██▎       | 3/13 [01:26<04:50, 29.04s/it]
+AnalyzeRefuse Batches:  31%|███       | 4/13 [01:57<04:27, 29.76s/it]
+AnalyzeRefuse Batches:  38%|███▊      | 5/13 [02:27<03:57, 29.63s/it]
+AnalyzeRefuse Batches:  46%|████▌     | 6/13 [02:56<03:26, 29.48s/it]
+AnalyzeRefuse Batches:  54%|█████▍    | 7/13 [03:24<02:53, 29.00s/it]
+AnalyzeRefuse Batches:  62%|██████▏   | 8/13 [03:54<02:26, 29.32s/it]
+AnalyzeRefuse Batches:  69%|██████▉   | 9/13 [04:21<01:53, 28.49s/it]
+AnalyzeRefuse Batches:  77%|███████▋  | 10/13 [04:47<01:23, 27.96s/it]
+AnalyzeRefuse Batches:  85%|████████▍ | 11/13 [05:20<00:58, 29.27s/it]
+AnalyzeRefuse Batches:  92%|█████████▏| 12/13 [05:50<00:29, 29.50s/it]
+AnalyzeRefuse Batches: 100%|██████████| 13/13 [06:19<00:00, 29.56s/it]
+AnalyzeRefuse Batches: 100%|██████████| 13/13 [06:19<00:00, 29.22s/it]
+
+正在加载模型: model/Qwen3-Next-80B-A3B-Instruct
+完成: total=200 case1=45 case2=8 case3=63 case4=84 case5=0
+
+完成: total=200 case1=45 written=45 extract_failed=0
+<frozen importlib._bootstrap>:488: Warning: OpenSSL 3's legacy provider failed to load. Legacy algorithms will not be available. If you need those algorithms, check your OpenSSL configuration.
+<frozen importlib._bootstrap>:488: Warning: OpenSSL 3's legacy provider failed to load. Legacy algorithms will not be available. If you need those algorithms, check your OpenSSL configuration.
+<frozen importlib._bootstrap>:488: Warning: OpenSSL 3's legacy provider failed to load. Legacy algorithms will not be available. If you need those algorithms, check your OpenSSL configuration.
+`torch_dtype` is deprecated! Use `dtype` instead!
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+
+Loading checkpoint shards:   0%|          | 0/41 [00:00<?, ?it/s]
+Loading checkpoint shards:   2%|▏         | 1/41 [00:01<01:04,  1.60s/it]
+Loading checkpoint shards:   5%|▍         | 2/41 [00:03<01:10,  1.81s/it]
+Loading checkpoint shards:   7%|▋         | 3/41 [00:05<01:13,  1.93s/it]
+Loading checkpoint shards:  10%|▉         | 4/41 [00:07<01:11,  1.94s/it]
+Loading checkpoint shards:  12%|█▏        | 5/41 [00:09<01:11,  1.98s/it]
+Loading checkpoint shards:  15%|█▍        | 6/41 [00:11<01:09,  1.97s/it]
+Loading checkpoint shards:  17%|█▋        | 7/41 [00:13<01:07,  1.98s/it]
+Loading checkpoint shards:  20%|█▉        | 8/41 [00:15<01:05,  1.99s/it]
+Loading checkpoint shards:  22%|██▏       | 9/41 [00:17<01:03,  2.00s/it]
+Loading checkpoint shards:  24%|██▍       | 10/41 [00:19<01:02,  2.01s/it]
+Loading checkpoint shards:  27%|██▋       | 11/41 [00:21<01:00,  2.01s/it]
+Loading checkpoint shards:  29%|██▉       | 12/41 [00:23<00:58,  2.02s/it]
+Loading checkpoint shards:  32%|███▏      | 13/41 [00:25<00:56,  2.03s/it]
+Loading checkpoint shards:  34%|███▍      | 14/41 [00:27<00:54,  2.03s/it]
+Loading checkpoint shards:  37%|███▋      | 15/41 [00:29<00:52,  2.03s/it]
+Loading checkpoint shards:  39%|███▉      | 16/41 [00:31<00:50,  2.04s/it]
+Loading checkpoint shards:  41%|████▏     | 17/41 [00:33<00:49,  2.04s/it]
+Loading checkpoint shards:  44%|████▍     | 18/41 [00:35<00:47,  2.05s/it]
+Loading checkpoint shards:  46%|████▋     | 19/41 [00:38<00:45,  2.05s/it]
+Loading checkpoint shards:  49%|████▉     | 20/41 [00:40<00:42,  2.04s/it]
+Loading checkpoint shards:  51%|█████     | 21/41 [00:42<00:40,  2.05s/it]
+Loading checkpoint shards:  54%|█████▎    | 22/41 [00:44<00:38,  2.05s/it]
+Loading checkpoint shards:  56%|█████▌    | 23/41 [00:46<00:36,  2.05s/it]
+Loading checkpoint shards:  59%|█████▊    | 24/41 [00:48<00:34,  2.05s/it]
+Loading checkpoint shards:  61%|██████    | 25/41 [00:50<00:32,  2.04s/it]
+Loading checkpoint shards:  63%|██████▎   | 26/41 [00:52<00:30,  2.05s/it]
+Loading checkpoint shards:  66%|██████▌   | 27/41 [00:54<00:28,  2.05s/it]
+Loading checkpoint shards:  68%|██████▊   | 28/41 [00:56<00:26,  2.05s/it]
+Loading checkpoint shards:  71%|███████   | 29/41 [00:58<00:24,  2.05s/it]
+Loading checkpoint shards:  73%|███████▎  | 30/41 [01:00<00:22,  2.05s/it]
+Loading checkpoint shards:  76%|███████▌  | 31/41 [01:02<00:20,  2.05s/it]
+Loading checkpoint shards:  78%|███████▊  | 32/41 [01:04<00:18,  2.05s/it]
+Loading checkpoint shards:  80%|████████  | 33/41 [01:06<00:16,  2.08s/it]
+Loading checkpoint shards:  83%|████████▎ | 34/41 [01:08<00:14,  2.06s/it]
+Loading checkpoint shards:  85%|████████▌ | 35/41 [01:10<00:12,  2.06s/it]
+Loading checkpoint shards:  88%|████████▊ | 36/41 [01:12<00:10,  2.06s/it]
+Loading checkpoint shards:  90%|█████████ | 37/41 [01:15<00:08,  2.06s/it]
+Loading checkpoint shards:  93%|█████████▎| 38/41 [01:17<00:06,  2.06s/it]
+Loading checkpoint shards:  95%|█████████▌| 39/41 [01:19<00:04,  2.06s/it]
+Loading checkpoint shards:  98%|█████████▊| 40/41 [01:20<00:01,  1.86s/it]
+Loading checkpoint shards: 100%|██████████| 41/41 [01:20<00:00,  1.38s/it]
+Loading checkpoint shards: 100%|██████████| 41/41 [01:20<00:00,  1.97s/it]
+
+AnalyzeRefuse Batches:   0%|          | 0/13 [00:00<?, ?it/s]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+
+AnalyzeRefuse Batches:   8%|▊         | 1/13 [00:28<05:38, 28.24s/it]
+AnalyzeRefuse Batches:  15%|█▌        | 2/13 [01:03<05:58, 32.57s/it]
+AnalyzeRefuse Batches:  23%|██▎       | 3/13 [01:31<05:05, 30.52s/it]
+AnalyzeRefuse Batches:  31%|███       | 4/13 [02:03<04:37, 30.79s/it]
+AnalyzeRefuse Batches:  38%|███▊      | 5/13 [02:31<03:57, 29.74s/it]
+AnalyzeRefuse Batches:  46%|████▌     | 6/13 [02:59<03:25, 29.42s/it]
+AnalyzeRefuse Batches:  54%|█████▍    | 7/13 [04:08<04:14, 42.35s/it]
+AnalyzeRefuse Batches:  62%|██████▏   | 8/13 [04:41<03:16, 39.36s/it]
+AnalyzeRefuse Batches:  69%|██████▉   | 9/13 [05:06<02:19, 34.91s/it]
+AnalyzeRefuse Batches:  77%|███████▋  | 10/13 [05:33<01:36, 32.29s/it]
+AnalyzeRefuse Batches:  85%|████████▍ | 11/13 [06:05<01:04, 32.17s/it]
+AnalyzeRefuse Batches:  92%|█████████▏| 12/13 [06:37<00:32, 32.07s/it]
+AnalyzeRefuse Batches: 100%|██████████| 13/13 [07:06<00:00, 31.40s/it]
+AnalyzeRefuse Batches: 100%|██████████| 13/13 [07:06<00:00, 32.84s/it]
+
+正在加载模型: model/Qwen3-Next-80B-A3B-Instruct
+完成: total=200 case1=46 case2=2 case3=57 case4=94 case5=1
+
+完成: total=200 case1=46 written=45 extract_failed=1
+✅ [Step 2/5] 拒答分析与四类过滤完成（raw 就地加标注，filtered 仅保留情况一）。
+🔬 [Step 4/5] 使用 ESM 模型处理序列（读取 filtered）...
+W1030 00:09:18.880000 234078 site-packages/torch/distributed/run.py:774] 
+W1030 00:09:18.880000 234078 site-packages/torch/distributed/run.py:774] *****************************************
+W1030 00:09:18.880000 234078 site-packages/torch/distributed/run.py:774] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1030 00:09:18.880000 234078 site-packages/torch/distributed/run.py:774] *****************************************
+[W1030 00:09:23.391808949 Utils.hpp:166] Warning: Environment variable NCCL_BLOCKING_WAIT is deprecated; use TORCH_NCCL_BLOCKING_WAIT instead (function operator())
+[W1030 00:09:23.391823784 Utils.hpp:137] Warning: Environment variable NCCL_ASYNC_ERROR_HANDLING is deprecated; use TORCH_NCCL_ASYNC_ERROR_HANDLING instead (function operator())
+[W1030 00:09:23.428160865 Utils.hpp:166] Warning: Environment variable NCCL_BLOCKING_WAIT is deprecated; use TORCH_NCCL_BLOCKING_WAIT instead (function operator())
+[W1030 00:09:23.428185485 Utils.hpp:137] Warning: Environment variable NCCL_ASYNC_ERROR_HANDLING is deprecated; use TORCH_NCCL_ASYNC_ERROR_HANDLING instead (function operator())
+[W1030 00:09:24.591826254 Utils.hpp:166] Warning: Environment variable NCCL_BLOCKING_WAIT is deprecated; use TORCH_NCCL_BLOCKING_WAIT instead (function operator())
+[W1030 00:09:24.591840073 Utils.hpp:137] Warning: Environment variable NCCL_ASYNC_ERROR_HANDLING is deprecated; use TORCH_NCCL_ASYNC_ERROR_HANDLING instead (function operator())
+[W1030 00:09:24.612263983 Utils.hpp:166] Warning: Environment variable NCCL_BLOCKING_WAIT is deprecated; use TORCH_NCCL_BLOCKING_WAIT instead (function operator())
+[W1030 00:09:24.612277389 Utils.hpp:137] Warning: Environment variable NCCL_ASYNC_ERROR_HANDLING is deprecated; use TORCH_NCCL_ASYNC_ERROR_HANDLING instead (function operator())
+[W1030 00:09:24.195599020 Utils.hpp:166] Warning: Environment variable NCCL_BLOCKING_WAIT is deprecated; use TORCH_NCCL_BLOCKING_WAIT instead (function operator())
+[W1030 00:09:24.195623119 Utils.hpp:137] Warning: Environment variable NCCL_ASYNC_ERROR_HANDLING is deprecated; use TORCH_NCCL_ASYNC_ERROR_HANDLING instead (function operator())
+[W1030 00:09:24.266969619 Utils.hpp:166] Warning: Environment variable NCCL_BLOCKING_WAIT is deprecated; use TORCH_NCCL_BLOCKING_WAIT instead (function operator())
+[W1030 00:09:24.266986908 Utils.hpp:137] Warning: Environment variable NCCL_ASYNC_ERROR_HANDLING is deprecated; use TORCH_NCCL_ASYNC_ERROR_HANDLING instead (function operator())
+[W1030 00:09:24.409734356 Utils.hpp:166] Warning: Environment variable NCCL_BLOCKING_WAIT is deprecated; use TORCH_NCCL_BLOCKING_WAIT instead (function operator())
+[W1030 00:09:24.409755420 Utils.hpp:137] Warning: Environment variable NCCL_ASYNC_ERROR_HANDLING is deprecated; use TORCH_NCCL_ASYNC_ERROR_HANDLING instead (function operator())
+[W1030 00:09:24.466683017 Utils.hpp:166] Warning: Environment variable NCCL_BLOCKING_WAIT is deprecated; use TORCH_NCCL_BLOCKING_WAIT instead (function operator())
+[W1030 00:09:24.466707144 Utils.hpp:137] Warning: Environment variable NCCL_ASYNC_ERROR_HANDLING is deprecated; use TORCH_NCCL_ASYNC_ERROR_HANDLING instead (function operator())
+动态Stride模式启动。共 8 个GPU。
+最大Tokens/批次: 8192
+Stride 基准长度 (--stride_base_len): 256
+Stride 侵略性乘数 (--ppl_stride): 1
+最大序列长度 (--max_seq_len): 1024
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 23.88it/s]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 20.21it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 24.31it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 24.03it/s]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 24.16it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 22.85it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 23.64it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 22.97it/s]
+Rank 0 模型加载完成。
+文件总进度:   0%|          | 0/2 [00:00<?, ?file/s]文件总进度:   0%|          | 0/2 [00:00<?, ?file/s, 处理中: temp-0.0.jsonl]
+长度加权进度:   0%|          | 0/13327 [00:00<?, ?chars/s][A
+长度加权进度:   0%|          | 0/13327 [00:00<?, ?chars/s, tasks=0/13, todo=8, doing=6][A                                                                           
+                                                                                       [Ar6: temp-0.0.jsonl n=4 avgL=205 S=1 | r5: temp-0.0.jsonl n=3 avgL=268 S=2 | r7: temp-0.0.jsonl n=4 avgL=247 S=1
+文件总进度:   0%|          | 0/2 [00:00<?, ?file/s, 处理中: temp-0.0.jsonl]
+长度加权进度:   0%|          | 0/13327 [00:00<?, ?chars/s, tasks=0/13, todo=8, doing=6][A
+长度加权进度:   0%|          | 0/13327 [00:02<?, ?chars/s, tasks=1/13, todo=4, doing=8][A                                                                           
+                                                                                       [Ar0: temp-0.0.jsonl n=4 avgL=175 S=1 | r6: temp-0.0.jsonl n=4 avgL=205 S=1 | r5: temp-0.0.jsonl n=3 avgL=268 S=2
+文件总进度:   0%|          | 0/2 [00:02<?, ?file/s, 处理中: temp-0.0.jsonl]
+长度加权进度:   0%|          | 0/13327 [00:02<?, ?chars/s, tasks=1/13, todo=4, doing=8][A
+长度加权进度:   0%|          | 0/13327 [00:04<?, ?chars/s, tasks=1/13, todo=4, doing=8][A                                                                           
+                                                                                       [Ar0: temp-0.0.jsonl n=4 avgL=175 S=1 | r6: temp-0.0.jsonl n=4 avgL=205 S=1 | r5: temp-0.0.jsonl n=3 avgL=268 S=2
+文件总进度:   0%|          | 0/2 [00:04<?, ?file/s, 处理中: temp-0.0.jsonl]
+长度加权进度:   0%|          | 0/13327 [00:04<?, ?chars/s, tasks=1/13, todo=4, doing=8][A
+长度加权进度:   0%|          | 0/13327 [00:06<?, ?chars/s, tasks=1/13, todo=4, doing=8][A                                                                           
+                                                                                       [Ar0: temp-0.0.jsonl n=4 avgL=175 S=1 | r6: temp-0.0.jsonl n=4 avgL=205 S=1 | r5: temp-0.0.jsonl n=3 avgL=268 S=2
+文件总进度:   0%|          | 0/2 [00:06<?, ?file/s, 处理中: temp-0.0.jsonl]
+长度加权进度:   0%|          | 0/13327 [00:06<?, ?chars/s, tasks=1/13, todo=4, doing=8][A
+长度加权进度:   0%|          | 0/13327 [00:08<?, ?chars/s, tasks=1/13, todo=4, doing=8][A                                                                           
+                                                                                       [Ar0: temp-0.0.jsonl n=4 avgL=175 S=1 | r6: temp-0.0.jsonl n=4 avgL=205 S=1 | r5: temp-0.0.jsonl n=3 avgL=268 S=2
+文件总进度:   0%|          | 0/2 [00:08<?, ?file/s, 处理中: temp-0.0.jsonl]
+长度加权进度:   0%|          | 0/13327 [00:08<?, ?chars/s, tasks=1/13, todo=4, doing=8][A
+长度加权进度:   6%|▌         | 806/13327 [00:08<02:12, 94.51chars/s, tasks=1/13, todo=4, doing=8][A
+长度加权进度:   6%|▌         | 806/13327 [00:10<02:12, 94.51chars/s, tasks=2/13, todo=3, doing=8][A                                                                           
+                                                                                                 [Ar5: temp-0.0.jsonl n=4 avgL=154 S=1 | r0: temp-0.0.jsonl n=4 avgL=175 S=1 | r6: temp-0.0.jsonl n=4 avgL=205 S=1
+文件总进度:   0%|          | 0/2 [00:10<?, ?file/s, 处理中: temp-0.0.jsonl]
+长度加权进度:   6%|▌         | 806/13327 [00:10<02:12, 94.51chars/s, tasks=2/13, todo=3, doing=8][A
+长度加权进度:  11%|█▏        | 1508/13327 [00:11<01:19, 149.38chars/s, tasks=2/13, todo=3, doing=8][A
+长度加权进度:  17%|█▋        | 2328/13327 [00:12<00:44, 246.05chars/s, tasks=2/13, todo=3, doing=8][A
+长度加权进度:  17%|█▋        | 2328/13327 [00:12<00:44, 246.05chars/s, tasks=4/13, todo=1, doing=8][A                                                                           
+                                                                                                   [Ar6: temp-0.0.jsonl n=4 avgL=106 S=1 | r0: temp-0.0.jsonl n=4 avgL=137 S=1 | r5: temp-0.0.jsonl n=4 avgL=154 S=1
+文件总进度:   0%|          | 0/2 [00:12<?, ?file/s, 处理中: temp-0.0.jsonl]
+长度加权进度:  17%|█▋        | 2328/13327 [00:12<00:44, 246.05chars/s, tasks=4/13, todo=1, doing=8][A
+长度加权进度:  17%|█▋        | 2328/13327 [00:14<00:44, 246.05chars/s, tasks=4/13, todo=1, doing=8][A                                                                           
+                                                                                                   [Ar6: temp-0.0.jsonl n=4 avgL=106 S=1 | r0: temp-0.0.jsonl n=4 avgL=137 S=1 | r5: temp-0.0.jsonl n=4 avgL=154 S=1
+文件总进度:   0%|          | 0/2 [00:14<?, ?file/s, 处理中: temp-0.0.jsonl]
+长度加权进度:  17%|█▋        | 2328/13327 [00:14<00:44, 246.05chars/s, tasks=4/13, todo=1, doing=8][A
+长度加权进度:  40%|███▉      | 5269/13327 [00:16<00:17, 466.48chars/s, tasks=4/13, todo=1, doing=8][A
+长度加权进度:  40%|███▉      | 5269/13327 [00:16<00:17, 466.48chars/s, tasks=7/13, todo=0, doing=6][A                                                                           
+                                                                                                   [Ar7: temp-0.0.jsonl n=1 avgL=89 S=1 | r6: temp-0.0.jsonl n=4 avgL=106 S=1 | r0: temp-0.0.jsonl n=4 avgL=137 S=1
+文件总进度:   0%|          | 0/2 [00:16<?, ?file/s, 处理中: temp-0.0.jsonl]
+长度加权进度:  40%|███▉      | 5269/13327 [00:16<00:17, 466.48chars/s, tasks=7/13, todo=0, doing=6][A
+长度加权进度:  47%|████▋     | 6243/13327 [00:16<00:12, 576.66chars/s, tasks=7/13, todo=0, doing=6][A
+长度加权进度:  58%|█████▊    | 7753/13327 [00:18<00:08, 680.59chars/s, tasks=7/13, todo=0, doing=6][A
+长度加权进度:  58%|█████▊    | 7753/13327 [00:18<00:08, 680.59chars/s, tasks=10/13, todo=0, doing=3][A                                                                           
+                                                                                                    [Ar7: temp-0.0.jsonl n=1 avgL=89 S=1 | r6: temp-0.0.jsonl n=4 avgL=106 S=1 | r0: temp-0.0.jsonl n=4 avgL=137 S=1
+文件总进度:   0%|          | 0/2 [00:18<?, ?file/s, 处理中: temp-0.0.jsonl]
+长度加权进度:  58%|█████▊    | 7753/13327 [00:18<00:08, 680.59chars/s, tasks=10/13, todo=0, doing=3][A
+长度加权进度:  59%|█████▉    | 7842/13327 [00:20<00:08, 680.59chars/s, tasks=11/13, todo=0, doing=2][A                                                                           
+                                                                                                    [Ar7: temp-0.0.jsonl n=1 avgL=89 S=1 | r6: temp-0.0.jsonl n=4 avgL=106 S=1 | r0: temp-0.0.jsonl n=4 avgL=137 S=1
+文件总进度:   0%|          | 0/2 [00:20<?, ?file/s, 处理中: temp-0.0.jsonl]
+长度加权进度:  59%|█████▉    | 7842/13327 [00:20<00:08, 680.59chars/s, tasks=11/13, todo=0, doing=2][A
+长度加权进度:  59%|█████▉    | 7842/13327 [00:22<00:08, 680.59chars/s, tasks=11/13, todo=0, doing=2][A                                                                           
+                                                                                                    [Ar7: temp-0.0.jsonl n=1 avgL=89 S=1 | r6: temp-0.0.jsonl n=4 avgL=106 S=1 | r0: temp-0.0.jsonl n=4 avgL=137 S=1
+文件总进度:   0%|          | 0/2 [00:22<?, ?file/s, 处理中: temp-0.0.jsonl]
+长度加权进度:  59%|█████▉    | 7842/13327 [00:22<00:08, 680.59chars/s, tasks=11/13, todo=0, doing=2][A
+长度加权进度:  59%|█████▉    | 7842/13327 [00:24<00:08, 680.59chars/s, tasks=11/13, todo=0, doing=2][A                                                                           
+                                                                                                    [Ar7: temp-0.0.jsonl n=1 avgL=89 S=1 | r6: temp-0.0.jsonl n=4 avgL=106 S=1 | r0: temp-0.0.jsonl n=4 avgL=137 S=1
+文件总进度:   0%|          | 0/2 [00:24<?, ?file/s, 处理中: temp-0.0.jsonl]
+长度加权进度:  59%|█████▉    | 7842/13327 [00:24<00:08, 680.59chars/s, tasks=11/13, todo=0, doing=2][A
+长度加权进度:  59%|█████▉    | 7842/13327 [00:26<00:08, 680.59chars/s, tasks=11/13, todo=0, doing=2][A                                                                           
+                                                                                                    [Ar7: temp-0.0.jsonl n=1 avgL=89 S=1 | r6: temp-0.0.jsonl n=4 avgL=106 S=1 | r0: temp-0.0.jsonl n=4 avgL=137 S=1
+文件总进度:   0%|          | 0/2 [00:26<?, ?file/s, 处理中: temp-0.0.jsonl]
+长度加权进度:  59%|█████▉    | 7842/13327 [00:26<00:08, 680.59chars/s, tasks=11/13, todo=0, doing=2][A
+长度加权进度:  59%|█████▉    | 7842/13327 [00:28<00:08, 680.59chars/s, tasks=11/13, todo=0, doing=2][A                                                                           
+                                                                                                    [Ar7: temp-0.0.jsonl n=1 avgL=89 S=1 | r6: temp-0.0.jsonl n=4 avgL=106 S=1 | r0: temp-0.0.jsonl n=4 avgL=137 S=1
+文件总进度:   0%|          | 0/2 [00:28<?, ?file/s, 处理中: temp-0.0.jsonl]
+长度加权进度:  59%|█████▉    | 7842/13327 [00:28<00:08, 680.59chars/s, tasks=11/13, todo=0, doing=2][A
+长度加权进度:  59%|█████▉    | 7842/13327 [00:29<00:08, 680.59chars/s, tasks=11/13, todo=0, doing=2][A
+长度加权进度:  59%|█████▉    | 7842/13327 [00:30<00:08, 680.59chars/s, tasks=11/13, todo=0, doing=2][A                                                                           
+                                                                                                    [Ar7: temp-0.0.jsonl n=1 avgL=89 S=1 | r6: temp-0.0.jsonl n=4 avgL=106 S=1 | r0: temp-0.0.jsonl n=4 avgL=137 S=1
+文件总进度:   0%|          | 0/2 [00:30<?, ?file/s, 处理中: temp-0.0.jsonl]
+长度加权进度:  59%|█████▉    | 7842/13327 [00:30<00:08, 680.59chars/s, tasks=11/13, todo=0, doing=2][A
+长度加权进度:  73%|███████▎  | 9681/13327 [00:30<00:12, 289.47chars/s, tasks=11/13, todo=0, doing=2][A
+长度加权进度:  73%|███████▎  | 9681/13327 [00:32<00:12, 289.47chars/s, tasks=12/13, todo=0, doing=1][A                                                                           
+                                                                                                    [Ar7: temp-0.0.jsonl n=1 avgL=89 S=1 | r6: temp-0.0.jsonl n=4 avgL=106 S=1 | r0: temp-0.0.jsonl n=4 avgL=137 S=1
+文件总进度:   0%|          | 0/2 [00:32<?, ?file/s, 处理中: temp-0.0.jsonl]
+长度加权进度:  73%|███████▎  | 9681/13327 [00:32<00:12, 289.47chars/s, tasks=12/13, todo=0, doing=1][A
+长度加权进度:  73%|███████▎  | 9681/13327 [00:34<00:12, 289.47chars/s, tasks=12/13, todo=0, doing=1][A                                                                           
+                                                                                                    [Ar7: temp-0.0.jsonl n=1 avgL=89 S=1 | r6: temp-0.0.jsonl n=4 avgL=106 S=1 | r0: temp-0.0.jsonl n=4 avgL=137 S=1
+文件总进度:   0%|          | 0/2 [00:34<?, ?file/s, 处理中: temp-0.0.jsonl]
+长度加权进度:  73%|███████▎  | 9681/13327 [00:34<00:12, 289.47chars/s, tasks=12/13, todo=0, doing=1][A
+长度加权进度:  73%|███████▎  | 9681/13327 [00:36<00:12, 289.47chars/s, tasks=12/13, todo=0, doing=1][A                                                                           
+                                                                                                    [Ar7: temp-0.0.jsonl n=1 avgL=89 S=1 | r6: temp-0.0.jsonl n=4 avgL=106 S=1 | r0: temp-0.0.jsonl n=4 avgL=137 S=1
+文件总进度:   0%|          | 0/2 [00:36<?, ?file/s, 处理中: temp-0.0.jsonl]
+长度加权进度:  73%|███████▎  | 9681/13327 [00:36<00:12, 289.47chars/s, tasks=12/13, todo=0, doing=1][A
+长度加权进度:  73%|███████▎  | 9681/13327 [00:38<00:12, 289.47chars/s, tasks=12/13, todo=0, doing=1][A                                                                           
+                                                                                                    [Ar7: temp-0.0.jsonl n=1 avgL=89 S=1 | r6: temp-0.0.jsonl n=4 avgL=106 S=1 | r0: temp-0.0.jsonl n=4 avgL=137 S=1
+文件总进度:   0%|          | 0/2 [00:38<?, ?file/s, 处理中: temp-0.0.jsonl]
+长度加权进度:  73%|███████▎  | 9681/13327 [00:38<00:12, 289.47chars/s, tasks=12/13, todo=0, doing=1][A
+长度加权进度:  73%|███████▎  | 9681/13327 [00:40<00:12, 289.47chars/s, tasks=12/13, todo=0, doing=1][A                                                                           
+                                                                                                    [Ar7: temp-0.0.jsonl n=1 avgL=89 S=1 | r6: temp-0.0.jsonl n=4 avgL=106 S=1 | r0: temp-0.0.jsonl n=4 avgL=137 S=1
+文件总进度:   0%|          | 0/2 [00:40<?, ?file/s, 处理中: temp-0.0.jsonl]
+长度加权进度:  73%|███████▎  | 9681/13327 [00:40<00:12, 289.47chars/s, tasks=12/13, todo=0, doing=1][A
+长度加权进度:  73%|███████▎  | 9681/13327 [00:42<00:12, 289.47chars/s, tasks=12/13, todo=0, doing=1][A                                                                           
+                                                                                                    [Ar7: temp-0.0.jsonl n=1 avgL=89 S=1 | r6: temp-0.0.jsonl n=4 avgL=106 S=1 | r0: temp-0.0.jsonl n=4 avgL=137 S=1
+文件总进度:   0%|          | 0/2 [00:42<?, ?file/s, 处理中: temp-0.0.jsonl]
+长度加权进度:  73%|███████▎  | 9681/13327 [00:42<00:12, 289.47chars/s, tasks=12/13, todo=0, doing=1][A
+长度加权进度:  73%|███████▎  | 9681/13327 [00:44<00:12, 289.47chars/s, tasks=12/13, todo=0, doing=1][A                                                                           
+                                                                                                    [Ar7: temp-0.0.jsonl n=1 avgL=89 S=1 | r6: temp-0.0.jsonl n=4 avgL=106 S=1 | r0: temp-0.0.jsonl n=4 avgL=137 S=1
+文件总进度:   0%|          | 0/2 [00:44<?, ?file/s, 处理中: temp-0.0.jsonl]
+长度加权进度:  73%|███████▎  | 9681/13327 [00:44<00:12, 289.47chars/s, tasks=12/13, todo=0, doing=1][A
+长度加权进度:  92%|█████████▏| 12227/13327 [00:45<00:04, 222.25chars/s, tasks=12/13, todo=0, doing=1][A
+                                                                                                     [A文件总进度:  50%|█████     | 1/2 [00:45<00:45, 45.65s/file, 处理中: temp-0.0.jsonl]文件总进度:  50%|█████     | 1/2 [00:45<00:45, 45.65s/file, 处理中: temp-0.7.jsonl]
+长度加权进度:   0%|          | 0/11785 [00:00<?, ?chars/s][A
+长度加权进度:   0%|          | 0/11785 [00:00<?, ?chars/s, tasks=0/12, todo=5, doing=7][A                                                                                   
+                                                                                       [Ar1: temp-0.7.jsonl n=4 avgL=241 S=1 | r3: temp-0.7.jsonl n=1 avgL=249 S=1 | r7: temp-0.7.jsonl n=4 avgL=255 S=2
+文件总进度:  50%|█████     | 1/2 [00:45<00:45, 45.65s/file, 处理中: temp-0.7.jsonl]
+长度加权进度:   0%|          | 0/11785 [00:00<?, ?chars/s, tasks=0/12, todo=5, doing=7][A
+长度加权进度:   0%|          | 0/11785 [00:02<?, ?chars/s, tasks=0/12, todo=4, doing=8][A                                                                                   
+                                                                                       [Ar0: temp-0.7.jsonl n=4 avgL=183 S=1 | r1: temp-0.7.jsonl n=4 avgL=241 S=1 | r3: temp-0.7.jsonl n=1 avgL=249 S=1
+文件总进度:  50%|█████     | 1/2 [00:47<00:45, 45.65s/file, 处理中: temp-0.7.jsonl]
+长度加权进度:   0%|          | 0/11785 [00:02<?, ?chars/s, tasks=0/12, todo=4, doing=8][A
+长度加权进度:   0%|          | 0/11785 [00:04<?, ?chars/s, tasks=0/12, todo=4, doing=8][A                                                                                   
+                                                                                       [Ar0: temp-0.7.jsonl n=4 avgL=183 S=1 | r1: temp-0.7.jsonl n=4 avgL=241 S=1 | r3: temp-0.7.jsonl n=1 avgL=249 S=1
+文件总进度:  50%|█████     | 1/2 [00:49<00:45, 45.65s/file, 处理中: temp-0.7.jsonl]
+长度加权进度:   0%|          | 0/11785 [00:04<?, ?chars/s, tasks=0/12, todo=4, doing=8][A
+长度加权进度:   0%|          | 0/11785 [00:06<?, ?chars/s, tasks=0/12, todo=4, doing=8][A                                                                                   
+                                                                                       [Ar0: temp-0.7.jsonl n=4 avgL=183 S=1 | r1: temp-0.7.jsonl n=4 avgL=241 S=1 | r3: temp-0.7.jsonl n=1 avgL=249 S=1
+文件总进度:  50%|█████     | 1/2 [00:51<00:45, 45.65s/file, 处理中: temp-0.7.jsonl]
+长度加权进度:   0%|          | 0/11785 [00:06<?, ?chars/s, tasks=0/12, todo=4, doing=8][A
+长度加权进度:  11%|█         | 1271/11785 [00:08<01:06, 158.29chars/s, tasks=0/12, todo=4, doing=8][A
+长度加权进度:  11%|█         | 1271/11785 [00:08<01:06, 158.29chars/s, tasks=2/12, todo=2, doing=8][A                                                                                   
+                                                                                                   [Ar7: temp-0.7.jsonl n=4 avgL=130 S=1 | r3: temp-0.7.jsonl n=4 avgL=151 S=1 | r0: temp-0.7.jsonl n=4 avgL=183 S=1
+文件总进度:  50%|█████     | 1/2 [00:53<00:45, 45.65s/file, 处理中: temp-0.7.jsonl]
+长度加权进度:  11%|█         | 1271/11785 [00:08<01:06, 158.29chars/s, tasks=2/12, todo=2, doing=8][A
+长度加权进度:  20%|██        | 2412/11785 [00:10<00:35, 266.32chars/s, tasks=2/12, todo=2, doing=8][A
+长度加权进度:  20%|██        | 2412/11785 [00:10<00:35, 266.32chars/s, tasks=3/12, todo=1, doing=8][A                                                                                   
+                                                                                                   [Ar6: temp-0.7.jsonl n=4 avgL=118 S=1 | r7: temp-0.7.jsonl n=4 avgL=130 S=1 | r3: temp-0.7.jsonl n=4 avgL=151 S=1
+文件总进度:  50%|█████     | 1/2 [00:55<00:45, 45.65s/file, 处理中: temp-0.7.jsonl]
+长度加权进度:  20%|██        | 2412/11785 [00:10<00:35, 266.32chars/s, tasks=3/12, todo=1, doing=8][A
+长度加权进度:  27%|██▋       | 3146/11785 [00:11<00:25, 339.93chars/s, tasks=3/12, todo=1, doing=8][A
+长度加权进度:  27%|██▋       | 3146/11785 [00:12<00:25, 339.93chars/s, tasks=4/12, todo=0, doing=8][A                                                                                   
+                                                                                                   [Ar0: temp-0.7.jsonl n=4 avgL=88 S=1 | r6: temp-0.7.jsonl n=4 avgL=118 S=1 | r7: temp-0.7.jsonl n=4 avgL=130 S=1
+文件总进度:  50%|█████     | 1/2 [00:57<00:45, 45.65s/file, 处理中: temp-0.7.jsonl]
+长度加权进度:  27%|██▋       | 3146/11785 [00:12<00:25, 339.93chars/s, tasks=4/12, todo=0, doing=8][A
+长度加权进度:  31%|███       | 3667/11785 [00:13<00:25, 314.99chars/s, tasks=4/12, todo=0, doing=8][A
+长度加权进度:  31%|███       | 3667/11785 [00:14<00:25, 314.99chars/s, tasks=5/12, todo=0, doing=7][A                                                                                   
+                                                                                                   [Ar0: temp-0.7.jsonl n=4 avgL=88 S=1 | r6: temp-0.7.jsonl n=4 avgL=118 S=1 | r7: temp-0.7.jsonl n=4 avgL=130 S=1
+文件总进度:  50%|█████     | 1/2 [00:59<00:45, 45.65s/file, 处理中: temp-0.7.jsonl]
+长度加权进度:  31%|███       | 3667/11785 [00:14<00:25, 314.99chars/s, tasks=5/12, todo=0, doing=7][A
+长度加权进度:  34%|███▍      | 4022/11785 [00:14<00:26, 295.26chars/s, tasks=5/12, todo=0, doing=7][A
+长度加权进度:  38%|███▊      | 4496/11785 [00:15<00:19, 364.50chars/s, tasks=5/12, todo=0, doing=7][A
+长度加权进度:  43%|████▎     | 5100/11785 [00:16<00:15, 420.14chars/s, tasks=5/12, todo=0, doing=7][A
+长度加权进度:  43%|████▎     | 5100/11785 [00:16<00:15, 420.14chars/s, tasks=8/12, todo=0, doing=4][A                                                                                   
+                                                                                                   [Ar0: temp-0.7.jsonl n=4 avgL=88 S=1 | r6: temp-0.7.jsonl n=4 avgL=118 S=1 | r7: temp-0.7.jsonl n=4 avgL=130 S=1
+文件总进度:  50%|█████     | 1/2 [01:01<00:45, 45.65s/file, 处理中: temp-0.7.jsonl]
+长度加权进度:  43%|████▎     | 5100/11785 [00:16<00:15, 420.14chars/s, tasks=8/12, todo=0, doing=4][A
+长度加权进度:  63%|██████▎   | 7478/11785 [00:17<00:05, 807.27chars/s, tasks=8/12, todo=0, doing=4][A
+长度加权进度:  63%|██████▎   | 7478/11785 [00:18<00:05, 807.27chars/s, tasks=10/12, todo=0, doing=2][A                                                                                   
+                                                                                                    [Ar0: temp-0.7.jsonl n=4 avgL=88 S=1 | r6: temp-0.7.jsonl n=4 avgL=118 S=1 | r7: temp-0.7.jsonl n=4 avgL=130 S=1
+文件总进度:  50%|█████     | 1/2 [01:03<00:45, 45.65s/file, 处理中: temp-0.7.jsonl]
+长度加权进度:  63%|██████▎   | 7478/11785 [00:18<00:05, 807.27chars/s, tasks=10/12, todo=0, doing=2][A
+长度加权进度:  63%|██████▎   | 7478/11785 [00:20<00:05, 807.27chars/s, tasks=10/12, todo=0, doing=2][A                                                                                   
+                                                                                                    [Ar0: temp-0.7.jsonl n=4 avgL=88 S=1 | r6: temp-0.7.jsonl n=4 avgL=118 S=1 | r7: temp-0.7.jsonl n=4 avgL=130 S=1
+文件总进度:  50%|█████     | 1/2 [01:05<00:45, 45.65s/file, 处理中: temp-0.7.jsonl]
+长度加权进度:  63%|██████▎   | 7478/11785 [00:20<00:05, 807.27chars/s, tasks=10/12, todo=0, doing=2][A
+长度加权进度:  63%|██████▎   | 7478/11785 [00:22<00:05, 807.27chars/s, tasks=10/12, todo=0, doing=2][A                                                                                   
+                                                                                                    [Ar0: temp-0.7.jsonl n=4 avgL=88 S=1 | r6: temp-0.7.jsonl n=4 avgL=118 S=1 | r7: temp-0.7.jsonl n=4 avgL=130 S=1
+文件总进度:  50%|█████     | 1/2 [01:07<00:45, 45.65s/file, 处理中: temp-0.7.jsonl]
+长度加权进度:  63%|██████▎   | 7478/11785 [00:22<00:05, 807.27chars/s, tasks=10/12, todo=0, doing=2][A
+长度加权进度:  63%|██████▎   | 7478/11785 [00:24<00:05, 807.27chars/s, tasks=10/12, todo=0, doing=2][A                                                                                   
+                                                                                                    [Ar0: temp-0.7.jsonl n=4 avgL=88 S=1 | r6: temp-0.7.jsonl n=4 avgL=118 S=1 | r7: temp-0.7.jsonl n=4 avgL=130 S=1
+文件总进度:  50%|█████     | 1/2 [01:09<00:45, 45.65s/file, 处理中: temp-0.7.jsonl]
+长度加权进度:  63%|██████▎   | 7478/11785 [00:24<00:05, 807.27chars/s, tasks=10/12, todo=0, doing=2][A
+长度加权进度:  63%|██████▎   | 7478/11785 [00:26<00:05, 807.27chars/s, tasks=10/12, todo=0, doing=2][A                                                                                   
+                                                                                                    [Ar0: temp-0.7.jsonl n=4 avgL=88 S=1 | r6: temp-0.7.jsonl n=4 avgL=118 S=1 | r7: temp-0.7.jsonl n=4 avgL=130 S=1
+文件总进度:  50%|█████     | 1/2 [01:11<00:45, 45.65s/file, 处理中: temp-0.7.jsonl]
+长度加权进度:  63%|██████▎   | 7478/11785 [00:26<00:05, 807.27chars/s, tasks=10/12, todo=0, doing=2][A
+长度加权进度:  63%|██████▎   | 7478/11785 [00:28<00:05, 807.27chars/s, tasks=10/12, todo=0, doing=2][A                                                                                   
+                                                                                                    [Ar0: temp-0.7.jsonl n=4 avgL=88 S=1 | r6: temp-0.7.jsonl n=4 avgL=118 S=1 | r7: temp-0.7.jsonl n=4 avgL=130 S=1
+文件总进度:  50%|█████     | 1/2 [01:13<00:45, 45.65s/file, 处理中: temp-0.7.jsonl]
+长度加权进度:  63%|██████▎   | 7478/11785 [00:28<00:05, 807.27chars/s, tasks=10/12, todo=0, doing=2][A
+长度加权进度:  63%|██████▎   | 7478/11785 [00:30<00:05, 807.27chars/s, tasks=10/12, todo=0, doing=2][A                                                                                   
+                                                                                                    [Ar0: temp-0.7.jsonl n=4 avgL=88 S=1 | r6: temp-0.7.jsonl n=4 avgL=118 S=1 | r7: temp-0.7.jsonl n=4 avgL=130 S=1
+文件总进度:  50%|█████     | 1/2 [01:15<00:45, 45.65s/file, 处理中: temp-0.7.jsonl]
+长度加权进度:  63%|██████▎   | 7478/11785 [00:30<00:05, 807.27chars/s, tasks=10/12, todo=0, doing=2][A
+长度加权进度:  63%|██████▎   | 7478/11785 [00:30<00:05, 807.27chars/s, tasks=10/12, todo=0, doing=2][A
+长度加权进度:  79%|███████▉  | 9289/11785 [00:30<00:09, 269.51chars/s, tasks=10/12, todo=0, doing=2][A
+长度加权进度:  79%|███████▉  | 9289/11785 [00:32<00:09, 269.51chars/s, tasks=11/12, todo=0, doing=1][A                                                                                   
+                                                                                                    [Ar0: temp-0.7.jsonl n=4 avgL=88 S=1 | r6: temp-0.7.jsonl n=4 avgL=118 S=1 | r7: temp-0.7.jsonl n=4 avgL=130 S=1
+文件总进度:  50%|█████     | 1/2 [01:17<00:45, 45.65s/file, 处理中: temp-0.7.jsonl]
+长度加权进度:  79%|███████▉  | 9289/11785 [00:32<00:09, 269.51chars/s, tasks=11/12, todo=0, doing=1][A
+长度加权进度:  79%|███████▉  | 9289/11785 [00:34<00:09, 269.51chars/s, tasks=11/12, todo=0, doing=1][A                                                                                   
+                                                                                                    [Ar0: temp-0.7.jsonl n=4 avgL=88 S=1 | r6: temp-0.7.jsonl n=4 avgL=118 S=1 | r7: temp-0.7.jsonl n=4 avgL=130 S=1
+文件总进度:  50%|█████     | 1/2 [01:19<00:45, 45.65s/file, 处理中: temp-0.7.jsonl]
+长度加权进度:  79%|███████▉  | 9289/11785 [00:34<00:09, 269.51chars/s, tasks=11/12, todo=0, doing=1][A
+长度加权进度:  79%|███████▉  | 9289/11785 [00:36<00:09, 269.51chars/s, tasks=11/12, todo=0, doing=1][A                                                                                   
+                                                                                                    [Ar0: temp-0.7.jsonl n=4 avgL=88 S=1 | r6: temp-0.7.jsonl n=4 avgL=118 S=1 | r7: temp-0.7.jsonl n=4 avgL=130 S=1
+文件总进度:  50%|█████     | 1/2 [01:21<00:45, 45.65s/file, 处理中: temp-0.7.jsonl]
+长度加权进度:  79%|███████▉  | 9289/11785 [00:36<00:09, 269.51chars/s, tasks=11/12, todo=0, doing=1][A
+长度加权进度: 100%|██████████| 11785/11785 [00:38<00:00, 294.56chars/s, tasks=11/12, todo=0, doing=1][A
+长度加权进度: 100%|██████████| 11785/11785 [00:38<00:00, 294.56chars/s, tasks=12/12, todo=0, doing=0][A                                                                                   
+                                                                                                     [Ar0: temp-0.7.jsonl n=4 avgL=88 S=1 | r6: temp-0.7.jsonl n=4 avgL=118 S=1 | r7: temp-0.7.jsonl n=4 avgL=130 S=1
+文件总进度:  50%|█████     | 1/2 [01:23<00:45, 45.65s/file, 处理中: temp-0.7.jsonl]
+长度加权进度: 100%|██████████| 11785/11785 [00:38<00:00, 294.56chars/s, tasks=12/12, todo=0, doing=0][A
+                                                                                                     [A文件总进度: 100%|██████████| 2/2 [01:23<00:00, 41.26s/file, 处理中: temp-0.7.jsonl]文件总进度: 100%|██████████| 2/2 [01:23<00:00, 41.91s/file, 处理中: temp-0.7.jsonl]
+
+所有进程计算完成，写入 done 文件并等待其他进程（文件同步回退）...
+开始等待所有 rank 的 done 文件...
+等待GPU完成:   0%|          | 0/8 [00:00<?, ?rank/s]等待GPU完成:  88%|████████▊ | 7/8 [00:00<00:00, 12649.78rank/s]等待GPU完成:  88%|████████▊ | 7/8 [00:00<00:00, 7242.26rank/s, done=7/8 missing=[6] oldest_hb=3s]等待GPU完成: 100%|██████████| 8/8 [00:01<00:00,  7.99rank/s, done=7/8 missing=[6] oldest_hb=3s]  等待GPU完成: 100%|██████████| 8/8 [00:01<00:00,  7.99rank/s, done=8/8]                         已检测到所有 8 个 done 文件。
+                                                                      开始合并临时文件...
+合并文件:   0%|          | 0/2 [00:00<?, ?file/s]合并文件: 100%|██████████| 2/2 [00:00<00:00, 120.98file/s]
+正在生成最终的CSV摘要文件...
+生成摘要:   0%|          | 0/4 [00:00<?, ?file/s]生成摘要: 100%|██████████| 4/4 [00:00<00:00, 1359.47file/s]
+摘要文件成功保存到: results/2025-10-29_23-04-42/grok-4/Bacteria/raw_filtered_esm/summary_results.csv
+正在清理中间文件...
+✅ [Step 4/5] 序列处理完成。
+--------------------------------------------------
+🔬 [Step 5/5] cleaning <|im_end|>...
+*** 警告：脚本将直接覆盖原始文件，请确保已备份！ ***
+
+开始批量处理文件夹: results/2025-10-29_23-04-42/grok-4/Bacteria/raw_filtered_esm
+目标字段: assistant
+移除标记: <|im_end|>
+
+--- 正在处理 (将覆盖): results/2025-10-29_23-04-42/grok-4/Bacteria/raw_filtered_esm/temp-0.0.jsonl ---
+处理完成: results/2025-10-29_23-04-42/grok-4/Bacteria/raw_filtered_esm/temp-0.0.jsonl (已覆盖)
+  总行数: 45
+  修改行数: 45
+
+--- 正在处理 (将覆盖): results/2025-10-29_23-04-42/grok-4/Bacteria/raw_filtered_esm/temp-0.7.jsonl ---
+处理完成: results/2025-10-29_23-04-42/grok-4/Bacteria/raw_filtered_esm/temp-0.7.jsonl (已覆盖)
+  总行数: 45
+  修改行数: 45
+
+批量处理完毕，共处理 2 个文件。
+✅ [Step 5/5] <|im_end|> cleaning completed.
+--------------------------------------------------
+--- 推理任务结束 ---
+开始转换文件: results/2025-10-29_23-04-42/grok-4/Bacteria/raw_filtered_esm/temp-0.0.jsonl -> results/2025-10-29_23-04-42/grok-4/Bacteria/raw_filtered_esm/temp-0.0.fasta
+
+转换完成！
+成功写入 45 个 FASTA 条目。
+开始转换文件: results/2025-10-29_23-04-42/grok-4/Bacteria/raw_filtered_esm/temp-0.7.jsonl -> results/2025-10-29_23-04-42/grok-4/Bacteria/raw_filtered_esm/temp-0.7.fasta
+
+转换完成！
+成功写入 45 个 FASTA 条目。
+--- 步骤 1: 正在安装所需的 Python 库... ---
+Requirement already satisfied: torch in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (2.8.0)
+Requirement already satisfied: transformers in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (4.56.1)
+Requirement already satisfied: sentencepiece in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (0.2.1)
+Requirement already satisfied: h5py in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (3.14.0)
+Requirement already satisfied: filelock in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (3.19.1)
+Requirement already satisfied: typing-extensions>=4.10.0 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (4.15.0)
+Requirement already satisfied: sympy>=1.13.3 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (1.14.0)
+Requirement already satisfied: networkx in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (3.5)
+Requirement already satisfied: jinja2 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (3.1.6)
+Requirement already satisfied: fsspec in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (2025.3.0)
+Requirement already satisfied: nvidia-cuda-nvrtc-cu12==12.8.93 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (12.8.93)
+Requirement already satisfied: nvidia-cuda-runtime-cu12==12.8.90 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (12.8.90)
+Requirement already satisfied: nvidia-cuda-cupti-cu12==12.8.90 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (12.8.90)
+Requirement already satisfied: nvidia-cudnn-cu12==9.10.2.21 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (9.10.2.21)
+Requirement already satisfied: nvidia-cublas-cu12==12.8.4.1 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (12.8.4.1)
+Requirement already satisfied: nvidia-cufft-cu12==11.3.3.83 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (11.3.3.83)
+Requirement already satisfied: nvidia-curand-cu12==10.3.9.90 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (10.3.9.90)
+Requirement already satisfied: nvidia-cusolver-cu12==11.7.3.90 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (11.7.3.90)
+Requirement already satisfied: nvidia-cusparse-cu12==12.5.8.93 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (12.5.8.93)
+Requirement already satisfied: nvidia-cusparselt-cu12==0.7.1 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (0.7.1)
+Requirement already satisfied: nvidia-nccl-cu12==2.27.3 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (2.27.3)
+Requirement already satisfied: nvidia-nvtx-cu12==12.8.90 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (12.8.90)
+Requirement already satisfied: nvidia-nvjitlink-cu12==12.8.93 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (12.8.93)
+Requirement already satisfied: nvidia-cufile-cu12==1.13.1.3 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (1.13.1.3)
+Requirement already satisfied: triton==3.4.0 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (3.4.0)
+Requirement already satisfied: setuptools>=40.8.0 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from triton==3.4.0->torch) (78.1.1)
+Requirement already satisfied: huggingface-hub<1.0,>=0.34.0 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from transformers) (0.36.0)
+Requirement already satisfied: numpy>=1.17 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from transformers) (2.2.6)
+Requirement already satisfied: packaging>=20.0 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from transformers) (25.0)
+Requirement already satisfied: pyyaml>=5.1 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from transformers) (6.0.2)
+Requirement already satisfied: regex!=2019.12.17 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from transformers) (2025.9.1)
+Requirement already satisfied: requests in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from transformers) (2.32.5)
+Requirement already satisfied: tokenizers<=0.23.0,>=0.22.0 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from transformers) (0.22.0)
+Requirement already satisfied: safetensors>=0.4.3 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from transformers) (0.6.2)
+Requirement already satisfied: tqdm>=4.27 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from transformers) (4.67.1)
+Requirement already satisfied: hf-xet<2.0.0,>=1.1.3 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from huggingface-hub<1.0,>=0.34.0->transformers) (1.2.0)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from sympy>=1.13.3->torch) (1.3.0)
+Requirement already satisfied: MarkupSafe>=2.0 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from jinja2->torch) (3.0.2)
+Requirement already satisfied: charset_normalizer<4,>=2 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from requests->transformers) (3.4.3)
+Requirement already satisfied: idna<4,>=2.5 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from requests->transformers) (3.10)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from requests->transformers) (2.5.0)
+Requirement already satisfied: certifi>=2017.4.17 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from requests->transformers) (2025.8.3)
+
+--- 步骤 2: 正在创建所有目录... ---
+目录已准备就绪。
+
+--- 步骤 3: 正在检查并下载所需文件... ---
+二级结构模型已存在，跳过下载。
+
+--- 步骤 4: 环境准备就绪，正在启动 Python 脚本... ---
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+Using device: cuda
+检测到输入是一个目录: 'results/2025-10-29_23-04-42/grok-4/Bacteria/raw_filtered_esm'
+正在加载 ProtT5 模型...
+模型加载完毕。
+找到 2 个 FASTA 文件，准备开始处理...
+
+--- 正在处理文件: results/2025-10-29_23-04-42/grok-4/Bacteria/raw_filtered_esm/temp-0.0.fasta ---
+读取了 45 条序列。
+处理批次 45，包含 45 条序列...
+正在保存每个蛋白质的嵌入向量至: results/2025-10-29_23-04-42/grok-4/Bacteria/raw_filtered_esm/temp-0.0_per_protein.h5
+文件 results/2025-10-29_23-04-42/grok-4/Bacteria/raw_filtered_esm/temp-0.0.fasta 处理完毕，耗时 12.64 秒。
+
+--- 正在处理文件: results/2025-10-29_23-04-42/grok-4/Bacteria/raw_filtered_esm/temp-0.7.fasta ---
+读取了 45 条序列。
+处理批次 45，包含 45 条序列...
+正在保存每个蛋白质的嵌入向量至: results/2025-10-29_23-04-42/grok-4/Bacteria/raw_filtered_esm/temp-0.7_per_protein.h5
+文件 results/2025-10-29_23-04-42/grok-4/Bacteria/raw_filtered_esm/temp-0.7.fasta 处理完毕，耗时 7.54 秒。
+
+--- 所有文件处理完毕！总耗时 20.17 秒 ---
+
+--- 所有操作执行完毕！结果保存在 'results/2025-10-29_23-04-42/grok-4/Bacteria/raw_filtered_esm' 目录中。 ---
+<frozen importlib._bootstrap>:488: Warning: OpenSSL 3's legacy provider failed to load. Legacy algorithms will not be available. If you need those algorithms, check your OpenSSL configuration.
+<frozen importlib._bootstrap>:488: Warning: OpenSSL 3's legacy provider failed to load. Legacy algorithms will not be available. If you need those algorithms, check your OpenSSL configuration.
+<frozen importlib._bootstrap>:488: Warning: OpenSSL 3's legacy provider failed to load. Legacy algorithms will not be available. If you need those algorithms, check your OpenSSL configuration.
+/data/nnotaa/miniconda3/envs/ml/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+/data/nnotaa/miniconda3/envs/ml/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+
+Reading protein ID order from: results/2025-10-29_23-04-42/grok-4/Bacteria/raw_filtered_esm/temp-0.0.fasta
+Found 45 protein IDs in FASTA file.
+Loading embeddings from: results/2025-10-29_23-04-42/grok-4/Bacteria/raw_filtered_esm/temp-0.0_per_protein.h5
+
+Running predictions...
+Prediction counts: Counter({1: 43, 0: 2})
+
+Saving results to: results/2025-10-29_23-04-42/grok-4/Bacteria/raw_filtered_esm/temp-0.0_per_protein.jsonl
+Successfully saved 45 predictions.
+
+<frozen importlib._bootstrap>:488: Warning: OpenSSL 3's legacy provider failed to load. Legacy algorithms will not be available. If you need those algorithms, check your OpenSSL configuration.
+<frozen importlib._bootstrap>:488: Warning: OpenSSL 3's legacy provider failed to load. Legacy algorithms will not be available. If you need those algorithms, check your OpenSSL configuration.
+<frozen importlib._bootstrap>:488: Warning: OpenSSL 3's legacy provider failed to load. Legacy algorithms will not be available. If you need those algorithms, check your OpenSSL configuration.
+/data/nnotaa/miniconda3/envs/ml/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+/data/nnotaa/miniconda3/envs/ml/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+
+Reading protein ID order from: results/2025-10-29_23-04-42/grok-4/Bacteria/raw_filtered_esm/temp-0.7.fasta
+Found 45 protein IDs in FASTA file.
+Loading embeddings from: results/2025-10-29_23-04-42/grok-4/Bacteria/raw_filtered_esm/temp-0.7_per_protein.h5
+
+Running predictions...
+Prediction counts: Counter({1: 44, 0: 1})
+
+Saving results to: results/2025-10-29_23-04-42/grok-4/Bacteria/raw_filtered_esm/temp-0.7_per_protein.jsonl
+Successfully saved 45 predictions.
+
+开始处理...
+  - 从 'results/2025-10-29_23-04-42/grok-4/Bacteria/raw_filtered_esm/temp-0.0.jsonl' 提取字段: ['id', 'description', 'sequence', 'taxonomy', 'prompt', 'assistant']
+  - 从 'results/2025-10-29_23-04-42/grok-4/Bacteria/raw_filtered_esm/temp-0.0_per_protein.jsonl' 提取字段: ['prediction', 'probability']
+
+处理完成！共合并 45 行记录。
+结果已保存到: results/2025-10-29_23-04-42/grok-4/Bacteria/raw_filtered_esm/temp-0.0_result.jsonl
+开始处理...
+  - 从 'results/2025-10-29_23-04-42/grok-4/Bacteria/raw_filtered_esm/temp-0.7.jsonl' 提取字段: ['id', 'description', 'sequence', 'taxonomy', 'prompt', 'assistant']
+  - 从 'results/2025-10-29_23-04-42/grok-4/Bacteria/raw_filtered_esm/temp-0.7_per_protein.jsonl' 提取字段: ['prediction', 'probability']
+
+处理完成！共合并 45 行记录。
+结果已保存到: results/2025-10-29_23-04-42/grok-4/Bacteria/raw_filtered_esm/temp-0.7_result.jsonl
+   - 正在运行 Animal toxin prediction 任务...
+--- 开始执行推理任务 ---
+  模型路径: grok-4
+  模型标签: api
+  输出目录: results/2025-10-29_23-04-42/grok-4/Animal/raw
+  温度: 0.0 0.7
+  检测到 'api' 标签, 调用 API 推理脚本...
+============================================================
+🚀 开始 统一API 推理任务 (并发版 v3.3)...
+⚡ 最大并发数: 10
+ timeout=1500s
+🤖 API 模型: grok-4
+📂 Prompt 文件: dataset/Animal.jsonl
+🔥 温度列表: [0.0, 0.7]
+📝 输出目录: results/2025-10-29_23-04-42/grok-4/Animal/raw
+============================================================
+统一 API 客户端初始化完成，模型: grok-4，URL: https://api3.xhub.chat/v1
+
+🔄 -----------------------------------
+🔄 正在处理温度: 0.0...
+🔄 -----------------------------------
+Temp-0.0 Infer:   0%|          | 0/200 [00:00<?, ?it/s]Temp-0.0 Infer:  32%|███▏      | 63/200 [01:21<02:58,  1.30s/it]Temp-0.0 Infer:  32%|███▏      | 63/200 [01:21<02:58,  1.30s/it, inflight=137, slow=137, oldest_s=81, forced_to=0]Temp-0.0 Infer:  32%|███▏      | 64/200 [01:31<03:22,  1.49s/it, inflight=137, slow=137, oldest_s=81, forced_to=0]Temp-0.0 Infer:  32%|███▏      | 64/200 [01:31<03:22,  1.49s/it, inflight=136, slow=136, oldest_s=91, forced_to=0]Temp-0.0 Infer:  32%|███▎      | 65/200 [01:36<03:34,  1.59s/it, inflight=136, slow=136, oldest_s=91, forced_to=0]Temp-0.0 Infer:  32%|███▎      | 65/200 [01:36<03:34,  1.59s/it, inflight=135, slow=135, oldest_s=96, forced_to=0]Temp-0.0 Infer:  33%|███▎      | 66/200 [02:01<05:46,  2.59s/it, inflight=135, slow=135, oldest_s=96, forced_to=0]Temp-0.0 Infer:  33%|███▎      | 66/200 [02:01<05:46,  2.59s/it, inflight=134, slow=134, oldest_s=121, forced_to=0]Temp-0.0 Infer:  34%|███▎      | 67/200 [02:02<05:31,  2.49s/it, inflight=134, slow=134, oldest_s=121, forced_to=0]Temp-0.0 Infer:  34%|███▎      | 67/200 [02:02<05:31,  2.49s/it, inflight=133, slow=133, oldest_s=122, forced_to=0]Temp-0.0 Infer:  34%|███▍      | 68/200 [02:34<10:21,  4.71s/it, inflight=133, slow=133, oldest_s=122, forced_to=0]Temp-0.0 Infer:  34%|███▍      | 68/200 [02:34<10:21,  4.71s/it, inflight=132, slow=132, oldest_s=154, forced_to=0]Temp-0.0 Infer:  34%|███▍      | 69/200 [02:47<11:54,  5.45s/it, inflight=132, slow=132, oldest_s=154, forced_to=0]Temp-0.0 Infer:  34%|███▍      | 69/200 [02:47<11:54,  5.45s/it, inflight=131, slow=131, oldest_s=167, forced_to=0]Temp-0.0 Infer:  35%|███▌      | 70/200 [03:11<16:39,  7.69s/it, inflight=131, slow=131, oldest_s=167, forced_to=0]Temp-0.0 Infer:  35%|███▌      | 70/200 [03:11<16:39,  7.69s/it, inflight=130, slow=130, oldest_s=191, forced_to=0]Temp-0.0 Infer:  36%|███▌      | 71/200 [03:39<23:01, 10.71s/it, inflight=130, slow=130, oldest_s=191, forced_to=0]Temp-0.0 Infer:  36%|███▌      | 71/200 [03:39<23:01, 10.71s/it, inflight=129, slow=129, oldest_s=219, forced_to=0]Temp-0.0 Infer:  36%|███▌      | 72/200 [04:15<32:19, 15.15s/it, inflight=129, slow=129, oldest_s=219, forced_to=0]Temp-0.0 Infer:  36%|███▌      | 72/200 [04:15<32:19, 15.15s/it, inflight=128, slow=128, oldest_s=255, forced_to=0]Temp-0.0 Infer:  36%|███▋      | 73/200 [04:18<26:50, 12.68s/it, inflight=128, slow=128, oldest_s=255, forced_to=0]Temp-0.0 Infer:  36%|███▋      | 73/200 [04:18<26:50, 12.68s/it, inflight=127, slow=127, oldest_s=258, forced_to=0]Temp-0.0 Infer:  37%|███▋      | 74/200 [04:46<33:55, 16.16s/it, inflight=127, slow=127, oldest_s=258, forced_to=0]Temp-0.0 Infer:  37%|███▋      | 74/200 [04:46<33:55, 16.16s/it, inflight=126, slow=126, oldest_s=286, forced_to=0]Temp-0.0 Infer:  38%|███▊      | 75/200 [05:08<36:29, 17.51s/it, inflight=126, slow=126, oldest_s=286, forced_to=0]Temp-0.0 Infer:  38%|███▊      | 75/200 [05:08<36:29, 17.51s/it, inflight=125, slow=125, oldest_s=308, forced_to=0]Temp-0.0 Infer:  38%|███▊      | 76/200 [05:13<29:40, 14.36s/it, inflight=125, slow=125, oldest_s=308, forced_to=0]Temp-0.0 Infer:  38%|███▊      | 76/200 [05:13<29:40, 14.36s/it, inflight=124, slow=124, oldest_s=313, forced_to=0]Temp-0.0 Infer:  38%|███▊      | 77/200 [05:20<25:25, 12.40s/it, inflight=124, slow=124, oldest_s=313, forced_to=0]Temp-0.0 Infer:  38%|███▊      | 77/200 [05:20<25:25, 12.40s/it, inflight=123, slow=123, oldest_s=320, forced_to=0]Temp-0.0 Infer:  39%|███▉      | 78/200 [05:21<18:46,  9.23s/it, inflight=123, slow=123, oldest_s=320, forced_to=0]Temp-0.0 Infer:  39%|███▉      | 78/200 [05:21<18:46,  9.23s/it, inflight=122, slow=122, oldest_s=321, forced_to=0]Temp-0.0 Infer:  40%|███▉      | 79/200 [05:43<25:53, 12.84s/it, inflight=122, slow=122, oldest_s=321, forced_to=0]Temp-0.0 Infer:  40%|███▉      | 79/200 [05:43<25:53, 12.84s/it, inflight=121, slow=121, oldest_s=343, forced_to=0]Temp-0.0 Infer:  40%|████      | 80/200 [05:44<19:00,  9.50s/it, inflight=121, slow=121, oldest_s=343, forced_to=0]Temp-0.0 Infer:  40%|████      | 80/200 [05:44<19:00,  9.50s/it, inflight=120, slow=120, oldest_s=344, forced_to=0]Temp-0.0 Infer:  40%|████      | 81/200 [06:02<23:24, 11.80s/it, inflight=120, slow=120, oldest_s=344, forced_to=0]Temp-0.0 Infer:  40%|████      | 81/200 [06:02<23:24, 11.80s/it, inflight=119, slow=119, oldest_s=362, forced_to=0]Temp-0.0 Infer:  41%|████      | 82/200 [07:06<53:20, 27.12s/it, inflight=119, slow=119, oldest_s=362, forced_to=0]Temp-0.0 Infer:  41%|████      | 82/200 [07:06<53:20, 27.12s/it, inflight=118, slow=118, oldest_s=426, forced_to=0]Temp-0.0 Infer:  42%|████▏     | 83/200 [07:23<47:15, 24.23s/it, inflight=118, slow=118, oldest_s=426, forced_to=0]Temp-0.0 Infer:  42%|████▏     | 83/200 [07:23<47:15, 24.23s/it, inflight=117, slow=117, oldest_s=443, forced_to=0]Temp-0.0 Infer:  42%|████▏     | 84/200 [07:37<41:03, 21.24s/it, inflight=117, slow=117, oldest_s=443, forced_to=0]Temp-0.0 Infer:  42%|████▏     | 84/200 [07:37<41:03, 21.24s/it, inflight=116, slow=116, oldest_s=457, forced_to=0]Temp-0.0 Infer:  42%|████▎     | 85/200 [07:38<29:15, 15.27s/it, inflight=116, slow=116, oldest_s=457, forced_to=0]Temp-0.0 Infer:  42%|████▎     | 85/200 [07:38<29:15, 15.27s/it, inflight=115, slow=115, oldest_s=458, forced_to=0]Temp-0.0 Infer:  43%|████▎     | 86/200 [08:06<36:16, 19.10s/it, inflight=115, slow=115, oldest_s=458, forced_to=0]Temp-0.0 Infer:  43%|████▎     | 86/200 [08:06<36:16, 19.10s/it, inflight=114, slow=114, oldest_s=486, forced_to=0]Temp-0.0 Infer:  44%|████▎     | 87/200 [08:43<45:57, 24.40s/it, inflight=114, slow=114, oldest_s=486, forced_to=0]Temp-0.0 Infer:  44%|████▎     | 87/200 [08:43<45:57, 24.40s/it, inflight=113, slow=113, oldest_s=523, forced_to=0]Temp-0.0 Infer:  44%|████▍     | 88/200 [09:18<51:14, 27.45s/it, inflight=113, slow=113, oldest_s=523, forced_to=0]Temp-0.0 Infer:  44%|████▍     | 88/200 [09:18<51:14, 27.45s/it, inflight=112, slow=112, oldest_s=558, forced_to=0]Temp-0.0 Infer:  44%|████▍     | 89/200 [09:22<37:43, 20.39s/it, inflight=112, slow=112, oldest_s=558, forced_to=0]Temp-0.0 Infer:  44%|████▍     | 89/200 [09:22<37:43, 20.39s/it, inflight=111, slow=111, oldest_s=562, forced_to=0]Temp-0.0 Infer:  45%|████▌     | 90/200 [09:31<31:00, 16.91s/it, inflight=111, slow=111, oldest_s=562, forced_to=0]Temp-0.0 Infer:  45%|████▌     | 90/200 [09:31<31:00, 16.91s/it, inflight=110, slow=110, oldest_s=571, forced_to=0]Temp-0.0 Infer:  46%|████▌     | 91/200 [09:53<33:44, 18.58s/it, inflight=110, slow=110, oldest_s=571, forced_to=0]Temp-0.0 Infer:  46%|████▌     | 91/200 [09:53<33:44, 18.58s/it, inflight=109, slow=109, oldest_s=593, forced_to=0]Temp-0.0 Infer:  46%|████▌     | 92/200 [10:00<26:56, 14.97s/it, inflight=109, slow=109, oldest_s=593, forced_to=0]Temp-0.0 Infer:  46%|████▌     | 92/200 [10:00<26:56, 14.97s/it, inflight=108, slow=108, oldest_s=600, forced_to=0]Temp-0.0 Infer:  46%|████▋     | 93/200 [11:48<1:16:29, 42.89s/it, inflight=108, slow=108, oldest_s=600, forced_to=0]Temp-0.0 Infer:  46%|████▋     | 93/200 [11:48<1:16:29, 42.89s/it, inflight=107, slow=107, oldest_s=708, forced_to=0]Temp-0.0 Infer:  47%|████▋     | 94/200 [11:54<56:12, 31.82s/it, inflight=107, slow=107, oldest_s=708, forced_to=0]  Temp-0.0 Infer:  47%|████▋     | 94/200 [11:54<56:12, 31.82s/it, inflight=106, slow=106, oldest_s=714, forced_to=0]Temp-0.0 Infer:  48%|████▊     | 95/200 [12:39<1:02:40, 35.82s/it, inflight=106, slow=106, oldest_s=714, forced_to=0]Temp-0.0 Infer:  48%|████▊     | 95/200 [12:39<1:02:40, 35.82s/it, inflight=105, slow=105, oldest_s=759, forced_to=0]Temp-0.0 Infer:  48%|████▊     | 96/200 [12:42<44:56, 25.93s/it, inflight=105, slow=105, oldest_s=759, forced_to=0]  Temp-0.0 Infer:  48%|████▊     | 96/200 [12:42<44:56, 25.93s/it, inflight=104, slow=104, oldest_s=762, forced_to=0]Temp-0.0 Infer:  48%|████▊     | 97/200 [13:02<41:29, 24.17s/it, inflight=104, slow=104, oldest_s=762, forced_to=0]Temp-0.0 Infer:  48%|████▊     | 97/200 [13:02<41:29, 24.17s/it, inflight=103, slow=103, oldest_s=782, forced_to=0]Temp-0.0 Infer:  49%|████▉     | 98/200 [13:13<34:31, 20.31s/it, inflight=103, slow=103, oldest_s=782, forced_to=0]Temp-0.0 Infer:  49%|████▉     | 98/200 [13:13<34:31, 20.31s/it, inflight=102, slow=102, oldest_s=793, forced_to=0]Temp-0.0 Infer:  50%|████▉     | 99/200 [13:31<32:50, 19.51s/it, inflight=102, slow=102, oldest_s=793, forced_to=0]Temp-0.0 Infer:  50%|████▉     | 99/200 [13:31<32:50, 19.51s/it, inflight=101, slow=101, oldest_s=811, forced_to=0]Temp-0.0 Infer:  50%|█████     | 100/200 [13:42<28:17, 16.98s/it, inflight=101, slow=101, oldest_s=811, forced_to=0]Temp-0.0 Infer:  50%|█████     | 100/200 [13:42<28:17, 16.98s/it, inflight=100, slow=100, oldest_s=822, forced_to=0]Temp-0.0 Infer:  50%|█████     | 101/200 [14:03<30:12, 18.31s/it, inflight=100, slow=100, oldest_s=822, forced_to=0]Temp-0.0 Infer:  50%|█████     | 101/200 [14:03<30:12, 18.31s/it, inflight=99, slow=99, oldest_s=843, forced_to=0]  Temp-0.0 Infer:  51%|█████     | 102/200 [14:09<23:47, 14.57s/it, inflight=99, slow=99, oldest_s=843, forced_to=0]Temp-0.0 Infer:  51%|█████     | 102/200 [14:09<23:47, 14.57s/it, inflight=98, slow=98, oldest_s=849, forced_to=0]Temp-0.0 Infer:  52%|█████▏    | 103/200 [14:32<27:51, 17.23s/it, inflight=98, slow=98, oldest_s=849, forced_to=0]Temp-0.0 Infer:  52%|█████▏    | 103/200 [14:32<27:51, 17.23s/it, inflight=97, slow=97, oldest_s=872, forced_to=0]Temp-0.0 Infer:  52%|█████▏    | 104/200 [15:17<40:49, 25.52s/it, inflight=97, slow=97, oldest_s=872, forced_to=0]Temp-0.0 Infer:  52%|█████▏    | 104/200 [15:17<40:49, 25.52s/it, inflight=96, slow=96, oldest_s=917, forced_to=0]Temp-0.0 Infer:  52%|█████▎    | 105/200 [15:26<32:12, 20.35s/it, inflight=96, slow=96, oldest_s=917, forced_to=0]Temp-0.0 Infer:  52%|█████▎    | 105/200 [15:26<32:12, 20.35s/it, inflight=95, slow=95, oldest_s=925, forced_to=0]Temp-0.0 Infer:  53%|█████▎    | 106/200 [15:33<25:48, 16.47s/it, inflight=95, slow=95, oldest_s=925, forced_to=0]Temp-0.0 Infer:  53%|█████▎    | 106/200 [15:33<25:48, 16.47s/it, inflight=94, slow=94, oldest_s=933, forced_to=0]Temp-0.0 Infer:  54%|█████▎    | 107/200 [15:45<23:42, 15.29s/it, inflight=94, slow=94, oldest_s=933, forced_to=0]Temp-0.0 Infer:  54%|█████▎    | 107/200 [15:45<23:42, 15.29s/it, inflight=93, slow=93, oldest_s=945, forced_to=0]Temp-0.0 Infer:  54%|█████▍    | 108/200 [16:12<28:26, 18.54s/it, inflight=93, slow=93, oldest_s=945, forced_to=0]Temp-0.0 Infer:  54%|█████▍    | 108/200 [16:12<28:26, 18.54s/it, inflight=92, slow=92, oldest_s=972, forced_to=0]Temp-0.0 Infer:  55%|█████▍    | 109/200 [16:16<21:36, 14.25s/it, inflight=92, slow=92, oldest_s=972, forced_to=0]Temp-0.0 Infer:  55%|█████▍    | 109/200 [16:16<21:36, 14.25s/it, inflight=91, slow=91, oldest_s=976, forced_to=0]Temp-0.0 Infer:  55%|█████▌    | 110/200 [16:45<27:57, 18.63s/it, inflight=91, slow=91, oldest_s=976, forced_to=0]Temp-0.0 Infer:  55%|█████▌    | 110/200 [16:45<27:57, 18.63s/it, inflight=90, slow=90, oldest_s=1005, forced_to=0]Temp-0.0 Infer:  56%|█████▌    | 111/200 [16:53<23:04, 15.56s/it, inflight=90, slow=90, oldest_s=1005, forced_to=0]Temp-0.0 Infer:  56%|█████▌    | 111/200 [16:53<23:04, 15.56s/it, inflight=89, slow=89, oldest_s=1013, forced_to=0]Temp-0.0 Infer:  56%|█████▌    | 112/200 [16:58<18:08, 12.37s/it, inflight=89, slow=89, oldest_s=1013, forced_to=0]Temp-0.0 Infer:  56%|█████▌    | 112/200 [16:58<18:08, 12.37s/it, inflight=88, slow=88, oldest_s=1018, forced_to=0]Temp-0.0 Infer:  56%|█████▋    | 113/200 [17:31<26:46, 18.47s/it, inflight=88, slow=88, oldest_s=1018, forced_to=0]Temp-0.0 Infer:  56%|█████▋    | 113/200 [17:31<26:46, 18.47s/it, inflight=87, slow=87, oldest_s=1051, forced_to=0]Temp-0.0 Infer:  57%|█████▋    | 114/200 [17:44<24:14, 16.91s/it, inflight=87, slow=87, oldest_s=1051, forced_to=0]Temp-0.0 Infer:  57%|█████▋    | 114/200 [17:44<24:14, 16.91s/it, inflight=86, slow=86, oldest_s=1064, forced_to=0]Temp-0.0 Infer:  57%|█████▊    | 115/200 [17:48<18:30, 13.07s/it, inflight=86, slow=86, oldest_s=1064, forced_to=0]Temp-0.0 Infer:  57%|█████▊    | 115/200 [17:48<18:30, 13.07s/it, inflight=85, slow=85, oldest_s=1068, forced_to=0]Temp-0.0 Infer:  58%|█████▊    | 116/200 [18:32<31:13, 22.30s/it, inflight=85, slow=85, oldest_s=1068, forced_to=0]Temp-0.0 Infer:  58%|█████▊    | 116/200 [18:32<31:13, 22.30s/it, inflight=84, slow=84, oldest_s=1112, forced_to=0]Temp-0.0 Infer:  58%|█████▊    | 117/200 [18:36<23:26, 16.94s/it, inflight=84, slow=84, oldest_s=1112, forced_to=0]Temp-0.0 Infer:  58%|█████▊    | 117/200 [18:36<23:26, 16.94s/it, inflight=83, slow=83, oldest_s=1116, forced_to=0]Temp-0.0 Infer:  59%|█████▉    | 118/200 [18:39<17:19, 12.68s/it, inflight=83, slow=83, oldest_s=1116, forced_to=0]Temp-0.0 Infer:  59%|█████▉    | 118/200 [18:39<17:19, 12.68s/it, inflight=82, slow=82, oldest_s=1119, forced_to=0]Temp-0.0 Infer:  60%|█████▉    | 119/200 [18:52<17:15, 12.79s/it, inflight=82, slow=82, oldest_s=1119, forced_to=0]Temp-0.0 Infer:  60%|█████▉    | 119/200 [18:52<17:15, 12.79s/it, inflight=81, slow=81, oldest_s=1132, forced_to=0]Temp-0.0 Infer:  60%|██████    | 120/200 [19:41<31:19, 23.50s/it, inflight=81, slow=81, oldest_s=1132, forced_to=0]Temp-0.0 Infer:  60%|██████    | 120/200 [19:41<31:19, 23.50s/it, inflight=80, slow=80, oldest_s=1181, forced_to=0]Temp-0.0 Infer:  60%|██████    | 121/200 [19:46<23:42, 18.00s/it, inflight=80, slow=80, oldest_s=1181, forced_to=0]Temp-0.0 Infer:  60%|██████    | 121/200 [19:46<23:42, 18.00s/it, inflight=79, slow=79, oldest_s=1186, forced_to=0]Temp-0.0 Infer:  61%|██████    | 122/200 [20:04<23:24, 18.01s/it, inflight=79, slow=79, oldest_s=1186, forced_to=0]Temp-0.0 Infer:  61%|██████    | 122/200 [20:04<23:24, 18.01s/it, inflight=78, slow=78, oldest_s=1204, forced_to=0]Temp-0.0 Infer:  62%|██████▏   | 123/200 [20:13<19:47, 15.42s/it, inflight=78, slow=78, oldest_s=1204, forced_to=0]Temp-0.0 Infer:  62%|██████▏   | 123/200 [20:13<19:47, 15.42s/it, inflight=77, slow=77, oldest_s=1213, forced_to=0]Temp-0.0 Infer:  62%|██████▏   | 124/200 [20:30<19:52, 15.69s/it, inflight=77, slow=77, oldest_s=1213, forced_to=0]Temp-0.0 Infer:  62%|██████▏   | 124/200 [20:30<19:52, 15.69s/it, inflight=76, slow=76, oldest_s=1230, forced_to=0]Temp-0.0 Infer:  62%|██████▎   | 125/200 [20:57<24:07, 19.30s/it, inflight=76, slow=76, oldest_s=1230, forced_to=0]Temp-0.0 Infer:  62%|██████▎   | 125/200 [20:57<24:07, 19.30s/it, inflight=75, slow=75, oldest_s=1257, forced_to=0]Temp-0.0 Infer:  63%|██████▎   | 126/200 [21:15<23:04, 18.71s/it, inflight=75, slow=75, oldest_s=1257, forced_to=0]Temp-0.0 Infer:  63%|██████▎   | 126/200 [21:15<23:04, 18.71s/it, inflight=74, slow=74, oldest_s=1275, forced_to=0]Temp-0.0 Infer:  64%|██████▎   | 127/200 [21:35<23:32, 19.35s/it, inflight=74, slow=74, oldest_s=1275, forced_to=0]Temp-0.0 Infer:  64%|██████▎   | 127/200 [21:35<23:32, 19.35s/it, inflight=73, slow=73, oldest_s=1295, forced_to=0]Temp-0.0 Infer:  64%|██████▍   | 128/200 [21:38<17:19, 14.44s/it, inflight=73, slow=73, oldest_s=1295, forced_to=0]Temp-0.0 Infer:  64%|██████▍   | 128/200 [21:38<17:19, 14.44s/it, inflight=72, slow=72, oldest_s=1298, forced_to=0]Temp-0.0 Infer:  64%|██████▍   | 129/200 [21:42<13:14, 11.19s/it, inflight=72, slow=72, oldest_s=1298, forced_to=0]Temp-0.0 Infer:  64%|██████▍   | 129/200 [21:42<13:14, 11.19s/it, inflight=71, slow=71, oldest_s=1302, forced_to=0]Temp-0.0 Infer:  65%|██████▌   | 130/200 [22:07<17:56, 15.38s/it, inflight=71, slow=71, oldest_s=1302, forced_to=0]Temp-0.0 Infer:  65%|██████▌   | 130/200 [22:07<17:56, 15.38s/it, inflight=70, slow=70, oldest_s=1327, forced_to=0]Temp-0.0 Infer:  66%|██████▌   | 131/200 [22:28<19:36, 17.05s/it, inflight=70, slow=70, oldest_s=1327, forced_to=0]Temp-0.0 Infer:  66%|██████▌   | 131/200 [22:28<19:36, 17.05s/it, inflight=69, slow=69, oldest_s=1348, forced_to=0]Temp-0.0 Infer:  66%|██████▌   | 132/200 [22:31<14:20, 12.65s/it, inflight=69, slow=69, oldest_s=1348, forced_to=0]Temp-0.0 Infer:  66%|██████▌   | 132/200 [22:31<14:20, 12.65s/it, inflight=68, slow=68, oldest_s=1351, forced_to=0]Temp-0.0 Infer:  66%|██████▋   | 133/200 [22:38<12:19, 11.04s/it, inflight=68, slow=68, oldest_s=1351, forced_to=0]Temp-0.0 Infer:  66%|██████▋   | 133/200 [22:38<12:19, 11.04s/it, inflight=67, slow=67, oldest_s=1358, forced_to=0]Temp-0.0 Infer:  67%|██████▋   | 134/200 [22:44<10:31,  9.56s/it, inflight=67, slow=67, oldest_s=1358, forced_to=0]Temp-0.0 Infer:  67%|██████▋   | 134/200 [22:44<10:31,  9.56s/it, inflight=66, slow=66, oldest_s=1364, forced_to=0]Temp-0.0 Infer:  68%|██████▊   | 135/200 [23:22<19:45, 18.24s/it, inflight=66, slow=66, oldest_s=1364, forced_to=0]Temp-0.0 Infer:  68%|██████▊   | 135/200 [23:22<19:45, 18.24s/it, inflight=65, slow=65, oldest_s=1402, forced_to=0]Temp-0.0 Infer:  68%|██████▊   | 136/200 [23:34<17:13, 16.16s/it, inflight=65, slow=65, oldest_s=1402, forced_to=0]Temp-0.0 Infer:  68%|██████▊   | 136/200 [23:34<17:13, 16.16s/it, inflight=64, slow=64, oldest_s=1414, forced_to=0]Temp-0.0 Infer:  68%|██████▊   | 137/200 [23:49<16:40, 15.89s/it, inflight=64, slow=64, oldest_s=1414, forced_to=0]Temp-0.0 Infer:  68%|██████▊   | 137/200 [23:49<16:40, 15.89s/it, inflight=63, slow=63, oldest_s=1429, forced_to=0]Temp-0.0 Infer:  69%|██████▉   | 138/200 [23:53<12:52, 12.46s/it, inflight=63, slow=63, oldest_s=1429, forced_to=0]Temp-0.0 Infer:  69%|██████▉   | 138/200 [23:53<12:52, 12.46s/it, inflight=62, slow=62, oldest_s=1433, forced_to=0]Temp-0.0 Infer:  70%|██████▉   | 139/200 [24:11<14:19, 14.09s/it, inflight=62, slow=62, oldest_s=1433, forced_to=0]Temp-0.0 Infer:  70%|██████▉   | 139/200 [24:11<14:19, 14.09s/it, inflight=61, slow=61, oldest_s=1451, forced_to=0]Temp-0.0 Infer:  70%|███████   | 140/200 [24:15<10:59, 10.99s/it, inflight=61, slow=61, oldest_s=1451, forced_to=0]Temp-0.0 Infer:  70%|███████   | 140/200 [24:15<10:59, 10.99s/it, inflight=60, slow=60, oldest_s=1455, forced_to=0]Temp-0.0 Infer:  70%|███████   | 141/200 [24:26<10:43, 10.91s/it, inflight=60, slow=60, oldest_s=1455, forced_to=0]Temp-0.0 Infer:  70%|███████   | 141/200 [24:26<10:43, 10.91s/it, inflight=59, slow=59, oldest_s=1466, forced_to=0]Temp-0.0 Infer:  71%|███████   | 142/200 [24:34<09:40, 10.01s/it, inflight=59, slow=59, oldest_s=1466, forced_to=0]Temp-0.0 Infer:  71%|███████   | 142/200 [24:34<09:40, 10.01s/it, inflight=58, slow=58, oldest_s=1474, forced_to=0]Temp-0.0 Infer:  72%|███████▏  | 143/200 [24:55<12:48, 13.49s/it, inflight=58, slow=58, oldest_s=1474, forced_to=0]Temp-0.0 Infer:  72%|███████▏  | 143/200 [24:55<12:48, 13.49s/it, inflight=57, slow=57, oldest_s=1495, forced_to=0]Temp-0.0 Infer:  72%|███████▏  | 144/200 [25:03<11:05, 11.89s/it, inflight=57, slow=57, oldest_s=1495, forced_to=0]Temp-0.0 Infer:  72%|███████▏  | 144/200 [25:03<11:05, 11.89s/it, inflight=56, slow=56, oldest_s=1503, forced_to=0]Temp-0.0 Infer:  72%|███████▎  | 145/200 [25:10<09:23, 10.24s/it, inflight=56, slow=56, oldest_s=1503, forced_to=0]Temp-0.0 Infer:  72%|███████▎  | 145/200 [25:10<09:23, 10.24s/it, inflight=55, slow=55, oldest_s=1510, forced_to=0]Temp-0.0 Infer:  73%|███████▎  | 146/200 [25:19<08:52,  9.86s/it, inflight=55, slow=55, oldest_s=1510, forced_to=0]Temp-0.0 Infer:  73%|███████▎  | 146/200 [25:19<08:52,  9.86s/it, inflight=54, slow=54, oldest_s=1519, forced_to=0]Temp-0.0 Infer:  74%|███████▎  | 147/200 [26:04<17:57, 20.33s/it, inflight=54, slow=54, oldest_s=1519, forced_to=0]Temp-0.0 Infer:  74%|███████▎  | 147/200 [26:04<17:57, 20.33s/it, inflight=53, slow=53, oldest_s=1564, forced_to=0]Temp-0.0 Infer:  74%|███████▍  | 148/200 [26:20<16:38, 19.20s/it, inflight=53, slow=53, oldest_s=1564, forced_to=0]Temp-0.0 Infer:  74%|███████▍  | 148/200 [26:20<16:38, 19.20s/it, inflight=52, slow=52, oldest_s=1580, forced_to=0]Temp-0.0 Infer:  74%|███████▍  | 149/200 [26:37<15:47, 18.58s/it, inflight=52, slow=52, oldest_s=1580, forced_to=0]Temp-0.0 Infer:  74%|███████▍  | 149/200 [26:37<15:47, 18.58s/it, inflight=51, slow=51, oldest_s=1597, forced_to=0]Temp-0.0 Infer:  75%|███████▌  | 150/200 [26:43<12:22, 14.85s/it, inflight=51, slow=51, oldest_s=1597, forced_to=0]Temp-0.0 Infer:  75%|███████▌  | 150/200 [26:43<12:22, 14.85s/it, inflight=50, slow=50, oldest_s=1603, forced_to=0]Temp-0.0 Infer:  76%|███████▌  | 151/200 [27:40<22:17, 27.29s/it, inflight=50, slow=50, oldest_s=1603, forced_to=0]Temp-0.0 Infer:  76%|███████▌  | 151/200 [27:40<22:17, 27.29s/it, inflight=49, slow=49, oldest_s=1660, forced_to=0]Temp-0.0 Infer:  76%|███████▌  | 152/200 [27:42<15:54, 19.89s/it, inflight=49, slow=49, oldest_s=1660, forced_to=0]Temp-0.0 Infer:  76%|███████▌  | 152/200 [27:42<15:54, 19.89s/it, inflight=48, slow=48, oldest_s=1662, forced_to=0]Temp-0.0 Infer:  76%|███████▋  | 153/200 [28:27<21:16, 27.17s/it, inflight=48, slow=48, oldest_s=1662, forced_to=0]Temp-0.0 Infer:  76%|███████▋  | 153/200 [28:27<21:16, 27.17s/it, inflight=47, slow=47, oldest_s=1707, forced_to=0]Temp-0.0 Infer:  77%|███████▋  | 154/200 [28:29<15:10, 19.79s/it, inflight=47, slow=47, oldest_s=1707, forced_to=0]Temp-0.0 Infer:  77%|███████▋  | 154/200 [28:29<15:10, 19.79s/it, inflight=46, slow=46, oldest_s=1709, forced_to=0]Temp-0.0 Infer:  78%|███████▊  | 155/200 [28:31<10:53, 14.52s/it, inflight=46, slow=46, oldest_s=1709, forced_to=0]Temp-0.0 Infer:  78%|███████▊  | 155/200 [28:31<10:53, 14.52s/it, inflight=45, slow=45, oldest_s=1711, forced_to=0]Temp-0.0 Infer:  78%|███████▊  | 156/200 [29:01<13:52, 18.92s/it, inflight=45, slow=45, oldest_s=1711, forced_to=0]Temp-0.0 Infer:  78%|███████▊  | 156/200 [29:01<13:52, 18.92s/it, inflight=44, slow=44, oldest_s=1740, forced_to=0]Temp-0.0 Infer:  78%|███████▊  | 157/200 [29:52<20:35, 28.73s/it, inflight=44, slow=44, oldest_s=1740, forced_to=0]Temp-0.0 Infer:  78%|███████▊  | 157/200 [29:52<20:35, 28.73s/it, inflight=43, slow=43, oldest_s=1792, forced_to=0]Temp-0.0 Infer:  79%|███████▉  | 158/200 [30:23<20:31, 29.32s/it, inflight=43, slow=43, oldest_s=1792, forced_to=0]Temp-0.0 Infer:  79%|███████▉  | 158/200 [30:23<20:31, 29.32s/it, inflight=42, slow=42, oldest_s=1823, forced_to=0]Temp-0.0 Infer:  80%|███████▉  | 159/200 [30:36<16:48, 24.60s/it, inflight=42, slow=42, oldest_s=1823, forced_to=0]Temp-0.0 Infer:  80%|███████▉  | 159/200 [30:36<16:48, 24.60s/it, inflight=41, slow=41, oldest_s=1836, forced_to=0]Temp-0.0 Infer:  80%|████████  | 160/200 [30:40<12:14, 18.37s/it, inflight=41, slow=41, oldest_s=1836, forced_to=0]Temp-0.0 Infer:  80%|████████  | 160/200 [30:40<12:14, 18.37s/it, inflight=40, slow=40, oldest_s=1840, forced_to=0]Temp-0.0 Infer:  80%|████████  | 161/200 [31:07<13:32, 20.84s/it, inflight=40, slow=40, oldest_s=1840, forced_to=0]Temp-0.0 Infer:  80%|████████  | 161/200 [31:07<13:32, 20.84s/it, inflight=39, slow=39, oldest_s=1867, forced_to=0]Temp-0.0 Infer:  81%|████████  | 162/200 [31:17<11:06, 17.54s/it, inflight=39, slow=39, oldest_s=1867, forced_to=0]Temp-0.0 Infer:  81%|████████  | 162/200 [31:17<11:06, 17.54s/it, inflight=38, slow=38, oldest_s=1877, forced_to=0]Temp-0.0 Infer:  82%|████████▏ | 163/200 [31:21<08:20, 13.53s/it, inflight=38, slow=38, oldest_s=1877, forced_to=0]Temp-0.0 Infer:  82%|████████▏ | 163/200 [31:21<08:20, 13.53s/it, inflight=37, slow=37, oldest_s=1881, forced_to=0]Temp-0.0 Infer:  82%|████████▏ | 164/200 [31:33<07:49, 13.03s/it, inflight=37, slow=37, oldest_s=1881, forced_to=0]Temp-0.0 Infer:  82%|████████▏ | 164/200 [31:33<07:49, 13.03s/it, inflight=36, slow=36, oldest_s=1893, forced_to=0]Temp-0.0 Infer:  82%|████████▎ | 165/200 [31:41<06:44, 11.57s/it, inflight=36, slow=36, oldest_s=1893, forced_to=0]Temp-0.0 Infer:  82%|████████▎ | 165/200 [31:41<06:44, 11.57s/it, inflight=35, slow=35, oldest_s=1901, forced_to=0]Temp-0.0 Infer:  83%|████████▎ | 166/200 [32:29<12:46, 22.55s/it, inflight=35, slow=35, oldest_s=1901, forced_to=0]Temp-0.0 Infer:  83%|████████▎ | 166/200 [32:29<12:46, 22.55s/it, inflight=34, slow=34, oldest_s=1949, forced_to=0]Temp-0.0 Infer:  84%|████████▎ | 167/200 [33:02<14:08, 25.72s/it, inflight=34, slow=34, oldest_s=1949, forced_to=0]Temp-0.0 Infer:  84%|████████▎ | 167/200 [33:02<14:08, 25.72s/it, inflight=33, slow=33, oldest_s=1982, forced_to=0]Temp-0.0 Infer:  84%|████████▍ | 168/200 [33:22<12:43, 23.85s/it, inflight=33, slow=33, oldest_s=1982, forced_to=0]Temp-0.0 Infer:  84%|████████▍ | 168/200 [33:22<12:43, 23.85s/it, inflight=32, slow=32, oldest_s=2002, forced_to=0]Temp-0.0 Infer:  84%|████████▍ | 169/200 [33:30<09:59, 19.33s/it, inflight=32, slow=32, oldest_s=2002, forced_to=0]Temp-0.0 Infer:  84%|████████▍ | 169/200 [33:30<09:59, 19.33s/it, inflight=31, slow=31, oldest_s=2010, forced_to=0]Temp-0.0 Infer:  85%|████████▌ | 170/200 [34:42<17:28, 34.94s/it, inflight=31, slow=31, oldest_s=2010, forced_to=0]Temp-0.0 Infer:  85%|████████▌ | 170/200 [34:42<17:28, 34.94s/it, inflight=30, slow=30, oldest_s=2082, forced_to=0]Temp-0.0 Infer:  86%|████████▌ | 171/200 [35:12<16:08, 33.40s/it, inflight=30, slow=30, oldest_s=2082, forced_to=0]Temp-0.0 Infer:  86%|████████▌ | 171/200 [35:12<16:08, 33.40s/it, inflight=29, slow=29, oldest_s=2112, forced_to=0]Temp-0.0 Infer:  86%|████████▌ | 172/200 [35:46<15:42, 33.67s/it, inflight=29, slow=29, oldest_s=2112, forced_to=0]Temp-0.0 Infer:  86%|████████▌ | 172/200 [35:46<15:42, 33.67s/it, inflight=28, slow=28, oldest_s=2146, forced_to=0]Temp-0.0 Infer:  86%|████████▋ | 173/200 [36:36<17:19, 38.49s/it, inflight=28, slow=28, oldest_s=2146, forced_to=0]Temp-0.0 Infer:  86%|████████▋ | 173/200 [36:36<17:19, 38.49s/it, inflight=27, slow=27, oldest_s=2196, forced_to=0]Temp-0.0 Infer:  87%|████████▋ | 174/200 [37:06<15:38, 36.09s/it, inflight=27, slow=27, oldest_s=2196, forced_to=0]Temp-0.0 Infer:  87%|████████▋ | 174/200 [37:06<15:38, 36.09s/it, inflight=26, slow=26, oldest_s=2226, forced_to=0]Temp-0.0 Infer:  88%|████████▊ | 175/200 [37:11<11:09, 26.77s/it, inflight=26, slow=26, oldest_s=2226, forced_to=0]Temp-0.0 Infer:  88%|████████▊ | 175/200 [37:11<11:09, 26.77s/it, inflight=25, slow=25, oldest_s=2231, forced_to=0]Temp-0.0 Infer:  88%|████████▊ | 176/200 [37:46<11:41, 29.22s/it, inflight=25, slow=25, oldest_s=2231, forced_to=0]Temp-0.0 Infer:  88%|████████▊ | 176/200 [37:46<11:41, 29.22s/it, inflight=24, slow=24, oldest_s=2266, forced_to=0]Temp-0.0 Infer:  88%|████████▊ | 177/200 [37:52<08:32, 22.29s/it, inflight=24, slow=24, oldest_s=2266, forced_to=0]Temp-0.0 Infer:  88%|████████▊ | 177/200 [37:52<08:32, 22.29s/it, inflight=23, slow=23, oldest_s=2272, forced_to=0]Temp-0.0 Infer:  89%|████████▉ | 178/200 [38:09<07:32, 20.55s/it, inflight=23, slow=23, oldest_s=2272, forced_to=0]Temp-0.0 Infer:  89%|████████▉ | 178/200 [38:09<07:32, 20.55s/it, inflight=22, slow=22, oldest_s=2289, forced_to=0]Temp-0.0 Infer:  90%|████████▉ | 179/200 [38:12<05:25, 15.49s/it, inflight=22, slow=22, oldest_s=2289, forced_to=0]Temp-0.0 Infer:  90%|████████▉ | 179/200 [38:12<05:25, 15.49s/it, inflight=21, slow=21, oldest_s=2292, forced_to=0]Temp-0.0 Infer:  90%|█████████ | 180/200 [38:52<07:31, 22.59s/it, inflight=21, slow=21, oldest_s=2292, forced_to=0]Temp-0.0 Infer:  90%|█████████ | 180/200 [38:52<07:31, 22.59s/it, inflight=20, slow=20, oldest_s=2332, forced_to=0]Temp-0.0 Infer:  90%|█████████ | 181/200 [38:57<05:33, 17.58s/it, inflight=20, slow=20, oldest_s=2332, forced_to=0]Temp-0.0 Infer:  90%|█████████ | 181/200 [38:57<05:33, 17.58s/it, inflight=19, slow=19, oldest_s=2337, forced_to=0]Temp-0.0 Infer:  91%|█████████ | 182/200 [39:53<08:43, 29.10s/it, inflight=19, slow=19, oldest_s=2337, forced_to=0]Temp-0.0 Infer:  91%|█████████ | 182/200 [39:53<08:43, 29.10s/it, inflight=18, slow=18, oldest_s=2393, forced_to=0]Temp-0.0 Infer:  92%|█████████▏| 183/200 [39:58<06:10, 21.82s/it, inflight=18, slow=18, oldest_s=2393, forced_to=0]Temp-0.0 Infer:  92%|█████████▏| 183/200 [39:58<06:10, 21.82s/it, inflight=17, slow=17, oldest_s=2398, forced_to=0]Temp-0.0 Infer:  92%|█████████▏| 184/200 [40:14<05:19, 19.97s/it, inflight=17, slow=17, oldest_s=2398, forced_to=0]Temp-0.0 Infer:  92%|█████████▏| 184/200 [40:14<05:19, 19.97s/it, inflight=16, slow=16, oldest_s=2414, forced_to=0]Temp-0.0 Infer:  92%|█████████▎| 185/200 [40:43<05:40, 22.68s/it, inflight=16, slow=16, oldest_s=2414, forced_to=0]Temp-0.0 Infer:  92%|█████████▎| 185/200 [40:43<05:40, 22.68s/it, inflight=15, slow=15, oldest_s=2443, forced_to=0]Temp-0.0 Infer:  93%|█████████▎| 186/200 [41:03<05:05, 21.79s/it, inflight=15, slow=15, oldest_s=2443, forced_to=0]Temp-0.0 Infer:  93%|█████████▎| 186/200 [41:03<05:05, 21.79s/it, inflight=14, slow=14, oldest_s=2463, forced_to=0]Temp-0.0 Infer:  94%|█████████▎| 187/200 [41:20<04:25, 20.43s/it, inflight=14, slow=14, oldest_s=2463, forced_to=0]Temp-0.0 Infer:  94%|█████████▎| 187/200 [41:20<04:25, 20.43s/it, inflight=13, slow=13, oldest_s=2480, forced_to=0]Temp-0.0 Infer:  94%|█████████▍| 188/200 [41:38<03:55, 19.61s/it, inflight=13, slow=13, oldest_s=2480, forced_to=0]Temp-0.0 Infer:  94%|█████████▍| 188/200 [41:38<03:55, 19.61s/it, inflight=12, slow=12, oldest_s=2498, forced_to=0]Temp-0.0 Infer:  94%|█████████▍| 189/200 [42:30<05:22, 29.33s/it, inflight=12, slow=12, oldest_s=2498, forced_to=0]Temp-0.0 Infer:  94%|█████████▍| 189/200 [42:30<05:22, 29.33s/it, inflight=11, slow=11, oldest_s=2550, forced_to=0]Temp-0.0 Infer:  95%|█████████▌| 190/200 [43:09<05:24, 32.41s/it, inflight=11, slow=11, oldest_s=2550, forced_to=0]Temp-0.0 Infer:  95%|█████████▌| 190/200 [43:09<05:24, 32.41s/it, inflight=10, slow=10, oldest_s=2589, forced_to=0]Temp-0.0 Infer:  96%|█████████▌| 191/200 [43:10<03:26, 22.90s/it, inflight=10, slow=10, oldest_s=2589, forced_to=0]Temp-0.0 Infer:  96%|█████████▌| 191/200 [43:10<03:26, 22.90s/it, inflight=9, slow=9, oldest_s=2590, forced_to=0]  Temp-0.0 Infer:  96%|█████████▌| 192/200 [43:21<02:33, 19.22s/it, inflight=9, slow=9, oldest_s=2590, forced_to=0]Temp-0.0 Infer:  96%|█████████▌| 192/200 [43:21<02:33, 19.22s/it, inflight=8, slow=8, oldest_s=2601, forced_to=0]Temp-0.0 Infer:  96%|█████████▋| 193/200 [43:24<01:41, 14.53s/it, inflight=8, slow=8, oldest_s=2601, forced_to=0]Temp-0.0 Infer:  96%|█████████▋| 193/200 [43:24<01:41, 14.53s/it, inflight=7, slow=7, oldest_s=2604, forced_to=0]Temp-0.0 Infer:  97%|█████████▋| 194/200 [44:05<02:14, 22.36s/it, inflight=7, slow=7, oldest_s=2604, forced_to=0]Temp-0.0 Infer:  97%|█████████▋| 194/200 [44:05<02:14, 22.36s/it, inflight=6, slow=6, oldest_s=2645, forced_to=0]Temp-0.0 Infer:  98%|█████████▊| 195/200 [44:15<01:33, 18.76s/it, inflight=6, slow=6, oldest_s=2645, forced_to=0]Temp-0.0 Infer:  98%|█████████▊| 195/200 [44:15<01:33, 18.76s/it, inflight=5, slow=5, oldest_s=2655, forced_to=0]Temp-0.0 Infer:  98%|█████████▊| 196/200 [44:37<01:19, 19.75s/it, inflight=5, slow=5, oldest_s=2655, forced_to=0]Temp-0.0 Infer:  98%|█████████▊| 196/200 [44:37<01:19, 19.75s/it, inflight=4, slow=4, oldest_s=2677, forced_to=0]Temp-0.0 Infer:  98%|█████████▊| 197/200 [48:17<03:59, 79.75s/it, inflight=4, slow=4, oldest_s=2677, forced_to=0]Temp-0.0 Infer:  98%|█████████▊| 197/200 [48:17<03:59, 79.75s/it, inflight=3, slow=3, oldest_s=2897, forced_to=0]Temp-0.0 Infer:  99%|█████████▉| 198/200 [48:58<02:16, 68.16s/it, inflight=3, slow=3, oldest_s=2897, forced_to=0]Temp-0.0 Infer:  99%|█████████▉| 198/200 [48:58<02:16, 68.16s/it, inflight=2, slow=2, oldest_s=2938, forced_to=0]Temp-0.0 Infer: 100%|█████████▉| 199/200 [49:49<01:03, 63.02s/it, inflight=2, slow=2, oldest_s=2938, forced_to=0]Temp-0.0 Infer: 100%|█████████▉| 199/200 [49:49<01:03, 63.02s/it, inflight=1, slow=1, oldest_s=2989, forced_to=0]Temp-0.0 Infer: 100%|██████████| 200/200 [51:48<00:00, 79.70s/it, inflight=1, slow=1, oldest_s=2989, forced_to=0]Temp-0.0 Infer: 100%|██████████| 200/200 [51:48<00:00, 79.70s/it, inflight=0, slow=0, oldest_s=0, forced_to=0]   Temp-0.0 Infer: 100%|██████████| 200/200 [51:48<00:00, 15.54s/it, inflight=0, slow=0, oldest_s=0, forced_to=0]
+✅ 结果已保存至: results/2025-10-29_23-04-42/grok-4/Animal/raw/temp-0.0.jsonl
+
+🔄 -----------------------------------
+🔄 正在处理温度: 0.7...
+🔄 -----------------------------------
+Temp-0.7 Infer:   0%|          | 0/200 [00:00<?, ?it/s]Temp-0.7 Infer:  34%|███▍      | 68/200 [01:11<02:19,  1.05s/it]Temp-0.7 Infer:  34%|███▍      | 68/200 [01:11<02:19,  1.05s/it, inflight=132, slow=132, oldest_s=71, forced_to=0]Temp-0.7 Infer:  34%|███▍      | 69/200 [01:46<03:50,  1.76s/it, inflight=132, slow=132, oldest_s=71, forced_to=0]Temp-0.7 Infer:  34%|███▍      | 69/200 [01:46<03:50,  1.76s/it, inflight=131, slow=131, oldest_s=106, forced_to=0]Temp-0.7 Infer:  35%|███▌      | 70/200 [01:53<04:05,  1.89s/it, inflight=131, slow=131, oldest_s=106, forced_to=0]Temp-0.7 Infer:  35%|███▌      | 70/200 [01:53<04:05,  1.89s/it, inflight=130, slow=130, oldest_s=113, forced_to=0]Temp-0.7 Infer:  36%|███▌      | 71/200 [01:56<04:08,  1.92s/it, inflight=130, slow=130, oldest_s=113, forced_to=0]Temp-0.7 Infer:  36%|███▌      | 71/200 [01:56<04:08,  1.92s/it, inflight=129, slow=129, oldest_s=116, forced_to=0]Temp-0.7 Infer:  36%|███▌      | 72/200 [02:28<07:34,  3.55s/it, inflight=129, slow=129, oldest_s=116, forced_to=0]Temp-0.7 Infer:  36%|███▌      | 72/200 [02:28<07:34,  3.55s/it, inflight=128, slow=128, oldest_s=148, forced_to=0]Temp-0.7 Infer:  36%|███▋      | 73/200 [02:48<09:55,  4.69s/it, inflight=128, slow=128, oldest_s=148, forced_to=0]Temp-0.7 Infer:  36%|███▋      | 73/200 [02:48<09:55,  4.69s/it, inflight=127, slow=127, oldest_s=168, forced_to=0]Temp-0.7 Infer:  37%|███▋      | 74/200 [03:28<16:33,  7.88s/it, inflight=127, slow=127, oldest_s=168, forced_to=0]Temp-0.7 Infer:  37%|███▋      | 74/200 [03:28<16:33,  7.88s/it, inflight=126, slow=126, oldest_s=208, forced_to=0]Temp-0.7 Infer:  38%|███▊      | 75/200 [03:47<19:12,  9.22s/it, inflight=126, slow=126, oldest_s=208, forced_to=0]Temp-0.7 Infer:  38%|███▊      | 75/200 [03:47<19:12,  9.22s/it, inflight=125, slow=125, oldest_s=227, forced_to=0]Temp-0.7 Infer:  38%|███▊      | 76/200 [04:27<28:10, 13.64s/it, inflight=125, slow=125, oldest_s=227, forced_to=0]Temp-0.7 Infer:  38%|███▊      | 76/200 [04:27<28:10, 13.64s/it, inflight=124, slow=124, oldest_s=267, forced_to=0]Temp-0.7 Infer:  38%|███▊      | 77/200 [04:32<24:57, 12.17s/it, inflight=124, slow=124, oldest_s=267, forced_to=0]Temp-0.7 Infer:  38%|███▊      | 77/200 [04:32<24:57, 12.17s/it, inflight=123, slow=123, oldest_s=272, forced_to=0]Temp-0.7 Infer:  39%|███▉      | 78/200 [05:05<33:00, 16.23s/it, inflight=123, slow=123, oldest_s=272, forced_to=0]Temp-0.7 Infer:  39%|███▉      | 78/200 [05:05<33:00, 16.23s/it, inflight=122, slow=122, oldest_s=305, forced_to=0]Temp-0.7 Infer:  40%|███▉      | 79/200 [05:10<27:47, 13.78s/it, inflight=122, slow=122, oldest_s=305, forced_to=0]Temp-0.7 Infer:  40%|███▉      | 79/200 [05:10<27:47, 13.78s/it, inflight=121, slow=121, oldest_s=310, forced_to=0]Temp-0.7 Infer:  40%|████      | 80/200 [05:28<29:19, 14.66s/it, inflight=121, slow=121, oldest_s=310, forced_to=0]Temp-0.7 Infer:  40%|████      | 80/200 [05:28<29:19, 14.66s/it, inflight=120, slow=120, oldest_s=328, forced_to=0]Temp-0.7 Infer:  40%|████      | 81/200 [05:59<37:10, 18.75s/it, inflight=120, slow=120, oldest_s=328, forced_to=0]Temp-0.7 Infer:  40%|████      | 81/200 [05:59<37:10, 18.75s/it, inflight=119, slow=119, oldest_s=359, forced_to=0]Temp-0.7 Infer:  41%|████      | 82/200 [06:13<34:41, 17.64s/it, inflight=119, slow=119, oldest_s=359, forced_to=0]Temp-0.7 Infer:  41%|████      | 82/200 [06:13<34:41, 17.64s/it, inflight=118, slow=118, oldest_s=373, forced_to=0]Temp-0.7 Infer:  42%|████▏     | 83/200 [06:22<29:49, 15.29s/it, inflight=118, slow=118, oldest_s=373, forced_to=0]Temp-0.7 Infer:  42%|████▏     | 83/200 [06:22<29:49, 15.29s/it, inflight=117, slow=117, oldest_s=382, forced_to=0]Temp-0.7 Infer:  42%|████▏     | 84/200 [07:34<1:00:15, 31.17s/it, inflight=117, slow=117, oldest_s=382, forced_to=0]Temp-0.7 Infer:  42%|████▏     | 84/200 [07:34<1:00:15, 31.17s/it, inflight=116, slow=116, oldest_s=454, forced_to=0]Temp-0.7 Infer:  42%|████▎     | 85/200 [07:44<47:50, 24.96s/it, inflight=116, slow=116, oldest_s=454, forced_to=0]  Temp-0.7 Infer:  42%|████▎     | 85/200 [07:44<47:50, 24.96s/it, inflight=115, slow=115, oldest_s=464, forced_to=0]Temp-0.7 Infer:  43%|████▎     | 86/200 [08:06<45:53, 24.16s/it, inflight=115, slow=115, oldest_s=464, forced_to=0]Temp-0.7 Infer:  43%|████▎     | 86/200 [08:06<45:53, 24.16s/it, inflight=114, slow=114, oldest_s=486, forced_to=0]Temp-0.7 Infer:  44%|████▎     | 87/200 [08:17<38:30, 20.45s/it, inflight=114, slow=114, oldest_s=486, forced_to=0]Temp-0.7 Infer:  44%|████▎     | 87/200 [08:17<38:30, 20.45s/it, inflight=113, slow=113, oldest_s=497, forced_to=0]Temp-0.7 Infer:  44%|████▍     | 88/200 [08:34<36:09, 19.37s/it, inflight=113, slow=113, oldest_s=497, forced_to=0]Temp-0.7 Infer:  44%|████▍     | 88/200 [08:34<36:09, 19.37s/it, inflight=112, slow=112, oldest_s=514, forced_to=0]Temp-0.7 Infer:  44%|████▍     | 89/200 [08:42<29:28, 15.93s/it, inflight=112, slow=112, oldest_s=514, forced_to=0]Temp-0.7 Infer:  44%|████▍     | 89/200 [08:42<29:28, 15.93s/it, inflight=111, slow=111, oldest_s=522, forced_to=0]Temp-0.7 Infer:  45%|████▌     | 90/200 [09:34<48:49, 26.63s/it, inflight=111, slow=111, oldest_s=522, forced_to=0]Temp-0.7 Infer:  45%|████▌     | 90/200 [09:34<48:49, 26.63s/it, inflight=110, slow=110, oldest_s=574, forced_to=0]Temp-0.7 Infer:  46%|████▌     | 91/200 [09:48<41:52, 23.06s/it, inflight=110, slow=110, oldest_s=574, forced_to=0]Temp-0.7 Infer:  46%|████▌     | 91/200 [09:48<41:52, 23.06s/it, inflight=109, slow=109, oldest_s=588, forced_to=0]Temp-0.7 Infer:  46%|████▌     | 92/200 [09:55<32:35, 18.10s/it, inflight=109, slow=109, oldest_s=588, forced_to=0]Temp-0.7 Infer:  46%|████▌     | 92/200 [09:55<32:35, 18.10s/it, inflight=108, slow=108, oldest_s=595, forced_to=0]

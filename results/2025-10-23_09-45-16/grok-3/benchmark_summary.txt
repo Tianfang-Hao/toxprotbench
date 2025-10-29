@@ -1,0 +1,18 @@
+===== Benchmark Summary =====
+
+[Generation]
+- batch_inference_api model=grok-3 temp=0.0 prompts=13 outputs=13
+- batch_inference_api model=grok-3 temp=0.7 prompts=13 outputs=13
+- batch_inference_api model=grok-3 temp=0.0 prompts=13 outputs=13
+- batch_inference_api model=grok-3 temp=0.7 prompts=13 outputs=13
+
+[Filter no_stop] files=2 read=26 kept=10 discarded=16 retention=0.385
+
+[ESM] files=2 read=2 calculated=1 failed=1 coverage=0.500
+
+[Animal ToxinPred] files=0 rows=0 tox=0 non-tox=0 toxicity_rate=0.000
+[Bacteria Classifier] files=0 rows=0 tox=0 non-tox=0 toxicity_rate=0.000
+
+[E2E Effective Rate] approx_effective_rate = 0.500
+
+===== End =====

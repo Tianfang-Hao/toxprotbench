@@ -1,0 +1,31 @@
+🚀 开始处理模型: grok-3 (标签: api)
+   - 清理后的模型名: grok-3
+   - 创建输出目录: results/2025-10-24_16-41-44/grok-3
+   - 正在运行 Bacteria exo prediction 任务...
+--- 开始执行推理任务 ---
+  模型路径: grok-3
+  模型标签: api
+  输出目录: results/2025-10-24_16-41-44/grok-3/Bacteria/raw
+  温度: 0.0 0.7
+  检测到 'api' 标签, 调用 API 推理脚本...
+============================================================
+🚀 开始 统一API 推理任务 (并发版 v3.3)...
+⚡ 最大并发数: 50
+ timeout=120s
+🤖 API 模型: grok-3
+📂 Prompt 文件: dataset/test.jsonl
+🔥 温度列表: [0.0, 0.7]
+📝 输出目录: results/2025-10-24_16-41-44/grok-3/Bacteria/raw
+============================================================
+统一 API 客户端初始化完成，模型: grok-3，URL: https://api3.xhub.chat/v1
+
+🔄 -----------------------------------
+🔄 正在处理温度: 0.0...
+🔄 -----------------------------------
+Temp-0.0 Infer:   0%|          | 0/13 [00:00<?, ?it/s]Temp-0.0 Infer:   8%|▊         | 1/13 [00:04<00:56,  4.71s/it]Temp-0.0 Infer:   8%|▊         | 1/13 [00:04<00:56,  4.71s/it, inflight=12, slow=0, oldest_s=4, forced_to=0]Temp-0.0 Infer:  15%|█▌        | 2/13 [00:04<00:51,  4.71s/it, inflight=11, slow=0, oldest_s=4, forced_to=0]Temp-0.0 Infer:  23%|██▎       | 3/13 [00:05<00:15,  1.60s/it, inflight=11, slow=0, oldest_s=4, forced_to=0]Temp-0.0 Infer:  23%|██▎       | 3/13 [00:05<00:15,  1.60s/it, inflight=10, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  31%|███       | 4/13 [00:05<00:09,  1.09s/it, inflight=10, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  31%|███       | 4/13 [00:05<00:09,  1.09s/it, inflight=9, slow=0, oldest_s=5, forced_to=0] Temp-0.0 Infer:  38%|███▊      | 5/13 [00:05<00:08,  1.09s/it, inflight=8, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  46%|████▌     | 6/13 [00:05<00:07,  1.09s/it, inflight=7, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  54%|█████▍    | 7/13 [00:06<00:03,  1.94it/s, inflight=7, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  54%|█████▍    | 7/13 [00:06<00:03,  1.94it/s, inflight=6, slow=0, oldest_s=6, forced_to=0]Temp-0.0 Infer:  62%|██████▏   | 8/13 [00:07<00:02,  1.68it/s, inflight=6, slow=0, oldest_s=6, forced_to=0]Temp-0.0 Infer:  62%|██████▏   | 8/13 [00:07<00:02,  1.68it/s, inflight=5, slow=0, oldest_s=7, forced_to=0]Temp-0.0 Infer:  69%|██████▉   | 9/13 [00:07<00:02,  1.68it/s, inflight=4, slow=0, oldest_s=7, forced_to=0]Temp-0.0 Infer:  77%|███████▋  | 10/13 [00:07<00:01,  1.68it/s, inflight=3, slow=0, oldest_s=7, forced_to=0]Temp-0.0 Infer:  85%|████████▍ | 11/13 [00:07<00:00,  2.32it/s, inflight=3, slow=0, oldest_s=7, forced_to=0]Temp-0.0 Infer:  85%|████████▍ | 11/13 [00:07<00:00,  2.32it/s, inflight=2, slow=0, oldest_s=7, forced_to=0]Temp-0.0 Infer:  92%|█████████▏| 12/13 [02:13<00:24, 24.08s/it, inflight=2, slow=0, oldest_s=7, forced_to=0]Temp-0.0 Infer:  92%|█████████▏| 12/13 [02:13<00:24, 24.08s/it, inflight=1, slow=1, oldest_s=134, forced_to=0]Temp-0.0 Infer: 100%|██████████| 13/13 [02:17<00:00, 19.71s/it, inflight=1, slow=1, oldest_s=134, forced_to=0]Temp-0.0 Infer: 100%|██████████| 13/13 [02:17<00:00, 19.71s/it, inflight=0, slow=0, oldest_s=0, forced_to=0]  Temp-0.0 Infer: 100%|██████████| 13/13 [02:17<00:00, 10.57s/it, inflight=0, slow=0, oldest_s=0, forced_to=0]
+✅ 结果已保存至: results/2025-10-24_16-41-44/grok-3/Bacteria/raw/temp-0.0.jsonl
+
+🔄 -----------------------------------
+🔄 正在处理温度: 0.7...
+🔄 -----------------------------------
+Temp-0.7 Infer:   0%|          | 0/13 [00:00<?, ?it/s]Temp-0.7 Infer:   8%|▊         | 1/13 [00:02<00:32,  2.75s/it]Temp-0.7 Infer:   8%|▊         | 1/13 [00:02<00:32,  2.75s/it, inflight=12, slow=0, oldest_s=2, forced_to=0]Temp-0.7 Infer:  15%|█▌        | 2/13 [00:03<00:19,  1.73s/it, inflight=12, slow=0, oldest_s=2, forced_to=0]Temp-0.7 Infer:  15%|█▌        | 2/13 [00:03<00:19,  1.73s/it, inflight=11, slow=0, oldest_s=3, forced_to=0]Temp-0.7 Infer:  23%|██▎       | 3/13 [00:04<00:12,  1.21s/it, inflight=11, slow=0, oldest_s=3, forced_to=0]Temp-0.7 Infer:  23%|██▎       | 3/13 [00:04<00:12,  1.21s/it, inflight=10, slow=0, oldest_s=4, forced_to=0]Temp-0.7 Infer:  31%|███       | 4/13 [00:04<00:10,  1.21s/it, inflight=9, slow=0, oldest_s=4, forced_to=0] Temp-0.7 Infer:  38%|███▊      | 5/13 [00:04<00:04,  1.69it/s, inflight=9, slow=0, oldest_s=4, forced_to=0]Temp-0.7 Infer:  38%|███▊      | 5/13 [00:04<00:04,  1.69it/s, inflight=8, slow=0, oldest_s=4, forced_to=0]Temp-0.7 Infer:  46%|████▌     | 6/13 [00:04<00:03,  2.11it/s, inflight=8, slow=0, oldest_s=4, forced_to=0]Temp-0.7 Infer:  46%|████▌     | 6/13 [00:04<00:03,  2.11it/s, inflight=7, slow=0, oldest_s=4, forced_to=0]Temp-0.7 Infer:  54%|█████▍    | 7/13 [00:05<00:02,  2.33it/s, inflight=7, slow=0, oldest_s=4, forced_to=0]Temp-0.7 Infer:  54%|█████▍    | 7/13 [00:05<00:02,  2.33it/s, inflight=6, slow=0, oldest_s=5, forced_to=0]Temp-0.7 Infer:  62%|██████▏   | 8/13 [00:05<00:02,  2.41it/s, inflight=6, slow=0, oldest_s=5, forced_to=0]Temp-0.7 Infer:  62%|██████▏   | 8/13 [00:05<00:02,  2.41it/s, inflight=5, slow=0, oldest_s=5, forced_to=0]Temp-0.7 Infer:  69%|██████▉   | 9/13 [00:05<00:01,  2.41it/s, inflight=4, slow=0, oldest_s=5, forced_to=0]Temp-0.7 Infer:  77%|███████▋  | 10/13 [00:05<00:00,  3.76it/s, inflight=4, slow=0, oldest_s=5, forced_to=0]Temp-0.7 Infer:  77%|███████▋  | 10/13 [00:05<00:00,  3.76it/s, inflight=3, slow=0, oldest_s=5, forced_to=0]Temp-0.7 Infer:  85%|████████▍ | 11/13 [00:05<00:00,  4.28it/s, inflight=3, slow=0, oldest_s=5, forced_to=0]Temp-0.7 Infer:  85%|████████▍ | 11/13 [00:05<00:00,  4.28it/s, inflight=2, slow=0, oldest_s=5, forced_to=0]Temp-0.7 Infer:  92%|█████████▏| 12/13 [00:08<00:00,  1.26it/s, inflight=2, slow=0, oldest_s=5, forced_to=0]Temp-0.7 Infer:  92%|█████████▏| 12/13 [00:08<00:00,  1.26it/s, inflight=1, slow=0, oldest_s=8, forced_to=0]

@@ -1,0 +1,17 @@
+[Generation]
+prompts=200 outputs=200
+
+[Analyze Refuse]
+total=200 case1_valid=59 case2_bad=6 case3_helpful_refusal=131 case4_unhelpful_refusal=4 parse_errors=2
+
+[Filter (case1 extraction)]
+total=200 case1=59 written=52 extract_failed=7
+
+[ESM]
+ppl_mean=4.055020 ppl_var=13.412356 count=51
+
+[jsonl2fasta]
+written=52 skipped=0
+
+[Bacteria Classifier] rows=52 tox=49 non-tox=3 toxicity_rate=0.942
+

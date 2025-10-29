@@ -1,0 +1,1397 @@
+🚀 开始处理模型: grok-3 (标签: api)
+   - 清理后的模型名: grok-3
+   - 创建输出目录: results/2025-10-23_00-40-52/grok-3
+   - 正在运行 Bacteria exo prediction 任务...
+   - 正在运行 Bacteria exo prediction 任务...
+   - 正在运行 Bacteria exo prediction 任务...
+   - 正在运行 Bacteria exo prediction 任务...
+   - 正在运行 Bacteria exo prediction 任务...
+--- 开始执行推理任务 ---
+  模型路径: grok-3
+  模型标签: api
+  输出目录: results/2025-10-23_00-40-52/grok-3/Bacteria/raw
+  温度: 0.0 0.7
+  检测到 'api' 标签, 调用 API 推理脚本...
+============================================================
+🚀 开始 统一API 推理任务 (并发版 v3.3)...
+⚡ 最大并发数: 50
+ timeout=120s
+🤖 API 模型: grok-3
+📂 Prompt 文件: dataset/test.jsonl
+🔥 温度列表: [0.0, 0.7]
+📝 输出目录: results/2025-10-23_00-40-52/grok-3/Bacteria/raw
+============================================================
+统一 API 客户端初始化完成，模型: grok-3，URL: https://api3.xhub.chat/v1
+
+🔄 -----------------------------------
+🔄 正在处理温度: 0.0...
+🔄 -----------------------------------
+Temp-0.0 Infer:   0%|          | 0/13 [00:00<?, ?it/s]Temp-0.0 Infer:   8%|▊         | 1/13 [00:04<00:52,  4.41s/it]Temp-0.0 Infer:  15%|█▌        | 2/13 [00:05<00:25,  2.28s/it]Temp-0.0 Infer:  31%|███       | 4/13 [00:06<00:12,  1.41s/it]Temp-0.0 Infer:  38%|███▊      | 5/13 [00:10<00:16,  2.07s/it]Temp-0.0 Infer:  62%|██████▏   | 8/13 [02:08<01:56, 23.31s/it]Temp-0.0 Infer: 100%|██████████| 13/13 [02:08<00:00,  9.88s/it]
+✅ 结果已保存至: results/2025-10-23_00-40-52/grok-3/Bacteria/raw/temp-0.0.jsonl
+
+🔄 -----------------------------------
+🔄 正在处理温度: 0.7...
+🔄 -----------------------------------
+Temp-0.7 Infer:   0%|          | 0/13 [00:00<?, ?it/s]Temp-0.7 Infer:   8%|▊         | 1/13 [00:03<00:41,  3.49s/it]Temp-0.7 Infer:  15%|█▌        | 2/13 [00:04<00:19,  1.79s/it]Temp-0.7 Infer:  23%|██▎       | 3/13 [00:05<00:15,  1.57s/it]Temp-0.7 Infer:  38%|███▊      | 5/13 [00:19<00:37,  4.72s/it]Temp-0.7 Infer: 100%|██████████| 13/13 [05:01<00:00, 28.06s/it]Temp-0.7 Infer: 100%|██████████| 13/13 [05:01<00:00, 23.22s/it]
+✅ 结果已保存至: results/2025-10-23_00-40-52/grok-3/Bacteria/raw/temp-0.7.jsonl
+
+🎉 所有 API 推理任务完成！
+✅ [Step 1/5] 批量推理完成。
+--------------------------------------------------
+🧹 [Step 3/5] 过滤结果...
+输出目录 '/data/nnotaa/align-anything/projects/Bio/benchmark/results/2025-10-23_00-40-52/grok-3/Bacteria/raw_filtered' 已准备就绪。
+
+正在处理文件: results/2025-10-23_00-40-52/grok-3/Bacteria/raw/temp-0.0.jsonl
+处理完成: 'temp-0.0.jsonl'。
+   总共处理 13 行，保留了 13 行。
+
+正在处理文件: results/2025-10-23_00-40-52/grok-3/Bacteria/raw/temp-0.7.jsonl
+处理完成: 'temp-0.7.jsonl'。
+   总共处理 13 行，保留了 13 行。
+
+所有 .jsonl 文件处理完毕！输出位于: /data/nnotaa/align-anything/projects/Bio/benchmark/results/2025-10-23_00-40-52/grok-3/Bacteria/raw_filtered
+✅ [Step 3/5] 过滤完成。结果位于 'results/2025-10-23_00-40-52/grok-3/Bacteria/raw_filtered'.
+--------------------------------------------------
+🔬 [Step 4/5] 使用 ESM 模型处理序列...
+W1023 00:48:05.147000 188046 site-packages/torch/distributed/run.py:774] 
+W1023 00:48:05.147000 188046 site-packages/torch/distributed/run.py:774] *****************************************
+W1023 00:48:05.147000 188046 site-packages/torch/distributed/run.py:774] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1023 00:48:05.147000 188046 site-packages/torch/distributed/run.py:774] *****************************************
+高性能模式启动。共 8 个GPU。
+最大Tokens/批次: 8192
+自动混合精度(autocast)已【禁用】。
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 24.56it/s]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 24.16it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 20.29it/s]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 23.99it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 22.83it/s]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 21.83it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  8.79it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 15.96it/s]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 22.21it/s]
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank7]:[W1023 00:48:16.563682680 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 7]  using GPU 7 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank3]:[W1023 00:48:17.649133176 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 3]  using GPU 3 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank4]:[W1023 00:48:17.910995519 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 4]  using GPU 4 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+Rank 0 模型加载完成。
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank0]:[W1023 00:48:17.947412172 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 0]  using GPU 0 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank5]:[W1023 00:48:17.269360043 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 5]  using GPU 5 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank1]:[W1023 00:48:17.337579530 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 1]  using GPU 1 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank6]:[W1023 00:48:18.665210523 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 6]  using GPU 6 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank2]:[W1023 00:48:18.804650329 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 2]  using GPU 2 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+文件总进度:   0%|          | 0/2 [00:00<?, ?file/s]文件总进度:   0%|          | 0/2 [00:00<?, ?file/s, 处理中: temp-0.0.jsonl]
+Batches (Rank 0): 0batch [00:00, ?batch/s][A
+Batches (Rank 0): 2batch [00:01,  1.12batch/s][A
+                                              [A文件总进度:  50%|█████     | 1/2 [00:01<00:01,  1.78s/file, 处理中: temp-0.0.jsonl]文件总进度:  50%|█████     | 1/2 [00:01<00:01,  1.78s/file, 处理中: temp-0.7.jsonl]
+Batches (Rank 0): 0batch [00:00, ?batch/s][A
+Batches (Rank 0): 2batch [00:01,  1.29batch/s][A
+                                              [A文件总进度: 100%|██████████| 2/2 [00:03<00:00,  1.65s/file, 处理中: temp-0.7.jsonl]文件总进度: 100%|██████████| 2/2 [00:03<00:00,  1.67s/file, 处理中: temp-0.7.jsonl]
+
+所有进程计算完成，等待同步...
+开始合并临时文件...
+合并文件:   0%|          | 0/2 [00:00<?, ?file/s]合并文件: 100%|██████████| 2/2 [00:00<00:00, 960.34file/s]
+正在生成最终的CSV摘要文件...
+生成摘要:   0%|          | 0/2 [00:00<?, ?file/s]生成摘要: 100%|██████████| 2/2 [00:00<00:00, 7275.46file/s]
+摘要文件成功保存到: results/2025-10-23_00-40-52/grok-3/Bacteria/raw_filtered_esm/summary_results.csv
+✅ [Step 4/5] 序列处理完成。
+--------------------------------------------------
+🔬 [Step 5/5] cleaning <|im_end|>...
+*** 警告：脚本将直接覆盖原始文件，请确保已备份！ ***
+
+开始批量处理文件夹: results/2025-10-23_00-40-52/grok-3/Bacteria/raw_filtered_esm
+目标字段: assistant
+移除标记: <|im_end|>
+
+--- 正在处理 (将覆盖): results/2025-10-23_00-40-52/grok-3/Bacteria/raw_filtered_esm/temp-0.0.jsonl ---
+处理完成: results/2025-10-23_00-40-52/grok-3/Bacteria/raw_filtered_esm/temp-0.0.jsonl (已覆盖)
+  总行数: 13
+  修改行数: 0
+
+--- 正在处理 (将覆盖): results/2025-10-23_00-40-52/grok-3/Bacteria/raw_filtered_esm/temp-0.7.jsonl ---
+处理完成: results/2025-10-23_00-40-52/grok-3/Bacteria/raw_filtered_esm/temp-0.7.jsonl (已覆盖)
+  总行数: 13
+  修改行数: 0
+
+批量处理完毕，共处理 2 个文件。
+✅ [Step 5/5] <|im_end|> cleaning completed.
+--------------------------------------------------
+--- 推理任务结束 ---
+开始转换文件: results/2025-10-23_00-40-52/grok-3/Bacteria/raw_filtered_esm/temp-0.0.jsonl -> results/2025-10-23_00-40-52/grok-3/Bacteria/raw_filtered_esm/temp-0.0.fasta
+
+转换完成！
+成功写入 13 个 FASTA 条目。
+开始转换文件: results/2025-10-23_00-40-52/grok-3/Bacteria/raw_filtered_esm/temp-0.7.jsonl -> results/2025-10-23_00-40-52/grok-3/Bacteria/raw_filtered_esm/temp-0.7.fasta
+
+转换完成！
+成功写入 13 个 FASTA 条目。
+--- 步骤 1: 正在安装所需的 Python 库... ---
+Requirement already satisfied: torch in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (2.8.0)
+Requirement already satisfied: transformers in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (4.56.1)
+Requirement already satisfied: sentencepiece in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (0.2.1)
+Requirement already satisfied: h5py in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (3.14.0)
+Requirement already satisfied: filelock in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (3.19.1)
+Requirement already satisfied: typing-extensions>=4.10.0 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (4.15.0)
+Requirement already satisfied: sympy>=1.13.3 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (1.14.0)
+Requirement already satisfied: networkx in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (3.5)
+Requirement already satisfied: jinja2 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (3.1.6)
+Requirement already satisfied: fsspec in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (2025.3.0)
+Requirement already satisfied: nvidia-cuda-nvrtc-cu12==12.8.93 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (12.8.93)
+Requirement already satisfied: nvidia-cuda-runtime-cu12==12.8.90 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (12.8.90)
+Requirement already satisfied: nvidia-cuda-cupti-cu12==12.8.90 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (12.8.90)
+Requirement already satisfied: nvidia-cudnn-cu12==9.10.2.21 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (9.10.2.21)
+Requirement already satisfied: nvidia-cublas-cu12==12.8.4.1 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (12.8.4.1)
+Requirement already satisfied: nvidia-cufft-cu12==11.3.3.83 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (11.3.3.83)
+Requirement already satisfied: nvidia-curand-cu12==10.3.9.90 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (10.3.9.90)
+Requirement already satisfied: nvidia-cusolver-cu12==11.7.3.90 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (11.7.3.90)
+Requirement already satisfied: nvidia-cusparse-cu12==12.5.8.93 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (12.5.8.93)
+Requirement already satisfied: nvidia-cusparselt-cu12==0.7.1 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (0.7.1)
+Requirement already satisfied: nvidia-nccl-cu12==2.27.3 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (2.27.3)
+Requirement already satisfied: nvidia-nvtx-cu12==12.8.90 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (12.8.90)
+Requirement already satisfied: nvidia-nvjitlink-cu12==12.8.93 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (12.8.93)
+Requirement already satisfied: nvidia-cufile-cu12==1.13.1.3 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (1.13.1.3)
+Requirement already satisfied: triton==3.4.0 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (3.4.0)
+Requirement already satisfied: setuptools>=40.8.0 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from triton==3.4.0->torch) (78.1.1)
+Requirement already satisfied: huggingface-hub<1.0,>=0.34.0 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from transformers) (0.34.4)
+Requirement already satisfied: numpy>=1.17 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from transformers) (2.2.6)
+Requirement already satisfied: packaging>=20.0 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from transformers) (25.0)
+Requirement already satisfied: pyyaml>=5.1 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from transformers) (6.0.2)
+Requirement already satisfied: regex!=2019.12.17 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from transformers) (2025.9.1)
+Requirement already satisfied: requests in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from transformers) (2.32.5)
+Requirement already satisfied: tokenizers<=0.23.0,>=0.22.0 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from transformers) (0.22.0)
+Requirement already satisfied: safetensors>=0.4.3 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from transformers) (0.6.2)
+Requirement already satisfied: tqdm>=4.27 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from transformers) (4.67.1)
+Requirement already satisfied: hf-xet<2.0.0,>=1.1.3 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from huggingface-hub<1.0,>=0.34.0->transformers) (1.1.9)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from sympy>=1.13.3->torch) (1.3.0)
+Requirement already satisfied: MarkupSafe>=2.0 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from jinja2->torch) (3.0.2)
+Requirement already satisfied: charset_normalizer<4,>=2 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from requests->transformers) (3.4.3)
+Requirement already satisfied: idna<4,>=2.5 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from requests->transformers) (3.10)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from requests->transformers) (2.5.0)
+Requirement already satisfied: certifi>=2017.4.17 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from requests->transformers) (2025.8.3)
+
+--- 步骤 2: 正在创建所有目录... ---
+目录已准备就绪。
+
+--- 步骤 3: 正在检查并下载所需文件... ---
+二级结构模型已存在，跳过下载。
+
+--- 步骤 4: 环境准备就绪，正在启动 Python 脚本... ---
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+Using device: cuda
+检测到输入是一个目录: 'results/2025-10-23_00-40-52/grok-3/Bacteria/raw_filtered_esm'
+正在加载 ProtT5 模型...
+模型加载完毕。
+找到 2 个 FASTA 文件，准备开始处理...
+
+--- 正在处理文件: results/2025-10-23_00-40-52/grok-3/Bacteria/raw_filtered_esm/temp-0.0.fasta ---
+读取了 13 条序列。
+13
+正在保存每个蛋白质的嵌入向量至: results/2025-10-23_00-40-52/grok-3/Bacteria/raw_filtered_esm/temp-0.0_per_protein.h5
+文件 results/2025-10-23_00-40-52/grok-3/Bacteria/raw_filtered_esm/temp-0.0.fasta 处理完毕，耗时 2.56 秒。
+
+--- 正在处理文件: results/2025-10-23_00-40-52/grok-3/Bacteria/raw_filtered_esm/temp-0.7.fasta ---
+读取了 13 条序列。
+1
+13
+正在保存每个蛋白质的嵌入向量至: results/2025-10-23_00-40-52/grok-3/Bacteria/raw_filtered_esm/temp-0.7_per_protein.h5
+文件 results/2025-10-23_00-40-52/grok-3/Bacteria/raw_filtered_esm/temp-0.7.fasta 处理完毕，耗时 5.15 秒。
+
+--- 所有文件处理完毕！总耗时 7.71 秒 ---
+
+--- 所有操作执行完毕！结果保存在 'results/2025-10-23_00-40-52/grok-3/Bacteria/raw_filtered_esm' 目录中。 ---
+<frozen importlib._bootstrap>:488: Warning: OpenSSL 3's legacy provider failed to load. Legacy algorithms will not be available. If you need those algorithms, check your OpenSSL configuration.
+<frozen importlib._bootstrap>:488: Warning: OpenSSL 3's legacy provider failed to load. Legacy algorithms will not be available. If you need those algorithms, check your OpenSSL configuration.
+<frozen importlib._bootstrap>:488: Warning: OpenSSL 3's legacy provider failed to load. Legacy algorithms will not be available. If you need those algorithms, check your OpenSSL configuration.
+/data/nnotaa/miniconda3/envs/ml/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+/data/nnotaa/miniconda3/envs/ml/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+
+Reading protein ID order from: results/2025-10-23_00-40-52/grok-3/Bacteria/raw_filtered_esm/temp-0.0.fasta
+Found 13 protein IDs in FASTA file.
+Loading embeddings from: results/2025-10-23_00-40-52/grok-3/Bacteria/raw_filtered_esm/temp-0.0_per_protein.h5
+
+Running predictions...
+Prediction counts: Counter({1: 13})
+
+Saving results to: results/2025-10-23_00-40-52/grok-3/Bacteria/raw_filtered_esm/temp-0.0_per_protein.jsonl
+Successfully saved 13 predictions.
+
+<frozen importlib._bootstrap>:488: Warning: OpenSSL 3's legacy provider failed to load. Legacy algorithms will not be available. If you need those algorithms, check your OpenSSL configuration.
+<frozen importlib._bootstrap>:488: Warning: OpenSSL 3's legacy provider failed to load. Legacy algorithms will not be available. If you need those algorithms, check your OpenSSL configuration.
+<frozen importlib._bootstrap>:488: Warning: OpenSSL 3's legacy provider failed to load. Legacy algorithms will not be available. If you need those algorithms, check your OpenSSL configuration.
+/data/nnotaa/miniconda3/envs/ml/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+/data/nnotaa/miniconda3/envs/ml/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+
+Reading protein ID order from: results/2025-10-23_00-40-52/grok-3/Bacteria/raw_filtered_esm/temp-0.7.fasta
+Found 13 protein IDs in FASTA file.
+Loading embeddings from: results/2025-10-23_00-40-52/grok-3/Bacteria/raw_filtered_esm/temp-0.7_per_protein.h5
+
+Running predictions...
+Prediction counts: Counter({1: 13})
+
+Saving results to: results/2025-10-23_00-40-52/grok-3/Bacteria/raw_filtered_esm/temp-0.7_per_protein.jsonl
+Successfully saved 13 predictions.
+
+开始处理...
+  - 从 'dataset/test.jsonl' 提取字段: ['id', 'description', 'sequence', 'taxonomy', 'prompt']
+  - 从 'results/2025-10-23_00-40-52/grok-3/Bacteria/raw_filtered_esm/temp-0.0_per_protein.jsonl' 提取字段: ['prediction', 'probability']
+
+处理完成！共合并 13 行记录。
+结果已保存到: results/2025-10-23_00-40-52/grok-3/Bacteria/raw_filtered_esm/temp-0.0_result.jsonl
+开始处理...
+  - 从 'dataset/test.jsonl' 提取字段: ['id', 'description', 'sequence', 'taxonomy', 'prompt']
+  - 从 'results/2025-10-23_00-40-52/grok-3/Bacteria/raw_filtered_esm/temp-0.7_per_protein.jsonl' 提取字段: ['prediction', 'probability']
+
+处理完成！共合并 13 行记录。
+结果已保存到: results/2025-10-23_00-40-52/grok-3/Bacteria/raw_filtered_esm/temp-0.7_result.jsonl
+   - 正在运行 Animal toxin prediction 任务...
+   - 正在运行 Animal toxin prediction 任务...
+   - 正在运行 Animal toxin prediction 任务...
+   - 正在运行 Animal toxin prediction 任务...
+   - 正在运行 Animal toxin prediction 任务...
+--- 开始执行推理任务 ---
+  模型路径: grok-3
+  模型标签: api
+  输出目录: results/2025-10-23_00-40-52/grok-3/Animal/raw
+  温度: 0.0 0.7
+  检测到 'openai-api' 标签, 调用 API 推理脚本...
+============================================================
+🚀 开始 统一API 推理任务 (并发版 v3.3)...
+⚡ 最大并发数: 50
+ timeout=120s
+🤖 API 模型: grok-3
+📂 Prompt 文件: dataset/test.jsonl
+🔥 温度列表: [0.0, 0.7]
+📝 输出目录: results/2025-10-23_00-40-52/grok-3/Animal/raw
+============================================================
+统一 API 客户端初始化完成，模型: grok-3，URL: https://api3.xhub.chat/v1
+
+🔄 -----------------------------------
+🔄 正在处理温度: 0.0...
+🔄 -----------------------------------
+Temp-0.0 Infer:   0%|          | 0/13 [00:00<?, ?it/s]Temp-0.0 Infer:   8%|▊         | 1/13 [00:04<00:49,  4.12s/it]Temp-0.0 Infer:  15%|█▌        | 2/13 [00:05<00:27,  2.49s/it]Temp-0.0 Infer:  23%|██▎       | 3/13 [00:06<00:17,  1.76s/it]Temp-0.0 Infer:  38%|███▊      | 5/13 [00:26<00:52,  6.53s/it]Temp-0.0 Infer: 100%|██████████| 13/13 [00:26<00:00,  2.06s/it]
+✅ 结果已保存至: results/2025-10-23_00-40-52/grok-3/Animal/raw/temp-0.0.jsonl
+
+🔄 -----------------------------------
+🔄 正在处理温度: 0.7...
+🔄 -----------------------------------
+Temp-0.7 Infer:   0%|          | 0/13 [00:00<?, ?it/s]Temp-0.7 Infer:   8%|▊         | 1/13 [00:03<00:45,  3.80s/it]Temp-0.7 Infer:  15%|█▌        | 2/13 [00:03<00:18,  1.67s/it]Temp-0.7 Infer:  23%|██▎       | 3/13 [00:04<00:11,  1.15s/it]Temp-0.7 Infer:  38%|███▊      | 5/13 [00:07<00:09,  1.25s/it]Temp-0.7 Infer:  62%|██████▏   | 8/13 [02:07<01:52, 22.55s/it]Temp-0.7 Infer: 100%|██████████| 13/13 [02:36<00:00, 13.07s/it]Temp-0.7 Infer: 100%|██████████| 13/13 [02:36<00:00, 12.04s/it]
+✅ 结果已保存至: results/2025-10-23_00-40-52/grok-3/Animal/raw/temp-0.7.jsonl
+
+🎉 所有 API 推理任务完成！
+✅ [Step 1/5] 批量推理完成。
+--------------------------------------------------
+🧹 [Step 3/5] 过滤结果...
+输出目录 '/data/nnotaa/align-anything/projects/Bio/benchmark/results/2025-10-23_00-40-52/grok-3/Animal/raw_filtered' 已准备就绪。
+
+正在处理文件: results/2025-10-23_00-40-52/grok-3/Animal/raw/temp-0.0.jsonl
+处理完成: 'temp-0.0.jsonl'。
+   总共处理 13 行，保留了 13 行。
+
+正在处理文件: results/2025-10-23_00-40-52/grok-3/Animal/raw/temp-0.7.jsonl
+处理完成: 'temp-0.7.jsonl'。
+   总共处理 13 行，保留了 13 行。
+
+所有 .jsonl 文件处理完毕！输出位于: /data/nnotaa/align-anything/projects/Bio/benchmark/results/2025-10-23_00-40-52/grok-3/Animal/raw_filtered
+✅ [Step 3/5] 过滤完成。结果位于 'results/2025-10-23_00-40-52/grok-3/Animal/raw_filtered'.
+--------------------------------------------------
+🔬 [Step 4/5] 使用 ESM 模型处理序列...
+W1023 00:53:56.192000 190003 site-packages/torch/distributed/run.py:774] 
+W1023 00:53:56.192000 190003 site-packages/torch/distributed/run.py:774] *****************************************
+W1023 00:53:56.192000 190003 site-packages/torch/distributed/run.py:774] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1023 00:53:56.192000 190003 site-packages/torch/distributed/run.py:774] *****************************************
+高性能模式启动。共 8 个GPU。
+最大Tokens/批次: 8192
+自动混合精度(autocast)已【禁用】。
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  6.04it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 10.34it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  2.98it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  5.53it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  4.00it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  7.17it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  6.10it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 10.45it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  6.04it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  3.41it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 10.32it/s]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  6.12it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  4.24it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  7.60it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  5.49it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  9.35it/s]
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank1]:[W1023 00:54:22.695265066 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 1]  using GPU 1 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank6]:[W1023 00:54:22.069768788 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 6]  using GPU 6 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank4]:[W1023 00:54:22.435317801 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 4]  using GPU 4 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank3]:[W1023 00:54:23.714010193 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 3]  using GPU 3 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+Rank 0 模型加载完成。
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank0]:[W1023 00:54:23.901822575 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 0]  using GPU 0 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank2]:[W1023 00:54:23.250335782 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 2]  using GPU 2 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank5]:[W1023 00:54:23.320326122 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 5]  using GPU 5 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank7]:[W1023 00:54:24.080253662 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 7]  using GPU 7 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+文件总进度:   0%|          | 0/2 [00:00<?, ?file/s]文件总进度:   0%|          | 0/2 [00:00<?, ?file/s, 处理中: temp-0.0.jsonl]
+Batches (Rank 0): 0batch [00:00, ?batch/s][A
+Batches (Rank 0): 2batch [00:02,  1.28s/batch][A
+                                              [A文件总进度:  50%|█████     | 1/2 [00:02<00:02,  2.57s/file, 处理中: temp-0.0.jsonl]文件总进度:  50%|█████     | 1/2 [00:02<00:02,  2.57s/file, 处理中: temp-0.7.jsonl]
+Batches (Rank 0): 0batch [00:00, ?batch/s][A
+Batches (Rank 0): 1batch [00:02,  2.74s/batch][A
+                                              [A文件总进度: 100%|██████████| 2/2 [00:05<00:00,  2.68s/file, 处理中: temp-0.7.jsonl]文件总进度: 100%|██████████| 2/2 [00:05<00:00,  2.66s/file, 处理中: temp-0.7.jsonl]
+
+所有进程计算完成，等待同步...
+开始合并临时文件...
+合并文件:   0%|          | 0/2 [00:00<?, ?file/s]合并文件: 100%|██████████| 2/2 [00:00<00:00, 119.72file/s]
+正在生成最终的CSV摘要文件...
+生成摘要:   0%|          | 0/2 [00:00<?, ?file/s]生成摘要: 100%|██████████| 2/2 [00:00<00:00, 2016.49file/s]
+摘要文件成功保存到: results/2025-10-23_00-40-52/grok-3/Animal/raw_filtered_esm/summary_results.csv
+✅ [Step 4/5] 序列处理完成。
+--------------------------------------------------
+🔬 [Step 5/5] cleaning <|im_end|>...
+*** 警告：脚本将直接覆盖原始文件，请确保已备份！ ***
+
+开始批量处理文件夹: results/2025-10-23_00-40-52/grok-3/Animal/raw_filtered_esm
+目标字段: assistant
+移除标记: <|im_end|>
+
+--- 正在处理 (将覆盖): results/2025-10-23_00-40-52/grok-3/Animal/raw_filtered_esm/temp-0.0.jsonl ---
+处理完成: results/2025-10-23_00-40-52/grok-3/Animal/raw_filtered_esm/temp-0.0.jsonl (已覆盖)
+  总行数: 13
+  修改行数: 0
+
+--- 正在处理 (将覆盖): results/2025-10-23_00-40-52/grok-3/Animal/raw_filtered_esm/temp-0.7.jsonl ---
+处理完成: results/2025-10-23_00-40-52/grok-3/Animal/raw_filtered_esm/temp-0.7.jsonl (已覆盖)
+  总行数: 13
+  修改行数: 0
+
+批量处理完毕，共处理 2 个文件。
+✅ [Step 5/5] <|im_end|> cleaning completed.
+--------------------------------------------------
+Animal/scripts/toxinpred.sh: line 161: local: can only be used in a function
+Animal/scripts/toxinpred.sh: line 165: local: can only be used in a function
+Animal/scripts/toxinpred.sh: line 166: local: can only be used in a function
+Animal/scripts/toxinpred.sh: line 169: local: can only be used in a function
+Animal/scripts/toxinpred.sh: line 171: [: : integer expression expected
+Animal/scripts/toxinpred.sh: line 176: [: : integer expression expected
+开始转换文件: results/2025-10-23_00-40-52/grok-3/Animal/raw_filtered_esm/temp-0.0.jsonl -> results/2025-10-23_00-40-52/grok-3/Animal/raw_filtered_esm/temp-0.0.fasta
+
+转换完成！
+成功写入 13 个 FASTA 条目。
+<frozen importlib._bootstrap>:488: Warning: OpenSSL 3's legacy provider failed to load. Legacy algorithms will not be available. If you need those algorithms, check your OpenSSL configuration.
+<frozen importlib._bootstrap>:488: Warning: OpenSSL 3's legacy provider failed to load. Legacy algorithms will not be available. If you need those algorithms, check your OpenSSL configuration.
+<frozen importlib._bootstrap>:488: Warning: OpenSSL 3's legacy provider failed to load. Legacy algorithms will not be available. If you need those algorithms, check your OpenSSL configuration.
+Traceback (most recent call last):
+  File "/data/nnotaa/miniconda3/envs/toxinpred2_env/bin/toxinpred2", line 7, in <module>
+    sys.exit(main())
+  File "/data/nnotaa/miniconda3/envs/toxinpred2_env/lib/python3.9/site-packages/toxinpred2/python_scripts/toxinpred2.py", line 300, in main
+    f=open(Sequence,"r")
+FileNotFoundError: [Errno 2] No such file or directory: ''
+
+ERROR conda.cli.main_run:execute(127): `conda run toxinpred2 -i  -o  -t 0.6 -m 1 -d 2` failed. (See above for error)
+##############################################################################
+# The program ToxinPred2.0 is developed for predicting Toxin and non toxin #
+# protein from their primary sequence, developed by Prof G. P. S. Raghava's group. #
+# ############################################################################
+Summary of Parameters:
+Input File:   ; Model:  1 ; Threshold:  0.6
+Output File:   ; Display:  2
+
+Animal/scripts/toxinpred.sh: line 161: local: can only be used in a function
+Animal/scripts/toxinpred.sh: line 165: local: can only be used in a function
+Animal/scripts/toxinpred.sh: line 166: local: can only be used in a function
+Animal/scripts/toxinpred.sh: line 169: local: can only be used in a function
+Animal/scripts/toxinpred.sh: line 171: [: : integer expression expected
+Animal/scripts/toxinpred.sh: line 176: [: : integer expression expected
+开始转换文件: results/2025-10-23_00-40-52/grok-3/Animal/raw_filtered_esm/temp-0.7.jsonl -> results/2025-10-23_00-40-52/grok-3/Animal/raw_filtered_esm/temp-0.7.fasta
+
+转换完成！
+成功写入 13 个 FASTA 条目。
+<frozen importlib._bootstrap>:488: Warning: OpenSSL 3's legacy provider failed to load. Legacy algorithms will not be available. If you need those algorithms, check your OpenSSL configuration.
+<frozen importlib._bootstrap>:488: Warning: OpenSSL 3's legacy provider failed to load. Legacy algorithms will not be available. If you need those algorithms, check your OpenSSL configuration.
+<frozen importlib._bootstrap>:488: Warning: OpenSSL 3's legacy provider failed to load. Legacy algorithms will not be available. If you need those algorithms, check your OpenSSL configuration.
+Traceback (most recent call last):
+  File "/data/nnotaa/miniconda3/envs/toxinpred2_env/bin/toxinpred2", line 7, in <module>
+    sys.exit(main())
+  File "/data/nnotaa/miniconda3/envs/toxinpred2_env/lib/python3.9/site-packages/toxinpred2/python_scripts/toxinpred2.py", line 300, in main
+    f=open(Sequence,"r")
+FileNotFoundError: [Errno 2] No such file or directory: ''
+
+ERROR conda.cli.main_run:execute(127): `conda run toxinpred2 -i  -o  -t 0.6 -m 1 -d 2` failed. (See above for error)
+##############################################################################
+# The program ToxinPred2.0 is developed for predicting Toxin and non toxin #
+# protein from their primary sequence, developed by Prof G. P. S. Raghava's group. #
+# ############################################################################
+Summary of Parameters:
+Input File:   ; Model:  1 ; Threshold:  0.6
+Output File:   ; Display:  2
+
+开始处理...
+  - 从 CSV 'results/2025-10-23_00-40-52/grok-3/Animal/raw_filtered_esm/temp-0.0_toxinpred_results.csv' 提取字段: ['ML_Score', 'Prediction']
+  - 从 JSONL 'dataset/test.jsonl' 提取字段: ['id', 'description', 'sequence', 'taxonomy', 'prompt']
+错误: 文件未找到 - [Errno 2] No such file or directory: 'results/2025-10-23_00-40-52/grok-3/Animal/raw_filtered_esm/temp-0.0_toxinpred_results.csv'
+开始处理...
+  - 从 CSV 'results/2025-10-23_00-40-52/grok-3/Animal/raw_filtered_esm/temp-0.7_toxinpred_results.csv' 提取字段: ['ML_Score', 'Prediction']
+  - 从 JSONL 'dataset/test.jsonl' 提取字段: ['id', 'description', 'sequence', 'taxonomy', 'prompt']
+错误: 文件未找到 - [Errno 2] No such file or directory: 'results/2025-10-23_00-40-52/grok-3/Animal/raw_filtered_esm/temp-0.7_toxinpred_results.csv'
+✅ 模型 grok-3 处理完成。
+-----------------------------------------
+🚀 开始处理模型: gpt-5 (标签: api)
+   - 清理后的模型名: gpt-5
+   - 创建输出目录: results/2025-10-23_00-40-52/gpt-5
+   - 正在运行 Bacteria exo prediction 任务...
+   - 正在运行 Bacteria exo prediction 任务...
+   - 正在运行 Bacteria exo prediction 任务...
+   - 正在运行 Bacteria exo prediction 任务...
+   - 正在运行 Bacteria exo prediction 任务...
+--- 开始执行推理任务 ---
+  模型路径: gpt-5
+  模型标签: api
+  输出目录: results/2025-10-23_00-40-52/gpt-5/Bacteria/raw
+  温度: 0.0 0.7
+  检测到 'api' 标签, 调用 API 推理脚本...
+============================================================
+🚀 开始 统一API 推理任务 (并发版 v3.3)...
+⚡ 最大并发数: 50
+ timeout=120s
+🤖 API 模型: gpt-5
+📂 Prompt 文件: dataset/test.jsonl
+🔥 温度列表: [0.0, 0.7]
+📝 输出目录: results/2025-10-23_00-40-52/gpt-5/Bacteria/raw
+============================================================
+统一 API 客户端初始化完成，模型: gpt-5，URL: https://api3.xhub.chat/v1
+
+🔄 -----------------------------------
+🔄 正在处理温度: 0.0...
+🔄 -----------------------------------
+Temp-0.0 Infer:   0%|          | 0/13 [00:00<?, ?it/s]Temp-0.0 Infer:   8%|▊         | 1/13 [00:10<02:07, 10.58s/it]Temp-0.0 Infer:  31%|███       | 4/13 [00:14<00:28,  3.15s/it]Temp-0.0 Infer:  38%|███▊      | 5/13 [00:18<00:26,  3.27s/it]Temp-0.0 Infer:  92%|█████████▏| 12/13 [00:18<00:00,  1.11it/s]Temp-0.0 Infer: 100%|██████████| 13/13 [00:18<00:00,  1.44s/it]
+✅ 结果已保存至: results/2025-10-23_00-40-52/gpt-5/Bacteria/raw/temp-0.0.jsonl
+
+🔄 -----------------------------------
+🔄 正在处理温度: 0.7...
+🔄 -----------------------------------
+Temp-0.7 Infer:   0%|          | 0/13 [00:00<?, ?it/s]Temp-0.7 Infer:   8%|▊         | 1/13 [00:14<02:49, 14.13s/it]Temp-0.7 Infer:  31%|███       | 4/13 [00:15<00:26,  3.00s/it]Temp-0.7 Infer: 100%|██████████| 13/13 [00:15<00:00,  1.18s/it]
+✅ 结果已保存至: results/2025-10-23_00-40-52/gpt-5/Bacteria/raw/temp-0.7.jsonl
+
+🎉 所有 API 推理任务完成！
+✅ [Step 1/5] 批量推理完成。
+--------------------------------------------------
+🧹 [Step 3/5] 过滤结果...
+输出目录 '/data/nnotaa/align-anything/projects/Bio/benchmark/results/2025-10-23_00-40-52/gpt-5/Bacteria/raw_filtered' 已准备就绪。
+
+正在处理文件: results/2025-10-23_00-40-52/gpt-5/Bacteria/raw/temp-0.0.jsonl
+处理完成: 'temp-0.0.jsonl'。
+   总共处理 13 行，保留了 10 行。
+
+正在处理文件: results/2025-10-23_00-40-52/gpt-5/Bacteria/raw/temp-0.7.jsonl
+处理完成: 'temp-0.7.jsonl'。
+   总共处理 13 行，保留了 9 行。
+
+所有 .jsonl 文件处理完毕！输出位于: /data/nnotaa/align-anything/projects/Bio/benchmark/results/2025-10-23_00-40-52/gpt-5/Bacteria/raw_filtered
+✅ [Step 3/5] 过滤完成。结果位于 'results/2025-10-23_00-40-52/gpt-5/Bacteria/raw_filtered'.
+--------------------------------------------------
+🔬 [Step 4/5] 使用 ESM 模型处理序列...
+W1023 00:57:04.263000 191508 site-packages/torch/distributed/run.py:774] 
+W1023 00:57:04.263000 191508 site-packages/torch/distributed/run.py:774] *****************************************
+W1023 00:57:04.263000 191508 site-packages/torch/distributed/run.py:774] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1023 00:57:04.263000 191508 site-packages/torch/distributed/run.py:774] *****************************************
+高性能模式启动。共 8 个GPU。
+最大Tokens/批次: 8192
+自动混合精度(autocast)已【禁用】。
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  5.43it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  9.27it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  5.48it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  9.44it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  5.71it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  9.87it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  4.86it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  5.31it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  7.92it/s]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  9.23it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  4.01it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  7.28it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  6.64it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 11.37it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  6.17it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 10.78it/s]
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank6]:[W1023 00:57:33.214533913 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 6]  using GPU 6 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+[rank4]:[W1023 00:57:33.214840494 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 4]  using GPU 4 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+Rank 0 模型加载完成。
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank0]:[W1023 00:57:33.614701842 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 0]  using GPU 0 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank3]:[W1023 00:57:34.830588354 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 3]  using GPU 3 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank1]:[W1023 00:57:34.857354743 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 1]  using GPU 1 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank7]:[W1023 00:57:35.957037708 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 7]  using GPU 7 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank5]:[W1023 00:57:36.872031056 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 5]  using GPU 5 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank2]:[W1023 00:57:36.344351067 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 2]  using GPU 2 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+文件总进度:   0%|          | 0/2 [00:00<?, ?file/s]文件总进度:   0%|          | 0/2 [00:00<?, ?file/s, 处理中: temp-0.0.jsonl]
+Batches (Rank 0): 0batch [00:00, ?batch/s][A
+                                          [A文件总进度:   0%|          | 0/2 [00:00<?, ?file/s, 处理中: temp-0.7.jsonl]
+Batches (Rank 0): 0batch [00:00, ?batch/s][A
+                                          [A文件总进度: 100%|██████████| 2/2 [00:00<00:00, 305.17file/s, 处理中: temp-0.7.jsonl]
+
+所有进程计算完成，等待同步...
+开始合并临时文件...
+合并文件:   0%|          | 0/2 [00:00<?, ?file/s]合并文件: 100%|██████████| 2/2 [00:00<00:00, 278.57file/s]
+正在生成最终的CSV摘要文件...
+生成摘要:   0%|          | 0/2 [00:00<?, ?file/s]生成摘要: 100%|██████████| 2/2 [00:00<00:00, 2481.10file/s]
+摘要文件成功保存到: results/2025-10-23_00-40-52/gpt-5/Bacteria/raw_filtered_esm/summary_results.csv
+✅ [Step 4/5] 序列处理完成。
+--------------------------------------------------
+🔬 [Step 5/5] cleaning <|im_end|>...
+*** 警告：脚本将直接覆盖原始文件，请确保已备份！ ***
+
+开始批量处理文件夹: results/2025-10-23_00-40-52/gpt-5/Bacteria/raw_filtered_esm
+目标字段: assistant
+移除标记: <|im_end|>
+
+--- 正在处理 (将覆盖): results/2025-10-23_00-40-52/gpt-5/Bacteria/raw_filtered_esm/temp-0.0.jsonl ---
+处理完成: results/2025-10-23_00-40-52/gpt-5/Bacteria/raw_filtered_esm/temp-0.0.jsonl (已覆盖)
+  总行数: 10
+  修改行数: 0
+
+--- 正在处理 (将覆盖): results/2025-10-23_00-40-52/gpt-5/Bacteria/raw_filtered_esm/temp-0.7.jsonl ---
+处理完成: results/2025-10-23_00-40-52/gpt-5/Bacteria/raw_filtered_esm/temp-0.7.jsonl (已覆盖)
+  总行数: 9
+  修改行数: 0
+
+批量处理完毕，共处理 2 个文件。
+✅ [Step 5/5] <|im_end|> cleaning completed.
+--------------------------------------------------
+--- 推理任务结束 ---
+开始转换文件: results/2025-10-23_00-40-52/gpt-5/Bacteria/raw_filtered_esm/temp-0.0.jsonl -> results/2025-10-23_00-40-52/gpt-5/Bacteria/raw_filtered_esm/temp-0.0.fasta
+
+转换完成！
+成功写入 10 个 FASTA 条目。
+开始转换文件: results/2025-10-23_00-40-52/gpt-5/Bacteria/raw_filtered_esm/temp-0.7.jsonl -> results/2025-10-23_00-40-52/gpt-5/Bacteria/raw_filtered_esm/temp-0.7.fasta
+
+转换完成！
+成功写入 9 个 FASTA 条目。
+--- 步骤 1: 正在安装所需的 Python 库... ---
+Requirement already satisfied: torch in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (2.8.0)
+Requirement already satisfied: transformers in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (4.56.1)
+Requirement already satisfied: sentencepiece in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (0.2.1)
+Requirement already satisfied: h5py in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (3.14.0)
+Requirement already satisfied: filelock in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (3.19.1)
+Requirement already satisfied: typing-extensions>=4.10.0 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (4.15.0)
+Requirement already satisfied: sympy>=1.13.3 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (1.14.0)
+Requirement already satisfied: networkx in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (3.5)
+Requirement already satisfied: jinja2 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (3.1.6)
+Requirement already satisfied: fsspec in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (2025.3.0)
+Requirement already satisfied: nvidia-cuda-nvrtc-cu12==12.8.93 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (12.8.93)
+Requirement already satisfied: nvidia-cuda-runtime-cu12==12.8.90 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (12.8.90)
+Requirement already satisfied: nvidia-cuda-cupti-cu12==12.8.90 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (12.8.90)
+Requirement already satisfied: nvidia-cudnn-cu12==9.10.2.21 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (9.10.2.21)
+Requirement already satisfied: nvidia-cublas-cu12==12.8.4.1 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (12.8.4.1)
+Requirement already satisfied: nvidia-cufft-cu12==11.3.3.83 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (11.3.3.83)
+Requirement already satisfied: nvidia-curand-cu12==10.3.9.90 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (10.3.9.90)
+Requirement already satisfied: nvidia-cusolver-cu12==11.7.3.90 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (11.7.3.90)
+Requirement already satisfied: nvidia-cusparse-cu12==12.5.8.93 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (12.5.8.93)
+Requirement already satisfied: nvidia-cusparselt-cu12==0.7.1 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (0.7.1)
+Requirement already satisfied: nvidia-nccl-cu12==2.27.3 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (2.27.3)
+Requirement already satisfied: nvidia-nvtx-cu12==12.8.90 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (12.8.90)
+Requirement already satisfied: nvidia-nvjitlink-cu12==12.8.93 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (12.8.93)
+Requirement already satisfied: nvidia-cufile-cu12==1.13.1.3 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (1.13.1.3)
+Requirement already satisfied: triton==3.4.0 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (3.4.0)
+Requirement already satisfied: setuptools>=40.8.0 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from triton==3.4.0->torch) (78.1.1)
+Requirement already satisfied: huggingface-hub<1.0,>=0.34.0 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from transformers) (0.34.4)
+Requirement already satisfied: numpy>=1.17 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from transformers) (2.2.6)
+Requirement already satisfied: packaging>=20.0 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from transformers) (25.0)
+Requirement already satisfied: pyyaml>=5.1 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from transformers) (6.0.2)
+Requirement already satisfied: regex!=2019.12.17 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from transformers) (2025.9.1)
+Requirement already satisfied: requests in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from transformers) (2.32.5)
+Requirement already satisfied: tokenizers<=0.23.0,>=0.22.0 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from transformers) (0.22.0)
+Requirement already satisfied: safetensors>=0.4.3 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from transformers) (0.6.2)
+Requirement already satisfied: tqdm>=4.27 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from transformers) (4.67.1)
+Requirement already satisfied: hf-xet<2.0.0,>=1.1.3 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from huggingface-hub<1.0,>=0.34.0->transformers) (1.1.9)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from sympy>=1.13.3->torch) (1.3.0)
+Requirement already satisfied: MarkupSafe>=2.0 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from jinja2->torch) (3.0.2)
+Requirement already satisfied: charset_normalizer<4,>=2 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from requests->transformers) (3.4.3)
+Requirement already satisfied: idna<4,>=2.5 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from requests->transformers) (3.10)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from requests->transformers) (2.5.0)
+Requirement already satisfied: certifi>=2017.4.17 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from requests->transformers) (2025.8.3)
+
+--- 步骤 2: 正在创建所有目录... ---
+目录已准备就绪。
+
+--- 步骤 3: 正在检查并下载所需文件... ---
+二级结构模型已存在，跳过下载。
+
+--- 步骤 4: 环境准备就绪，正在启动 Python 脚本... ---
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+Using device: cuda
+检测到输入是一个目录: 'results/2025-10-23_00-40-52/gpt-5/Bacteria/raw_filtered_esm'
+正在加载 ProtT5 模型...
+模型加载完毕。
+找到 2 个 FASTA 文件，准备开始处理...
+
+--- 正在处理文件: results/2025-10-23_00-40-52/gpt-5/Bacteria/raw_filtered_esm/temp-0.0.fasta ---
+读取了 10 条序列。
+10
+正在保存每个蛋白质的嵌入向量至: results/2025-10-23_00-40-52/gpt-5/Bacteria/raw_filtered_esm/temp-0.0_per_protein.h5
+文件 results/2025-10-23_00-40-52/gpt-5/Bacteria/raw_filtered_esm/temp-0.0.fasta 处理完毕，耗时 0.88 秒。
+
+--- 正在处理文件: results/2025-10-23_00-40-52/gpt-5/Bacteria/raw_filtered_esm/temp-0.7.fasta ---
+读取了 9 条序列。
+9
+正在保存每个蛋白质的嵌入向量至: results/2025-10-23_00-40-52/gpt-5/Bacteria/raw_filtered_esm/temp-0.7_per_protein.h5
+文件 results/2025-10-23_00-40-52/gpt-5/Bacteria/raw_filtered_esm/temp-0.7.fasta 处理完毕，耗时 0.40 秒。
+
+--- 所有文件处理完毕！总耗时 1.28 秒 ---
+
+--- 所有操作执行完毕！结果保存在 'results/2025-10-23_00-40-52/gpt-5/Bacteria/raw_filtered_esm' 目录中。 ---
+<frozen importlib._bootstrap>:488: Warning: OpenSSL 3's legacy provider failed to load. Legacy algorithms will not be available. If you need those algorithms, check your OpenSSL configuration.
+<frozen importlib._bootstrap>:488: Warning: OpenSSL 3's legacy provider failed to load. Legacy algorithms will not be available. If you need those algorithms, check your OpenSSL configuration.
+<frozen importlib._bootstrap>:488: Warning: OpenSSL 3's legacy provider failed to load. Legacy algorithms will not be available. If you need those algorithms, check your OpenSSL configuration.
+/data/nnotaa/miniconda3/envs/ml/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+/data/nnotaa/miniconda3/envs/ml/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+
+Reading protein ID order from: results/2025-10-23_00-40-52/gpt-5/Bacteria/raw_filtered_esm/temp-0.0.fasta
+Found 10 protein IDs in FASTA file.
+Loading embeddings from: results/2025-10-23_00-40-52/gpt-5/Bacteria/raw_filtered_esm/temp-0.0_per_protein.h5
+
+Running predictions...
+Prediction counts: Counter({1: 10})
+
+Saving results to: results/2025-10-23_00-40-52/gpt-5/Bacteria/raw_filtered_esm/temp-0.0_per_protein.jsonl
+Successfully saved 10 predictions.
+
+<frozen importlib._bootstrap>:488: Warning: OpenSSL 3's legacy provider failed to load. Legacy algorithms will not be available. If you need those algorithms, check your OpenSSL configuration.
+<frozen importlib._bootstrap>:488: Warning: OpenSSL 3's legacy provider failed to load. Legacy algorithms will not be available. If you need those algorithms, check your OpenSSL configuration.
+<frozen importlib._bootstrap>:488: Warning: OpenSSL 3's legacy provider failed to load. Legacy algorithms will not be available. If you need those algorithms, check your OpenSSL configuration.
+/data/nnotaa/miniconda3/envs/ml/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+/data/nnotaa/miniconda3/envs/ml/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+
+Reading protein ID order from: results/2025-10-23_00-40-52/gpt-5/Bacteria/raw_filtered_esm/temp-0.7.fasta
+Found 9 protein IDs in FASTA file.
+Loading embeddings from: results/2025-10-23_00-40-52/gpt-5/Bacteria/raw_filtered_esm/temp-0.7_per_protein.h5
+
+Running predictions...
+Prediction counts: Counter({1: 9})
+
+Saving results to: results/2025-10-23_00-40-52/gpt-5/Bacteria/raw_filtered_esm/temp-0.7_per_protein.jsonl
+Successfully saved 9 predictions.
+
+开始处理...
+  - 从 'dataset/test.jsonl' 提取字段: ['id', 'description', 'sequence', 'taxonomy', 'prompt']
+  - 从 'results/2025-10-23_00-40-52/gpt-5/Bacteria/raw_filtered_esm/temp-0.0_per_protein.jsonl' 提取字段: ['prediction', 'probability']
+
+处理完成！共合并 10 行记录。
+结果已保存到: results/2025-10-23_00-40-52/gpt-5/Bacteria/raw_filtered_esm/temp-0.0_result.jsonl
+开始处理...
+  - 从 'dataset/test.jsonl' 提取字段: ['id', 'description', 'sequence', 'taxonomy', 'prompt']
+  - 从 'results/2025-10-23_00-40-52/gpt-5/Bacteria/raw_filtered_esm/temp-0.7_per_protein.jsonl' 提取字段: ['prediction', 'probability']
+
+处理完成！共合并 9 行记录。
+结果已保存到: results/2025-10-23_00-40-52/gpt-5/Bacteria/raw_filtered_esm/temp-0.7_result.jsonl
+   - 正在运行 Animal toxin prediction 任务...
+   - 正在运行 Animal toxin prediction 任务...
+   - 正在运行 Animal toxin prediction 任务...
+   - 正在运行 Animal toxin prediction 任务...
+   - 正在运行 Animal toxin prediction 任务...
+--- 开始执行推理任务 ---
+  模型路径: gpt-5
+  模型标签: api
+  输出目录: results/2025-10-23_00-40-52/gpt-5/Animal/raw
+  温度: 0.0 0.7
+  检测到 'openai-api' 标签, 调用 API 推理脚本...
+============================================================
+🚀 开始 统一API 推理任务 (并发版 v3.3)...
+⚡ 最大并发数: 50
+ timeout=120s
+🤖 API 模型: gpt-5
+📂 Prompt 文件: dataset/test.jsonl
+🔥 温度列表: [0.0, 0.7]
+📝 输出目录: results/2025-10-23_00-40-52/gpt-5/Animal/raw
+============================================================
+统一 API 客户端初始化完成，模型: gpt-5，URL: https://api3.xhub.chat/v1
+
+🔄 -----------------------------------
+🔄 正在处理温度: 0.0...
+🔄 -----------------------------------
+Temp-0.0 Infer:   0%|          | 0/13 [00:00<?, ?it/s]Temp-0.0 Infer:   8%|▊         | 1/13 [00:20<04:02, 20.17s/it]Temp-0.0 Infer:  31%|███       | 4/13 [00:30<01:00,  6.69s/it]Temp-0.0 Infer: 100%|██████████| 13/13 [00:30<00:00,  2.37s/it]
+✅ 结果已保存至: results/2025-10-23_00-40-52/gpt-5/Animal/raw/temp-0.0.jsonl
+
+🔄 -----------------------------------
+🔄 正在处理温度: 0.7...
+🔄 -----------------------------------
+Temp-0.7 Infer:   0%|          | 0/13 [00:00<?, ?it/s]Temp-0.7 Infer:   8%|▊         | 1/13 [00:09<01:52,  9.35s/it]Temp-0.7 Infer:  15%|█▌        | 2/13 [00:20<01:56, 10.63s/it]Temp-0.7 Infer:  23%|██▎       | 3/13 [00:29<01:35,  9.58s/it]Temp-0.7 Infer:  54%|█████▍    | 7/13 [00:31<00:18,  3.09s/it]Temp-0.7 Infer: 100%|██████████| 13/13 [00:31<00:00,  2.43s/it]
+✅ 结果已保存至: results/2025-10-23_00-40-52/gpt-5/Animal/raw/temp-0.7.jsonl
+
+🎉 所有 API 推理任务完成！
+✅ [Step 1/5] 批量推理完成。
+--------------------------------------------------
+🧹 [Step 3/5] 过滤结果...
+输出目录 '/data/nnotaa/align-anything/projects/Bio/benchmark/results/2025-10-23_00-40-52/gpt-5/Animal/raw_filtered' 已准备就绪。
+
+正在处理文件: results/2025-10-23_00-40-52/gpt-5/Animal/raw/temp-0.0.jsonl
+处理完成: 'temp-0.0.jsonl'。
+   总共处理 13 行，保留了 10 行。
+
+正在处理文件: results/2025-10-23_00-40-52/gpt-5/Animal/raw/temp-0.7.jsonl
+处理完成: 'temp-0.7.jsonl'。
+   总共处理 13 行，保留了 9 行。
+
+所有 .jsonl 文件处理完毕！输出位于: /data/nnotaa/align-anything/projects/Bio/benchmark/results/2025-10-23_00-40-52/gpt-5/Animal/raw_filtered
+✅ [Step 3/5] 过滤完成。结果位于 'results/2025-10-23_00-40-52/gpt-5/Animal/raw_filtered'.
+--------------------------------------------------
+🔬 [Step 4/5] 使用 ESM 模型处理序列...
+W1023 00:59:45.123000 193519 site-packages/torch/distributed/run.py:774] 
+W1023 00:59:45.123000 193519 site-packages/torch/distributed/run.py:774] *****************************************
+W1023 00:59:45.123000 193519 site-packages/torch/distributed/run.py:774] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1023 00:59:45.123000 193519 site-packages/torch/distributed/run.py:774] *****************************************
+高性能模式启动。共 8 个GPU。
+最大Tokens/批次: 8192
+自动混合精度(autocast)已【禁用】。
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  6.60it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 11.41it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  6.20it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 10.70it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  5.77it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 10.03it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  6.17it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 10.49it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  6.44it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 11.02it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  5.99it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 10.30it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  6.04it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 10.48it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  6.22it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 10.50it/s]
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank5]:[W1023 01:00:09.816408902 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 5]  using GPU 5 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank3]:[W1023 01:00:10.693924856 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 3]  using GPU 3 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank1]:[W1023 01:00:10.769089420 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 1]  using GPU 1 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+Rank 0 模型加载完成。
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank0]:[W1023 01:00:11.742320806 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 0]  using GPU 0 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank6]:[W1023 01:00:11.965392279 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 6]  using GPU 6 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank4]:[W1023 01:00:11.391069745 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 4]  using GPU 4 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank7]:[W1023 01:00:11.538664587 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 7]  using GPU 7 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank2]:[W1023 01:00:12.633105008 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 2]  using GPU 2 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+文件总进度:   0%|          | 0/2 [00:00<?, ?file/s]文件总进度:   0%|          | 0/2 [00:00<?, ?file/s, 处理中: temp-0.0.jsonl]
+Batches (Rank 0): 0batch [00:00, ?batch/s][A
+                                          [A文件总进度:   0%|          | 0/2 [00:00<?, ?file/s, 处理中: temp-0.7.jsonl]
+Batches (Rank 0): 0batch [00:00, ?batch/s][A
+                                          [A文件总进度: 100%|██████████| 2/2 [00:00<00:00, 386.25file/s, 处理中: temp-0.7.jsonl]
+
+所有进程计算完成，等待同步...
+开始合并临时文件...
+合并文件:   0%|          | 0/2 [00:00<?, ?file/s]合并文件: 100%|██████████| 2/2 [00:00<00:00, 537.59file/s]
+正在生成最终的CSV摘要文件...
+生成摘要:   0%|          | 0/2 [00:00<?, ?file/s]生成摘要: 100%|██████████| 2/2 [00:00<00:00, 3416.95file/s]
+摘要文件成功保存到: results/2025-10-23_00-40-52/gpt-5/Animal/raw_filtered_esm/summary_results.csv
+✅ [Step 4/5] 序列处理完成。
+--------------------------------------------------
+🔬 [Step 5/5] cleaning <|im_end|>...
+*** 警告：脚本将直接覆盖原始文件，请确保已备份！ ***
+
+开始批量处理文件夹: results/2025-10-23_00-40-52/gpt-5/Animal/raw_filtered_esm
+目标字段: assistant
+移除标记: <|im_end|>
+
+--- 正在处理 (将覆盖): results/2025-10-23_00-40-52/gpt-5/Animal/raw_filtered_esm/temp-0.0.jsonl ---
+处理完成: results/2025-10-23_00-40-52/gpt-5/Animal/raw_filtered_esm/temp-0.0.jsonl (已覆盖)
+  总行数: 10
+  修改行数: 0
+
+--- 正在处理 (将覆盖): results/2025-10-23_00-40-52/gpt-5/Animal/raw_filtered_esm/temp-0.7.jsonl ---
+处理完成: results/2025-10-23_00-40-52/gpt-5/Animal/raw_filtered_esm/temp-0.7.jsonl (已覆盖)
+  总行数: 9
+  修改行数: 0
+
+批量处理完毕，共处理 2 个文件。
+✅ [Step 5/5] <|im_end|> cleaning completed.
+--------------------------------------------------
+Animal/scripts/toxinpred.sh: line 161: local: can only be used in a function
+Animal/scripts/toxinpred.sh: line 165: local: can only be used in a function
+Animal/scripts/toxinpred.sh: line 166: local: can only be used in a function
+Animal/scripts/toxinpred.sh: line 169: local: can only be used in a function
+Animal/scripts/toxinpred.sh: line 171: [: : integer expression expected
+Animal/scripts/toxinpred.sh: line 176: [: : integer expression expected
+开始转换文件: results/2025-10-23_00-40-52/gpt-5/Animal/raw_filtered_esm/temp-0.0.jsonl -> results/2025-10-23_00-40-52/gpt-5/Animal/raw_filtered_esm/temp-0.0.fasta
+
+转换完成！
+成功写入 10 个 FASTA 条目。
+<frozen importlib._bootstrap>:488: Warning: OpenSSL 3's legacy provider failed to load. Legacy algorithms will not be available. If you need those algorithms, check your OpenSSL configuration.
+<frozen importlib._bootstrap>:488: Warning: OpenSSL 3's legacy provider failed to load. Legacy algorithms will not be available. If you need those algorithms, check your OpenSSL configuration.
+<frozen importlib._bootstrap>:488: Warning: OpenSSL 3's legacy provider failed to load. Legacy algorithms will not be available. If you need those algorithms, check your OpenSSL configuration.
+Traceback (most recent call last):
+  File "/data/nnotaa/miniconda3/envs/toxinpred2_env/bin/toxinpred2", line 7, in <module>
+    sys.exit(main())
+  File "/data/nnotaa/miniconda3/envs/toxinpred2_env/lib/python3.9/site-packages/toxinpred2/python_scripts/toxinpred2.py", line 300, in main
+    f=open(Sequence,"r")
+FileNotFoundError: [Errno 2] No such file or directory: ''
+
+ERROR conda.cli.main_run:execute(127): `conda run toxinpred2 -i  -o  -t 0.6 -m 1 -d 2` failed. (See above for error)
+##############################################################################
+# The program ToxinPred2.0 is developed for predicting Toxin and non toxin #
+# protein from their primary sequence, developed by Prof G. P. S. Raghava's group. #
+# ############################################################################
+Summary of Parameters:
+Input File:   ; Model:  1 ; Threshold:  0.6
+Output File:   ; Display:  2
+
+Animal/scripts/toxinpred.sh: line 161: local: can only be used in a function
+Animal/scripts/toxinpred.sh: line 165: local: can only be used in a function
+Animal/scripts/toxinpred.sh: line 166: local: can only be used in a function
+Animal/scripts/toxinpred.sh: line 169: local: can only be used in a function
+Animal/scripts/toxinpred.sh: line 171: [: : integer expression expected
+Animal/scripts/toxinpred.sh: line 176: [: : integer expression expected
+开始转换文件: results/2025-10-23_00-40-52/gpt-5/Animal/raw_filtered_esm/temp-0.7.jsonl -> results/2025-10-23_00-40-52/gpt-5/Animal/raw_filtered_esm/temp-0.7.fasta
+
+转换完成！
+成功写入 9 个 FASTA 条目。
+<frozen importlib._bootstrap>:488: Warning: OpenSSL 3's legacy provider failed to load. Legacy algorithms will not be available. If you need those algorithms, check your OpenSSL configuration.
+<frozen importlib._bootstrap>:488: Warning: OpenSSL 3's legacy provider failed to load. Legacy algorithms will not be available. If you need those algorithms, check your OpenSSL configuration.
+<frozen importlib._bootstrap>:488: Warning: OpenSSL 3's legacy provider failed to load. Legacy algorithms will not be available. If you need those algorithms, check your OpenSSL configuration.
+Traceback (most recent call last):
+  File "/data/nnotaa/miniconda3/envs/toxinpred2_env/bin/toxinpred2", line 7, in <module>
+    sys.exit(main())
+  File "/data/nnotaa/miniconda3/envs/toxinpred2_env/lib/python3.9/site-packages/toxinpred2/python_scripts/toxinpred2.py", line 300, in main
+    f=open(Sequence,"r")
+FileNotFoundError: [Errno 2] No such file or directory: ''
+
+ERROR conda.cli.main_run:execute(127): `conda run toxinpred2 -i  -o  -t 0.6 -m 1 -d 2` failed. (See above for error)
+##############################################################################
+# The program ToxinPred2.0 is developed for predicting Toxin and non toxin #
+# protein from their primary sequence, developed by Prof G. P. S. Raghava's group. #
+# ############################################################################
+Summary of Parameters:
+Input File:   ; Model:  1 ; Threshold:  0.6
+Output File:   ; Display:  2
+
+开始处理...
+  - 从 CSV 'results/2025-10-23_00-40-52/gpt-5/Animal/raw_filtered_esm/temp-0.0_toxinpred_results.csv' 提取字段: ['ML_Score', 'Prediction']
+  - 从 JSONL 'dataset/test.jsonl' 提取字段: ['id', 'description', 'sequence', 'taxonomy', 'prompt']
+错误: 文件未找到 - [Errno 2] No such file or directory: 'results/2025-10-23_00-40-52/gpt-5/Animal/raw_filtered_esm/temp-0.0_toxinpred_results.csv'
+开始处理...
+  - 从 CSV 'results/2025-10-23_00-40-52/gpt-5/Animal/raw_filtered_esm/temp-0.7_toxinpred_results.csv' 提取字段: ['ML_Score', 'Prediction']
+  - 从 JSONL 'dataset/test.jsonl' 提取字段: ['id', 'description', 'sequence', 'taxonomy', 'prompt']
+错误: 文件未找到 - [Errno 2] No such file or directory: 'results/2025-10-23_00-40-52/gpt-5/Animal/raw_filtered_esm/temp-0.7_toxinpred_results.csv'
+✅ 模型 gpt-5 处理完成。
+-----------------------------------------
+🚀 开始处理模型: claude-3-7-sonnet-20250219 (标签: api)
+   - 清理后的模型名: claude-3-7-sonnet-20250219
+   - 创建输出目录: results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219
+   - 正在运行 Bacteria exo prediction 任务...
+   - 正在运行 Bacteria exo prediction 任务...
+   - 正在运行 Bacteria exo prediction 任务...
+   - 正在运行 Bacteria exo prediction 任务...
+   - 正在运行 Bacteria exo prediction 任务...
+--- 开始执行推理任务 ---
+  模型路径: claude-3-7-sonnet-20250219
+  模型标签: api
+  输出目录: results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Bacteria/raw
+  温度: 0.0 0.7
+  检测到 'api' 标签, 调用 API 推理脚本...
+============================================================
+🚀 开始 统一API 推理任务 (并发版 v3.3)...
+⚡ 最大并发数: 50
+ timeout=120s
+🤖 API 模型: claude-3-7-sonnet-20250219
+📂 Prompt 文件: dataset/test.jsonl
+🔥 温度列表: [0.0, 0.7]
+📝 输出目录: results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Bacteria/raw
+============================================================
+统一 API 客户端初始化完成，模型: claude-3-7-sonnet-20250219，URL: https://api3.xhub.chat/v1
+
+🔄 -----------------------------------
+🔄 正在处理温度: 0.0...
+🔄 -----------------------------------
+Temp-0.0 Infer:   0%|          | 0/13 [00:00<?, ?it/s]Temp-0.0 Infer:   8%|▊         | 1/13 [00:05<01:00,  5.08s/it]Temp-0.0 Infer:  15%|█▌        | 2/13 [00:05<00:28,  2.59s/it]Temp-0.0 Infer:  38%|███▊      | 5/13 [00:06<00:07,  1.06it/s]Temp-0.0 Infer:  46%|████▌     | 6/13 [00:08<00:07,  1.04s/it]Temp-0.0 Infer:  62%|██████▏   | 8/13 [00:09<00:04,  1.11it/s]Temp-0.0 Infer: 100%|██████████| 13/13 [00:11<00:00,  1.65it/s]Temp-0.0 Infer: 100%|██████████| 13/13 [00:11<00:00,  1.12it/s]
+✅ 结果已保存至: results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Bacteria/raw/temp-0.0.jsonl
+
+🔄 -----------------------------------
+🔄 正在处理温度: 0.7...
+🔄 -----------------------------------
+Temp-0.7 Infer:   0%|          | 0/13 [00:00<?, ?it/s]Temp-0.7 Infer:   8%|▊         | 1/13 [00:03<00:46,  3.85s/it]Temp-0.7 Infer:  15%|█▌        | 2/13 [00:04<00:23,  2.12s/it]Temp-0.7 Infer:  38%|███▊      | 5/13 [00:08<00:12,  1.52s/it]Temp-0.7 Infer:  62%|██████▏   | 8/13 [00:09<00:04,  1.14it/s]Temp-0.7 Infer:  69%|██████▉   | 9/13 [00:10<00:03,  1.00it/s]Temp-0.7 Infer: 100%|██████████| 13/13 [00:17<00:00,  1.33s/it]Temp-0.7 Infer: 100%|██████████| 13/13 [00:17<00:00,  1.34s/it]
+✅ 结果已保存至: results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Bacteria/raw/temp-0.7.jsonl
+
+🎉 所有 API 推理任务完成！
+✅ [Step 1/5] 批量推理完成。
+--------------------------------------------------
+🧹 [Step 3/5] 过滤结果...
+输出目录 '/data/nnotaa/align-anything/projects/Bio/benchmark/results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Bacteria/raw_filtered' 已准备就绪。
+
+正在处理文件: results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Bacteria/raw/temp-0.0.jsonl
+处理完成: 'temp-0.0.jsonl'。
+   总共处理 13 行，保留了 13 行。
+
+正在处理文件: results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Bacteria/raw/temp-0.7.jsonl
+处理完成: 'temp-0.7.jsonl'。
+   总共处理 13 行，保留了 13 行。
+
+所有 .jsonl 文件处理完毕！输出位于: /data/nnotaa/align-anything/projects/Bio/benchmark/results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Bacteria/raw_filtered
+✅ [Step 3/5] 过滤完成。结果位于 'results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Bacteria/raw_filtered'.
+--------------------------------------------------
+🔬 [Step 4/5] 使用 ESM 模型处理序列...
+W1023 01:01:05.230000 194858 site-packages/torch/distributed/run.py:774] 
+W1023 01:01:05.230000 194858 site-packages/torch/distributed/run.py:774] *****************************************
+W1023 01:01:05.230000 194858 site-packages/torch/distributed/run.py:774] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1023 01:01:05.230000 194858 site-packages/torch/distributed/run.py:774] *****************************************
+高性能模式启动。共 8 个GPU。
+最大Tokens/批次: 8192
+自动混合精度(autocast)已【禁用】。
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  6.63it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 11.37it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  6.98it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 12.01it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  6.78it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 11.56it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  6.32it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 10.88it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  6.38it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  6.56it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 10.85it/s]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 11.16it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  6.50it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 10.94it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  6.07it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 10.44it/s]
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank4]:[W1023 01:01:24.622915902 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 4]  using GPU 4 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+Rank 0 模型加载完成。
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank0]:[W1023 01:01:25.649106852 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 0]  using GPU 0 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank2]:[W1023 01:01:25.076995201 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 2]  using GPU 2 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank1]:[W1023 01:01:25.252580404 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 1]  using GPU 1 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+[rank5]:[W1023 01:01:25.252580348 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 5]  using GPU 5 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+[rank6]:[W1023 01:01:25.252582625 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 6]  using GPU 6 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank3]:[W1023 01:01:25.473826243 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 3]  using GPU 3 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank7]:[W1023 01:01:25.526595525 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 7]  using GPU 7 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+文件总进度:   0%|          | 0/2 [00:00<?, ?file/s]文件总进度:   0%|          | 0/2 [00:00<?, ?file/s, 处理中: temp-0.0.jsonl]
+Batches (Rank 0): 0batch [00:00, ?batch/s][A
+Batches (Rank 0): 1batch [00:03,  3.74s/batch][A
+                                              [A文件总进度:  50%|█████     | 1/2 [00:03<00:03,  3.75s/file, 处理中: temp-0.0.jsonl]文件总进度:  50%|█████     | 1/2 [00:03<00:03,  3.75s/file, 处理中: temp-0.7.jsonl]
+Batches (Rank 0): 0batch [00:00, ?batch/s][A
+Batches (Rank 0): 1batch [00:02,  2.69s/batch][A
+                                              [A文件总进度: 100%|██████████| 2/2 [00:06<00:00,  3.13s/file, 处理中: temp-0.7.jsonl]文件总进度: 100%|██████████| 2/2 [00:06<00:00,  3.22s/file, 处理中: temp-0.7.jsonl]
+
+所有进程计算完成，等待同步...
+开始合并临时文件...
+合并文件:   0%|          | 0/2 [00:00<?, ?file/s]合并文件: 100%|██████████| 2/2 [00:00<00:00, 491.91file/s]
+正在生成最终的CSV摘要文件...
+生成摘要:   0%|          | 0/2 [00:00<?, ?file/s]生成摘要: 100%|██████████| 2/2 [00:00<00:00, 4183.84file/s]
+摘要文件成功保存到: results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Bacteria/raw_filtered_esm/summary_results.csv
+✅ [Step 4/5] 序列处理完成。
+--------------------------------------------------
+🔬 [Step 5/5] cleaning <|im_end|>...
+*** 警告：脚本将直接覆盖原始文件，请确保已备份！ ***
+
+开始批量处理文件夹: results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Bacteria/raw_filtered_esm
+目标字段: assistant
+移除标记: <|im_end|>
+
+--- 正在处理 (将覆盖): results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Bacteria/raw_filtered_esm/temp-0.0.jsonl ---
+处理完成: results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Bacteria/raw_filtered_esm/temp-0.0.jsonl (已覆盖)
+  总行数: 13
+  修改行数: 0
+
+--- 正在处理 (将覆盖): results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Bacteria/raw_filtered_esm/temp-0.7.jsonl ---
+处理完成: results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Bacteria/raw_filtered_esm/temp-0.7.jsonl (已覆盖)
+  总行数: 13
+  修改行数: 0
+
+批量处理完毕，共处理 2 个文件。
+✅ [Step 5/5] <|im_end|> cleaning completed.
+--------------------------------------------------
+--- 推理任务结束 ---
+开始转换文件: results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Bacteria/raw_filtered_esm/temp-0.0.jsonl -> results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Bacteria/raw_filtered_esm/temp-0.0.fasta
+
+转换完成！
+成功写入 13 个 FASTA 条目。
+开始转换文件: results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Bacteria/raw_filtered_esm/temp-0.7.jsonl -> results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Bacteria/raw_filtered_esm/temp-0.7.fasta
+
+转换完成！
+成功写入 13 个 FASTA 条目。
+--- 步骤 1: 正在安装所需的 Python 库... ---
+Requirement already satisfied: torch in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (2.8.0)
+Requirement already satisfied: transformers in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (4.56.1)
+Requirement already satisfied: sentencepiece in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (0.2.1)
+Requirement already satisfied: h5py in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (3.14.0)
+Requirement already satisfied: filelock in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (3.19.1)
+Requirement already satisfied: typing-extensions>=4.10.0 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (4.15.0)
+Requirement already satisfied: sympy>=1.13.3 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (1.14.0)
+Requirement already satisfied: networkx in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (3.5)
+Requirement already satisfied: jinja2 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (3.1.6)
+Requirement already satisfied: fsspec in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (2025.3.0)
+Requirement already satisfied: nvidia-cuda-nvrtc-cu12==12.8.93 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (12.8.93)
+Requirement already satisfied: nvidia-cuda-runtime-cu12==12.8.90 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (12.8.90)
+Requirement already satisfied: nvidia-cuda-cupti-cu12==12.8.90 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (12.8.90)
+Requirement already satisfied: nvidia-cudnn-cu12==9.10.2.21 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (9.10.2.21)
+Requirement already satisfied: nvidia-cublas-cu12==12.8.4.1 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (12.8.4.1)
+Requirement already satisfied: nvidia-cufft-cu12==11.3.3.83 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (11.3.3.83)
+Requirement already satisfied: nvidia-curand-cu12==10.3.9.90 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (10.3.9.90)
+Requirement already satisfied: nvidia-cusolver-cu12==11.7.3.90 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (11.7.3.90)
+Requirement already satisfied: nvidia-cusparse-cu12==12.5.8.93 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (12.5.8.93)
+Requirement already satisfied: nvidia-cusparselt-cu12==0.7.1 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (0.7.1)
+Requirement already satisfied: nvidia-nccl-cu12==2.27.3 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (2.27.3)
+Requirement already satisfied: nvidia-nvtx-cu12==12.8.90 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (12.8.90)
+Requirement already satisfied: nvidia-nvjitlink-cu12==12.8.93 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (12.8.93)
+Requirement already satisfied: nvidia-cufile-cu12==1.13.1.3 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (1.13.1.3)
+Requirement already satisfied: triton==3.4.0 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (3.4.0)
+Requirement already satisfied: setuptools>=40.8.0 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from triton==3.4.0->torch) (78.1.1)
+Requirement already satisfied: huggingface-hub<1.0,>=0.34.0 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from transformers) (0.34.4)
+Requirement already satisfied: numpy>=1.17 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from transformers) (2.2.6)
+Requirement already satisfied: packaging>=20.0 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from transformers) (25.0)
+Requirement already satisfied: pyyaml>=5.1 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from transformers) (6.0.2)
+Requirement already satisfied: regex!=2019.12.17 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from transformers) (2025.9.1)
+Requirement already satisfied: requests in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from transformers) (2.32.5)
+Requirement already satisfied: tokenizers<=0.23.0,>=0.22.0 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from transformers) (0.22.0)
+Requirement already satisfied: safetensors>=0.4.3 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from transformers) (0.6.2)
+Requirement already satisfied: tqdm>=4.27 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from transformers) (4.67.1)
+Requirement already satisfied: hf-xet<2.0.0,>=1.1.3 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from huggingface-hub<1.0,>=0.34.0->transformers) (1.1.9)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from sympy>=1.13.3->torch) (1.3.0)
+Requirement already satisfied: MarkupSafe>=2.0 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from jinja2->torch) (3.0.2)
+Requirement already satisfied: charset_normalizer<4,>=2 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from requests->transformers) (3.4.3)
+Requirement already satisfied: idna<4,>=2.5 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from requests->transformers) (3.10)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from requests->transformers) (2.5.0)
+Requirement already satisfied: certifi>=2017.4.17 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from requests->transformers) (2025.8.3)
+
+--- 步骤 2: 正在创建所有目录... ---
+目录已准备就绪。
+
+--- 步骤 3: 正在检查并下载所需文件... ---
+二级结构模型已存在，跳过下载。
+
+--- 步骤 4: 环境准备就绪，正在启动 Python 脚本... ---
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+Using device: cuda
+检测到输入是一个目录: 'results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Bacteria/raw_filtered_esm'
+正在加载 ProtT5 模型...
+模型加载完毕。
+找到 2 个 FASTA 文件，准备开始处理...
+
+--- 正在处理文件: results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Bacteria/raw_filtered_esm/temp-0.0.fasta ---
+读取了 13 条序列。
+13
+正在保存每个蛋白质的嵌入向量至: results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Bacteria/raw_filtered_esm/temp-0.0_per_protein.h5
+文件 results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Bacteria/raw_filtered_esm/temp-0.0.fasta 处理完毕，耗时 0.99 秒。
+
+--- 正在处理文件: results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Bacteria/raw_filtered_esm/temp-0.7.fasta ---
+读取了 13 条序列。
+13
+正在保存每个蛋白质的嵌入向量至: results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Bacteria/raw_filtered_esm/temp-0.7_per_protein.h5
+文件 results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Bacteria/raw_filtered_esm/temp-0.7.fasta 处理完毕，耗时 0.51 秒。
+
+--- 所有文件处理完毕！总耗时 1.50 秒 ---
+
+--- 所有操作执行完毕！结果保存在 'results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Bacteria/raw_filtered_esm' 目录中。 ---
+<frozen importlib._bootstrap>:488: Warning: OpenSSL 3's legacy provider failed to load. Legacy algorithms will not be available. If you need those algorithms, check your OpenSSL configuration.
+<frozen importlib._bootstrap>:488: Warning: OpenSSL 3's legacy provider failed to load. Legacy algorithms will not be available. If you need those algorithms, check your OpenSSL configuration.
+<frozen importlib._bootstrap>:488: Warning: OpenSSL 3's legacy provider failed to load. Legacy algorithms will not be available. If you need those algorithms, check your OpenSSL configuration.
+/data/nnotaa/miniconda3/envs/ml/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+/data/nnotaa/miniconda3/envs/ml/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+
+Reading protein ID order from: results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Bacteria/raw_filtered_esm/temp-0.0.fasta
+Found 13 protein IDs in FASTA file.
+Loading embeddings from: results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Bacteria/raw_filtered_esm/temp-0.0_per_protein.h5
+
+Running predictions...
+Prediction counts: Counter({1: 13})
+
+Saving results to: results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Bacteria/raw_filtered_esm/temp-0.0_per_protein.jsonl
+Successfully saved 13 predictions.
+
+<frozen importlib._bootstrap>:488: Warning: OpenSSL 3's legacy provider failed to load. Legacy algorithms will not be available. If you need those algorithms, check your OpenSSL configuration.
+<frozen importlib._bootstrap>:488: Warning: OpenSSL 3's legacy provider failed to load. Legacy algorithms will not be available. If you need those algorithms, check your OpenSSL configuration.
+<frozen importlib._bootstrap>:488: Warning: OpenSSL 3's legacy provider failed to load. Legacy algorithms will not be available. If you need those algorithms, check your OpenSSL configuration.
+/data/nnotaa/miniconda3/envs/ml/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+/data/nnotaa/miniconda3/envs/ml/lib/python3.10/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+
+Reading protein ID order from: results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Bacteria/raw_filtered_esm/temp-0.7.fasta
+Found 13 protein IDs in FASTA file.
+Loading embeddings from: results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Bacteria/raw_filtered_esm/temp-0.7_per_protein.h5
+
+Running predictions...
+Prediction counts: Counter({1: 13})
+
+Saving results to: results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Bacteria/raw_filtered_esm/temp-0.7_per_protein.jsonl
+Successfully saved 13 predictions.
+
+开始处理...
+  - 从 'dataset/test.jsonl' 提取字段: ['id', 'description', 'sequence', 'taxonomy', 'prompt']
+  - 从 'results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Bacteria/raw_filtered_esm/temp-0.0_per_protein.jsonl' 提取字段: ['prediction', 'probability']
+
+处理完成！共合并 13 行记录。
+结果已保存到: results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Bacteria/raw_filtered_esm/temp-0.0_result.jsonl
+开始处理...
+  - 从 'dataset/test.jsonl' 提取字段: ['id', 'description', 'sequence', 'taxonomy', 'prompt']
+  - 从 'results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Bacteria/raw_filtered_esm/temp-0.7_per_protein.jsonl' 提取字段: ['prediction', 'probability']
+
+处理完成！共合并 13 行记录。
+结果已保存到: results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Bacteria/raw_filtered_esm/temp-0.7_result.jsonl
+   - 正在运行 Animal toxin prediction 任务...
+   - 正在运行 Animal toxin prediction 任务...
+   - 正在运行 Animal toxin prediction 任务...
+   - 正在运行 Animal toxin prediction 任务...
+   - 正在运行 Animal toxin prediction 任务...
+--- 开始执行推理任务 ---
+  模型路径: claude-3-7-sonnet-20250219
+  模型标签: api
+  输出目录: results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Animal/raw
+  温度: 0.0 0.7
+  检测到 'openai-api' 标签, 调用 API 推理脚本...
+============================================================
+🚀 开始 统一API 推理任务 (并发版 v3.3)...
+⚡ 最大并发数: 50
+ timeout=120s
+🤖 API 模型: claude-3-7-sonnet-20250219
+📂 Prompt 文件: dataset/test.jsonl
+🔥 温度列表: [0.0, 0.7]
+📝 输出目录: results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Animal/raw
+============================================================
+统一 API 客户端初始化完成，模型: claude-3-7-sonnet-20250219，URL: https://api3.xhub.chat/v1
+
+🔄 -----------------------------------
+🔄 正在处理温度: 0.0...
+🔄 -----------------------------------
+Temp-0.0 Infer:   0%|          | 0/13 [00:00<?, ?it/s]Temp-0.0 Infer:   8%|▊         | 1/13 [00:05<01:00,  5.08s/it]Temp-0.0 Infer:  15%|█▌        | 2/13 [00:07<00:36,  3.34s/it]Temp-0.0 Infer:  38%|███▊      | 5/13 [00:09<00:11,  1.39s/it]Temp-0.0 Infer:  54%|█████▍    | 7/13 [00:11<00:07,  1.32s/it]Temp-0.0 Infer:  62%|██████▏   | 8/13 [00:13<00:07,  1.44s/it]Temp-0.0 Infer: 100%|██████████| 13/13 [00:14<00:00,  1.41it/s]Temp-0.0 Infer: 100%|██████████| 13/13 [00:14<00:00,  1.12s/it]
+✅ 结果已保存至: results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Animal/raw/temp-0.0.jsonl
+
+🔄 -----------------------------------
+🔄 正在处理温度: 0.7...
+🔄 -----------------------------------
+Temp-0.7 Infer:   0%|          | 0/13 [00:00<?, ?it/s]Temp-0.7 Infer:   8%|▊         | 1/13 [00:04<00:54,  4.53s/it]Temp-0.7 Infer:  15%|█▌        | 2/13 [00:06<00:31,  2.90s/it]Temp-0.7 Infer:  38%|███▊      | 5/13 [00:09<00:12,  1.51s/it]Temp-0.7 Infer: 100%|██████████| 13/13 [00:14<00:00,  1.14it/s]Temp-0.7 Infer: 100%|██████████| 13/13 [00:14<00:00,  1.10s/it]
+✅ 结果已保存至: results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Animal/raw/temp-0.7.jsonl
+
+🎉 所有 API 推理任务完成！
+✅ [Step 1/5] 批量推理完成。
+--------------------------------------------------
+🧹 [Step 3/5] 过滤结果...
+输出目录 '/data/nnotaa/align-anything/projects/Bio/benchmark/results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Animal/raw_filtered' 已准备就绪。
+
+正在处理文件: results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Animal/raw/temp-0.0.jsonl
+处理完成: 'temp-0.0.jsonl'。
+   总共处理 13 行，保留了 13 行。
+
+正在处理文件: results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Animal/raw/temp-0.7.jsonl
+处理完成: 'temp-0.7.jsonl'。
+   总共处理 13 行，保留了 13 行。
+
+所有 .jsonl 文件处理完毕！输出位于: /data/nnotaa/align-anything/projects/Bio/benchmark/results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Animal/raw_filtered
+✅ [Step 3/5] 过滤完成。结果位于 'results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Animal/raw_filtered'.
+--------------------------------------------------
+🔬 [Step 4/5] 使用 ESM 模型处理序列...
+W1023 01:04:04.871000 196701 site-packages/torch/distributed/run.py:774] 
+W1023 01:04:04.871000 196701 site-packages/torch/distributed/run.py:774] *****************************************
+W1023 01:04:04.871000 196701 site-packages/torch/distributed/run.py:774] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1023 01:04:04.871000 196701 site-packages/torch/distributed/run.py:774] *****************************************
+高性能模式启动。共 8 个GPU。
+最大Tokens/批次: 8192
+自动混合精度(autocast)已【禁用】。
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 21.83it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 20.35it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 19.68it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 19.63it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  6.98it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 12.01it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  6.96it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 11.91it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  6.43it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 11.06it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  9.41it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 15.21it/s]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 19.23it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 19.15it/s]
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank2]:[W1023 01:04:21.423011587 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 2]  using GPU 2 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank5]:[W1023 01:04:22.704191718 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 5]  using GPU 5 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank3]:[W1023 01:04:22.063482725 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 3]  using GPU 3 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank6]:[W1023 01:04:22.298286138 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 6]  using GPU 6 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank1]:[W1023 01:04:22.333162526 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 1]  using GPU 1 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank4]:[W1023 01:04:23.208864664 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 4]  using GPU 4 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank7]:[W1023 01:04:23.218943546 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 7]  using GPU 7 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+Rank 0 模型加载完成。
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank0]:[W1023 01:04:23.542500726 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 0]  using GPU 0 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+文件总进度:   0%|          | 0/2 [00:00<?, ?file/s]文件总进度:   0%|          | 0/2 [00:00<?, ?file/s, 处理中: temp-0.0.jsonl]
+Batches (Rank 0): 0batch [00:00, ?batch/s][A
+Batches (Rank 0): 1batch [00:03,  3.82s/batch][A
+                                              [A文件总进度:  50%|█████     | 1/2 [00:03<00:03,  3.82s/file, 处理中: temp-0.0.jsonl]文件总进度:  50%|█████     | 1/2 [00:03<00:03,  3.82s/file, 处理中: temp-0.7.jsonl]
+Batches (Rank 0): 0batch [00:00, ?batch/s][A
+Batches (Rank 0): 1batch [00:02,  2.10s/batch][A
+                                              [A文件总进度: 100%|██████████| 2/2 [00:05<00:00,  2.81s/file, 处理中: temp-0.7.jsonl]文件总进度: 100%|██████████| 2/2 [00:05<00:00,  2.96s/file, 处理中: temp-0.7.jsonl]
+
+所有进程计算完成，等待同步...
+开始合并临时文件...
+合并文件:   0%|          | 0/2 [00:00<?, ?file/s]合并文件: 100%|██████████| 2/2 [00:00<00:00, 921.02file/s]
+正在生成最终的CSV摘要文件...
+生成摘要:   0%|          | 0/2 [00:00<?, ?file/s]生成摘要: 100%|██████████| 2/2 [00:00<00:00, 7194.35file/s]
+摘要文件成功保存到: results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Animal/raw_filtered_esm/summary_results.csv
+✅ [Step 4/5] 序列处理完成。
+--------------------------------------------------
+🔬 [Step 5/5] cleaning <|im_end|>...
+*** 警告：脚本将直接覆盖原始文件，请确保已备份！ ***
+
+开始批量处理文件夹: results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Animal/raw_filtered_esm
+目标字段: assistant
+移除标记: <|im_end|>
+
+--- 正在处理 (将覆盖): results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Animal/raw_filtered_esm/temp-0.0.jsonl ---
+处理完成: results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Animal/raw_filtered_esm/temp-0.0.jsonl (已覆盖)
+  总行数: 13
+  修改行数: 0
+
+--- 正在处理 (将覆盖): results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Animal/raw_filtered_esm/temp-0.7.jsonl ---
+处理完成: results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Animal/raw_filtered_esm/temp-0.7.jsonl (已覆盖)
+  总行数: 13
+  修改行数: 0
+
+批量处理完毕，共处理 2 个文件。
+✅ [Step 5/5] <|im_end|> cleaning completed.
+--------------------------------------------------
+Animal/scripts/toxinpred.sh: line 161: local: can only be used in a function
+Animal/scripts/toxinpred.sh: line 165: local: can only be used in a function
+Animal/scripts/toxinpred.sh: line 166: local: can only be used in a function
+Animal/scripts/toxinpred.sh: line 169: local: can only be used in a function
+Animal/scripts/toxinpred.sh: line 171: [: : integer expression expected
+Animal/scripts/toxinpred.sh: line 176: [: : integer expression expected
+开始转换文件: results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Animal/raw_filtered_esm/temp-0.0.jsonl -> results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Animal/raw_filtered_esm/temp-0.0.fasta
+
+转换完成！
+成功写入 13 个 FASTA 条目。
+<frozen importlib._bootstrap>:488: Warning: OpenSSL 3's legacy provider failed to load. Legacy algorithms will not be available. If you need those algorithms, check your OpenSSL configuration.
+<frozen importlib._bootstrap>:488: Warning: OpenSSL 3's legacy provider failed to load. Legacy algorithms will not be available. If you need those algorithms, check your OpenSSL configuration.
+<frozen importlib._bootstrap>:488: Warning: OpenSSL 3's legacy provider failed to load. Legacy algorithms will not be available. If you need those algorithms, check your OpenSSL configuration.
+Traceback (most recent call last):
+  File "/data/nnotaa/miniconda3/envs/toxinpred2_env/bin/toxinpred2", line 7, in <module>
+    sys.exit(main())
+  File "/data/nnotaa/miniconda3/envs/toxinpred2_env/lib/python3.9/site-packages/toxinpred2/python_scripts/toxinpred2.py", line 300, in main
+    f=open(Sequence,"r")
+FileNotFoundError: [Errno 2] No such file or directory: ''
+
+ERROR conda.cli.main_run:execute(127): `conda run toxinpred2 -i  -o  -t 0.6 -m 1 -d 2` failed. (See above for error)
+##############################################################################
+# The program ToxinPred2.0 is developed for predicting Toxin and non toxin #
+# protein from their primary sequence, developed by Prof G. P. S. Raghava's group. #
+# ############################################################################
+Summary of Parameters:
+Input File:   ; Model:  1 ; Threshold:  0.6
+Output File:   ; Display:  2
+
+Animal/scripts/toxinpred.sh: line 161: local: can only be used in a function
+Animal/scripts/toxinpred.sh: line 165: local: can only be used in a function
+Animal/scripts/toxinpred.sh: line 166: local: can only be used in a function
+Animal/scripts/toxinpred.sh: line 169: local: can only be used in a function
+Animal/scripts/toxinpred.sh: line 171: [: : integer expression expected
+Animal/scripts/toxinpred.sh: line 176: [: : integer expression expected
+开始转换文件: results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Animal/raw_filtered_esm/temp-0.7.jsonl -> results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Animal/raw_filtered_esm/temp-0.7.fasta
+
+转换完成！
+成功写入 13 个 FASTA 条目。
+<frozen importlib._bootstrap>:488: Warning: OpenSSL 3's legacy provider failed to load. Legacy algorithms will not be available. If you need those algorithms, check your OpenSSL configuration.
+<frozen importlib._bootstrap>:488: Warning: OpenSSL 3's legacy provider failed to load. Legacy algorithms will not be available. If you need those algorithms, check your OpenSSL configuration.
+<frozen importlib._bootstrap>:488: Warning: OpenSSL 3's legacy provider failed to load. Legacy algorithms will not be available. If you need those algorithms, check your OpenSSL configuration.
+Traceback (most recent call last):
+  File "/data/nnotaa/miniconda3/envs/toxinpred2_env/bin/toxinpred2", line 7, in <module>
+    sys.exit(main())
+  File "/data/nnotaa/miniconda3/envs/toxinpred2_env/lib/python3.9/site-packages/toxinpred2/python_scripts/toxinpred2.py", line 300, in main
+    f=open(Sequence,"r")
+FileNotFoundError: [Errno 2] No such file or directory: ''
+
+ERROR conda.cli.main_run:execute(127): `conda run toxinpred2 -i  -o  -t 0.6 -m 1 -d 2` failed. (See above for error)
+##############################################################################
+# The program ToxinPred2.0 is developed for predicting Toxin and non toxin #
+# protein from their primary sequence, developed by Prof G. P. S. Raghava's group. #
+# ############################################################################
+Summary of Parameters:
+Input File:   ; Model:  1 ; Threshold:  0.6
+Output File:   ; Display:  2
+
+开始处理...
+  - 从 CSV 'results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Animal/raw_filtered_esm/temp-0.0_toxinpred_results.csv' 提取字段: ['ML_Score', 'Prediction']
+  - 从 JSONL 'dataset/test.jsonl' 提取字段: ['id', 'description', 'sequence', 'taxonomy', 'prompt']
+错误: 文件未找到 - [Errno 2] No such file or directory: 'results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Animal/raw_filtered_esm/temp-0.0_toxinpred_results.csv'
+开始处理...
+  - 从 CSV 'results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Animal/raw_filtered_esm/temp-0.7_toxinpred_results.csv' 提取字段: ['ML_Score', 'Prediction']
+  - 从 JSONL 'dataset/test.jsonl' 提取字段: ['id', 'description', 'sequence', 'taxonomy', 'prompt']
+错误: 文件未找到 - [Errno 2] No such file or directory: 'results/2025-10-23_00-40-52/claude-3-7-sonnet-20250219/Animal/raw_filtered_esm/temp-0.7_toxinpred_results.csv'
+✅ 模型 claude-3-7-sonnet-20250219 处理完成。
+-----------------------------------------
+🚀 开始处理模型: gemini-2.5-flash (标签: api)
+   - 清理后的模型名: gemini-2.5-flash
+   - 创建输出目录: results/2025-10-23_00-40-52/gemini-2.5-flash
+   - 正在运行 Bacteria exo prediction 任务...
+   - 正在运行 Bacteria exo prediction 任务...
+   - 正在运行 Bacteria exo prediction 任务...
+   - 正在运行 Bacteria exo prediction 任务...
+   - 正在运行 Bacteria exo prediction 任务...
+--- 开始执行推理任务 ---
+  模型路径: gemini-2.5-flash
+  模型标签: api
+  输出目录: results/2025-10-23_00-40-52/gemini-2.5-flash/Bacteria/raw
+  温度: 0.0 0.7
+  检测到 'api' 标签, 调用 API 推理脚本...
+============================================================
+🚀 开始 统一API 推理任务 (并发版 v3.3)...
+⚡ 最大并发数: 50
+ timeout=120s
+🤖 API 模型: gemini-2.5-flash
+📂 Prompt 文件: dataset/test.jsonl
+🔥 温度列表: [0.0, 0.7]
+📝 输出目录: results/2025-10-23_00-40-52/gemini-2.5-flash/Bacteria/raw
+============================================================
+统一 API 客户端初始化完成，模型: gemini-2.5-flash，URL: https://api3.xhub.chat/v1
+
+🔄 -----------------------------------
+🔄 正在处理温度: 0.0...
+🔄 -----------------------------------
+Temp-0.0 Infer:   0%|          | 0/13 [00:00<?, ?it/s]Temp-0.0 Infer:   8%|▊         | 1/13 [00:06<01:23,  6.97s/it]Temp-0.0 Infer:  15%|█▌        | 2/13 [00:08<00:40,  3.69s/it]Temp-0.0 Infer:  38%|███▊      | 5/13 [00:08<00:09,  1.13s/it]

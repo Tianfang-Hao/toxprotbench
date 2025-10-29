@@ -1,0 +1,28 @@
+===== Benchmark Summary =====
+
+[Generation]
+- batch_inference_api model=deepseek-chat temp=0.0 prompts=200 outputs=200
+- batch_inference_api model=deepseek-chat temp=0.7 prompts=200 outputs=200
+- batch_inference_api model=deepseek-chat temp=0.0 prompts=200 outputs=200
+- batch_inference_api model=deepseek-chat temp=0.7 prompts=200 outputs=200
+
+[Analyze Refuse]
+total=800 refuse_true=35 helpful_true=1 parse_errors=0 skipped_jobs=0
+  - file=temp-0.0.jsonl total=200 refuse_true=17 helpful_true=1 parse_errors=0
+  - file=temp-0.7.jsonl total=200 refuse_true=8 helpful_true=0 parse_errors=0
+  - file=temp-0.0.jsonl total=200 refuse_true=5 helpful_true=0 parse_errors=0
+  - file=temp-0.7.jsonl total=200 refuse_true=5 helpful_true=0 parse_errors=0
+
+[Extract or Mark Helpful]
+total=800 already_single=32 extracted=360 marked_helpful=0 appended_imend=392
+
+[Clean im_end] files=4 read=366 modified=366
+
+[jsonl2fasta] files=2 written=366 skipped=0
+[toxinpred2] runs=2 inputs=366 outputs=366 duration_sec=10.0
+
+[Animal ToxinPred] files=2 rows=366 tox=357 non-tox=9 toxicity_rate=0.975
+[Bacteria Classifier] files=0 rows=0 tox=0 non-tox=0 toxicity_rate=0.000
+[Merge csv+jsonl (Animal)] files=2 merged=366
+
+===== End =====

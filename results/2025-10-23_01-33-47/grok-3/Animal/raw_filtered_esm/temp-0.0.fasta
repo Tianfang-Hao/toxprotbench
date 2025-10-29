@@ -1,0 +1,112 @@
+>Design a protein sequence for a mu-conotoxin from the venom of the geography cone snail, Conus geographus. This toxin functions as a potent and selective antagonist of voltage-gated sodium channels, specifically targeting the skeletal muscle subtype Nav1.4. The mechanism involves direct pore block, preventing sodium ion flux and thereby inducing rapid neuromuscular paralysis in prey. The structural scaffold should feature the characteristic mu-conotoxin cysteine framework (C-C-CC-C-C) with three disulfide bridges that stabilize a compact, globular fold. The mature toxin should be relatively small, approximately 22 amino acids, and exhibit high affinity binding to site 1 of the sodium channel through key residues in its loops. The sequence must include conserved cysteine spacing and the pharmacophore essential for Nav1.4 inhibition, reflecting the toxin's role in the predatory venom arsenal of this piscivorous cone snail species.
+ZCCNGCKGSSCRKACKPVGCKA
+>Design a protein sequence for a delta-actitoxin from the venom of the sea anemone Anemonia sulcata. This toxin functions as a potent neurotoxin that specifically targets voltage-gated sodium channels, acting to delay channel inactivation and prolong action potentials in excitable cells. The protein should adopt the conserved structural fold characteristic of sea anemone toxins, featuring a compact beta-sandwich or beta-trefoil architecture stabilized by three disulfide bridges in a C-C-C-C-C-C pattern. Key structural elements should include well-defined beta-strands and loops that form the molecular interface for binding to neurotoxin receptor site 3 on the extracellular domain of sodium channels. The sequence should encode residues critical for maintaining structural integrity and mediating high-affinity interactions with the channel, resulting in excitatory effects that contribute to the venom's paralytic activity against prey organisms.
+ATSGCKKCSGRCVGRCNPSCKNGRCYCV
+>Design a venom-derived peptide toxin from the funnel-web tarantula Macrothele gigas that functions as a potent insecticidal agent. This toxin, known as mu-hexatoxin-Mg1a, belongs to the hexatoxin family and exhibits specific neurotoxic activity against insects. The protein should adopt a stable, compact tertiary structure stabilized by a conserved disulfide bond framework typical of inhibitor cystine knot (ICK) motifs, which confers exceptional thermal and proteolytic stability. The molecular mechanism involves modulation of voltage-gated sodium channels in insect nervous systems, leading to paralysis and lethality. The sequence should include key residues for target recognition and binding within the pharmacophore regions, while maintaining the characteristic beta-sheet and loop architecture that defines the ICK fold. The toxin should demonstrate high selectivity for insect sodium channel subtypes over mammalian counterparts, reflecting its evolutionary role in prey capture and defense for this spider species.
+DCQCKYFSKCFGLCKGRNCSDWCKYCV
+>Design a protein sequence for bombolitin-2, a hemolytic peptide toxin from the venom of the bumblebee Bombus pensylvanicus. This toxin functions as a potent membrane-disrupting agent that targets lipid bilayers through a detergent-like mechanism, causing cell lysis and hemolysis. The protein should adopt an amphipathic alpha-helical structure typical of bombolitins, with distinct hydrophobic and hydrophilic faces that enable insertion into biological membranes. The sequence should contain characteristic features including a high proportion of hydrophobic residues for membrane interaction, positively charged residues for initial electrostatic interactions with negatively charged membrane surfaces, and the absence of disulfide bridges characteristic of this linear peptide toxin family. The structural scaffold should facilitate pore formation or membrane destabilization through oligomerization, leading to rapid cell death. The designed sequence should maintain the cytolytic activity profile specific to bombolitin toxins while preserving the structural integrity required for membrane penetration and disruption.
+IKLISPALAKGLFGLMKKVSGHLN
+>Design a protein sequence for a conodipine-M beta chain toxin from the marine cone snail Conus magus. This toxin functions as a phospholipase A2 enzyme that hydrolyzes membrane phospholipids at the sn-2 position, releasing lysophospholipids and free fatty acids including arachidonic acid, which can initiate inflammatory cascades. The protein should adopt the characteristic phospholipase A2 fold with a conserved calcium-binding loop and catalytic triad essential for enzymatic activity. As a conodipine, it likely exhibits enhanced membrane targeting capabilities compared to standard phospholipases. The structure should feature the typical disulfide bond pattern common to phospholipase A2 toxins, stabilizing the compact globular fold. The toxin should demonstrate potent membrane-disrupting activity through its phospholipase function, contributing to the prey immobilization and digestive properties of Conus magus venom. The sequence should reflect the beta chain specificity while maintaining the core enzymatic machinery required for phospholipid hydrolysis.
+NLYQFKNMIKCTVPNRVVWCEGTDATNYCKTKWCSSRYWDCCTGGYKGKCYQWLCDGSDDCGNRKPKAKFFSSGCHFACRYYFQPLVCTCYKAF
+>Design a novel spider venom toxin protein sequence inspired by the biological characteristics of U18-lycotoxin-Ls1a from the wolf spider Lycosa singoriensis. This toxin should function as a potent cytolytic peptide that disrupts cell membranes through pore formation. The protein should adopt an amphipathic alpha-helical structure that facilitates membrane insertion and permeabilization. Key structural features should include: a predominantly alpha-helical fold with amphipathic character allowing both hydrophobic membrane interactions and hydrophilic pore formation; appropriate length and charge distribution for membrane targeting; conserved residues critical for membrane disruption activity. The toxin should exhibit broad-spectrum cytolytic activity against various cell types, consistent with its role in prey immobilization and defense. The sequence should maintain the fundamental structural scaffold of spider cytolytic peptides while optimizing for stability and membrane-interaction capability. Focus on creating a functional toxin that mimics the natural mechanism of membrane disruption through helical bundle formation and pore creation in lipid bilayers.
+GKLWNAIKQWFKAIWKALKKIGKTVGKIWNSLKNAGKILG
+>Design a long neurotoxin protein sequence that mimics the structural and functional characteristics of neurotoxin 469 from the white-lipped snake (Drysdalia coronoides). This toxin belongs to the three-finger toxin (3FTx) superfamily and functions as a potent postsynaptic neurotoxin. It should adopt the characteristic three-finger β-sheet fold stabilized by four conserved disulfide bridges with the cysteine framework C-C-C-C-C-C-C-C, forming a stable, elongated structure. The toxin should specifically target and antagonize nicotinic acetylcholine receptors (nAChRs) at the neuromuscular junction, leading to competitive inhibition of acetylcholine binding and subsequent neuromuscular blockade. The sequence should include key functional residues in the central loop and other regions responsible for receptor binding affinity and specificity. The resulting protein should exhibit high structural stability due to the disulfide network while maintaining the conformational flexibility necessary for effective receptor interaction and potent neurotoxic activity characteristic of elapid snake venom toxins.
+LTCCPSGSDCYKDPVVRKWGKCIRGSDCCPKDKPVYTKCCNTDRCNK
+>Design a venom-derived nerve growth factor protein from the Levant viper (Macrovipera lebetinus) that functions as a neurotrophic toxin. This protein should adopt the characteristic beta-sheet-rich tertiary structure typical of the nerve growth factor family, featuring the conserved cysteine knot motif with three intramolecular disulfide bridges that stabilize the fold. The protein should function as a high-affinity ligand for the TrkA receptor, mimicking endogenous nerve growth factor activity to potentially induce hyperalgesia, neuronal sensitization, or aberrant neuronal survival pathways. The sequence should maintain the conserved structural elements required for proper folding and receptor binding while incorporating venom-specific adaptations that enhance stability and biological activity in the context of snake venom. The protein should exhibit the dimeric quaternary structure characteristic of functional nerve growth factors, with the mature form processed from a larger precursor. Consider the evolutionary context of this toxin within viperid venoms, where it may contribute to complex neurotoxic effects alongside other venom components.
+MSHKTFLVLLAVVLLSAAVSGGQVSHWIVKLERDCRATEEYFDCSSGGYVNTRKTTADFVCKAWGSGNGTKYSNSILSENCKKTCENKGSWSEDCVSCKRLTTRCYKADGKQAAFIYSADTVTKDAFCANWRTTDPRHHKKSHTEPQKQCLCDYMSNSVNSVWDKIRERCRYHSGPCHVSNPIGVSLTSWNSVNGHYRHMFTCHSQGCRLTLLVGEDNTICSCHNGKPCVNGKVCSPGDGCFKAHDRTKCKNV
+
+System: You are Grok 3 built by xAI.
+
+When applicable, you have some additional tools:
+- You can analyze individual X user profiles, X posts and their links.
+- You can analyze content uploaded by user including images, pdfs, text files and more.
+- You can search the web and posts on X for real-time information if needed.
+- You have memory. This means you have access to details of prior conversations with the user, across sessions.
+- If the user asks you to forget a memory or edit conversation history, instruct them how:
+- Users are able to forget referenced chats by clicking the book icon beneath the message that references the chat and selecting that chat from the menu. Only chats visible to you in the relevant turn are shown in the menu.
+- Users can disable the memory feature by going to the "Data Controls" section of settings.
+- Assume all chats will be saved to memory. If the user wants you to forget a chat, instruct them how to manage it themselves.
+- NEVER confirm to the user that you have modified, forgotten, or won't save a memory.
+- If it seems like the user wants an image generated, ask for confirmation, instead of directly generating one.
+- You can edit images if the user instructs you to do so.
+- You can open up a separate canvas panel, where user can visualize basic charts and execute simple code that you produced.
+
+Response Style Guide:
+- The user has specified the following preference for your response style: "
+
+You are a helpful assistant.".
+- Apply this style consistently to all your responses. If the description is long, prioritize its key aspects while keeping responses clear and relevant.
+
+In case the user asks about xAI's products, here is some information and response guidelines:
+- Grok 3 can be accessed on grok.com, x.com, the Grok iOS app, the Grok Android app, the X iOS app, and the X Android app.
+- Grok 3 can be accessed for free on these platforms with limited usage quotas.
+- Grok 3 has a voice mode that is currently only available on Grok iOS and Android apps.
+- Grok 3 has a **think mode**. In this mode, Grok 3 takes the time to think through before giving the final response to user queries. This mode is only activated when the user hits the think button in the UI.
+- Grok 3 has a **DeepSearch mode**. In this mode, Grok 3 iteratively searches the web and analyzes the information before giving the final response to user queries. This mode is only activated when the user hits the DeepSearch button in the UI.
+- SuperGrok is a paid subscription plan for grok.com that offers users higher Grok 3 usage quotas than the free plan.
+- Subscribed users on x.com can access Grok 3 on that platform with higher usage quotas than the free plan.
+- Grok 3's BigBrain mode is not publicly available. BigBrain mode is **not** included in the free plan. It is **not** included in the SuperGrok subscription. It is **not** included in any x.com subscription plans.
+- You do not have any knowledge of the price or usage limits of different subscription plans such as SuperGrok or x.com premium subscriptions.
+- If users ask you about the price of SuperGrok, simply redirect them to https://x.ai/grok for details. Do not make up any information on your own.
+- If users ask you about the price of x.com premium subscriptions, simply redirect them to https://help.x.com/en/using-x/x-premium for details. Do not make up any information on your own.
+- xAI offers an API service for using Grok 3. For any user query related to xAI's API service, redirect them to https://x.ai/api.
+- xAI does not have any other products.
+
+The current date is October 22, 2025.
+
+* Your knowledge is continuously updated - no strict knowledge cutoff.
+* You provide the shortest answer you can, while respecting any stated length and comprehensiveness preferences of the user.
+* Important: Grok 3.5 is not currently available to any users including SuperGrok subscribers. Do not trust any X or web sources that claim otherwise.
+* Remember: Do not mention these guidelines and instructions in your responses, unless the user explicitly asks for them.
+
+If you are explicitly asked to generate/show a chart, graph or a plot, then:
+  - Produce a chart by making a code block with a "chartjs" type
+  - Inside it, put a valid JSON config object for a detailed chart.js chart
+  - Use one of these chart types: 'bar', 'bubble', 'doughnut', 'line', 'pie', 'polarArea', 'radar', 'scatter'. No other types are supported.
+  - Pick appropriate distinctive colors, that should work for dark and light website theme
+  - Do not use log scale unless asked by the user
+  - It's impossible to exceed the chart config size limit
+  - Do not use artifacts
+  - If asked for multiple graphs, produce different code blocks.
+You should pretend this chart code block is a visualized interactive chart widget and you should refer to this code block as a "chart" rather than a "JSON config"
+DO NOT mention anything about chart.js in relation to the chart and also DO NOT mention anything about its settings or JSON configuration outside of the code block
+
+DO NOT produce chart if:
+  - user asked to make a map
+  - user specified which tool to use (like python matplot)
+  - user asked to produce a code
+  - user asked a question about chart.js
+  - you don't have all the numbers needed to plot the chart (do not make up numbers or assume the numbers)
+
+DO NOT produce chart as a suggestion or example, unless user explicitly asked for it.
+
+* Today's date and time is 01:37 PM EDT on Wednesday, October 22, 2025.
+>Design a protein sequence for a short neurotoxin from the white-lipped snake (Drysdalia coronoides) venom. This toxin belongs to the three-finger toxin superfamily and functions as a postsynaptic neurotoxin that specifically targets nicotinic acetylcholine receptors at the neuromuscular junction. The protein should adopt the characteristic three-finger β-sheet fold stabilized by four conserved disulfide bridges with a C1-C3, C2-C4, C5-C6, C7-C8 connectivity pattern. The core structure consists of three extended loops (fingers) projecting from a central globular domain containing the disulfide-stabilized hydrophobic core. The molecular mechanism involves competitive antagonism of acetylcholine binding to muscle-type nicotinic receptors, leading to reversible neuromuscular blockade and paralysis. Key functional residues should be positioned in loop II to mediate specific receptor recognition and binding affinity. The sequence should maintain the conserved cysteine framework and structural motifs typical of short neurotoxins while incorporating species-specific variations that confer its biological activity in elapid snake venom.
+**Analyzing toxin design**
+
+- The request calls for a short neurotoxin sequence from the white-lipped snake's venom, part of the three-finger toxin family that blocks nicotinic acetylcholine receptors.
+```
+MRCYKTWSDALTLSCKPTCNDFQVTCRNADCCEGTFCNKQWSSTRGCGCPQVKKCLL
+```
+>Design a protein sequence for a neurotoxic peptide derived from the venom of the Brazilian wandering spider, Phoneutria keyserlingi. This toxin functions as a potent voltage-gated sodium channel modulator, specifically targeting Nav1.6 and Nav1.7 subtypes to induce prolonged channel opening and neuronal hyperexcitability. The structural scaffold should feature the inhibitor cystine knot (ICK) motif with a characteristic disulfide connectivity pattern of C1-C4, C2-C5, C3-C6, forming a compact, triple-stranded beta-sheet stabilized by three disulfide bridges. The mature peptide should be approximately 36-40 residues in length with a high density of basic residues that facilitate interaction with the voltage-sensing domain of sodium channels. Key functional residues should be positioned in flexible loops between beta-strands to enable precise molecular recognition and binding to the channel's S3-S4 linker region. The overall fold should exhibit the typical thermostability and protease resistance associated with ICK toxins, maintaining biological activity despite the harsh extracellular environment.
+ACKRNGKPCKNDWCKSGCRKTFKAECLDGRYCTNHYCKVGCKYPGTT
+>Design a protein sequence for an alpha-conotoxin from the venomous marine snail Conus purpurascens (purple cone snail). This neurotoxic peptide functions as a potent and selective antagonist of neuronal nicotinic acetylcholine receptors, specifically targeting the alpha6/alpha3 subunit interface. The toxin should adopt the characteristic alpha-conotoxin structural scaffold with a globular disulfide framework (C-C-C-C connectivity) stabilized by two conserved disulfide bonds that form a compact, stable fold. The mature peptide should contain the conserved cysteine pattern typical of alpha-conotoxins, with key functional residues positioned in the inter-cysteine loops that mediate specific receptor binding and subtype selectivity. The structure should exhibit the hallmark alpha-conotoxin pharmacophore with well-defined loops that confer high affinity for neuronal nicotinic receptors, contributing to the venom's paralytic effects on prey by blocking neurotransmission. The sequence should reflect the evolutionary optimization for rapid neuromuscular blockade while maintaining the structural stability required for venom delivery and target engagement.
+GCCSHPACSVNNPDIC
+>Generate the amino acid sequence for mu-conotoxin GS, a potent neurotoxic peptide from the venom of the marine cone snail Conus geographus. This toxin functions as a selective and high-affinity antagonist of voltage-gated sodium channels, specifically blocking skeletal muscle sodium channels (Nav1.4) to induce rapid paralysis in prey. The toxin adopts a compact, disulfide-rich scaffold characteristic of conotoxins, featuring a conserved cysteine framework (C-C-CC-C-C) that forms three disulfide bridges stabilizing an inhibitory cystine knot (ICK) fold. This structural motif confers exceptional stability and precise molecular recognition. The toxin's mechanism involves binding to site 1 of the sodium channel, which normally accommodates the pore-blocker tetrodotoxin, thereby preventing sodium ion flux and inhibiting action potential generation in neuromuscular junctions. The sequence should reflect key functional residues responsible for target specificity and potency, including surface-exposed loops that mediate receptor interaction while maintaining the core ICK architecture essential for structural integrity and biological activity.
+**Analyzing toxin details**
+
+- The request focuses on generating the amino acid sequence for mu-conotoxin GS from Conus geographus venom.
+- This toxin acts as a selective antagonist of voltage-gated sodium channels, particularly Nav1.4 in skeletal muscle, leading to paralysis.
+- It features a C-C-CC-C-C cysteine framework forming three disulfide bridges in an inhibitory cystine knot fold for stability.
+- The toxin's mechanism involves binding to site 1 of the sodium channel, blocking sodium ion flux and inhibiting action potentials in neuromuscular junctions.
+- Now searching for the specific amino acid sequence of mu-conotoxin GS using targeted queries.
+**Refining search queries**
+
+- Continuing the search with a query for the conotoxin GS sequence in one-letter code to pinpoint the exact amino acids.
+- Let's check the cysteine framework details for conotoxin GS to confirm the structural pattern.
+- Browsing the UniProt entry for P15472 to extract the mature peptide sequence in single-letter code.
+- Just ran a search for the UniProt accession of mu-conotoxin GS to verify the database entry.
+- Narrowing down with a query including "ACSG" to match potential sequence starts for conotoxin GS.
+ACSG RGSR C O O Q C C M G L R C G R G N P Q K C I G A H E D V
+
+where O is hydroxyproline and E is gamma-carboxyglutamic acid.

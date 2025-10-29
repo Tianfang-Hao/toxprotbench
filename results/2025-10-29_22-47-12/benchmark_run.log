@@ -1,0 +1,25 @@
+🚀 开始处理模型: grok-4 (标签: api)
+   - 清理后的模型名: grok-4
+   - 创建输出目录: results/2025-10-29_22-47-12/grok-4
+   - 正在运行 Bacteria exo prediction 任务...
+--- 开始执行推理任务 ---
+  模型路径: grok-4
+  模型标签: api
+  输出目录: results/2025-10-29_22-47-12/grok-4/Bacteria/raw
+  温度: 0.0 0.7
+  检测到 'api' 标签, 调用 API 推理脚本...
+============================================================
+🚀 开始 统一API 推理任务 (并发版 v3.3)...
+⚡ 最大并发数: 10
+ timeout=300s
+🤖 API 模型: grok-4
+📂 Prompt 文件: dataset/Bacteria.jsonl
+🔥 温度列表: [0.0, 0.7]
+📝 输出目录: results/2025-10-29_22-47-12/grok-4/Bacteria/raw
+============================================================
+统一 API 客户端初始化完成，模型: grok-4，URL: https://api3.xhub.chat/v1
+
+🔄 -----------------------------------
+🔄 正在处理温度: 0.0...
+🔄 -----------------------------------
+Temp-0.0 Infer:   0%|          | 0/200 [00:00<?, ?it/s]Temp-0.0 Infer:  91%|█████████ | 182/200 [01:56<00:11,  1.56it/s]Temp-0.0 Infer:  91%|█████████ | 182/200 [01:56<00:11,  1.56it/s, inflight=18, slow=18, oldest_s=116, forced_to=0]Temp-0.0 Infer:  92%|█████████▏| 183/200 [02:29<00:15,  1.12it/s, inflight=18, slow=18, oldest_s=116, forced_to=0]Temp-0.0 Infer:  92%|█████████▏| 183/200 [02:29<00:15,  1.12it/s, inflight=17, slow=17, oldest_s=149, forced_to=0]Temp-0.0 Infer:  92%|█████████▏| 184/200 [03:43<00:27,  1.70s/it, inflight=17, slow=17, oldest_s=149, forced_to=0]Temp-0.0 Infer:  92%|█████████▏| 184/200 [03:43<00:27,  1.70s/it, inflight=16, slow=16, oldest_s=223, forced_to=0]Temp-0.0 Infer:  92%|█████████▎| 185/200 [04:23<00:34,  2.28s/it, inflight=16, slow=16, oldest_s=223, forced_to=0]Temp-0.0 Infer:  92%|█████████▎| 185/200 [04:23<00:34,  2.28s/it, inflight=15, slow=15, oldest_s=263, forced_to=0]Temp-0.0 Infer:  93%|█████████▎| 186/200 [06:58<01:18,  5.59s/it, inflight=15, slow=15, oldest_s=263, forced_to=0]Temp-0.0 Infer:  93%|█████████▎| 186/200 [06:58<01:18,  5.59s/it, inflight=14, slow=14, oldest_s=418, forced_to=0]Temp-0.0 Infer:  94%|█████████▎| 187/200 [07:04<01:12,  5.61s/it, inflight=14, slow=14, oldest_s=418, forced_to=0]Temp-0.0 Infer:  94%|█████████▎| 187/200 [07:04<01:12,  5.61s/it, inflight=13, slow=13, oldest_s=424, forced_to=0]Temp-0.0 Infer:  94%|█████████▍| 188/200 [09:57<02:29, 12.47s/it, inflight=13, slow=13, oldest_s=424, forced_to=0]Temp-0.0 Infer:  94%|█████████▍| 188/200 [09:57<02:29, 12.47s/it, inflight=12, slow=12, oldest_s=597, forced_to=0]Temp-0.0 Infer:  94%|█████████▍| 189/200 [11:47<03:16, 17.85s/it, inflight=12, slow=12, oldest_s=597, forced_to=0]Temp-0.0 Infer:  94%|█████████▍| 189/200 [11:47<03:16, 17.85s/it, inflight=11, slow=11, oldest_s=707, forced_to=0]Temp-0.0 Infer:  95%|█████████▌| 190/200 [11:53<02:50, 17.02s/it, inflight=11, slow=11, oldest_s=707, forced_to=0]Temp-0.0 Infer:  95%|█████████▌| 190/200 [11:53<02:50, 17.02s/it, inflight=10, slow=10, oldest_s=713, forced_to=0]Temp-0.0 Infer:  96%|█████████▌| 191/200 [12:03<02:27, 16.38s/it, inflight=10, slow=10, oldest_s=713, forced_to=0]Temp-0.0 Infer:  96%|█████████▌| 191/200 [12:03<02:27, 16.38s/it, inflight=9, slow=9, oldest_s=723, forced_to=0]  Temp-0.0 Infer:  96%|█████████▌| 192/200 [12:47<02:37, 19.65s/it, inflight=9, slow=9, oldest_s=723, forced_to=0]Temp-0.0 Infer:  96%|█████████▌| 192/200 [12:47<02:37, 19.65s/it, inflight=8, slow=8, oldest_s=767, forced_to=0]Temp-0.0 Infer:  96%|█████████▋| 193/200 [13:49<03:00, 25.85s/it, inflight=8, slow=8, oldest_s=767, forced_to=0]Temp-0.0 Infer:  96%|█████████▋| 193/200 [13:49<03:00, 25.85s/it, inflight=7, slow=7, oldest_s=829, forced_to=0]Temp-0.0 Infer:  97%|█████████▋| 194/200 [14:29<02:49, 28.23s/it, inflight=7, slow=7, oldest_s=829, forced_to=0]Temp-0.0 Infer:  97%|█████████▋| 194/200 [14:29<02:49, 28.23s/it, inflight=6, slow=6, oldest_s=869, forced_to=0]Temp-0.0 Infer:  98%|█████████▊| 195/200 [14:30<01:54, 22.84s/it, inflight=6, slow=6, oldest_s=869, forced_to=0]Temp-0.0 Infer:  98%|█████████▊| 195/200 [14:30<01:54, 22.84s/it, inflight=5, slow=5, oldest_s=870, forced_to=0]Temp-0.0 Infer:  98%|█████████▊| 196/200 [14:49<01:28, 22.11s/it, inflight=5, slow=5, oldest_s=870, forced_to=0]Temp-0.0 Infer:  98%|█████████▊| 196/200 [14:49<01:28, 22.11s/it, inflight=4, slow=4, oldest_s=889, forced_to=0]Temp-0.0 Infer:  98%|█████████▊| 197/200 [16:01<01:41, 33.83s/it, inflight=4, slow=4, oldest_s=889, forced_to=0]Temp-0.0 Infer:  98%|█████████▊| 197/200 [16:01<01:41, 33.83s/it, inflight=3, slow=3, oldest_s=961, forced_to=0]Temp-0.0 Infer:  99%|█████████▉| 198/200 [16:02<00:51, 25.60s/it, inflight=3, slow=3, oldest_s=961, forced_to=0]Temp-0.0 Infer:  99%|█████████▉| 198/200 [16:02<00:51, 25.60s/it, inflight=2, slow=2, oldest_s=962, forced_to=0]

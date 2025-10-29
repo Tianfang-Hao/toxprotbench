@@ -1,0 +1,18 @@
+===== Benchmark Summary =====
+
+[Generation]
+- batch_inference_api model=claude-3-7-sonnet-20250219 temp=0.0 prompts=13 outputs=13
+- batch_inference_api model=claude-3-7-sonnet-20250219 temp=0.7 prompts=13 outputs=13
+- batch_inference_api model=claude-3-7-sonnet-20250219 temp=0.0 prompts=13 outputs=13
+- batch_inference_api model=claude-3-7-sonnet-20250219 temp=0.7 prompts=13 outputs=13
+
+[Filter no_stop] files=2 read=26 kept=26 discarded=0 retention=1.000
+
+[ESM] files=2 read=4 calculated=4 failed=0 coverage=1.000
+
+[Animal ToxinPred] files=0 rows=0 tox=0 non-tox=0 toxicity_rate=0.000
+[Bacteria Classifier] files=0 rows=0 tox=0 non-tox=0 toxicity_rate=0.000
+
+[E2E Effective Rate] approx_effective_rate = 1.000
+
+===== End =====

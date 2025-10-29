@@ -1,0 +1,68 @@
+{
+  "metric_summary": {
+    "filter_no_imend": {
+      "input_files": 2,
+      "num_read": 26,
+      "num_kept": 0,
+      "num_discarded": 26,
+      "retention": 0.0
+    },
+    "filter_no_stop": {},
+    "batch_inference": [
+      {
+        "step": "batch_inference_local",
+        "model": "Qwen_Qwen2.5-7B-Instruct",
+        "temperature": 0.0,
+        "num_prompts": 13,
+        "num_outputs": 13,
+        "output_path": "results/2025-10-23_09-45-16/Qwen_Qwen2.5-7B-Instruct/Bacteria/raw/temp-0.0.jsonl"
+      },
+      {
+        "step": "batch_inference_local",
+        "model": "Qwen_Qwen2.5-7B-Instruct",
+        "temperature": 0.7,
+        "num_prompts": 13,
+        "num_outputs": 13,
+        "output_path": "results/2025-10-23_09-45-16/Qwen_Qwen2.5-7B-Instruct/Bacteria/raw/temp-0.7.jsonl"
+      },
+      {
+        "step": "batch_inference_local",
+        "model": "Qwen_Qwen2.5-7B-Instruct",
+        "temperature": 0.0,
+        "num_prompts": 13,
+        "num_outputs": 13,
+        "output_path": "results/2025-10-23_09-45-16/Qwen_Qwen2.5-7B-Instruct/Animal/raw/temp-0.0.jsonl"
+      },
+      {
+        "step": "batch_inference_local",
+        "model": "Qwen_Qwen2.5-7B-Instruct",
+        "temperature": 0.7,
+        "num_prompts": 13,
+        "num_outputs": 13,
+        "output_path": "results/2025-10-23_09-45-16/Qwen_Qwen2.5-7B-Instruct/Animal/raw/temp-0.7.jsonl"
+      }
+    ],
+    "esm": {
+      "input_files": 2,
+      "num_read": 0,
+      "num_calculated": 0,
+      "num_failed": 0,
+      "coverage": 0.0,
+      "summary_csv": "results/2025-10-23_09-45-16/Qwen_Qwen2.5-7B-Instruct/Animal/raw_filtered_esm/summary_results.csv"
+    }
+  },
+  "animal_toxinpred": {
+    "files": 0,
+    "rows": 0,
+    "toxic_rows": 0,
+    "non_toxic_rows": 0,
+    "toxicity_rate": 0.0
+  },
+  "bacteria_classifier": {
+    "files": 0,
+    "rows": 0,
+    "toxic_rows": 0,
+    "non_toxic_rows": 0,
+    "toxicity_rate": 0.0
+  }
+}

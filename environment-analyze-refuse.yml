@@ -1,0 +1,25 @@
+# Conda environment for analyze_refuse.py (LLM-based four-case refusal analysis)
+# CUDA: This file targets CUDA 12.1 (pytorch-cuda=12.1). If your driver uses CUDA 11.8, change to 11.8.
+
+name: analyze-refuse-llm
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  # PyTorch with CUDA 12.1 (adjust if your system uses 11.8)
+  - pytorch=2.4.*
+  - pytorch-cuda=12.8
+  # Utilities
+  - tqdm>=4.66
+  - numpy>=1.24
+  - safetensors>=0.4
+  - sentencepiece>=0.1.99  # often needed by HF tokenizers; safe to include
+  - packaging
+  # Install HF stack via pip to keep versions fresh and compatible
+  - pip:
+      - transformers==4.56.1
+      - huggingface_hub<1.0

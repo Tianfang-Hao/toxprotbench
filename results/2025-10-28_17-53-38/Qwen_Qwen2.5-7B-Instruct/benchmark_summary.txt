@@ -1,0 +1,22 @@
+===== Benchmark Summary =====
+
+[Generation]
+- batch_inference_local model=Qwen_Qwen2.5-7B-Instruct temp=0.0 prompts=200 outputs=200
+- batch_inference_local model=Qwen_Qwen2.5-7B-Instruct temp=0.7 prompts=200 outputs=200
+- batch_inference_local model=Qwen_Qwen2.5-7B-Instruct temp=0.0 prompts=200 outputs=200
+- batch_inference_local model=Qwen_Qwen2.5-7B-Instruct temp=0.7 prompts=200 outputs=200
+
+[Clean im_end] files=4 read=0 modified=0
+
+[ESM] files=2 read=0 calculated=0 failed=0 coverage=0.000 model=facebook/esm2_t36_3B_UR50D domain=Animal
+
+[jsonl2fasta] files=2 written=0 skipped=0
+[fasta2h5] input_files=2 num_sequences=0 duration_sec=0.0
+
+[Animal ToxinPred] files=2 rows=0 tox=0 non-tox=0 toxicity_rate=0.000
+[Bacteria Classifier] files=0 rows=0 tox=0 non-tox=0 toxicity_rate=0.000
+[Merge csv+jsonl (Animal)] files=2 merged=0
+
+[E2E Effective Rate] approx_effective_rate = 0.000
+
+===== End =====

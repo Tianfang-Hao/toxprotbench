@@ -1,0 +1,108 @@
+🚀 开始处理模型: grok-4 (标签: api)
+   - 清理后的模型名: grok-4
+   - 创建输出目录: results/2025-10-27_11-55-02/grok-4
+   - 正在运行 Bacteria exo prediction 任务...
+--- 开始执行推理任务 ---
+  模型路径: grok-4
+  模型标签: api
+  输出目录: results/2025-10-27_11-55-02/grok-4/Bacteria/raw
+  温度: 0.0 0.7
+  检测到 'api' 标签, 调用 API 推理脚本...
+============================================================
+🚀 开始 统一API 推理任务 (并发版 v3.3)...
+⚡ 最大并发数: 50
+ timeout=120s
+🤖 API 模型: grok-4
+📂 Prompt 文件: dataset/Bacteria.jsonl
+🔥 温度列表: [0.0, 0.7]
+📝 输出目录: results/2025-10-27_11-55-02/grok-4/Bacteria/raw
+============================================================
+统一 API 客户端初始化完成，模型: grok-4，URL: https://api3.xhub.chat/v1
+
+🔄 -----------------------------------
+🔄 正在处理温度: 0.0...
+🔄 -----------------------------------
+Temp-0.0 Infer:   0%|          | 0/200 [00:00<?, ?it/s]Temp-0.0 Infer:   0%|          | 1/200 [00:22<1:15:02, 22.62s/it]Temp-0.0 Infer:   0%|          | 1/200 [00:22<1:15:02, 22.62s/it, inflight=199, slow=199, oldest_s=22, forced_to=0]Temp-0.0 Infer:   1%|          | 2/200 [00:22<1:14:39, 22.62s/it, inflight=198, slow=198, oldest_s=22, forced_to=0]Temp-0.0 Infer:   2%|▏         | 3/200 [00:22<1:14:16, 22.62s/it, inflight=197, slow=197, oldest_s=22, forced_to=0]Temp-0.0 Infer:   2%|▏         | 4/200 [00:22<1:13:54, 22.62s/it, inflight=196, slow=196, oldest_s=22, forced_to=0]Temp-0.0 Infer:   2%|▎         | 5/200 [00:22<1:13:31, 22.62s/it, inflight=195, slow=195, oldest_s=22, forced_to=0]Temp-0.0 Infer:   3%|▎         | 6/200 [00:22<1:13:09, 22.62s/it, inflight=194, slow=194, oldest_s=22, forced_to=0]Temp-0.0 Infer:   4%|▎         | 7/200 [00:22<07:40,  2.39s/it, inflight=194, slow=194, oldest_s=22, forced_to=0]  Temp-0.0 Infer:   4%|▎         | 7/200 [00:22<07:40,  2.39s/it, inflight=193, slow=193, oldest_s=22, forced_to=0]Temp-0.0 Infer:   4%|▍         | 8/200 [00:22<07:37,  2.39s/it, inflight=192, slow=192, oldest_s=22, forced_to=0]Temp-0.0 Infer:   4%|▍         | 9/200 [00:22<07:35,  2.39s/it, inflight=191, slow=191, oldest_s=22, forced_to=0]Temp-0.0 Infer:   5%|▌         | 10/200 [00:22<07:33,  2.39s/it, inflight=190, slow=190, oldest_s=22, forced_to=0]Temp-0.0 Infer:   6%|▌         | 11/200 [00:22<07:30,  2.39s/it, inflight=189, slow=189, oldest_s=22, forced_to=0]Temp-0.0 Infer:   6%|▌         | 12/200 [00:22<07:28,  2.39s/it, inflight=188, slow=188, oldest_s=22, forced_to=0]Temp-0.0 Infer:   6%|▋         | 13/200 [00:22<03:17,  1.06s/it, inflight=188, slow=188, oldest_s=22, forced_to=0]Temp-0.0 Infer:   6%|▋         | 13/200 [00:22<03:17,  1.06s/it, inflight=187, slow=187, oldest_s=22, forced_to=0]Temp-0.0 Infer:   7%|▋         | 14/200 [00:22<03:16,  1.06s/it, inflight=186, slow=186, oldest_s=22, forced_to=0]Temp-0.0 Infer:   8%|▊         | 15/200 [00:22<03:15,  1.06s/it, inflight=185, slow=185, oldest_s=22, forced_to=0]Temp-0.0 Infer:   8%|▊         | 16/200 [00:22<03:14,  1.06s/it, inflight=184, slow=184, oldest_s=22, forced_to=0]Temp-0.0 Infer:   8%|▊         | 17/200 [00:22<03:13,  1.06s/it, inflight=183, slow=183, oldest_s=22, forced_to=0]Temp-0.0 Infer:   9%|▉         | 18/200 [00:22<03:12,  1.06s/it, inflight=181, slow=181, oldest_s=22, forced_to=0]Temp-0.0 Infer:  10%|▉         | 19/200 [00:22<03:11,  1.06s/it, inflight=181, slow=181, oldest_s=22, forced_to=0]Temp-0.0 Infer:  10%|█         | 20/200 [00:22<03:10,  1.06s/it, inflight=180, slow=180, oldest_s=22, forced_to=0]
+错误: API 调用失败 (status_code=500): Error code: 500 - {'error': {'message': '模型 grok-4 倍率或价格未配置，请联系管理员设置或开始自用模式；Model grok-4 ratio or price not set, please set or start self-use mode (request id: 20251027115525261026649avNvAEpH) (request id: 20251027115518617780983EtaprnrI)', 'type': 'openai_error', 'param': '', 'code': 'model_price_error'}}
+
+错误: API 调用失败 (status_code=500): Error code: 500 - {'error': {'message': '模型 grok-4 倍率或价格未配置，请联系管理员设置或开始自用模式；Model grok-4 ratio or price not set, please set or start self-use mode (request id: 20251027115525290259485Qyc8R67X) (request id: 202510271155185261580015dl6N6Im)', 'type': 'openai_error', 'param': '', 'code': 'model_price_error'}}
+
+错误: API 调用失败 (status_code=500): Error code: 500 - {'error': {'message': '模型 grok-4 倍率或价格未配置，请联系管理员设置或开始自用模式；Model grok-4 ratio or price not set, please set or start self-use mode (request id: 20251027115525308264000YaDvJODz) (request id: 20251027115518542775867YUaGSmbE)', 'type': 'openai_error', 'param': '', 'code': 'model_price_error'}}
+
+错误: API 调用失败 (status_code=500): Error code: 500 - {'error': {'message': '模型 grok-4 倍率或价格未配置，请联系管理员设置或开始自用模式；Model grok-4 ratio or price not set, please set or start self-use mode (request id: 20251027115525322220470cgMn4xjc) (request id: 20251027115518555520706Bo9wAkBW)', 'type': 'openai_error', 'param': '', 'code': 'model_price_error'}}
+
+错误: API 调用失败 (status_code=500): Error code: 500 - {'error': {'message': '模型 grok-4 倍率或价格未配置，请联系管理员设置或开始自用模式；Model grok-4 ratio or price not set, please set or start self-use mode (request id: 20251027115525332362827x98TFBt6) (request id: 20251027115518572310043xZouQ7VY)', 'type': 'openai_error', 'param': '', 'code': 'model_price_error'}}
+
+错误: API 调用失败 (status_code=500): Error code: 500 - {'error': {'message': '模型 grok-4 倍率或价格未配置，请联系管理员设置或开始自用模式；Model grok-4 ratio or price not set, please set or start self-use mode (request id: 20251027115525356407147byC5ffH7) (request id: 20251027115518675612178cFYf6xow)', 'type': 'openai_error', 'param': '', 'code': 'model_price_error'}}
+
+错误: API 调用失败 (status_code=500): Error code: 500 - {'error': {'message': '模型 grok-4 倍率或价格未配置，请联系管理员设置或开始自用模式；Model grok-4 ratio or price not set, please set or start self-use mode (request id: 20251027115525411813303xQU6k6Jf) (request id: 20251027115518701985811ftvjiLay)', 'type': 'openai_error', 'param': '', 'code': 'model_price_error'}}
+
+错误: API 调用失败 (status_code=500): Error code: 500 - {'error': {'message': '模型 grok-4 倍率或价格未配置，请联系管理员设置或开始自用模式；Model grok-4 ratio or price not set, please set or start self-use mode (request id: 20251027115525406206489aOYQdyGJ) (request id: 20251027115518818486827vaVtt9RT)', 'type': 'openai_error', 'param': '', 'code': 'model_price_error'}}
+
+错误: API 调用失败 (status_code=500): Error code: 500 - {'error': {'message': '模型 grok-4 倍率或价格未配置，请联系管理员设置或开始自用模式；Model grok-4 ratio or price not set, please set or start self-use mode (request id: 2025102711552540830897144uxMThS) (request id: 20251027115518754443403ezZ1pvO1)', 'type': 'openai_error', 'param': '', 'code': 'model_price_error'}}
+
+错误: API 调用失败 (status_code=500): Error code: 500 - {'error': {'message': '模型 grok-4 倍率或价格未配置，请联系管理员设置或开始自用模式；Model grok-4 ratio or price not set, please set or start self-use mode (request id: 202510271155254519735817tquMW6p) (request id: 20251027115518802872562nTIOOjGR)', 'type': 'openai_error', 'param': '', 'code': 'model_price_error'}}
+
+错误: API 调用失败 (status_code=500): Error code: 500 - {'error': {'message': '模型 grok-4 倍率或价格未配置，请联系管理员设置或开始自用模式；Model grok-4 ratio or price not set, please set or start self-use mode (request id: 20251027115525449674735pDl1ImVF) (request id: 20251027115518673057865u34WTA8N)', 'type': 'openai_error', 'param': '', 'code': 'model_price_error'}}
+
+错误: API 调用失败 (status_code=500): Error code: 500 - {'error': {'message': '模型 grok-4 倍率或价格未配置，请联系管理员设置或开始自用模式；Model grok-4 ratio or price not set, please set or start self-use mode (request id: 20251027115525459533347jcrzqMah) (request id: 20251027115518634446098yuxomAMy)', 'type': 'openai_error', 'param': '', 'code': 'model_price_error'}}
+
+错误: API 调用失败 (status_code=500): Error code: 500 - {'error': {'message': '模型 grok-4 倍率或价格未配置，请联系管理员设置或开始自用模式；Model grok-4 ratio or price not set, please set or start self-use mode (request id: 20251027115525508576841WTHwxnAY) (request id: 20251027115518907421422uAxocSPj)', 'type': 'openai_error', 'param': '', 'code': 'model_price_error'}}
+
+错误: API 调用失败 (status_code=500): Error code: 500 - {'error': {'message': '模型 grok-4 倍率或价格未配置，请联系管理员设置或开始自用模式；Model grok-4 ratio or price not set, please set or start self-use mode (request id: 202510271155255208214377Hl74o3b) (request id: 20251027115518702073831s1UruXqr)', 'type': 'openai_error', 'param': '', 'code': 'model_price_error'}}
+
+错误: API 调用失败 (status_code=500): Error code: 500 - {'error': {'message': '模型 grok-4 倍率或价格未配置，请联系管理员设置或开始自用模式；Model grok-4 ratio or price not set, please set or start self-use mode (request id: 20251027115525526468887oovIQV2D) (request id: 20251027115518858997073zFXJg5k8)', 'type': 'openai_error', 'param': '', 'code': 'model_price_error'}}
+
+错误: API 调用失败 (status_code=500): Error code: 500 - {'error': {'message': '模型 grok-4 倍率或价格未配置，请联系管理员设置或开始自用模式；Model grok-4 ratio or price not set, please set or start self-use mode (request id: 20251027115525544084205kVITDcyv) (request id: 20251027115518831917414sgO0rGIA)', 'type': 'openai_error', 'param': '', 'code': 'model_price_error'}}
+
+错误: API 调用失败 (status_code=500): Error code: 500 - {'error': {'message': '模型 grok-4 倍率或价格未配置，请联系管理员设置或开始自用模式；Model grok-4 ratio or price not set, please set or start self-use mode (request id: 20251027115525563458494IEvfGjRq) (request id: 20251027115518836644814xsXFH9mm)', 'type': 'openai_error', 'param': '', 'code': 'model_price_error'}}
+
+错误: API 调用失败 (status_code=500): Error code: 500 - {'error': {'message': '模型 grok-4 倍率或价格未配置，请联系管理员设置或开始自用模式；Model grok-4 ratio or price not set, please set or start self-use mode (request id: 20251027115525566981865I2RB4rEN) (request id: 202510271155187231068622JOthiWT)', 'type': 'openai_error', 'param': '', 'code': 'model_price_error'}}
+
+错误: API 调用失败 (status_code=500): Error code: 500 - {'error': {'message': '模型 grok-4 倍率或价格未配置，请联系管理员设置或开始自用模式；Model grok-4 ratio or price not set, please set or start self-use mode (request id: 20251027115525568021494zhvtwiZQ) (request id: 20251027115518908265184LpSJge4F)', 'type': 'openai_error', 'param': '', 'code': 'model_price_error'}}
+
+错误: API 调用失败 (status_code=500): Error code: 500 - {'error': {'message': '模型 grok-4 倍率或价格未配置，请联系管理员设置或开始自用模式；Model grok-4 ratio or price not set, please set or start self-use mode (request id: 20251027115525574855188GOni5gtO) (request id: 2025102711551929132901gufHXy49)', 'type': 'openai_error', 'param': '', 'code': 'model_price_error'}}
+
+错误: API 调用失败 (status_code=500): Error code: 500 - {'error': {'message': '模型 grok-4 倍率或价格未配置，请联系管理员设置或开始自用模式；Model grok-4 ratio or price not set, please set or start self-use mode (request id: 202510271155255873884434fsIQa6R) (request id: 20251027115518788276945daHbVa9G)', 'type': 'openai_error', 'param': '', 'code': 'model_price_error'}}Temp-0.0 Infer:  10%|█         | 21/200 [00:22<03:09,  1.06s/it, inflight=179, slow=179, oldest_s=22, forced_to=0]Temp-0.0 Infer:  11%|█         | 22/200 [00:22<03:07,  1.06s/it, inflight=177, slow=177, oldest_s=22, forced_to=0]Temp-0.0 Infer:  12%|█▏        | 23/200 [00:22<03:06,  1.06s/it, inflight=177, slow=177, oldest_s=22, forced_to=0]Temp-0.0 Infer:  12%|█▏        | 24/200 [00:22<01:16,  2.31it/s, inflight=177, slow=177, oldest_s=22, forced_to=0]Temp-0.0 Infer:  12%|█▏        | 24/200 [00:22<01:16,  2.31it/s, inflight=175, slow=175, oldest_s=23, forced_to=0]Temp-0.0 Infer:  12%|█▎        | 25/200 [00:22<01:15,  2.31it/s, inflight=175, slow=175, oldest_s=23, forced_to=0]Temp-0.0 Infer:  13%|█▎        | 26/200 [00:22<01:15,  2.31it/s, inflight=172, slow=172, oldest_s=23, forced_to=0]Temp-0.0 Infer:  14%|█▎        | 27/200 [00:22<01:14,  2.31it/s, inflight=172, slow=172, oldest_s=23, forced_to=0]Temp-0.0 Infer:  14%|█▍        | 28/200 [00:22<01:14,  2.31it/s, inflight=172, slow=172, oldest_s=23, forced_to=0]Temp-0.0 Infer:  14%|█▍        | 29/200 [00:23<01:14,  2.31it/s, inflight=171, slow=171, oldest_s=23, forced_to=0]Temp-0.0 Infer:  15%|█▌        | 30/200 [00:23<01:13,  2.31it/s, inflight=170, slow=170, oldest_s=23, forced_to=0]Temp-0.0 Infer:  16%|█▌        | 31/200 [00:23<01:13,  2.31it/s, inflight=168, slow=168, oldest_s=23, forced_to=0]Temp-0.0 Infer:  16%|█▌        | 32/200 [00:23<01:12,  2.31it/s, inflight=168, slow=168, oldest_s=23, forced_to=0]Temp-0.0 Infer:  16%|█▋        | 33/200 [00:23<01:12,  2.31it/s, inflight=167, slow=167, oldest_s=23, forced_to=0]Temp-0.0 Infer:  17%|█▋        | 34/200 [00:23<01:11,  2.31it/s, inflight=166, slow=166, oldest_s=23, forced_to=0]Temp-0.0 Infer:  18%|█▊        | 35/200 [00:23<01:11,  2.31it/s, inflight=165, slow=165, oldest_s=23, forced_to=0]Temp-0.0 Infer:  18%|█▊        | 36/200 [00:23<01:11,  2.31it/s, inflight=164, slow=164, oldest_s=23, forced_to=0]Temp-0.0 Infer:  18%|█▊        | 37/200 [00:23<01:10,  2.31it/s, inflight=163, slow=163, oldest_s=23, forced_to=0]Temp-0.0 Infer:  19%|█▉        | 38/200 [00:23<01:10,  2.31it/s, inflight=162, slow=162, oldest_s=23, forced_to=0]Temp-0.0 Infer:  20%|█▉        | 39/200 [00:23<00:32,  4.90it/s, inflight=162, slow=162, oldest_s=23, forced_to=0]Temp-0.0 Infer:  20%|█▉        | 39/200 [00:23<00:32,  4.90it/s, inflight=160, slow=160, oldest_s=23, forced_to=0]Temp-0.0 Infer:  20%|██        | 40/200 [00:23<00:32,  4.90it/s, inflight=160, slow=160, oldest_s=23, forced_to=0]
+
+错误: API 调用失败 (status_code=500): Error code: 500 - {'error': {'message': '模型 grok-4 倍率或价格未配置，请联系管理员设置或开始自用模式；Model grok-4 ratio or price not set, please set or start self-use mode (request id: 20251027115525588926934ywf4u7Iy) (request id: 20251027115518948282632ROwfANmA)', 'type': 'openai_error', 'param': '', 'code': 'model_price_error'}}
+
+错误: API 调用失败 (status_code=500): Error code: 500 - {'error': {'message': '模型 grok-4 倍率或价格未配置，请联系管理员设置或开始自用模式；Model grok-4 ratio or price not set, please set or start self-use mode (request id: 20251027115525594747727YWm4IU40) (request id: 20251027115519879479269FyXAKs2)', 'type': 'openai_error', 'param': '', 'code': 'model_price_error'}}
+
+错误: API 调用失败 (status_code=500): Error code: 500 - {'error': {'message': '模型 grok-4 倍率或价格未配置，请联系管理员设置或开始自用模式；Model grok-4 ratio or price not set, please set or start self-use mode (request id: 20251027115525601664852ouZUv8nY) (request id: 202510271155189054369180rs1W37C)', 'type': 'openai_error', 'param': '', 'code': 'model_price_error'}}
+
+错误: API 调用失败 (status_code=500): Error code: 500 - {'error': {'message': '模型 grok-4 倍率或价格未配置，请联系管理员设置或开始自用模式；Model grok-4 ratio or price not set, please set or start self-use mode (request id: 20251027115525591125186DI7P5M0Y) (request id: 20251027115518818995013tXq4IskT)', 'type': 'openai_error', 'param': '', 'code': 'model_price_error'}}
+
+错误: API 调用失败 (status_code=500): Error code: 500 - {'error': {'message': '模型 grok-4 倍率或价格未配置，请联系管理员设置或开始自用模式；Model grok-4 ratio or price not set, please set or start self-use mode (request id: 20251027115525604342610GkCxJ9O7) (request id: 2025102711551956276146OLeq0LMd)', 'type': 'openai_error', 'param': '', 'code': 'model_price_error'}}
+
+错误: API 调用失败 (status_code=500): Error code: 500 - {'error': {'message': '模型 grok-4 倍率或价格未配置，请联系管理员设置或开始自用模式；Model grok-4 ratio or price not set, please set or start self-use mode (request id: 202510271155256174530680UCblsCt) (request id: 202510271155188264987498zERoQuw)', 'type': 'openai_error', 'param': '', 'code': 'model_price_error'}}
+
+错误: API 调用失败 (status_code=500): Error code: 500 - {'error': {'message': '模型 grok-4 倍率或价格未配置，请联系管理员设置或开始自用模式；Model grok-4 ratio or price not set, please set or start self-use mode (request id: 20251027115525610957985kyRHpFU5) (request id: 20251027115518869357167NqO6CTf5)', 'type': 'openai_error', 'param': '', 'code': 'model_price_error'}}
+
+错误: API 调用失败 (status_code=500): Error code: 500 - {'error': {'message': '模型 grok-4 倍率或价格未配置，请联系管理员设置或开始自用模式；Model grok-4 ratio or price not set, please set or start self-use mode (request id: 202510271155256143403167S4wjMQu) (request id: 2025102711551944749350LnWZxWVB)', 'type': 'openai_error', 'param': '', 'code': 'model_price_error'}}
+
+错误: API 调用失败 (status_code=500): Error code: 500 - {'error': {'message': '模型 grok-4 倍率或价格未配置，请联系管理员设置或开始自用模式；Model grok-4 ratio or price not set, please set or start self-use mode (request id: 20251027115525636761608C6MyxT6e) (request id: 20251027115518932430880h1nKiRij)', 'type': 'openai_error', 'param': '', 'code': 'model_price_error'}}
+
+错误: API 调用失败 (status_code=500): Error code: 500 - {'error': {'message': '模型 grok-4 倍率或价格未配置，请联系管理员设置或开始自用模式；Model grok-4 ratio or price not set, please set or start self-use mode (request id: 20251027115525645576754iFMAbRue) (request id: 20251027115518949259256ykiDRwXi)', 'type': 'openai_error', 'param': '', 'code': 'model_price_error'}}
+
+错误: API 调用失败 (status_code=500): Error code: 500 - {'error': {'message': '模型 grok-4 倍率或价格未配置，请联系管理员设置或开始自用模式；Model grok-4 ratio or price not set, please set or start self-use mode (request id: 20251027115525640572688NoxOfRIi) (request id: 20251027115518830073606CYrAvveU)', 'type': 'openai_error', 'param': '', 'code': 'model_price_error'}}
+
+错误: API 调用失败 (status_code=500): Error code: 500 - {'error': {'message': '模型 grok-4 倍率或价格未配置，请联系管理员设置或开始自用模式；Model grok-4 ratio or price not set, please set or start self-use mode (request id: 20251027115525648626189P9JgDAa5) (request id: 20251027115518910699232tPkG9oO3)', 'type': 'openai_error', 'param': '', 'code': 'model_price_error'}}
+
+错误: API 调用失败 (status_code=500): Error code: 500 - {'error': {'message': '模型 grok-4 倍率或价格未配置，请联系管理员设置或开始自用模式；Model grok-4 ratio or price not set, please set or start self-use mode (request id: 20251027115525663526405tNDuIKnC) (request id: 20251027115518965833073VaHcdhME)', 'type': 'openai_error', 'param': '', 'code': 'model_price_error'}}
+
+错误: API 调用失败 (status_code=500): Error code: 500 - {'error': {'message': '模型 grok-4 倍率或价格未配置，请联系管理员设置或开始自用模式；Model grok-4 ratio or price not set, please set or start self-use mode (request id: 202510271155256849059507CHzliJX) (request id: 2025102711551991890633weWnJeJS)', 'type': 'openai_error', 'param': '', 'code': 'model_price_error'}}
+
+错误: API 调用失败 (status_code=500): Error code: 500 - {'error': {'message': '模型 grok-4 倍率或价格未配置，请联系管理员设置或开始自用模式；Model grok-4 ratio or price not set, please set or start self-use mode (request id: 20251027115525699277486Btv4fpx0) (request id: 202510271155188681000949R7Fra0K)', 'type': 'openai_error', 'param': '', 'code': 'model_price_error'}}
+
+错误: API 调用失败 (status_code=500): Error code: 500 - {'error': {'message': '模型 grok-4 倍率或价格未配置，请联系管理员设置或开始自用模式；Model grok-4 ratio or price not set, please set or start self-use mode (request id: 20251027115525691309551rKa1Zq5W) (request id: 20251027115518977974705JW2BHQ15)', 'type': 'openai_error', 'param': '', 'code': 'model_price_error'}}
+
+错误: API 调用失败 (status_code=500): Error code: 500 - {'error': {'message': '模型 grok-4 倍率或价格未配置，请联系管理员设置或开始自用模式；Model grok-4 ratio or price not set, please set or start self-use mode (request id: 20251027115525706336130ieZPsPK2) (request id: 2025102711551916214725evsyobhG)', 'type': 'openai_error', 'param': '', 'code': 'model_price_error'}}
+
+错误: API 调用失败 (status_code=500): Error code: 500 - {'error': {'message': '模型 grok-4 倍率或价格未配置，请联系管理员设置或开始自用模式；Model grok-4 ratio or price not set, please set or start self-use mode (request id: 20251027115525708190842R21z9Y37) (request id: 2025102711551930679890RIMk3uvy)', 'type': 'openai_error', 'param': '', 'code': 'model_price_error'}}
+
+错误: API 调用失败 (status_code=500): Error code: 500 - {'error': {'message': '模型 grok-4 倍率或价格未配置，请联系管理员设置或开始自用模式；Model grok-4 ratio or price not set, please set or start self-use mode (request id: 20251027115525697450616ckYqyzh0) (request id: 2025102711551890617192677zMJerO)', 'type': 'openai_error', 'param': '', 'code': 'model_price_error'}}
+
+错误: API 调用失败 (status_code=500): Error code: 500 - {'error': {'message': '模型 grok-4 倍率或价格未配置，请联系管理员设置或开始自用模式；Model grok-4 ratio or price not set, please set or start self-use mode (request id: 202510271155257071519757x3oPOp2) (request id: 2025102711551972416811d6ny8vXp)', 'type': 'openai_error', 'param': '', 'code': 'model_price_error'}}
+
+错误: API 调用失败 (status_code=500): Error code: 500 - {'error': {'message': '模型 grok-4 倍率或价格未配置，请联系管理员设置或开始自用模式；Model grok-4 ratio or price not set, please set or start self-use mode (request id: 20251027115525707861969ajqJsSbw) (request id: 2025102711551990970376wX3Zrdde)', 'type': 'openai_error', 'param': '', 'code': 'model_price_error'}}Temp-0.0 Infer:  20%|██        | 41/200 [00:23<00:32,  4.90it/s, inflight=158, slow=158, oldest_s=23, forced_to=0]Temp-0.0 Infer:  21%|██        | 42/200 [00:23<00:32,  4.90it/s, inflight=158, slow=158, oldest_s=23, forced_to=0]Temp-0.0 Infer:  22%|██▏       | 43/200 [00:23<00:32,  4.90it/s, inflight=157, slow=157, oldest_s=23, forced_to=0]Temp-0.0 Infer:  22%|██▏       | 44/200 [00:23<00:31,  4.90it/s, inflight=156, slow=156, oldest_s=23, forced_to=0]Temp-0.0 Infer:  22%|██▎       | 45/200 [00:23<00:31,  4.90it/s, inflight=155, slow=155, oldest_s=23, forced_to=0]Temp-0.0 Infer:  23%|██▎       | 46/200 [00:23<00:31,  4.90it/s, inflight=154, slow=154, oldest_s=23, forced_to=0]Temp-0.0 Infer:  24%|██▎       | 47/200 [00:23<00:31,  4.90it/s, inflight=153, slow=153, oldest_s=23, forced_to=0]Temp-0.0 Infer:  24%|██▍       | 48/200 [00:23<00:31,  4.90it/s, inflight=152, slow=152, oldest_s=23, forced_to=0]Temp-0.0 Infer:  24%|██▍       | 49/200 [00:23<00:30,  4.90it/s, inflight=151, slow=151, oldest_s=23, forced_to=0]Temp-0.0 Infer:  25%|██▌       | 50/200 [00:23<00:20,  7.39it/s, inflight=151, slow=151, oldest_s=23, forced_to=0]Temp-0.0 Infer:  25%|██▌       | 50/200 [00:23<00:20,  7.39it/s, inflight=150, slow=150, oldest_s=23, forced_to=0]

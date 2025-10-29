@@ -1,0 +1,30 @@
+# Conda env for analyze_refuse.py with Transformers master (qwen3_next support)
+# If your system uses CUDA 11.8, change 'pytorch-cuda=12.1' to 'pytorch-cuda=11.8'.
+
+name: analyze-refuse-llm-src
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  # PyTorch with CUDA 12.1 (adjust to 11.8 if needed)
+  - pytorch=2.4.*
+  - pytorch-cuda=12.1
+
+  # Utilities
+  - tqdm>=4.66
+  - numpy>=1.24
+  - safetensors>=0.4
+  - sentencepiece>=0.1.99
+  - packaging
+  - accelerate>=0.30
+  - tokenizers>=0.19
+
+  # Install latest Transformers from source (master) to support qwen3_next
+  - pip:
+      - huggingface_hub>=0.26
+      - einops>=0.7
+      - git+https://github.com/huggingface/transformers.git

@@ -1,0 +1,129 @@
+🚀 开始处理模型: grok-3 (标签: api)
+   - 清理后的模型名: grok-3
+   - 创建输出目录: results/2025-10-23_12-40-50/grok-3
+   - 正在运行 Bacteria exo prediction 任务...
+--- 开始执行推理任务 ---
+  模型路径: grok-3
+  模型标签: api
+  输出目录: results/2025-10-23_12-40-50/grok-3/Bacteria/raw
+  温度: 0.0 0.7
+  检测到 'api' 标签, 调用 API 推理脚本...
+============================================================
+🚀 开始 统一API 推理任务 (并发版 v3.3)...
+⚡ 最大并发数: 50
+ timeout=120s
+🤖 API 模型: grok-3
+📂 Prompt 文件: dataset/test.jsonl
+🔥 温度列表: [0.0, 0.7]
+📝 输出目录: results/2025-10-23_12-40-50/grok-3/Bacteria/raw
+============================================================
+统一 API 客户端初始化完成，模型: grok-3，URL: https://api3.xhub.chat/v1
+
+🔄 -----------------------------------
+🔄 正在处理温度: 0.0...
+🔄 -----------------------------------
+Temp-0.0 Infer:   0%|          | 0/13 [00:00<?, ?it/s]Temp-0.0 Infer:   8%|▊         | 1/13 [00:05<01:04,  5.38s/it]Temp-0.0 Infer:  15%|█▌        | 2/13 [00:06<00:31,  2.87s/it]Temp-0.0 Infer:  31%|███       | 4/13 [00:35<01:30, 10.09s/it]Temp-0.0 Infer: 100%|██████████| 13/13 [04:07<00:00, 20.90s/it]Temp-0.0 Infer: 100%|██████████| 13/13 [04:07<00:00, 19.03s/it]
+✅ 结果已保存至: results/2025-10-23_12-40-50/grok-3/Bacteria/raw/temp-0.0.jsonl
+
+🔄 -----------------------------------
+🔄 正在处理温度: 0.7...
+🔄 -----------------------------------
+Temp-0.7 Infer:   0%|          | 0/13 [00:00<?, ?it/s]Temp-0.7 Infer:   8%|▊         | 1/13 [00:02<00:35,  2.95s/it]Temp-0.7 Infer:  15%|█▌        | 2/13 [00:05<00:26,  2.44s/it]Temp-0.7 Infer:  23%|██▎       | 3/13 [00:05<00:13,  1.38s/it]Temp-0.7 Infer:  38%|███▊      | 5/13 [00:06<00:08,  1.09s/it]Temp-0.7 Infer:  46%|████▌     | 6/13 [02:05<04:04, 34.95s/it]Temp-0.7 Infer:  62%|██████▏   | 8/13 [02:08<01:39, 19.88s/it]Temp-0.7 Infer: 100%|██████████| 13/13 [02:08<00:00,  9.90s/it]
+✅ 结果已保存至: results/2025-10-23_12-40-50/grok-3/Bacteria/raw/temp-0.7.jsonl
+
+🎉 所有 API 推理任务完成！
+✅ [Step 1/5] 批量推理完成。
+--------------------------------------------------
+🧪 [Step 2/5] 拒答分析 analyze_refuse.py...
+`torch_dtype` is deprecated! Use `dtype` instead!
+检测到 NVIDIA A100-SXM4-80GB，正在加载模型 Qwen/Qwen2.5-7B-Instruct...
+将使用 bfloat16 优化A100性能。
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:01,  1.66it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.67it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:01<00:00,  1.66it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.73it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.70it/s]
+正在读取文件: results/2025-10-23_12-40-50/grok-3/Bacteria/raw/temp-0.0.jsonl
+文件加载完毕，共 13 条记录。
+开始批量处理... 批量大小 (BATCH_SIZE) = 16
+Processing Batches:   0%|          | 0/1 [00:00<?, ?it/s]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Processing Batches: 100%|██████████| 1/1 [00:03<00:00,  3.32s/it]Processing Batches: 100%|██████████| 1/1 [00:03<00:00,  3.32s/it]
+处理完成，正在合并结果...
+正在将 13 条更新后的记录写回（覆盖）原文件: results/2025-10-23_12-40-50/grok-3/Bacteria/raw/temp-0.0.jsonl
+操作成功完成。
+处理完成: 共13条，已是单序列8，提取成功5，标注 helpful 0，追加 im_end 13。
+`torch_dtype` is deprecated! Use `dtype` instead!
+检测到 NVIDIA A100-SXM4-80GB，正在加载模型 Qwen/Qwen2.5-7B-Instruct...
+将使用 bfloat16 优化A100性能。
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:01,  1.53it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.53it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:01<00:00,  1.52it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.58it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.56it/s]
+正在读取文件: results/2025-10-23_12-40-50/grok-3/Bacteria/raw/temp-0.7.jsonl
+文件加载完毕，共 13 条记录。
+开始批量处理... 批量大小 (BATCH_SIZE) = 16
+Processing Batches:   0%|          | 0/1 [00:00<?, ?it/s]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+警告：无法在输出中找到JSON。输出：NNGHCVCADGYTGDGYSCQADGTCNNGHCVCADGY...
+Processing Batches: 100%|██████████| 1/1 [00:06<00:00,  6.87s/it]Processing Batches: 100%|██████████| 1/1 [00:06<00:00,  6.87s/it]
+处理完成，正在合并结果...
+正在将 13 条更新后的记录写回（覆盖）原文件: results/2025-10-23_12-40-50/grok-3/Bacteria/raw/temp-0.7.jsonl
+操作成功完成。
+处理完成: 共13条，已是单序列10，提取成功3，标注 helpful 0，追加 im_end 13。
+✅ [Step 2/5] 拒答与抽取完成。
+--------------------------------------------------
+输出目录 '/data/nnotaa/align-anything/projects/Bio/benchmark/results/2025-10-23_12-40-50/grok-3/Bacteria/raw_filtered' 已准备就绪。
+
+正在处理文件: results/2025-10-23_12-40-50/grok-3/Bacteria/raw/temp-0.0.jsonl
+处理完成: 'temp-0.0.jsonl'。
+   总共处理 13 行，保留了 13 行。
+
+正在处理文件: results/2025-10-23_12-40-50/grok-3/Bacteria/raw/temp-0.7.jsonl
+处理完成: 'temp-0.7.jsonl'。
+   总共处理 13 行，保留了 13 行。
+
+所有 .jsonl 文件处理完毕！输出位于: /data/nnotaa/align-anything/projects/Bio/benchmark/results/2025-10-23_12-40-50/grok-3/Bacteria/raw_filtered
+✅ [Step 3/5] 过滤完成。结果位于 'results/2025-10-23_12-40-50/grok-3/Bacteria/raw_filtered'.
+--------------------------------------------------
+🔬 [Step 4/5] 使用 ESM 模型处理序列...
+W1023 12:47:46.165000 299864 site-packages/torch/distributed/run.py:774] 
+W1023 12:47:46.165000 299864 site-packages/torch/distributed/run.py:774] *****************************************
+W1023 12:47:46.165000 299864 site-packages/torch/distributed/run.py:774] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1023 12:47:46.165000 299864 site-packages/torch/distributed/run.py:774] *****************************************
+高性能模式启动。共 8 个GPU。
+最大Tokens/批次: 8192
+自动混合精度(autocast)已【禁用】。
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 24.47it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 24.01it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 23.00it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 23.42it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  8.11it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 14.86it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  9.02it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  9.30it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 16.29it/s]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 16.76it/s]
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank7]:[W1023 12:47:56.118497895 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 7]  using GPU 7 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 23.79it/s]
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank2]:[W1023 12:47:57.878010925 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 2]  using GPU 2 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank4]:[W1023 12:47:57.293627905 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 4]  using GPU 4 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+Rank 0 模型加载完成。
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank0]:[W1023 12:47:57.436575916 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 0]  using GPU 0 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank6]:[W1023 12:47:58.774407056 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 6]  using GPU 6 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank1]:[W1023 12:47:58.391431726 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 1]  using GPU 1 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank3]:[W1023 12:47:58.391612706 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 3]  using GPU 3 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+[rank5]:[W1023 12:47:58.391767177 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 5]  using GPU 5 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+文件总进度:   0%|          | 0/2 [00:00<?, ?file/s]文件总进度:   0%|          | 0/2 [00:00<?, ?file/s, 处理中: temp-0.0.jsonl]
+Batches (Rank 0): 0batch [00:00, ?batch/s][A
+Batches (Rank 0): 1batch [00:03,  3.81s/batch][A
+                                              [A文件总进度:  50%|█████     | 1/2 [00:03<00:03,  3.82s/file, 处理中: temp-0.0.jsonl]文件总进度:  50%|█████     | 1/2 [00:03<00:03,  3.82s/file, 处理中: temp-0.7.jsonl]
+Batches (Rank 0): 0batch [00:00, ?batch/s][A
+Batches (Rank 0): 1batch [00:02,  2.72s/batch][A
+                                              [A文件总进度: 100%|██████████| 2/2 [00:06<00:00,  3.17s/file, 处理中: temp-0.7.jsonl]文件总进度: 100%|██████████| 2/2 [00:06<00:00,  3.27s/file, 处理中: temp-0.7.jsonl]
+
+所有进程计算完成，等待同步...

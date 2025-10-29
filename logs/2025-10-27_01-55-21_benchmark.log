@@ -1,0 +1,837 @@
+🚀 开始处理模型: deepseek-chat (标签: api)
+   - 清理后的模型名: deepseek-chat
+   - 创建输出目录: results/2025-10-27_01-55-21/deepseek-chat
+   - 正在运行 Bacteria exo prediction 任务...
+--- 开始执行推理任务 ---
+  模型路径: deepseek-chat
+  模型标签: api
+  输出目录: results/2025-10-27_01-55-21/deepseek-chat/Bacteria/raw
+  温度: 0.0 0.7
+  检测到 'api' 标签, 调用 API 推理脚本...
+============================================================
+🚀 开始 统一API 推理任务 (并发版 v3.3)...
+⚡ 最大并发数: 50
+ timeout=120s
+🤖 API 模型: deepseek-chat
+📂 Prompt 文件: dataset/Bacteria.jsonl
+🔥 温度列表: [0.0, 0.7]
+📝 输出目录: results/2025-10-27_01-55-21/deepseek-chat/Bacteria/raw
+============================================================
+统一 API 客户端初始化完成，模型: deepseek-chat，URL: https://api3.xhub.chat/v1
+
+🔄 -----------------------------------
+🔄 正在处理温度: 0.0...
+🔄 -----------------------------------
+Temp-0.0 Infer:   0%|          | 0/200 [00:00<?, ?it/s]Temp-0.0 Infer:   0%|          | 1/200 [00:00<02:21,  1.40it/s]Temp-0.0 Infer:   0%|          | 1/200 [00:00<02:21,  1.40it/s, inflight=199, slow=0, oldest_s=0, forced_to=0]Temp-0.0 Infer:   1%|          | 2/200 [00:00<02:21,  1.40it/s, inflight=198, slow=0, oldest_s=0, forced_to=0]Temp-0.0 Infer:   2%|▏         | 3/200 [00:00<02:20,  1.40it/s, inflight=191, slow=0, oldest_s=0, forced_to=0]Temp-0.0 Infer:   2%|▏         | 4/200 [00:00<02:19,  1.40it/s, inflight=191, slow=0, oldest_s=0, forced_to=0]Temp-0.0 Infer:   2%|▎         | 5/200 [00:00<02:19,  1.40it/s, inflight=191, slow=0, oldest_s=0, forced_to=0]Temp-0.0 Infer:   3%|▎         | 6/200 [00:00<02:18,  1.40it/s, inflight=191, slow=0, oldest_s=0, forced_to=0]Temp-0.0 Infer:   4%|▎         | 7/200 [00:00<02:17,  1.40it/s, inflight=191, slow=0, oldest_s=0, forced_to=0]Temp-0.0 Infer:   4%|▍         | 8/200 [00:00<02:16,  1.40it/s, inflight=191, slow=0, oldest_s=0, forced_to=0]Temp-0.0 Infer:   4%|▍         | 9/200 [00:00<02:16,  1.40it/s, inflight=191, slow=0, oldest_s=0, forced_to=0]Temp-0.0 Infer:   5%|▌         | 10/200 [00:00<02:15,  1.40it/s, inflight=188, slow=0, oldest_s=0, forced_to=0]Temp-0.0 Infer:   6%|▌         | 11/200 [00:00<02:14,  1.40it/s, inflight=188, slow=0, oldest_s=0, forced_to=0]Temp-0.0 Infer:   6%|▌         | 12/200 [00:00<02:14,  1.40it/s, inflight=188, slow=0, oldest_s=0, forced_to=0]Temp-0.0 Infer:   6%|▋         | 13/200 [00:00<02:13,  1.40it/s, inflight=187, slow=0, oldest_s=0, forced_to=0]Temp-0.0 Infer:   7%|▋         | 14/200 [00:00<00:08, 22.28it/s, inflight=187, slow=0, oldest_s=0, forced_to=0]Temp-0.0 Infer:   7%|▋         | 14/200 [00:00<00:08, 22.28it/s, inflight=184, slow=0, oldest_s=0, forced_to=0]Temp-0.0 Infer:   8%|▊         | 15/200 [00:00<00:08, 22.28it/s, inflight=184, slow=0, oldest_s=0, forced_to=0]Temp-0.0 Infer:   8%|▊         | 16/200 [00:00<00:08, 22.28it/s, inflight=184, slow=0, oldest_s=0, forced_to=0]Temp-0.0 Infer:   8%|▊         | 17/200 [00:00<00:08, 22.28it/s, inflight=183, slow=0, oldest_s=0, forced_to=0]Temp-0.0 Infer:   9%|▉         | 18/200 [00:00<00:08, 22.28it/s, inflight=182, slow=0, oldest_s=0, forced_to=0]Temp-0.0 Infer:  10%|▉         | 19/200 [00:00<00:08, 22.28it/s, inflight=180, slow=0, oldest_s=0, forced_to=0]Temp-0.0 Infer:  10%|█         | 20/200 [00:00<00:08, 22.28it/s, inflight=180, slow=0, oldest_s=0, forced_to=0]Temp-0.0 Infer:  10%|█         | 21/200 [00:00<00:08, 22.28it/s, inflight=178, slow=0, oldest_s=0, forced_to=0]Temp-0.0 Infer:  11%|█         | 22/200 [00:00<00:07, 22.28it/s, inflight=178, slow=0, oldest_s=0, forced_to=0]Temp-0.0 Infer:  12%|█▏        | 23/200 [00:00<00:07, 22.28it/s, inflight=177, slow=0, oldest_s=0, forced_to=0]Temp-0.0 Infer:  12%|█▏        | 24/200 [00:00<00:07, 22.28it/s, inflight=176, slow=0, oldest_s=0, forced_to=0]Temp-0.0 Infer:  12%|█▎        | 25/200 [00:00<00:07, 22.28it/s, inflight=175, slow=0, oldest_s=0, forced_to=0]Temp-0.0 Infer:  13%|█▎        | 26/200 [00:00<00:07, 22.28it/s, inflight=173, slow=0, oldest_s=0, forced_to=0]Temp-0.0 Infer:  14%|█▎        | 27/200 [00:00<00:07, 22.28it/s, inflight=173, slow=0, oldest_s=0, forced_to=0]Temp-0.0 Infer:  14%|█▍        | 28/200 [00:00<00:07, 22.28it/s, inflight=171, slow=0, oldest_s=0, forced_to=0]Temp-0.0 Infer:  14%|█▍        | 29/200 [00:00<00:07, 22.28it/s, inflight=171, slow=0, oldest_s=0, forced_to=0]Temp-0.0 Infer:  15%|█▌        | 30/200 [00:00<00:07, 22.28it/s, inflight=170, slow=0, oldest_s=0, forced_to=0]Temp-0.0 Infer:  16%|█▌        | 31/200 [00:00<00:07, 22.28it/s, inflight=168, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  16%|█▌        | 32/200 [00:00<00:07, 22.28it/s, inflight=168, slow=0, oldest_s=1, forced_to=0]
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523524297609OgFeYBnc)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523523225233F8H9lvSp)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523528328043nCLh04I4)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523530935990KEDHvfaN)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523540784227S1gdOKUm)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523538710336njkHl3uY)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 202510270155235469408424LfwMmqC)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 202510270155235433239314aJsiafX)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523546181513ZMuiPuAN)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523568450782fCIwEozO)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523554166308deOpMr8t)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523565474849jhR86bwf)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552353598070202WyCPkn)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523565175714pTS9P3FN)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523555564706oca5c2q1)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523567369942PqXwukY3)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523565752191FOaJMmy3)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 202510270155235616483191IbThFJz)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 202510270155235764694578RHTp7ux)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523552116295UfpZnx2y)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523575225328XPpOSkps)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523571748108qXqk88ea)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523573976872C9pqIm22)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523575518102YWZLkY0P)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523532874918ZevjhfDC)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523573768861iXqFAn3d)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523573167752YOLXcbkG)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523587150015hBitDLkX)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523544633116bjjZU78w)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523569230956RkvzF7uK)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552355094463853otOKJQ)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523572834614NnofiISz)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 202510270155235733269203IkGi8Lh)', 'type': 'new_api_error'}}Temp-0.0 Infer:  16%|█▋        | 33/200 [00:00<00:03, 53.04it/s, inflight=168, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  16%|█▋        | 33/200 [00:00<00:03, 53.04it/s, inflight=166, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  17%|█▋        | 34/200 [00:00<00:03, 53.04it/s, inflight=166, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  18%|█▊        | 35/200 [00:00<00:03, 53.04it/s, inflight=165, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  18%|█▊        | 36/200 [00:00<00:03, 53.04it/s, inflight=163, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  18%|█▊        | 37/200 [00:00<00:03, 53.04it/s, inflight=163, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  19%|█▉        | 38/200 [00:00<00:03, 53.04it/s, inflight=159, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  20%|█▉        | 39/200 [00:00<00:03, 53.04it/s, inflight=159, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  20%|██        | 40/200 [00:00<00:03, 53.04it/s, inflight=159, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  20%|██        | 41/200 [00:00<00:02, 53.04it/s, inflight=159, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  21%|██        | 42/200 [00:00<00:02, 53.04it/s, inflight=158, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  22%|██▏       | 43/200 [00:00<00:02, 53.04it/s, inflight=157, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  22%|██▏       | 44/200 [00:01<00:02, 53.04it/s, inflight=156, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  22%|██▎       | 45/200 [00:01<00:02, 53.04it/s, inflight=155, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  23%|██▎       | 46/200 [00:01<00:02, 53.04it/s, inflight=153, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  24%|██▎       | 47/200 [00:01<00:02, 53.04it/s, inflight=153, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  24%|██▍       | 48/200 [00:01<00:02, 53.04it/s, inflight=151, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  24%|██▍       | 49/200 [00:01<00:02, 53.04it/s, inflight=151, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  25%|██▌       | 50/200 [00:01<00:02, 53.04it/s, inflight=150, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  26%|██▌       | 51/200 [00:01<00:01, 79.11it/s, inflight=150, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  26%|██▌       | 51/200 [00:01<00:01, 79.11it/s, inflight=149, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  26%|██▌       | 52/200 [00:01<00:01, 79.11it/s, inflight=148, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  26%|██▋       | 53/200 [00:01<00:01, 79.11it/s, inflight=147, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  27%|██▋       | 54/200 [00:01<00:01, 79.11it/s, inflight=145, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  28%|██▊       | 55/200 [00:01<00:01, 79.11it/s, inflight=145, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  28%|██▊       | 56/200 [00:01<00:01, 79.11it/s, inflight=143, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  28%|██▊       | 57/200 [00:01<00:01, 79.11it/s, inflight=143, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  29%|██▉       | 58/200 [00:01<00:01, 79.11it/s, inflight=141, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  30%|██▉       | 59/200 [00:01<00:01, 79.11it/s, inflight=141, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  30%|███       | 60/200 [00:01<00:01, 79.11it/s, inflight=140, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  30%|███       | 61/200 [00:01<00:01, 79.11it/s, inflight=139, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  31%|███       | 62/200 [00:01<00:01, 79.11it/s, inflight=138, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  32%|███▏      | 63/200 [00:01<00:01, 79.11it/s, inflight=136, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  32%|███▏      | 64/200 [00:01<00:01, 79.11it/s, inflight=136, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  32%|███▎      | 65/200 [00:01<00:01, 84.86it/s, inflight=136, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  32%|███▎      | 65/200 [00:01<00:01, 84.86it/s, inflight=135, slow=0, oldest_s=1, forced_to=0]
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523568084084Qq2dGQSh)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523573046064nORHd9h8)', 'type': 'new_api_error'}}
+
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523569135998PqfaJMjy)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523574263981wUk8fcl6)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523552587299LrLGf3TO)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 202510270155236051763652LlqiVJC)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 202510270155235747719789JBO7smq)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523605091906SXqznG5N)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 202510270155236261510456KwAGSEW)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523613055875fneiBEfZ)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523567759674q3w3MD1c)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523604480465VwiDgBP1)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523563017980RZu57on1)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523642000130kw5pioGS)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523651923036ozO4is5G)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523651640308yrIDn8B9)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523652713591mge3UXpm)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523652974011gF6VzHpK)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523698529876kU7bI2wz)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523719738792fgHnfwZx)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523727117640Cidid14o)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523605251566Dmq7kdHd)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523753541078jjnXpWs1)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523629471804TQVd3MY9)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523755489230jR8iOFen)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523553165759IOkgJKBC)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523552816071MPPSNHPD)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523869568635Tujg6n4o)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 202510270155238868665985Xgy2WXh)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 202510270155236830035606GjTucsX)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523684961326KJu1WbDa)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523920648079tN6EiBzA)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523889506442heWciYQm)', 'type': 'new_api_error'}}Temp-0.0 Infer:  33%|███▎      | 66/200 [00:01<00:01, 84.86it/s, inflight=133, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  34%|███▎      | 67/200 [00:01<00:01, 84.86it/s, inflight=133, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  34%|███▍      | 68/200 [00:01<00:01, 84.86it/s, inflight=131, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  34%|███▍      | 69/200 [00:01<00:01, 84.86it/s, inflight=131, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  35%|███▌      | 70/200 [00:01<00:01, 84.86it/s, inflight=129, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  36%|███▌      | 71/200 [00:01<00:01, 84.86it/s, inflight=129, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  36%|███▌      | 72/200 [00:01<00:01, 84.86it/s, inflight=128, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  36%|███▋      | 73/200 [00:01<00:01, 84.86it/s, inflight=127, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  37%|███▋      | 74/200 [00:01<00:01, 84.86it/s, inflight=126, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  38%|███▊      | 75/200 [00:01<00:01, 84.86it/s, inflight=123, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  38%|███▊      | 76/200 [00:01<00:01, 84.86it/s, inflight=123, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  38%|███▊      | 77/200 [00:01<00:01, 84.86it/s, inflight=123, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  39%|███▉      | 78/200 [00:01<00:01, 84.86it/s, inflight=122, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  40%|███▉      | 79/200 [00:01<00:01, 94.88it/s, inflight=122, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  40%|███▉      | 79/200 [00:01<00:01, 94.88it/s, inflight=120, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  40%|████      | 80/200 [00:01<00:01, 94.88it/s, inflight=120, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  40%|████      | 81/200 [00:01<00:01, 94.88it/s, inflight=117, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  41%|████      | 82/200 [00:01<00:01, 94.88it/s, inflight=117, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  42%|████▏     | 83/200 [00:01<00:01, 94.88it/s, inflight=117, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  42%|████▏     | 84/200 [00:01<00:01, 94.88it/s, inflight=116, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  42%|████▎     | 85/200 [00:01<00:01, 94.88it/s, inflight=115, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  43%|████▎     | 86/200 [00:01<00:01, 94.88it/s, inflight=114, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  44%|████▎     | 87/200 [00:01<00:01, 94.88it/s, inflight=113, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  44%|████▍     | 88/200 [00:01<00:01, 94.88it/s, inflight=112, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  44%|████▍     | 89/200 [00:01<00:01, 94.88it/s, inflight=111, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  45%|████▌     | 90/200 [00:01<00:01, 94.88it/s, inflight=109, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  46%|████▌     | 91/200 [00:01<00:01, 94.88it/s, inflight=109, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  46%|████▌     | 92/200 [00:01<00:01, 94.88it/s, inflight=108, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  46%|████▋     | 93/200 [00:01<00:01, 94.88it/s, inflight=106, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  47%|████▋     | 94/200 [00:01<00:01, 94.88it/s, inflight=106, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  48%|████▊     | 95/200 [00:01<00:00, 108.46it/s, inflight=106, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  48%|████▊     | 95/200 [00:01<00:00, 108.46it/s, inflight=105, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  48%|████▊     | 96/200 [00:01<00:00, 108.46it/s, inflight=104, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  48%|████▊     | 97/200 [00:01<00:00, 108.46it/s, inflight=103, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  49%|████▉     | 98/200 [00:01<00:00, 108.46it/s, inflight=102, slow=0, oldest_s=1, forced_to=0]
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523940715269jig2za6f)', 'type': 'new_api_error'}}
+
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523962605734ASAqLZWB)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523949185292ZrhJ0ej3)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523964709929jIGvWjsz)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 202510270155239285292820SFYwUbH)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523922243900K2BekqVj)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 202510270155239722549871jsFpNPI)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523978905835yrPjVBqH)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523980664639ukOff0do)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523949294339tqjrOtpw)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523990620565vK6cYtIB)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523949048455fdeKQ6pi)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552411494371hfk1wdDR)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552412039027Ghe5dRLs)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552419860153Udtxil0c)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552427700569aibl8yKW)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524256884242Qs0ZA6n)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552418940460lume8WUj)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552432411076IiLDrMQf)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552441477767YWa9LOpj)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552430435224DUWNNctG)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552450651479zt2sIJlq)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552437402583M3FGqKLU)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552461318778CzV6yPu6)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 202510270155246550141025j3TZw2)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552475354144csyIoy72)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552483834199eA2uWoG3)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524831039275G4857Is)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552492928080p6K3ELv9)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552483195118RUSNWIyt)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524109302468J12Cis91)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552413473267QgPWqbBq)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524142147934RxrF4UeU)', 'type': 'new_api_error'}}Temp-0.0 Infer:  50%|████▉     | 99/200 [00:01<00:00, 108.46it/s, inflight=101, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  50%|█████     | 100/200 [00:01<00:00, 108.46it/s, inflight=100, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  50%|█████     | 101/200 [00:01<00:00, 108.46it/s, inflight=99, slow=0, oldest_s=1, forced_to=0] Temp-0.0 Infer:  51%|█████     | 102/200 [00:01<00:00, 108.46it/s, inflight=97, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  52%|█████▏    | 103/200 [00:01<00:00, 108.46it/s, inflight=97, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  52%|█████▏    | 104/200 [00:01<00:00, 108.46it/s, inflight=95, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  52%|█████▎    | 105/200 [00:01<00:00, 108.46it/s, inflight=95, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  53%|█████▎    | 106/200 [00:01<00:00, 108.46it/s, inflight=93, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  54%|█████▎    | 107/200 [00:01<00:00, 108.46it/s, inflight=93, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  54%|█████▍    | 108/200 [00:01<00:00, 108.46it/s, inflight=92, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  55%|█████▍    | 109/200 [00:01<00:00, 114.22it/s, inflight=92, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  55%|█████▍    | 109/200 [00:01<00:00, 114.22it/s, inflight=91, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  55%|█████▌    | 110/200 [00:01<00:00, 114.22it/s, inflight=90, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  56%|█████▌    | 111/200 [00:01<00:00, 114.22it/s, inflight=89, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  56%|█████▌    | 112/200 [00:01<00:00, 114.22it/s, inflight=88, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  56%|█████▋    | 113/200 [00:01<00:00, 114.22it/s, inflight=87, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  57%|█████▋    | 114/200 [00:01<00:00, 114.22it/s, inflight=85, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  57%|█████▊    | 115/200 [00:01<00:00, 114.22it/s, inflight=85, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  58%|█████▊    | 116/200 [00:01<00:00, 114.22it/s, inflight=82, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  58%|█████▊    | 117/200 [00:01<00:00, 114.22it/s, inflight=82, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  59%|█████▉    | 118/200 [00:01<00:00, 114.22it/s, inflight=82, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  60%|█████▉    | 119/200 [00:01<00:00, 114.22it/s, inflight=81, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  60%|██████    | 120/200 [00:01<00:00, 114.22it/s, inflight=80, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  60%|██████    | 121/200 [00:01<00:00, 114.22it/s, inflight=79, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  61%|██████    | 122/200 [00:01<00:00, 114.22it/s, inflight=78, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  62%|██████▏   | 123/200 [00:01<00:00, 117.75it/s, inflight=78, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  62%|██████▏   | 123/200 [00:01<00:00, 117.75it/s, inflight=77, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  62%|██████▏   | 124/200 [00:01<00:00, 117.75it/s, inflight=76, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  62%|██████▎   | 125/200 [00:01<00:00, 117.75it/s, inflight=74, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  63%|██████▎   | 126/200 [00:01<00:00, 117.75it/s, inflight=74, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  64%|██████▎   | 127/200 [00:01<00:00, 117.75it/s, inflight=73, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  64%|██████▍   | 128/200 [00:01<00:00, 117.75it/s, inflight=71, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  64%|██████▍   | 129/200 [00:01<00:00, 117.75it/s, inflight=71, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  65%|██████▌   | 130/200 [00:01<00:00, 117.75it/s, inflight=69, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  66%|██████▌   | 131/200 [00:01<00:00, 117.75it/s, inflight=69, slow=0, oldest_s=1, forced_to=0]
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552430345405eqPGGRIj)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524170547562Dj2v1Mpn)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524138432386KkUlanC3)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524176133979SztcsY1a)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552460639475ANvPc8lf)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552477808788bLAefUdb)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523974453743lNMFBsCh)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523960700291OFWzaUhG)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 202510270155242052794690ePdNS3V)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524108703551LH7s2MHB)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 202510270155242326041632zOZqwv9)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524139626726aqUBPUDG)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524248483455GTc5yzzc)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524246958064mawHg2Ha)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524266405558kGdIIwWj)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524274385924gylY2lHT)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524273418572XmH45exS)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015523950405605jRB9EGSM)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524201465506oRGOlSWW)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524301146788GrTFvGfT)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524296727717qip77MvA)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524310602965XB7MYFsJ)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524312048351mWky84t3)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552442686540l6BCz63P)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524153523037SfjqwPT2)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524325726926uLOlGC4l)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524347135638LnWxypde)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524345060675rW8wJEzB)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524318250771VypSijYR)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524364102731MSAXj6Pl)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524383247097QHQzTC3t)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524298082660BKaymO8Y)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552444789591lrmV3o3x)', 'type': 'new_api_error'}}Temp-0.0 Infer:  66%|██████▌   | 132/200 [00:01<00:00, 117.75it/s, inflight=66, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  66%|██████▋   | 133/200 [00:01<00:00, 117.75it/s, inflight=66, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  67%|██████▋   | 134/200 [00:01<00:00, 117.75it/s, inflight=66, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  68%|██████▊   | 135/200 [00:01<00:00, 117.75it/s, inflight=65, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  68%|██████▊   | 136/200 [00:01<00:00, 117.75it/s, inflight=64, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  68%|██████▊   | 137/200 [00:01<00:00, 123.08it/s, inflight=64, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  68%|██████▊   | 137/200 [00:01<00:00, 123.08it/s, inflight=63, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  69%|██████▉   | 138/200 [00:01<00:00, 123.08it/s, inflight=62, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  70%|██████▉   | 139/200 [00:01<00:00, 123.08it/s, inflight=60, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  70%|███████   | 140/200 [00:01<00:00, 123.08it/s, inflight=60, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  70%|███████   | 141/200 [00:01<00:00, 123.08it/s, inflight=59, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  71%|███████   | 142/200 [00:01<00:00, 123.08it/s, inflight=58, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  72%|███████▏  | 143/200 [00:01<00:00, 123.08it/s, inflight=56, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  72%|███████▏  | 144/200 [00:01<00:00, 123.08it/s, inflight=56, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  72%|███████▎  | 145/200 [00:01<00:00, 123.08it/s, inflight=55, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  73%|███████▎  | 146/200 [00:01<00:00, 123.08it/s, inflight=54, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  74%|███████▎  | 147/200 [00:01<00:00, 123.08it/s, inflight=53, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  74%|███████▍  | 148/200 [00:01<00:00, 123.08it/s, inflight=52, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  74%|███████▍  | 149/200 [00:01<00:00, 123.08it/s, inflight=51, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  75%|███████▌  | 150/200 [00:01<00:00, 123.08it/s, inflight=50, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  76%|███████▌  | 151/200 [00:01<00:00, 127.67it/s, inflight=50, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  76%|███████▌  | 151/200 [00:01<00:00, 127.67it/s, inflight=49, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  76%|███████▌  | 152/200 [00:01<00:00, 127.67it/s, inflight=48, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  76%|███████▋  | 153/200 [00:01<00:00, 127.67it/s, inflight=47, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  77%|███████▋  | 154/200 [00:01<00:00, 127.67it/s, inflight=46, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  78%|███████▊  | 155/200 [00:01<00:00, 127.67it/s, inflight=45, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  78%|███████▊  | 156/200 [00:01<00:00, 127.67it/s, inflight=44, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  78%|███████▊  | 157/200 [00:01<00:00, 127.67it/s, inflight=43, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  79%|███████▉  | 158/200 [00:01<00:00, 127.67it/s, inflight=42, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  80%|███████▉  | 159/200 [00:01<00:00, 127.67it/s, inflight=41, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  80%|████████  | 160/200 [00:01<00:00, 127.67it/s, inflight=40, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  80%|████████  | 161/200 [00:01<00:00, 127.67it/s, inflight=38, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  81%|████████  | 162/200 [00:01<00:00, 127.67it/s, inflight=38, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  82%|████████▏ | 163/200 [00:01<00:00, 127.67it/s, inflight=37, slow=0, oldest_s=1, forced_to=0]
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524318077186kGOaql51)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524414256681qQLVjmGe)', 'type': 'new_api_error'}}
+
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 202510270155244182606671kr4xqgM)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524329005343vcUst2eI)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524432017333liR0HoAz)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524408370880eKE2anpc)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524444226846MWEx9y88)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524448570464ecwwboEh)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524449735808bPFHmZpp)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 202510270155244699794491V7Rsc8W)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524193194368nYPs5rFR)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 202510270155243783496024oG7Gl1z)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524374076693Pxz80Udq)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524477422973QcnSJ4j8)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524410921498Ax8TFarQ)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524506745343NqjNG1sP)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 202510270155245044190592HYbRNVx)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 202510270155245246494367aO91Pru)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524531525941ulUBHB8B)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524345251682r2cFKnvA)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524256074717iAlPEHGu)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524561702155crZuJ3ZC)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524561607804XJZVFcZc)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524567936753vNN9Dcbu)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524513689640dhhhU62q)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524581017550NV3PgVue)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524584711099IQmIMVL3)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524620860311awZplPBZ)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524633656898ZvWGNjQm)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524433354327qWh9OBVR)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524637361941njrfdvbB)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524650024794mDO9yKaE)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524562480462J44z3Mqb)', 'type': 'new_api_error'}}Temp-0.0 Infer:  82%|████████▏ | 164/200 [00:01<00:00, 127.67it/s, inflight=36, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  82%|████████▎ | 165/200 [00:01<00:00, 127.67it/s, inflight=33, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  83%|████████▎ | 166/200 [00:01<00:00, 127.67it/s, inflight=33, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  84%|████████▎ | 167/200 [00:01<00:00, 127.67it/s, inflight=33, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  84%|████████▍ | 168/200 [00:01<00:00, 127.67it/s, inflight=32, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  84%|████████▍ | 169/200 [00:01<00:00, 127.67it/s, inflight=31, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  85%|████████▌ | 170/200 [00:01<00:00, 127.67it/s, inflight=30, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  86%|████████▌ | 171/200 [00:01<00:00, 127.67it/s, inflight=29, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  86%|████████▌ | 172/200 [00:01<00:00, 127.67it/s, inflight=28, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  86%|████████▋ | 173/200 [00:01<00:00, 153.29it/s, inflight=28, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  86%|████████▋ | 173/200 [00:01<00:00, 153.29it/s, inflight=27, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  87%|████████▋ | 174/200 [00:01<00:00, 153.29it/s, inflight=26, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  88%|████████▊ | 175/200 [00:01<00:00, 153.29it/s, inflight=25, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  88%|████████▊ | 176/200 [00:01<00:00, 153.29it/s, inflight=24, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  88%|████████▊ | 177/200 [00:01<00:00, 153.29it/s, inflight=23, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  89%|████████▉ | 178/200 [00:01<00:00, 153.29it/s, inflight=22, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  90%|████████▉ | 179/200 [00:01<00:00, 153.29it/s, inflight=21, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  90%|█████████ | 180/200 [00:01<00:00, 153.29it/s, inflight=20, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  90%|█████████ | 181/200 [00:01<00:00, 153.29it/s, inflight=19, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  91%|█████████ | 182/200 [00:01<00:00, 153.29it/s, inflight=18, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  92%|█████████▏| 183/200 [00:01<00:00, 153.29it/s, inflight=17, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  92%|█████████▏| 184/200 [00:01<00:00, 153.29it/s, inflight=16, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  92%|█████████▎| 185/200 [00:01<00:00, 153.29it/s, inflight=15, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  93%|█████████▎| 186/200 [00:01<00:00, 153.29it/s, inflight=14, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  94%|█████████▎| 187/200 [00:01<00:00, 153.29it/s, inflight=13, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  94%|█████████▍| 188/200 [00:01<00:00, 153.29it/s, inflight=12, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  94%|█████████▍| 189/200 [00:01<00:00, 153.29it/s, inflight=11, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  95%|█████████▌| 190/200 [00:01<00:00, 153.29it/s, inflight=10, slow=0, oldest_s=1, forced_to=0]Temp-0.0 Infer:  96%|█████████▌| 191/200 [00:01<00:00, 153.29it/s, inflight=9, slow=0, oldest_s=2, forced_to=0] Temp-0.0 Infer:  96%|█████████▌| 192/200 [00:01<00:00, 153.29it/s, inflight=7, slow=0, oldest_s=2, forced_to=0]Temp-0.0 Infer:  96%|█████████▋| 193/200 [00:01<00:00, 153.29it/s, inflight=7, slow=0, oldest_s=2, forced_to=0]Temp-0.0 Infer:  97%|█████████▋| 194/200 [00:01<00:00, 153.29it/s, inflight=6, slow=0, oldest_s=2, forced_to=0]Temp-0.0 Infer:  98%|█████████▊| 195/200 [00:01<00:00, 153.29it/s, inflight=5, slow=0, oldest_s=2, forced_to=0]Temp-0.0 Infer:  98%|█████████▊| 196/200 [00:01<00:00, 153.29it/s, inflight=4, slow=0, oldest_s=2, forced_to=0]Temp-0.0 Infer:  98%|█████████▊| 197/200 [00:02<00:00, 153.29it/s, inflight=3, slow=0, oldest_s=2, forced_to=0]
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524656192350wx84bHjG)', 'type': 'new_api_error'}}
+
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524565960354usCv3M5D)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 202510270155246581785826eV9Nf6O)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524575620835TN86YjsM)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524690002874ny9inhhJ)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524686207400IN4dFpdH)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524708075073X78aAzUz)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 202510270155247079048077f1PGBTd)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524480581159HaI5a2KN)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524673505560ny5c22Cb)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 202510270155245089134735UMksXI6)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524593750466yQG7n6eZ)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524726755966FXI4ul72)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524547857462LBhbnUqC)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524733816020L716ar5T)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524736417648iN5RNA7B)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524745739738UllFepjf)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524746315025Fj0tlApH)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524752787569BbD3RWa5)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524759672756WclUdbGE)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524763662445kINtDiya)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524767007318qahHz5bP)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524770628391Ci0xfO9f)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524760358756aqnNsFj5)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524723690931BhRZWvYP)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524780747484GqFtCYeB)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524773515612eTNOoBg0)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 202510270155247764247060dWQscwA)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524793618913iRVnUSPB)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524749411648u4sBm8JB)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524807111825xIao7qfc)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524813598151AVso4YUG)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524813733290Zs4KrjgC)', 'type': 'new_api_error'}}Temp-0.0 Infer:  99%|█████████▉| 198/200 [00:02<00:00, 153.29it/s, inflight=2, slow=0, oldest_s=2, forced_to=0]Temp-0.0 Infer: 100%|█████████▉| 199/200 [00:02<00:00, 153.29it/s, inflight=1, slow=0, oldest_s=2, forced_to=0]Temp-0.0 Infer: 100%|██████████| 200/200 [00:02<00:00, 173.74it/s, inflight=1, slow=0, oldest_s=2, forced_to=0]Temp-0.0 Infer: 100%|██████████| 200/200 [00:02<00:00, 173.74it/s, inflight=0, slow=0, oldest_s=0, forced_to=0]Temp-0.0 Infer: 100%|██████████| 200/200 [00:02<00:00, 97.51it/s, inflight=0, slow=0, oldest_s=0, forced_to=0] 
+
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524817134775ti27yE8a)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524837349367Fnw9jHDI)', 'type': 'new_api_error'}}
+✅ 结果已保存至: results/2025-10-27_01-55-21/deepseek-chat/Bacteria/raw/temp-0.0.jsonl
+
+🔄 -----------------------------------
+🔄 正在处理温度: 0.7...
+🔄 -----------------------------------
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524960729331UTJK4pPu)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524956826247ji50Cqp4)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524974272522oUgCFESd)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524986346674OIQ017Tf)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524977832076CHXNJ3oR)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524997990122s0C9mpDV)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 202510270155249790521244UjxYvPX)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015524994155946N4uA1Q8R)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552516642713XzIbdXX2)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552522238672yMsW5pa9)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 202510270155259683134fKGyS7xr)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552525953892r0i00SAH)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552527516563lukjDqY)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552536068446qzJNUmGU)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552550602900P8lNuRjM)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552539733827iiTrn3tJ)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552558643712EzsmVc6K)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552512604808AilKdAYC)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552583189279Dqwy5FyO)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552530904590QYxhOUtH)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552593854998MZBT5GeN)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552574531130vXU4sVT)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525102303734pqvP8cz0)', 'type': 'new_api_error'}}
+Temp-0.7 Infer:   0%|          | 0/200 [00:00<?, ?it/s]Temp-0.7 Infer:   0%|          | 1/200 [00:00<00:00, 1247.19it/s, inflight=177, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:   1%|          | 2/200 [00:00<00:00, 1770.87it/s, inflight=177, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:   2%|▏         | 3/200 [00:00<00:00, 2248.55it/s, inflight=177, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:   2%|▏         | 4/200 [00:00<00:00, 683.61it/s, inflight=177, slow=0, oldest_s=0, forced_to=0] Temp-0.7 Infer:   2%|▎         | 5/200 [00:00<00:00, 397.17it/s, inflight=177, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:   3%|▎         | 6/200 [00:00<00:00, 459.82it/s, inflight=177, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:   4%|▎         | 7/200 [00:00<00:00, 525.24it/s, inflight=177, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:   4%|▍         | 8/200 [00:00<00:00, 591.72it/s, inflight=177, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:   4%|▍         | 9/200 [00:00<00:00, 580.54it/s, inflight=177, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:   5%|▌         | 10/200 [00:00<00:00, 630.14it/s, inflight=177, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:   6%|▌         | 11/200 [00:00<00:00, 684.00it/s, inflight=177, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:   6%|▌         | 12/200 [00:00<00:00, 736.04it/s, inflight=177, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:   6%|▋         | 13/200 [00:00<00:00, 650.06it/s, inflight=177, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:   7%|▋         | 14/200 [00:00<00:00, 681.48it/s, inflight=177, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:   8%|▊         | 15/200 [00:00<00:00, 720.06it/s, inflight=177, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:   8%|▊         | 16/200 [00:00<00:00, 759.64it/s, inflight=177, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:   8%|▊         | 17/200 [00:00<00:00, 730.57it/s, inflight=177, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:   9%|▉         | 18/200 [00:00<00:00, 624.86it/s, inflight=177, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  10%|▉         | 19/200 [00:00<00:00, 601.68it/s, inflight=177, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  10%|█         | 20/200 [00:00<00:00, 625.23it/s, inflight=177, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  10%|█         | 21/200 [00:00<00:00, 626.39it/s, inflight=177, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  11%|█         | 22/200 [00:00<00:00, 646.34it/s, inflight=177, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  12%|█▏        | 23/200 [00:00<00:00, 667.96it/s, inflight=177, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  12%|█▏        | 24/200 [00:00<00:00, 674.85it/s, inflight=175, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  12%|█▎        | 25/200 [00:00<00:00, 637.96it/s, inflight=175, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  13%|█▎        | 26/200 [00:00<00:00, 644.49it/s, inflight=174, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  14%|█▎        | 27/200 [00:00<00:00, 490.55it/s, inflight=173, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  14%|█▍        | 28/200 [00:00<00:00, 429.65it/s, inflight=171, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  14%|█▍        | 29/200 [00:00<00:00, 412.54it/s, inflight=171, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  15%|█▌        | 30/200 [00:00<00:00, 420.28it/s, inflight=170, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  16%|█▌        | 31/200 [00:00<00:00, 381.27it/s, inflight=169, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  16%|█▌        | 32/200 [00:00<00:00, 326.72it/s, inflight=168, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  16%|█▋        | 33/200 [00:00<00:00, 303.70it/s, inflight=168, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  16%|█▋        | 33/200 [00:00<00:00, 303.70it/s, inflight=166, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  17%|█▋        | 34/200 [00:00<00:00, 303.70it/s, inflight=166, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  18%|█▊        | 35/200 [00:00<00:00, 303.70it/s, inflight=165, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  18%|█▊        | 36/200 [00:00<00:00, 303.70it/s, inflight=163, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  18%|█▊        | 37/200 [00:00<00:00, 303.70it/s, inflight=163, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  19%|█▉        | 38/200 [00:00<00:00, 303.70it/s, inflight=162, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  20%|█▉        | 39/200 [00:00<00:00, 303.70it/s, inflight=160, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  20%|██        | 40/200 [00:00<00:00, 303.70it/s, inflight=160, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  20%|██        | 41/200 [00:00<00:00, 303.70it/s, inflight=159, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  21%|██        | 42/200 [00:00<00:00, 303.70it/s, inflight=158, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  22%|██▏       | 43/200 [00:00<00:00, 303.70it/s, inflight=156, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  22%|██▏       | 44/200 [00:00<00:00, 303.70it/s, inflight=156, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  22%|██▎       | 45/200 [00:00<00:00, 303.70it/s, inflight=155, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  23%|██▎       | 46/200 [00:00<00:00, 303.70it/s, inflight=154, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  24%|██▎       | 47/200 [00:00<00:00, 303.70it/s, inflight=152, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  24%|██▍       | 48/200 [00:00<00:00, 303.70it/s, inflight=152, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  24%|██▍       | 49/200 [00:00<00:00, 303.70it/s, inflight=151, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  25%|██▌       | 50/200 [00:00<00:00, 303.70it/s, inflight=150, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  26%|██▌       | 51/200 [00:00<00:00, 303.70it/s, inflight=148, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  26%|██▌       | 52/200 [00:00<00:00, 303.70it/s, inflight=148, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  26%|██▋       | 53/200 [00:00<00:00, 303.70it/s, inflight=147, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  27%|██▋       | 54/200 [00:00<00:00, 303.70it/s, inflight=146, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  28%|██▊       | 55/200 [00:00<00:00, 303.70it/s, inflight=145, slow=0, oldest_s=0, forced_to=0]
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552567400134OCgEFNQT)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552528205779t7H4V0jx)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525148204406HbDyTtWQ)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525162540121T6iYFdCP)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525177118979RS4MYjlA)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552544689109zWvU4itI)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525191162343FeGi8Inj)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525109144864ydgZGZuo)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525131054454dVWNnOFK)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525232486352qzRkIsIL)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 202510270155251320253970jL11GNv)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525237192141KpBWF2sp)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 202510270155257014872736XDMK4a)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525247058882RqFDCeJx)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525259762461QYyhxgCA)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525274743874NFPWEIdM)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525274559085Qqmuiu1Y)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525291762220dGMxmmti)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525299656922ZGNkIOa7)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525299481259pK9NAiMK)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525219903099se3YlzIW)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 202510270155253215646435RHTa2Nw)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552561910517K1HL0x8G)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525315126789UOdMS98w)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 202510270155253322963467xhCTZsP)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525327872742inw8OhLi)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 202510270155252497856871RPynW6R)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552597267555zxAkMvEJ)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525350183606Cmvx8o1a)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525275091140WwmW31Mr)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525367668378FEoRP4KQ)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525380986355Il8zc8SD)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525387718971aJERIqxm)', 'type': 'new_api_error'}}Temp-0.7 Infer:  28%|██▊       | 56/200 [00:00<00:00, 303.70it/s, inflight=143, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  28%|██▊       | 57/200 [00:00<00:00, 303.70it/s, inflight=143, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  29%|██▉       | 58/200 [00:00<00:00, 303.70it/s, inflight=141, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  30%|██▉       | 59/200 [00:00<00:00, 303.70it/s, inflight=141, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  30%|███       | 60/200 [00:00<00:00, 303.70it/s, inflight=140, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  30%|███       | 61/200 [00:00<00:00, 303.70it/s, inflight=139, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  31%|███       | 62/200 [00:00<00:00, 303.70it/s, inflight=138, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  32%|███▏      | 63/200 [00:00<00:00, 303.70it/s, inflight=136, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  32%|███▏      | 64/200 [00:00<00:00, 172.53it/s, inflight=136, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  32%|███▏      | 64/200 [00:00<00:00, 172.53it/s, inflight=136, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  32%|███▎      | 65/200 [00:00<00:00, 172.53it/s, inflight=135, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  33%|███▎      | 66/200 [00:00<00:00, 172.53it/s, inflight=134, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  34%|███▎      | 67/200 [00:00<00:00, 172.53it/s, inflight=133, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  34%|███▍      | 68/200 [00:00<00:00, 172.53it/s, inflight=132, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  34%|███▍      | 69/200 [00:00<00:00, 172.53it/s, inflight=131, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  35%|███▌      | 70/200 [00:00<00:00, 172.53it/s, inflight=130, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  36%|███▌      | 71/200 [00:00<00:00, 172.53it/s, inflight=128, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  36%|███▌      | 72/200 [00:00<00:00, 172.53it/s, inflight=128, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  36%|███▋      | 73/200 [00:00<00:00, 172.53it/s, inflight=127, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  37%|███▋      | 74/200 [00:00<00:00, 172.53it/s, inflight=126, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  38%|███▊      | 75/200 [00:00<00:00, 172.53it/s, inflight=125, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  38%|███▊      | 76/200 [00:00<00:00, 172.53it/s, inflight=124, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  38%|███▊      | 77/200 [00:00<00:00, 172.53it/s, inflight=122, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  39%|███▉      | 78/200 [00:00<00:00, 172.53it/s, inflight=122, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  40%|███▉      | 79/200 [00:00<00:00, 172.53it/s, inflight=121, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  40%|████      | 80/200 [00:00<00:00, 172.53it/s, inflight=119, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  40%|████      | 81/200 [00:00<00:00, 172.53it/s, inflight=119, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  41%|████      | 82/200 [00:00<00:00, 172.53it/s, inflight=117, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  42%|████▏     | 83/200 [00:00<00:00, 172.53it/s, inflight=117, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  42%|████▏     | 84/200 [00:00<00:00, 172.53it/s, inflight=115, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  42%|████▎     | 85/200 [00:00<00:00, 115.96it/s, inflight=115, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  42%|████▎     | 85/200 [00:00<00:00, 115.96it/s, inflight=115, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  43%|████▎     | 86/200 [00:00<00:00, 115.96it/s, inflight=114, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  44%|████▎     | 87/200 [00:00<00:00, 115.96it/s, inflight=113, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  44%|████▍     | 88/200 [00:00<00:00, 115.96it/s, inflight=112, slow=0, oldest_s=0, forced_to=0]
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525373553169JsoASxQt)', 'type': 'new_api_error'}}
+
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525390256677iVCoUwpT)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525390986421V6SYtxYc)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525393799649FCSWeXdH)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525290064611ROwlvoHN)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525439365566Gi4pxWDJ)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525443932289AOZz6v0t)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525228834279CVi3uAM1)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 202510270155254586983724iv5SAr7)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 202510270155253552917187JbiRIZB)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525477467889ceD1ZZ6G)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 202510270155254660182550qu4okRV)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525384396171JUPBm3O9)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 202510270155255047634369P6rHA0q)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 202510270155254717783850a1S5k7t)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525509723496q33Eg0L9)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525308002198oSZQ1Tye)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525534864913hoezynEB)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 202510270155255622912352YrA8Q1n)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525559072419FgngvwP8)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 202510270155254700555236VQgDg8A)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525570913498ckq1ukH6)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 202510270155251097985029XPElDY2)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525472944620vnpwj4NO)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525584613642Hy71WriS)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525592593033bMbJVIuH)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525584645323qq2el2rl)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525617096886OV2ln7Nl)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525616718490n2MnJzNh)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525629310522FTmRWwQ3)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525439120511qSuXtgAx)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525641750669C4dI0cMm)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525644922438ABokBTzM)', 'type': 'new_api_error'}}Temp-0.7 Infer:  44%|████▍     | 89/200 [00:00<00:00, 115.96it/s, inflight=110, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  45%|████▌     | 90/200 [00:00<00:00, 115.96it/s, inflight=110, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  46%|████▌     | 91/200 [00:00<00:00, 115.96it/s, inflight=109, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  46%|████▌     | 92/200 [00:00<00:00, 115.96it/s, inflight=106, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  46%|████▋     | 93/200 [00:00<00:00, 115.96it/s, inflight=106, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  47%|████▋     | 94/200 [00:00<00:00, 115.96it/s, inflight=106, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  48%|████▊     | 95/200 [00:00<00:00, 115.96it/s, inflight=105, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  48%|████▊     | 96/200 [00:00<00:00, 115.96it/s, inflight=102, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  48%|████▊     | 97/200 [00:00<00:00, 115.96it/s, inflight=102, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  49%|████▉     | 98/200 [00:00<00:00, 115.96it/s, inflight=102, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  50%|████▉     | 99/200 [00:00<00:00, 115.96it/s, inflight=101, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  50%|█████     | 100/200 [00:00<00:00, 119.85it/s, inflight=101, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  50%|█████     | 100/200 [00:00<00:00, 119.85it/s, inflight=98, slow=0, oldest_s=0, forced_to=0] Temp-0.7 Infer:  50%|█████     | 101/200 [00:00<00:00, 119.85it/s, inflight=98, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  51%|█████     | 102/200 [00:00<00:00, 119.85it/s, inflight=98, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  52%|█████▏    | 103/200 [00:00<00:00, 119.85it/s, inflight=96, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  52%|█████▏    | 104/200 [00:00<00:00, 119.85it/s, inflight=96, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  52%|█████▎    | 105/200 [00:00<00:00, 119.85it/s, inflight=95, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  53%|█████▎    | 106/200 [00:00<00:00, 119.85it/s, inflight=93, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  54%|█████▎    | 107/200 [00:00<00:00, 119.85it/s, inflight=93, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  54%|█████▍    | 108/200 [00:00<00:00, 119.85it/s, inflight=92, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  55%|█████▍    | 109/200 [00:00<00:00, 119.85it/s, inflight=91, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  55%|█████▌    | 110/200 [00:00<00:00, 119.85it/s, inflight=89, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  56%|█████▌    | 111/200 [00:00<00:00, 119.85it/s, inflight=89, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  56%|█████▌    | 112/200 [00:00<00:00, 119.85it/s, inflight=88, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  56%|█████▋    | 113/200 [00:00<00:00, 119.85it/s, inflight=86, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  57%|█████▋    | 114/200 [00:00<00:00, 120.87it/s, inflight=86, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  57%|█████▋    | 114/200 [00:00<00:00, 120.87it/s, inflight=86, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  57%|█████▊    | 115/200 [00:00<00:00, 120.87it/s, inflight=84, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  58%|█████▊    | 116/200 [00:00<00:00, 120.87it/s, inflight=84, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  58%|█████▊    | 117/200 [00:00<00:00, 120.87it/s, inflight=82, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  59%|█████▉    | 118/200 [00:00<00:00, 120.87it/s, inflight=82, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  60%|█████▉    | 119/200 [00:00<00:00, 120.87it/s, inflight=81, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  60%|██████    | 120/200 [00:00<00:00, 120.87it/s, inflight=79, slow=0, oldest_s=0, forced_to=0]
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525648851350bPwqsBqF)', 'type': 'new_api_error'}}
+
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525651916332wBceb4Ke)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525689565453P8qQYp1t)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525744434287jzdV9S7m)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525738368107fLbJR84J)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525752131923DERfykLK)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 202510270155256904257240St9ntNx)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525713600757JJB7piig)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525745940247agQGyjxD)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525712359912vFWprcKP)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525698807928M5nPYAXT)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525694850743gBFWuPFO)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525658015983TqIhDOgQ)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 202510270155256741807049H3CYVy8)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525899572357jjnB7gV5)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525919884192UapKqond)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525933603173kNk23kIT)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525723438624Q1x5Knmp)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525953592425413hrMdu)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525421140504mm4ZXMIy)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 202510270155253347525616nWoxt4E)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525971720322e74YazVo)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525553823959sOMrI22n)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525968880752HqJVpKJV)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525984448557XicHAMIk)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 202510270155259859824974DMoxBIH)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525991201893qAJLmPyl)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552617634703XSeMoZGE)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525962939278PdVcOkZs)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525963078764tb1hkB8Z)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552644840438NfiPh0T6)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552641728045717uVB2a)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552643482877JdNKAzZJ)', 'type': 'new_api_error'}}Temp-0.7 Infer:  60%|██████    | 121/200 [00:00<00:00, 120.87it/s, inflight=79, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  61%|██████    | 122/200 [00:00<00:00, 120.87it/s, inflight=74, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  62%|██████▏   | 123/200 [00:00<00:00, 120.87it/s, inflight=74, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  62%|██████▏   | 124/200 [00:00<00:00, 120.87it/s, inflight=74, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  62%|██████▎   | 125/200 [00:00<00:00, 120.87it/s, inflight=74, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  63%|██████▎   | 126/200 [00:00<00:00, 120.87it/s, inflight=74, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  64%|██████▎   | 127/200 [00:00<00:00, 120.87it/s, inflight=73, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  64%|██████▍   | 128/200 [00:00<00:00, 122.07it/s, inflight=73, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  64%|██████▍   | 128/200 [00:00<00:00, 122.07it/s, inflight=72, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  64%|██████▍   | 129/200 [00:00<00:00, 122.07it/s, inflight=71, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  65%|██████▌   | 130/200 [00:00<00:00, 122.07it/s, inflight=69, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  66%|██████▌   | 131/200 [00:00<00:00, 122.07it/s, inflight=69, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer:  66%|██████▌   | 132/200 [00:01<00:00, 122.07it/s, inflight=68, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  66%|██████▋   | 133/200 [00:01<00:00, 122.07it/s, inflight=66, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  67%|██████▋   | 134/200 [00:01<00:00, 122.07it/s, inflight=66, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  68%|██████▊   | 135/200 [00:01<00:00, 122.07it/s, inflight=64, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  68%|██████▊   | 136/200 [00:01<00:00, 122.07it/s, inflight=64, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  68%|██████▊   | 137/200 [00:01<00:00, 122.07it/s, inflight=63, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  69%|██████▉   | 138/200 [00:01<00:00, 122.07it/s, inflight=62, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  70%|██████▉   | 139/200 [00:01<00:00, 122.07it/s, inflight=61, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  70%|███████   | 140/200 [00:01<00:00, 122.07it/s, inflight=60, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  70%|███████   | 141/200 [00:01<00:00, 122.07it/s, inflight=59, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  71%|███████   | 142/200 [00:01<00:00, 126.38it/s, inflight=59, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  71%|███████   | 142/200 [00:01<00:00, 126.38it/s, inflight=58, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  72%|███████▏  | 143/200 [00:01<00:00, 126.38it/s, inflight=57, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  72%|███████▏  | 144/200 [00:01<00:00, 126.38it/s, inflight=56, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  72%|███████▎  | 145/200 [00:01<00:00, 126.38it/s, inflight=54, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  73%|███████▎  | 146/200 [00:01<00:00, 126.38it/s, inflight=54, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  74%|███████▎  | 147/200 [00:01<00:00, 126.38it/s, inflight=51, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  74%|███████▍  | 148/200 [00:01<00:00, 126.38it/s, inflight=51, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  74%|███████▍  | 149/200 [00:01<00:00, 126.38it/s, inflight=51, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  75%|███████▌  | 150/200 [00:01<00:00, 126.38it/s, inflight=50, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  76%|███████▌  | 151/200 [00:01<00:00, 126.38it/s, inflight=49, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  76%|███████▌  | 152/200 [00:01<00:00, 126.38it/s, inflight=48, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  76%|███████▋  | 153/200 [00:01<00:00, 126.38it/s, inflight=47, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  77%|███████▋  | 154/200 [00:01<00:00, 126.38it/s, inflight=46, slow=0, oldest_s=1, forced_to=0]
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552653740432Bt8SPmHa)', 'type': 'new_api_error'}}
+
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552651164464dS2FUL9t)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525544223356342dNIe1)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 202510270155265675465111IJlgCD)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552665009145nIMZdixx)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552666326415OETkiXBl)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552693888684EN1Exubr)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525741335981SvqVXHrr)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552694083770ZeQv3joR)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552684423030UJ9jcK9p)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552696434201U9Yin8dG)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525958570372XCMKDPkS)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526115225526vadb1agL)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552615576229bw5YfczZ)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526574511739o3rInWc)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526165700095zO5pdDoL)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552665140513fB5fmHhs)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015525724606377X9oD17Ur)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 202510270155261765967594svamvMX)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526186420927GIuE43tE)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 202510270155261955928846g7acVFS)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 2025102701552691260116REGgd5nG)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526210611216My1YghjY)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526110107746Y0Xf0iKR)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526219251059lumvLJcH)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526110325903a6wIxOyR)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526111195631K4TucmeT)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526102660896PbWd9Qos)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526261177829gEakkw3R)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526245630427NmclKZxP)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526181338408haUl0Z6R)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526285098265LJKsFxDo)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526308638551fmp7Z849)', 'type': 'new_api_error'}}Temp-0.7 Infer:  78%|███████▊  | 155/200 [00:01<00:00, 126.38it/s, inflight=44, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  78%|███████▊  | 156/200 [00:01<00:00, 126.38it/s, inflight=44, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  78%|███████▊  | 157/200 [00:01<00:00, 130.36it/s, inflight=44, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  78%|███████▊  | 157/200 [00:01<00:00, 130.36it/s, inflight=43, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  79%|███████▉  | 158/200 [00:01<00:00, 130.36it/s, inflight=42, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  80%|███████▉  | 159/200 [00:01<00:00, 130.36it/s, inflight=41, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  80%|████████  | 160/200 [00:01<00:00, 130.36it/s, inflight=40, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  80%|████████  | 161/200 [00:01<00:00, 130.36it/s, inflight=38, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  81%|████████  | 162/200 [00:01<00:00, 130.36it/s, inflight=38, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  82%|████████▏ | 163/200 [00:01<00:00, 130.36it/s, inflight=37, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  82%|████████▏ | 164/200 [00:01<00:00, 130.36it/s, inflight=36, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  82%|████████▎ | 165/200 [00:01<00:00, 130.36it/s, inflight=35, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  83%|████████▎ | 166/200 [00:01<00:00, 130.36it/s, inflight=34, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  84%|████████▎ | 167/200 [00:01<00:00, 130.36it/s, inflight=33, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  84%|████████▍ | 168/200 [00:01<00:00, 130.36it/s, inflight=31, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  84%|████████▍ | 169/200 [00:01<00:00, 130.36it/s, inflight=31, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  85%|████████▌ | 170/200 [00:01<00:00, 130.36it/s, inflight=30, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  86%|████████▌ | 171/200 [00:01<00:00, 130.36it/s, inflight=29, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  86%|████████▌ | 172/200 [00:01<00:00, 130.36it/s, inflight=28, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  86%|████████▋ | 173/200 [00:01<00:00, 130.36it/s, inflight=26, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  87%|████████▋ | 174/200 [00:01<00:00, 130.36it/s, inflight=26, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  88%|████████▊ | 175/200 [00:01<00:00, 130.36it/s, inflight=24, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  88%|████████▊ | 176/200 [00:01<00:00, 130.36it/s, inflight=24, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  88%|████████▊ | 177/200 [00:01<00:00, 130.36it/s, inflight=23, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  89%|████████▉ | 178/200 [00:01<00:00, 130.36it/s, inflight=22, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  90%|████████▉ | 179/200 [00:01<00:00, 130.36it/s, inflight=21, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  90%|█████████ | 180/200 [00:01<00:00, 130.36it/s, inflight=20, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  90%|█████████ | 181/200 [00:01<00:00, 130.36it/s, inflight=17, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  91%|█████████ | 182/200 [00:01<00:00, 130.36it/s, inflight=17, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  92%|█████████▏| 183/200 [00:01<00:00, 130.36it/s, inflight=17, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  92%|█████████▏| 184/200 [00:01<00:00, 130.36it/s, inflight=15, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  92%|█████████▎| 185/200 [00:01<00:00, 130.36it/s, inflight=15, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  93%|█████████▎| 186/200 [00:01<00:00, 130.36it/s, inflight=14, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  94%|█████████▎| 187/200 [00:01<00:00, 130.36it/s, inflight=13, slow=0, oldest_s=1, forced_to=0]
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526305740444NL395Qz8)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526333193579mvEKU2c6)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526149223167VSzufOs2)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526326639263Ia5kLvCp)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526343649746XIsnkU0c)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526163454609MwzSDYP9)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526342576907uLvxjCCg)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526343520304EQ8Jc4hR)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526351740124cmMGPZuA)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526260870426i4yYZXTN)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526261813359z6ZrdB5H)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 202510270155262743026180D8OH6lW)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526362998881yr2izqo1)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526365074923UEYxrVGw)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526312112908iL2AlXMJ)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 202510270155263846311758RFSIEOh)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526385279479eYKtySzT)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526327335174VOZQq18M)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526324207317VFgVZHJx)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526576629133FeZYciM)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526187761338NR3AgTgr)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526268793172GbuosDJd)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526438069924vAFZFFc9)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526436631200VNDAIrlc)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526443789167bgP18kgJ)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526445022226Dw0wiDOP)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526448372359XSvNImsF)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526444823760wKg8Ftaf)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526421906289Wg3yUbWs)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526455021854YgA2NAB1)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526433631091e0oGrIE2)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526459808694cKUEaDft)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526459508310cLG8iohn)', 'type': 'new_api_error'}}Temp-0.7 Infer:  94%|█████████▍| 188/200 [00:01<00:00, 177.84it/s, inflight=13, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  94%|█████████▍| 188/200 [00:01<00:00, 177.84it/s, inflight=11, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  94%|█████████▍| 189/200 [00:01<00:00, 177.84it/s, inflight=11, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  95%|█████████▌| 190/200 [00:01<00:00, 177.84it/s, inflight=10, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  96%|█████████▌| 191/200 [00:01<00:00, 177.84it/s, inflight=8, slow=0, oldest_s=1, forced_to=0] Temp-0.7 Infer:  96%|█████████▌| 192/200 [00:01<00:00, 177.84it/s, inflight=8, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  96%|█████████▋| 193/200 [00:01<00:00, 177.84it/s, inflight=7, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  97%|█████████▋| 194/200 [00:01<00:00, 177.84it/s, inflight=5, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  98%|█████████▊| 195/200 [00:01<00:00, 177.84it/s, inflight=5, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  98%|█████████▊| 196/200 [00:01<00:00, 177.84it/s, inflight=3, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  98%|█████████▊| 197/200 [00:01<00:00, 177.84it/s, inflight=3, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer:  99%|█████████▉| 198/200 [00:01<00:00, 177.84it/s, inflight=2, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer: 100%|█████████▉| 199/200 [00:01<00:00, 177.84it/s, inflight=1, slow=0, oldest_s=1, forced_to=0]Temp-0.7 Infer: 100%|██████████| 200/200 [00:01<00:00, 177.84it/s, inflight=0, slow=0, oldest_s=0, forced_to=0]Temp-0.7 Infer: 100%|██████████| 200/200 [00:01<00:00, 149.47it/s, inflight=0, slow=0, oldest_s=0, forced_to=0]
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526461037033SR2V2v1I)', 'type': 'new_api_error'}}
+
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526465341474H48kxHEc)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 202510270155264422730664Stj3b90)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526478814534VpGFiQi2)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526475138305iAKAYWRo)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526476149532wTnx7vbB)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 202510270155264814985464Hbb8WNy)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526480433720Uyrw9kZ0)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526510487214fSttOizx)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526512391623xlmNhePj)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526512855535JHUGvHRG)', 'type': 'new_api_error'}}
+
+错误: API 调用失败 (status_code=401): Error code: 401 - {'error': {'message': '[sk-EhH***OZL] 该令牌额度已用尽 !token.UnlimitedQuota && token.RemainQuota = -185572 (request id: 20251027015526553306733Gt18AeSp)', 'type': 'new_api_error'}}
+✅ 结果已保存至: results/2025-10-27_01-55-21/deepseek-chat/Bacteria/raw/temp-0.7.jsonl
+
+🎉 所有 API 推理任务完成！
+✅ [Step 1/5] 批量推理完成。
+--------------------------------------------------
+🧪 [Step 2/5] 拒答分析 & 四类判定与过滤...

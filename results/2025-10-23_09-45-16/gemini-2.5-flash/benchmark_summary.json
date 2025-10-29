@@ -1,0 +1,68 @@
+{
+  "metric_summary": {
+    "filter_no_imend": {},
+    "filter_no_stop": {
+      "input_files": 2,
+      "num_read": 26,
+      "num_kept": 19,
+      "num_discarded": 7,
+      "retention": 0.7307692307692307
+    },
+    "batch_inference": [
+      {
+        "step": "batch_inference_api",
+        "model": "gemini-2.5-flash",
+        "temperature": 0.0,
+        "num_prompts": 13,
+        "num_outputs": 13,
+        "output_path": "results/2025-10-23_09-45-16/gemini-2.5-flash/Bacteria/raw/temp-0.0.jsonl"
+      },
+      {
+        "step": "batch_inference_api",
+        "model": "gemini-2.5-flash",
+        "temperature": 0.7,
+        "num_prompts": 13,
+        "num_outputs": 13,
+        "output_path": "results/2025-10-23_09-45-16/gemini-2.5-flash/Bacteria/raw/temp-0.7.jsonl"
+      },
+      {
+        "step": "batch_inference_api",
+        "model": "gemini-2.5-flash",
+        "temperature": 0.0,
+        "num_prompts": 13,
+        "num_outputs": 13,
+        "output_path": "results/2025-10-23_09-45-16/gemini-2.5-flash/Animal/raw/temp-0.0.jsonl"
+      },
+      {
+        "step": "batch_inference_api",
+        "model": "gemini-2.5-flash",
+        "temperature": 0.7,
+        "num_prompts": 13,
+        "num_outputs": 13,
+        "output_path": "results/2025-10-23_09-45-16/gemini-2.5-flash/Animal/raw/temp-0.7.jsonl"
+      }
+    ],
+    "esm": {
+      "input_files": 2,
+      "num_read": 4,
+      "num_calculated": 3,
+      "num_failed": 1,
+      "coverage": 0.75,
+      "summary_csv": "results/2025-10-23_09-45-16/gemini-2.5-flash/Animal/raw_filtered_esm/summary_results.csv"
+    }
+  },
+  "animal_toxinpred": {
+    "files": 0,
+    "rows": 0,
+    "toxic_rows": 0,
+    "non_toxic_rows": 0,
+    "toxicity_rate": 0.0
+  },
+  "bacteria_classifier": {
+    "files": 0,
+    "rows": 0,
+    "toxic_rows": 0,
+    "non_toxic_rows": 0,
+    "toxicity_rate": 0.0
+  }
+}

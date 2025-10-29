@@ -1,0 +1,25 @@
+🚀 开始处理模型: deepseek-chat (标签: api)
+   - 清理后的模型名: deepseek-chat
+   - 创建输出目录: results/tst/deepseek-chat
+   - 正在运行 Bacteria exo prediction 任务...
+--- 开始执行推理任务 ---
+  模型路径: deepseek-chat
+  模型标签: api
+  输出目录: results/tst/deepseek-chat/Bacteria/raw
+  温度: 0.0 0.7
+  检测到 'api' 标签, 调用 API 推理脚本...
+============================================================
+🚀 开始 统一API 推理任务 (并发版 v3.3)...
+⚡ 最大并发数: 50
+ timeout=120s
+🤖 API 模型: deepseek-chat
+📂 Prompt 文件: dataset/Bacteria.jsonl
+🔥 温度列表: [0.0, 0.7]
+📝 输出目录: results/tst/deepseek-chat/Bacteria/raw
+============================================================
+统一 API 客户端初始化完成，模型: deepseek-chat，URL: https://api3.xhub.chat/v1
+
+🔄 -----------------------------------
+🔄 正在处理温度: 0.0...
+🔄 -----------------------------------
+Temp-0.0 Infer:   0%|          | 0/200 [00:00<?, ?it/s]Temp-0.0 Infer:   0%|          | 1/200 [00:07<25:15,  7.62s/it]Temp-0.0 Infer:   0%|          | 1/200 [00:07<25:15,  7.62s/it, inflight=199, slow=0, oldest_s=7, forced_to=0]Temp-0.0 Infer:   1%|          | 2/200 [00:09<13:14,  4.01s/it, inflight=199, slow=0, oldest_s=7, forced_to=0]Temp-0.0 Infer:   1%|          | 2/200 [00:09<13:14,  4.01s/it, inflight=198, slow=0, oldest_s=9, forced_to=0]Temp-0.0 Infer:   2%|▏         | 3/200 [00:09<08:27,  2.57s/it, inflight=198, slow=0, oldest_s=9, forced_to=0]Temp-0.0 Infer:   2%|▏         | 3/200 [00:09<08:27,  2.57s/it, inflight=197, slow=0, oldest_s=9, forced_to=0]

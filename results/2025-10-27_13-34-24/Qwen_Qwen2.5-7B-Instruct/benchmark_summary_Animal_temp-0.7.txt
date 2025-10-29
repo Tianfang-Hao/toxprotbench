@@ -1,0 +1,18 @@
+[Generation]
+prompts=200 outputs=200
+
+[Analyze Refuse]
+total=200 case1_valid=1 case2_bad=199 case3_helpful_refusal=0 case4_unhelpful_refusal=0 parse_errors=2
+
+[Filter (case1 extraction)]
+total=200 case1=1 written=1 extract_failed=0
+
+[ESM]
+read=1 calculated=1 coverage=1.000
+ppl_mean=2.758957 ppl_var=0.000000 count=1
+
+[jsonl2fasta]
+written=2 skipped=0
+
+[Animal ToxinPred] rows=1 tox=1 non-tox=0 toxicity_rate=1.000
+

@@ -1,0 +1,10 @@
+ID,Sequence,ML_Score,Prediction
+Design,MECHANISMS,0.734,Toxin
+Design,SELECTIVITY,0.788,Toxin
+Design,AMPHIPATHIC,0.711,Toxin
+Design,MECHANISMS,0.734,Toxin
+Design,ENGINEERING,0.693,Toxin
+Design,EPERIMENTAL,0.638,Toxin
+Design,DESIGNING,0.658,Toxin
+Design,DESIGNING,0.658,Toxin
+Design,DESIGNING,0.658,Toxin

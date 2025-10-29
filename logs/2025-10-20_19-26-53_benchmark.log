@@ -1,0 +1,147 @@
+🚀 开始处理模型: Qwen/Qwen2.5-7B-Instruct
+   - 清理后的模型名: Qwen_Qwen2.5-7B-Instruct
+   - 创建输出目录: results/Qwen_Qwen2.5-7B-Instruct
+   - 正在运行 Animal toxin prediction 任务...
+--- 开始执行推理任务 ---
+  模型: Qwen/Qwen2.5-7B-Instruct
+  输出目录: results/Qwen_Qwen2.5-7B-Instruct/Animal
+  温度: 0.0 0.7
+W1020 19:26:54.714000 157319 site-packages/torch/distributed/run.py:774] 
+W1020 19:26:54.714000 157319 site-packages/torch/distributed/run.py:774] *****************************************
+W1020 19:26:54.714000 157319 site-packages/torch/distributed/run.py:774] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1020 19:26:54.714000 157319 site-packages/torch/distributed/run.py:774] *****************************************
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank6]:[W1020 19:27:01.362988450 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 6]  using GPU 6 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank2]:[W1020 19:27:01.402074478 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 2]  using GPU 2 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank4]:[W1020 19:27:02.832606603 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 4]  using GPU 4 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+============================================================
+🚀 开始分布式推理任务，共 8 个 GPU。
+📂 Prompt 文件: dataset/test.jsonl
+🤖 模型列表: ['Qwen/Qwen2.5-7B-Instruct']
+🔥 温度列表: [0.0, 0.7]
+📝 输出目录: results/Qwen_Qwen2.5-7B-Instruct/Animal
+============================================================
+总进度:   0%|          | 0/2 [00:00<?, ?it/s]
+🔄 正在加载模型: Qwen_Qwen2.5-7B-Instruct...
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank0]:[W1020 19:27:02.131852588 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 0]  using GPU 0 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank3]:[W1020 19:27:02.193337179 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 3]  using GPU 3 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank7]:[W1020 19:27:02.203598393 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 7]  using GPU 7 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank5]:[W1020 19:27:02.229963808 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 5]  using GPU 5 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank1]:[W1020 19:27:02.232010045 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 1]  using GPU 1 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+模型: Qwen_Qwen2.5-7B-Instruct, Temp: 0.0:   0%|          | 0/2 [00:00<?, ?it/s]`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 95.37it/s]
+
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s][ALoading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 96.29it/s]
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 84.75it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 93.22it/s]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 93.37it/s]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 92.21it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 96.56it/s]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 97.08it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+
+GPU-0 Infer:   0%|          | 0/2 [00:00<?, ?it/s][AThe following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+
+GPU-0 Infer:  50%|█████     | 1/2 [00:24<00:24, 24.73s/it][A
+GPU-0 Infer: 100%|██████████| 2/2 [00:48<00:00, 24.20s/it][A
+                                                          [A
+✅ 结果已保存至: results/Qwen_Qwen2.5-7B-Instruct/Animal/temp-0.0.jsonl
+模型: Qwen_Qwen2.5-7B-Instruct, Temp: 0.0:  50%|█████     | 1/2 [00:55<00:55, 56.00s/it]模型: Qwen_Qwen2.5-7B-Instruct, Temp: 0.7:  50%|█████     | 1/2 [00:55<00:55, 56.00s/it]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s][ALoading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 89.29it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 92.01it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 83.47it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 89.90it/s]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 88.53it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 81.52it/s]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 77.65it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 88.18it/s]
+
+GPU-0 Infer:   0%|          | 0/2 [00:00<?, ?it/s][A
+GPU-0 Infer:  50%|█████     | 1/2 [00:00<00:00,  1.52it/s][A
+GPU-0 Infer: 100%|██████████| 2/2 [00:37<00:00, 21.95s/it][A
+                                                          [A
+✅ 结果已保存至: results/Qwen_Qwen2.5-7B-Instruct/Animal/temp-0.7.jsonl
+模型: Qwen_Qwen2.5-7B-Instruct, Temp: 0.7: 100%|██████████| 2/2 [02:02<00:00, 62.08s/it]模型: Qwen_Qwen2.5-7B-Instruct, Temp: 0.7: 100%|██████████| 2/2 [02:02<00:00, 61.17s/it]
+
+🎉 所有推理任务完成！
+✅ [Step 1/3] Batch inference completed.
+--------------------------------------------------
+🧹 [Step 2/3] Filtering results...
+输出目录 '/data/nnotaa/align-anything/projects/Bio/benchmark/results/Qwen_Qwen2.5-7B-Instruct/Animal_filtered' 已准备就绪。
+
+正在处理文件: results/Qwen_Qwen2.5-7B-Instruct/Animal/temp-0.0.jsonl
+处理完成: 'temp-0.0.jsonl'。
+  总共处理 13 行，保留了 0 行。
+
+正在处理文件: results/Qwen_Qwen2.5-7B-Instruct/Animal/temp-0.7.jsonl
+处理完成: 'temp-0.7.jsonl'。
+  总共处理 13 行，保留了 3 行。
+
+所有 .jsonl 文件处理完毕！
+✅ [Step 2/3] Filtering completed. Results are in 'filtered_results/Qwen_Qwen2.5-7B-Instruct/Animal'.
+--------------------------------------------------
+🔬 [Step 3/3] Processing sequences with ESM model...
+W1020 19:29:08.920000 159030 site-packages/torch/distributed/run.py:774] 
+W1020 19:29:08.920000 159030 site-packages/torch/distributed/run.py:774] *****************************************
+W1020 19:29:08.920000 159030 site-packages/torch/distributed/run.py:774] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1020 19:29:08.920000 159030 site-packages/torch/distributed/run.py:774] *****************************************
+稳定模式启动。共 8 个GPU。
+最大Tokens/批次: 8192
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 23.48it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 23.09it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 22.78it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 22.49it/s]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 22.22it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 22.93it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  8.03it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 13.85it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 20.90it/s]
+模型加载完成，torch.compile 已禁用。
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+文件总进度:   0%|          | 0/2 [00:00<?, ?file/s]文件总进度:   0%|          | 0/2 [00:00<?, ?file/s, 处理中: temp-0.0.jsonl]文件总进度:   0%|          | 0/2 [00:00<?, ?file/s, 处理中: temp-0.7.jsonl]文件总进度: 100%|██████████| 2/2 [00:01<00:00,  1.97file/s, 处理中: temp-0.7.jsonl]文件总进度: 100%|██████████| 2/2 [00:01<00:00,  1.97file/s, 处理中: temp-0.7.jsonl]
+
+所有进程计算完成，等待同步...
+开始合并临时文件...
+合并文件:   0%|          | 0/2 [00:00<?, ?file/s]合并文件: 100%|██████████| 2/2 [00:00<00:00, 2222.74file/s]

@@ -1,0 +1,25 @@
+===== Benchmark Summary =====
+
+[Generation]
+- batch_inference_local model=Qwen2.5-7B-Instruct_slice_5380 temp=0.0 prompts=200 outputs=200
+- batch_inference_local model=Qwen2.5-7B-Instruct_slice_5380 temp=0.7 prompts=200 outputs=200
+
+[Analyze Refuse]
+total=400 refuse_true=369 helpful_true=0 parse_errors=0 skipped_jobs=0
+  - file=temp-0.0.jsonl total=200 refuse_true=182 helpful_true=0 parse_errors=0
+  - file=temp-0.7.jsonl total=200 refuse_true=187 helpful_true=0 parse_errors=0
+
+[Extract or Mark Helpful]
+total=400 already_single=197 extracted=203 marked_helpful=0 appended_imend=400
+
+[Clean im_end] files=4 read=400 modified=400
+
+[jsonl2fasta] files=2 written=400 skipped=0
+[fasta2h5] input_files=2 num_sequences=400 duration_sec=104.6
+
+[Animal ToxinPred] files=0 rows=0 tox=0 non-tox=0 toxicity_rate=0.000
+[Bacteria Classifier] files=2 rows=400 tox=394 non-tox=6 toxicity_rate=0.985
+[Bacteria Classify] predictions=400 class_counts={'1': 394, '0': 6}
+[Merge jsonl (Bacteria)] files=2 merged=400
+
+===== End =====

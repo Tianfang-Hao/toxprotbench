@@ -1,0 +1,22 @@
+{
+  "metric_summary": {
+    "filter_no_imend": {},
+    "filter_no_stop": {},
+    "batch_inference": [],
+    "esm": {}
+  },
+  "animal_toxinpred": {
+    "files": 0,
+    "rows": 0,
+    "toxic_rows": 0,
+    "non_toxic_rows": 0,
+    "toxicity_rate": 0.0
+  },
+  "bacteria_classifier": {
+    "files": 0,
+    "rows": 0,
+    "toxic_rows": 0,
+    "non_toxic_rows": 0,
+    "toxicity_rate": 0.0
+  }
+}

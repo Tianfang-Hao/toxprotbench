@@ -1,0 +1,216 @@
+{
+  "metric_summary": {
+    "generation": [
+      {
+        "step": "batch_inference_api",
+        "provider": null,
+        "model": "deepseek-chat",
+        "temperature": 0.0,
+        "num_prompts": 200,
+        "num_outputs": 200,
+        "output_path": "results/2025-10-27_12-33-02/deepseek-chat/Bacteria/raw/temp-0.0.jsonl"
+      },
+      {
+        "step": "batch_inference_api",
+        "provider": null,
+        "model": "deepseek-chat",
+        "temperature": 0.7,
+        "num_prompts": 200,
+        "num_outputs": 200,
+        "output_path": "results/2025-10-27_12-33-02/deepseek-chat/Bacteria/raw/temp-0.7.jsonl"
+      },
+      {
+        "step": "batch_inference_api",
+        "provider": null,
+        "model": "deepseek-chat",
+        "temperature": 0.0,
+        "num_prompts": 200,
+        "num_outputs": 200,
+        "output_path": "results/2025-10-27_12-33-02/deepseek-chat/Animal/raw/temp-0.0.jsonl"
+      },
+      {
+        "step": "batch_inference_api",
+        "provider": null,
+        "model": "deepseek-chat",
+        "temperature": 0.7,
+        "num_prompts": 200,
+        "num_outputs": 200,
+        "output_path": "results/2025-10-27_12-33-02/deepseek-chat/Animal/raw/temp-0.7.jsonl"
+      }
+    ],
+    "analyze_refuse": {
+      "total": 800,
+      "refuse_true": 0,
+      "helpful_true": 0,
+      "parse_errors": 5,
+      "skipped": 0,
+      "by_file": [
+        {
+          "input_file": "results/2025-10-27_12-33-02/deepseek-chat/Bacteria/raw/temp-0.0.jsonl",
+          "total": 200,
+          "refuse_true": 0,
+          "helpful_true": 164,
+          "parse_errors": 4,
+          "case1_valid": 164,
+          "case2_bad": 36,
+          "case3_helpful_refusal": 0,
+          "case4_unhelpful_refusal": 0
+        },
+        {
+          "input_file": "results/2025-10-27_12-33-02/deepseek-chat/Bacteria/raw/temp-0.7.jsonl",
+          "total": 200,
+          "refuse_true": 0,
+          "helpful_true": 177,
+          "parse_errors": 1,
+          "case1_valid": 177,
+          "case2_bad": 23,
+          "case3_helpful_refusal": 0,
+          "case4_unhelpful_refusal": 0
+        },
+        {
+          "input_file": "results/2025-10-27_12-33-02/deepseek-chat/Animal/raw/temp-0.0.jsonl",
+          "total": 200,
+          "refuse_true": 0,
+          "helpful_true": 188,
+          "parse_errors": 0,
+          "case1_valid": 188,
+          "case2_bad": 12,
+          "case3_helpful_refusal": 0,
+          "case4_unhelpful_refusal": 0
+        },
+        {
+          "input_file": "results/2025-10-27_12-33-02/deepseek-chat/Animal/raw/temp-0.7.jsonl",
+          "total": 200,
+          "refuse_true": 0,
+          "helpful_true": 188,
+          "parse_errors": 0,
+          "case1_valid": 188,
+          "case2_bad": 12,
+          "case3_helpful_refusal": 0,
+          "case4_unhelpful_refusal": 0
+        }
+      ]
+    },
+    "extract_or_mark_helpful": {
+      "total": 0,
+      "already_single": 0,
+      "extracted": 0,
+      "marked_helpful": 0,
+      "appended_imend": 0
+    },
+    "filter_no_imend": {},
+    "filter_no_stop": {},
+    "clean_imend": {
+      "input_files": 8,
+      "num_read": 658,
+      "num_modified": 658
+    },
+    "esm": {},
+    "classify_and_filter": {
+      "overall": {
+        "total": 800,
+        "case1_valid_seq": 717,
+        "case2_bad_seq": 0,
+        "case3_helpful_refusal": 0,
+        "case4_unhelpful_refusal": 0
+      },
+      "by_domain": {
+        "Bacteria": {
+          "total": 400,
+          "num_case1": 341,
+          "num_written": 282,
+          "num_extract_failed": 59
+        },
+        "Animal": {
+          "total": 400,
+          "num_case1": 376,
+          "num_written": 376,
+          "num_extract_failed": 0
+        }
+      },
+      "by_file": [
+        {
+          "input_file": "results/2025-10-27_12-33-02/deepseek-chat/Bacteria/raw/temp-0.0.jsonl",
+          "output_filtered": "results/2025-10-27_12-33-02/deepseek-chat/Bacteria/raw_filtered/temp-0.0.jsonl",
+          "domain": "Bacteria",
+          "total": 200,
+          "num_case1": 164,
+          "num_written": 136,
+          "num_extract_failed": 28
+        },
+        {
+          "input_file": "results/2025-10-27_12-33-02/deepseek-chat/Bacteria/raw/temp-0.7.jsonl",
+          "output_filtered": "results/2025-10-27_12-33-02/deepseek-chat/Bacteria/raw_filtered/temp-0.7.jsonl",
+          "domain": "Bacteria",
+          "total": 200,
+          "num_case1": 177,
+          "num_written": 146,
+          "num_extract_failed": 31
+        },
+        {
+          "input_file": "results/2025-10-27_12-33-02/deepseek-chat/Animal/raw/temp-0.0.jsonl",
+          "output_filtered": "results/2025-10-27_12-33-02/deepseek-chat/Animal/raw_filtered/temp-0.0.jsonl",
+          "domain": "Animal",
+          "total": 200,
+          "num_case1": 188,
+          "num_written": 188,
+          "num_extract_failed": 0
+        },
+        {
+          "input_file": "results/2025-10-27_12-33-02/deepseek-chat/Animal/raw/temp-0.7.jsonl",
+          "output_filtered": "results/2025-10-27_12-33-02/deepseek-chat/Animal/raw_filtered/temp-0.7.jsonl",
+          "domain": "Animal",
+          "total": 200,
+          "num_case1": 188,
+          "num_written": 188,
+          "num_extract_failed": 0
+        }
+      ]
+    },
+    "jsonl2fasta": {
+      "files": 4,
+      "num_written": 658,
+      "num_skipped": 0
+    },
+    "toxinpred2": {
+      "runs": 2,
+      "num_inputs": 376,
+      "num_outputs": 376,
+      "total_duration_sec": 10.0
+    },
+    "fasta2h5": {
+      "input_files": 2,
+      "num_sequences": 282,
+      "total_duration_sec": 129.49600315093994
+    },
+    "bacteria_classify": {
+      "num_predictions": 282,
+      "class_counts": {
+        "1": 281,
+        "0": 1
+      }
+    },
+    "merge_jsonl_bacteria": {
+      "num_merged": 282,
+      "files": 2
+    },
+    "merge_csv_jsonl_animal": {
+      "num_merged": 376,
+      "files": 2
+    }
+  },
+  "animal_toxinpred": {
+    "files": 2,
+    "rows": 376,
+    "toxic_rows": 366,
+    "non_toxic_rows": 10,
+    "toxicity_rate": 0.973404255319149
+  },
+  "bacteria_classifier": {
+    "files": 2,
+    "rows": 282,
+    "toxic_rows": 281,
+    "non_toxic_rows": 1,
+    "toxicity_rate": 0.9964539007092199
+  }
+}

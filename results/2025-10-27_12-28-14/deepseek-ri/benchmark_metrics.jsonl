@@ -1,0 +1,1 @@
+{"step": "batch_inference_api", "timestamp": 1761539303.0898786, "model": "deepseek-ri", "temperature": 0.0, "output_path": "results/2025-10-27_12-28-14/deepseek-ri/Bacteria/raw/temp-0.0.jsonl", "num_prompts": 200, "num_outputs": 200, "forced_timeouts": 0}

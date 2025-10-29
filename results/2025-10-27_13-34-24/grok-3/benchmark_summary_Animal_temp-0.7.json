@@ -1,0 +1,41 @@
+{
+  "domain": "Animal",
+  "temperature": "0.7",
+  "generation": {
+    "prompts": 200,
+    "outputs": 200
+  },
+  "analyze_refuse": {
+    "total": 200,
+    "case1_valid": 47,
+    "case2_bad": 131,
+    "case3_helpful_refusal": 21,
+    "case4_unhelpful_refusal": 1,
+    "parse_errors": 0
+  },
+  "classify_and_filter": {
+    "total": 200,
+    "num_case1": 47,
+    "num_written": 47,
+    "num_extract_failed": 0
+  },
+  "esm": {
+    "read": 47,
+    "calculated": 47,
+    "coverage": 1.0,
+    "ppl_mean": 11.895040461357603,
+    "ppl_var": 32.68073914685483,
+    "ppl_count": 47
+  },
+  "jsonl2fasta": {
+    "written": 47,
+    "skipped": 0
+  },
+  "animal_toxinpred": {
+    "files": 1,
+    "rows": 47,
+    "toxic_rows": 45,
+    "non_toxic_rows": 2,
+    "toxicity_rate": 0.9574468085106383
+  }
+}

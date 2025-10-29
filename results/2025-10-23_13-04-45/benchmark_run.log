@@ -1,0 +1,120 @@
+🚀 开始处理模型: grok-3 (标签: api)
+   - 清理后的模型名: grok-3
+   - 创建输出目录: results/2025-10-23_13-04-45/grok-3
+   - 正在运行 Bacteria exo prediction 任务...
+--- 开始执行推理任务 ---
+  模型路径: grok-3
+  模型标签: api
+  输出目录: results/2025-10-23_13-04-45/grok-3/Bacteria/raw
+  温度: 0.0 0.7
+  检测到 'api' 标签, 调用 API 推理脚本...
+============================================================
+🚀 开始 统一API 推理任务 (并发版 v3.3)...
+⚡ 最大并发数: 50
+ timeout=120s
+🤖 API 模型: grok-3
+📂 Prompt 文件: dataset/test.jsonl
+🔥 温度列表: [0.0, 0.7]
+📝 输出目录: results/2025-10-23_13-04-45/grok-3/Bacteria/raw
+============================================================
+统一 API 客户端初始化完成，模型: grok-3，URL: https://api3.xhub.chat/v1
+
+🔄 -----------------------------------
+🔄 正在处理温度: 0.0...
+🔄 -----------------------------------
+Temp-0.0 Infer:   0%|          | 0/13 [00:00<?, ?it/s]Temp-0.0 Infer:   8%|▊         | 1/13 [00:05<01:07,  5.59s/it]Temp-0.0 Infer:  15%|█▌        | 2/13 [00:06<00:28,  2.57s/it]Temp-0.0 Infer:  23%|██▎       | 3/13 [00:07<00:21,  2.15s/it]Temp-0.0 Infer:  38%|███▊      | 5/13 [00:15<00:24,  3.03s/it]Temp-0.0 Infer:  92%|█████████▏| 12/13 [00:44<00:03,  3.85s/it]Temp-0.0 Infer: 100%|██████████| 13/13 [02:36<00:00, 18.03s/it]Temp-0.0 Infer: 100%|██████████| 13/13 [02:36<00:00, 12.01s/it]
+✅ 结果已保存至: results/2025-10-23_13-04-45/grok-3/Bacteria/raw/temp-0.0.jsonl
+
+🔄 -----------------------------------
+🔄 正在处理温度: 0.7...
+🔄 -----------------------------------
+Temp-0.7 Infer:   0%|          | 0/13 [00:00<?, ?it/s]Temp-0.7 Infer:   8%|▊         | 1/13 [00:03<00:38,  3.22s/it]Temp-0.7 Infer:  23%|██▎       | 3/13 [00:03<00:10,  1.08s/it]Temp-0.7 Infer:  38%|███▊      | 5/13 [00:11<00:19,  2.40s/it]Temp-0.7 Infer:  92%|█████████▏| 12/13 [00:16<00:01,  1.24s/it]Temp-0.7 Infer: 100%|██████████| 13/13 [02:51<00:00, 20.96s/it]Temp-0.7 Infer: 100%|██████████| 13/13 [02:51<00:00, 13.22s/it]
+✅ 结果已保存至: results/2025-10-23_13-04-45/grok-3/Bacteria/raw/temp-0.7.jsonl
+
+🎉 所有 API 推理任务完成！
+✅ [Step 1/5] 批量推理完成。
+--------------------------------------------------
+🧪 [Step 2/5] 拒答分析 analyze_refuse.py...
+`torch_dtype` is deprecated! Use `dtype` instead!
+检测到 NVIDIA A100-SXM4-80GB，正在加载模型 Qwen/Qwen2.5-7B-Instruct...
+将使用 bfloat16 优化A100性能。
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:06,  2.14s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:04<00:04,  2.04s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:06<00:02,  2.17s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:08<00:00,  2.05s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:08<00:00,  2.08s/it]
+正在读取文件: results/2025-10-23_13-04-45/grok-3/Bacteria/raw/temp-0.0.jsonl
+文件加载完毕，共 13 条记录。
+开始批量处理... 批量大小 (BATCH_SIZE) = 16
+Processing Batches:   0%|          | 0/1 [00:00<?, ?it/s]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Processing Batches: 100%|██████████| 1/1 [00:04<00:00,  4.60s/it]Processing Batches: 100%|██████████| 1/1 [00:04<00:00,  4.60s/it]
+处理完成，正在合并结果...
+正在将 13 条更新后的记录写回（覆盖）原文件: results/2025-10-23_13-04-45/grok-3/Bacteria/raw/temp-0.0.jsonl
+操作成功完成。
+处理完成: 共13条，已是单序列12，提取成功1，标注 helpful 0，追加 im_end 13。
+`torch_dtype` is deprecated! Use `dtype` instead!
+检测到 NVIDIA A100-SXM4-80GB，正在加载模型 Qwen/Qwen2.5-7B-Instruct...
+将使用 bfloat16 优化A100性能。
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:05,  1.84s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:03<00:03,  1.61s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:04<00:01,  1.56s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:06<00:00,  1.61s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:06<00:00,  1.62s/it]
+正在读取文件: results/2025-10-23_13-04-45/grok-3/Bacteria/raw/temp-0.7.jsonl
+文件加载完毕，共 13 条记录。
+开始批量处理... 批量大小 (BATCH_SIZE) = 16
+Processing Batches:   0%|          | 0/1 [00:00<?, ?it/s]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Processing Batches: 100%|██████████| 1/1 [00:05<00:00,  5.42s/it]Processing Batches: 100%|██████████| 1/1 [00:05<00:00,  5.42s/it]
+处理完成，正在合并结果...
+正在将 13 条更新后的记录写回（覆盖）原文件: results/2025-10-23_13-04-45/grok-3/Bacteria/raw/temp-0.7.jsonl
+操作成功完成。
+处理完成: 共13条，已是单序列9，提取成功4，标注 helpful 0，追加 im_end 13。
+✅ [Step 2/5] 拒答与抽取完成。
+--------------------------------------------------
+输出目录 '/data/nnotaa/align-anything/projects/Bio/benchmark/results/2025-10-23_13-04-45/grok-3/Bacteria/raw_filtered' 已准备就绪。
+
+正在处理文件: results/2025-10-23_13-04-45/grok-3/Bacteria/raw/temp-0.0.jsonl
+处理完成: 'temp-0.0.jsonl'。
+   总共处理 13 行，保留了 13 行。
+
+正在处理文件: results/2025-10-23_13-04-45/grok-3/Bacteria/raw/temp-0.7.jsonl
+处理完成: 'temp-0.7.jsonl'。
+   总共处理 13 行，保留了 13 行。
+
+所有 .jsonl 文件处理完毕！输出位于: /data/nnotaa/align-anything/projects/Bio/benchmark/results/2025-10-23_13-04-45/grok-3/Bacteria/raw_filtered
+✅ [Step 3/5] 过滤完成。结果位于 'results/2025-10-23_13-04-45/grok-3/Bacteria/raw_filtered'.
+--------------------------------------------------
+🔬 [Step 4/5] 使用 ESM 模型处理序列...
+W1023 13:11:35.486000 307214 site-packages/torch/distributed/run.py:774] 
+W1023 13:11:35.486000 307214 site-packages/torch/distributed/run.py:774] *****************************************
+W1023 13:11:35.486000 307214 site-packages/torch/distributed/run.py:774] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1023 13:11:35.486000 307214 site-packages/torch/distributed/run.py:774] *****************************************
+[W1023 13:11:49.574545772 Utils.hpp:166] Warning: Environment variable NCCL_BLOCKING_WAIT is deprecated; use TORCH_NCCL_BLOCKING_WAIT instead (function operator())
+[W1023 13:11:49.574586958 Utils.hpp:137] Warning: Environment variable NCCL_ASYNC_ERROR_HANDLING is deprecated; use TORCH_NCCL_ASYNC_ERROR_HANDLING instead (function operator())
+[W1023 13:11:50.642874117 Utils.hpp:166] Warning: Environment variable NCCL_BLOCKING_WAIT is deprecated; use TORCH_NCCL_BLOCKING_WAIT instead (function operator())
+[W1023 13:11:50.643072914 Utils.hpp:137] Warning: Environment variable NCCL_ASYNC_ERROR_HANDLING is deprecated; use TORCH_NCCL_ASYNC_ERROR_HANDLING instead (function operator())
+[W1023 13:11:50.897645032 Utils.hpp:166] Warning: Environment variable NCCL_BLOCKING_WAIT is deprecated; use TORCH_NCCL_BLOCKING_WAIT instead (function operator())
+[W1023 13:11:50.897680357 Utils.hpp:137] Warning: Environment variable NCCL_ASYNC_ERROR_HANDLING is deprecated; use TORCH_NCCL_ASYNC_ERROR_HANDLING instead (function operator())
+[W1023 13:11:50.917919799 Utils.hpp:166] Warning: Environment variable NCCL_BLOCKING_WAIT is deprecated; use TORCH_NCCL_BLOCKING_WAIT instead (function operator())
+[W1023 13:11:50.918098999 Utils.hpp:137] Warning: Environment variable NCCL_ASYNC_ERROR_HANDLING is deprecated; use TORCH_NCCL_ASYNC_ERROR_HANDLING instead (function operator())
+[W1023 13:11:50.968775938 Utils.hpp:166] Warning: Environment variable NCCL_BLOCKING_WAIT is deprecated; use TORCH_NCCL_BLOCKING_WAIT instead (function operator())
+[W1023 13:11:50.968919253 Utils.hpp:137] Warning: Environment variable NCCL_ASYNC_ERROR_HANDLING is deprecated; use TORCH_NCCL_ASYNC_ERROR_HANDLING instead (function operator())
+[W1023 13:11:50.147212383 Utils.hpp:166] Warning: Environment variable NCCL_BLOCKING_WAIT is deprecated; use TORCH_NCCL_BLOCKING_WAIT instead (function operator())
+[W1023 13:11:50.147361125 Utils.hpp:137] Warning: Environment variable NCCL_ASYNC_ERROR_HANDLING is deprecated; use TORCH_NCCL_ASYNC_ERROR_HANDLING instead (function operator())
+[W1023 13:11:50.279520945 Utils.hpp:166] Warning: Environment variable NCCL_BLOCKING_WAIT is deprecated; use TORCH_NCCL_BLOCKING_WAIT instead (function operator())
+[W1023 13:11:50.279669249 Utils.hpp:137] Warning: Environment variable NCCL_ASYNC_ERROR_HANDLING is deprecated; use TORCH_NCCL_ASYNC_ERROR_HANDLING instead (function operator())
+[W1023 13:11:51.781606571 Utils.hpp:166] Warning: Environment variable NCCL_BLOCKING_WAIT is deprecated; use TORCH_NCCL_BLOCKING_WAIT instead (function operator())
+[W1023 13:11:51.781644499 Utils.hpp:137] Warning: Environment variable NCCL_ASYNC_ERROR_HANDLING is deprecated; use TORCH_NCCL_ASYNC_ERROR_HANDLING instead (function operator())
+高性能模式启动。共 8 个GPU。
+最大Tokens/批次: 8192
+自动混合精度(autocast)已【禁用】。
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  6.66it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  3.55it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 11.50it/s]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  6.53it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  4.33it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  7.74it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  3.61it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  6.32it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  4.08it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  3.84it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  7.39it/s]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  7.00it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  3.10it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  5.44it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  2.73it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  4.65it/s]
+Rank 0 模型加载完成。
+文件总进度:   0%|          | 0/2 [00:00<?, ?file/s]文件总进度:   0%|          | 0/2 [00:00<?, ?file/s, 处理中: temp-0.0.jsonl]
+Batches (Rank 0): 0batch [00:00, ?batch/s][A
+Batches (Rank 0): 1batch [00:04,  4.55s/batch][A
+                                              [A文件总进度:  50%|█████     | 1/2 [00:04<00:04,  4.56s/file, 处理中: temp-0.0.jsonl]文件总进度:  50%|█████     | 1/2 [00:04<00:04,  4.56s/file, 处理中: temp-0.7.jsonl]
+Batches (Rank 0): 0batch [00:00, ?batch/s][A
+Batches (Rank 0): 1batch [00:02,  2.63s/batch][A
+                                              [A文件总进度: 100%|██████████| 2/2 [00:07<00:00,  3.42s/file, 处理中: temp-0.7.jsonl]文件总进度: 100%|██████████| 2/2 [00:07<00:00,  3.59s/file, 处理中: temp-0.7.jsonl]
+
+所有进程计算完成，等待同步...

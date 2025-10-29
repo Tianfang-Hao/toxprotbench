@@ -1,0 +1,201 @@
+🚀 开始处理模型: grok-3 (标签: api)
+   - 清理后的模型名: grok-3
+   - 创建输出目录: results/2025-10-23_00-15-28/grok-3
+   - 正在运行 Bacteria exo prediction 任务...
+   - 正在运行 Bacteria exo prediction 任务...
+   - 正在运行 Bacteria exo prediction 任务...
+   - 正在运行 Bacteria exo prediction 任务...
+   - 正在运行 Bacteria exo prediction 任务...
+--- 开始执行推理任务 ---
+  模型路径: grok-3
+  模型标签: api
+  输出目录: results/2025-10-23_00-15-28/grok-3/Bacteria/raw
+  温度: 0.0 0.7
+  检测到 'api' 标签, 调用 API 推理脚本...
+============================================================
+🚀 开始 统一API 推理任务 (并发版 v3.3)...
+⚡ 最大并发数: 10
+ timeout=120s
+🤖 API 模型: grok-3
+📂 Prompt 文件: dataset/test.jsonl
+🔥 温度列表: [0.0, 0.7]
+📝 输出目录: results/2025-10-23_00-15-28/grok-3/Bacteria/raw
+============================================================
+统一 API 客户端初始化完成，模型: grok-3，URL: https://api3.xhub.chat/v1
+
+🔄 -----------------------------------
+🔄 正在处理温度: 0.0...
+🔄 -----------------------------------
+Temp-0.0 Infer:   0%|          | 0/13 [00:00<?, ?it/s]Temp-0.0 Infer:   8%|▊         | 1/13 [00:05<01:09,  5.82s/it]Temp-0.0 Infer:  23%|██▎       | 3/13 [00:06<00:18,  1.85s/it]Temp-0.0 Infer:  38%|███▊      | 5/13 [00:41<01:18,  9.83s/it]Temp-0.0 Infer: 100%|██████████| 13/13 [00:41<00:00,  3.19s/it]
+✅ 结果已保存至: results/2025-10-23_00-15-28/grok-3/Bacteria/raw/temp-0.0.jsonl
+
+🔄 -----------------------------------
+🔄 正在处理温度: 0.7...
+🔄 -----------------------------------
+Temp-0.7 Infer:   0%|          | 0/13 [00:00<?, ?it/s]Temp-0.7 Infer:   8%|▊         | 1/13 [00:04<00:48,  4.04s/it]Temp-0.7 Infer:  23%|██▎       | 3/13 [00:04<00:11,  1.14s/it]Temp-0.7 Infer:  38%|███▊      | 5/13 [00:09<00:16,  2.02s/it]Temp-0.7 Infer:  54%|█████▍    | 7/13 [00:23<00:23,  3.97s/it]Temp-0.7 Infer: 100%|██████████| 13/13 [04:45<00:00, 29.59s/it]Temp-0.7 Infer: 100%|██████████| 13/13 [04:45<00:00, 21.96s/it]
+✅ 结果已保存至: results/2025-10-23_00-15-28/grok-3/Bacteria/raw/temp-0.7.jsonl
+
+🎉 所有 API 推理任务完成！
+✅ [Step 1/5] 批量推理完成。
+--------------------------------------------------
+🧹 [Step 3/5] 过滤结果...
+输出目录 '/data/nnotaa/align-anything/projects/Bio/benchmark/results/2025-10-23_00-15-28/grok-3/Bacteria/raw_filtered_stop' 已准备就绪。
+
+正在处理文件: results/2025-10-23_00-15-28/grok-3/Bacteria/raw/temp-0.0.jsonl
+处理完成: 'temp-0.0.jsonl'。
+   总共处理 13 行，保留了 13 行。
+
+正在处理文件: results/2025-10-23_00-15-28/grok-3/Bacteria/raw/temp-0.7.jsonl
+处理完成: 'temp-0.7.jsonl'。
+   总共处理 13 行，保留了 13 行。
+
+所有 .jsonl 文件处理完毕！输出位于: /data/nnotaa/align-anything/projects/Bio/benchmark/results/2025-10-23_00-15-28/grok-3/Bacteria/raw_filtered_stop
+✅ [Step 3/5] 过滤完成。结果位于 'results/2025-10-23_00-15-28/grok-3/Bacteria/raw_filtered'.
+--------------------------------------------------
+🔬 [Step 4/5] 使用 ESM 模型处理序列...
+W1023 00:20:57.903000 174857 site-packages/torch/distributed/run.py:774] 
+W1023 00:20:57.903000 174857 site-packages/torch/distributed/run.py:774] *****************************************
+W1023 00:20:57.903000 174857 site-packages/torch/distributed/run.py:774] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1023 00:20:57.903000 174857 site-packages/torch/distributed/run.py:774] *****************************************
+高性能模式启动。共 8 个GPU。
+最大Tokens/批次: 8192
+自动混合精度(autocast)已【禁用】。
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 23.45it/s]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 22.39it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 23.20it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 23.02it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  9.14it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 16.46it/s]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 22.01it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 22.22it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 22.80it/s]
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank4]:[W1023 00:21:11.639404052 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 4]  using GPU 4 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank7]:[W1023 00:21:11.817904260 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 7]  using GPU 7 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+[rank1]:[W1023 00:21:11.817899528 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 1]  using GPU 1 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank5]:[W1023 00:21:11.072408050 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 5]  using GPU 5 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+[rank2]:[W1023 00:21:11.072484386 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 2]  using GPU 2 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank3]:[W1023 00:21:11.311860689 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 3]  using GPU 3 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank6]:[W1023 00:21:11.363398987 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 6]  using GPU 6 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+Rank 0 模型加载完成。
+/data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank0]:[W1023 00:21:11.415450296 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 0]  using GPU 0 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+错误：输入文件夹 'results/2025-10-23_00-15-28/grok-3/Bacteria/raw_filtered' 不存在或不是一个目录。
+未找到 .jsonl 文件，程序退出。
+✅ [Step 4/5] 序列处理完成。
+--------------------------------------------------
+🔬 [Step 5/5] cleaning <|im_end|>...
+*** 警告：脚本将直接覆盖原始文件，请确保已备份！ ***
+
+开始批量处理文件夹: results/2025-10-23_00-15-28/grok-3/Bacteria/raw_filtered_esm
+目标字段: assistant
+移除标记: <|im_end|>
+
+在指定文件夹中未找到匹配的 .jsonl 文件。
+✅ [Step 5/5] <|im_end|> cleaning completed.
+--------------------------------------------------
+--- 推理任务结束 ---
+警告: 未找到文件 results/2025-10-23_00-15-28/grok-3/Bacteria/raw_filtered_esm/temp-0.0.jsonl
+警告: 未找到文件 results/2025-10-23_00-15-28/grok-3/Bacteria/raw_filtered_esm/temp-0.7.jsonl
+--- 步骤 1: 正在安装所需的 Python 库... ---
+Requirement already satisfied: torch in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (2.8.0)
+Requirement already satisfied: transformers in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (4.56.1)
+Requirement already satisfied: sentencepiece in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (0.2.1)
+Requirement already satisfied: h5py in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (3.14.0)
+Requirement already satisfied: filelock in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (3.19.1)
+Requirement already satisfied: typing-extensions>=4.10.0 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (4.15.0)
+Requirement already satisfied: sympy>=1.13.3 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (1.14.0)
+Requirement already satisfied: networkx in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (3.5)
+Requirement already satisfied: jinja2 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (3.1.6)
+Requirement already satisfied: fsspec in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (2025.3.0)
+Requirement already satisfied: nvidia-cuda-nvrtc-cu12==12.8.93 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (12.8.93)
+Requirement already satisfied: nvidia-cuda-runtime-cu12==12.8.90 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (12.8.90)
+Requirement already satisfied: nvidia-cuda-cupti-cu12==12.8.90 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (12.8.90)
+Requirement already satisfied: nvidia-cudnn-cu12==9.10.2.21 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (9.10.2.21)
+Requirement already satisfied: nvidia-cublas-cu12==12.8.4.1 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (12.8.4.1)
+Requirement already satisfied: nvidia-cufft-cu12==11.3.3.83 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (11.3.3.83)
+Requirement already satisfied: nvidia-curand-cu12==10.3.9.90 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (10.3.9.90)
+Requirement already satisfied: nvidia-cusolver-cu12==11.7.3.90 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (11.7.3.90)
+Requirement already satisfied: nvidia-cusparse-cu12==12.5.8.93 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (12.5.8.93)
+Requirement already satisfied: nvidia-cusparselt-cu12==0.7.1 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (0.7.1)
+Requirement already satisfied: nvidia-nccl-cu12==2.27.3 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (2.27.3)
+Requirement already satisfied: nvidia-nvtx-cu12==12.8.90 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (12.8.90)
+Requirement already satisfied: nvidia-nvjitlink-cu12==12.8.93 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (12.8.93)
+Requirement already satisfied: nvidia-cufile-cu12==1.13.1.3 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (1.13.1.3)
+Requirement already satisfied: triton==3.4.0 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from torch) (3.4.0)
+Requirement already satisfied: setuptools>=40.8.0 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from triton==3.4.0->torch) (78.1.1)
+Requirement already satisfied: huggingface-hub<1.0,>=0.34.0 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from transformers) (0.34.4)
+Requirement already satisfied: numpy>=1.17 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from transformers) (2.2.6)
+Requirement already satisfied: packaging>=20.0 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from transformers) (25.0)
+Requirement already satisfied: pyyaml>=5.1 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from transformers) (6.0.2)
+Requirement already satisfied: regex!=2019.12.17 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from transformers) (2025.9.1)
+Requirement already satisfied: requests in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from transformers) (2.32.5)
+Requirement already satisfied: tokenizers<=0.23.0,>=0.22.0 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from transformers) (0.22.0)
+Requirement already satisfied: safetensors>=0.4.3 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from transformers) (0.6.2)
+Requirement already satisfied: tqdm>=4.27 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from transformers) (4.67.1)
+Requirement already satisfied: hf-xet<2.0.0,>=1.1.3 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from huggingface-hub<1.0,>=0.34.0->transformers) (1.1.9)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from sympy>=1.13.3->torch) (1.3.0)
+Requirement already satisfied: MarkupSafe>=2.0 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from jinja2->torch) (3.0.2)
+Requirement already satisfied: charset_normalizer<4,>=2 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from requests->transformers) (3.4.3)
+Requirement already satisfied: idna<4,>=2.5 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from requests->transformers) (3.10)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from requests->transformers) (2.5.0)
+Requirement already satisfied: certifi>=2017.4.17 in /data/nnotaa/miniconda3/envs/align-anything/lib/python3.11/site-packages (from requests->transformers) (2025.8.3)
+
+--- 步骤 2: 正在创建所有目录... ---
+目录已准备就绪。
+
+--- 步骤 3: 正在检查并下载所需文件... ---
+二级结构模型已存在，跳过下载。
+
+--- 步骤 4: 环境准备就绪，正在启动 Python 脚本... ---
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+Using device: cuda
+检测到输入是一个目录: 'results/2025-10-23_00-15-28/grok-3/Bacteria/raw_filtered_esm'
+正在加载 ProtT5 模型...
+模型加载完毕。
+在路径 'results/2025-10-23_00-15-28/grok-3/Bacteria/raw_filtered_esm' 中未找到任何 .fasta 文件。
+
+--- 所有操作执行完毕！结果保存在 'results/2025-10-23_00-15-28/grok-3/Bacteria/raw_filtered_esm' 目录中。 ---
+警告: 未找到文件 results/2025-10-23_00-15-28/grok-3/Bacteria/raw_filtered_esm/temp-0.0.jsonl
+警告: 未找到文件 results/2025-10-23_00-15-28/grok-3/Bacteria/raw_filtered_esm/temp-0.7.jsonl
+警告: 未找到文件 results/2025-10-23_00-15-28/grok-3/Bacteria/raw_filtered_esm/temp-0.0.jsonl
+警告: 未找到文件 results/2025-10-23_00-15-28/grok-3/Bacteria/raw_filtered_esm/temp-0.7.jsonl
+   - 正在运行 Animal toxin prediction 任务...
+   - 正在运行 Animal toxin prediction 任务...
+   - 正在运行 Animal toxin prediction 任务...
+   - 正在运行 Animal toxin prediction 任务...
+   - 正在运行 Animal toxin prediction 任务...
+--- 开始执行推理任务 ---
+  模型路径: grok-3
+  模型标签: api
+  输出目录: results/2025-10-23_00-15-28/grok-3/Animal/raw
+  温度: 0.0 0.7
+  检测到 'openai-api' 标签, 调用 API 推理脚本...
+============================================================
+🚀 开始 统一API 推理任务 (并发版 v3.3)...
+⚡ 最大并发数: 50
+ timeout=120s
+🤖 API 模型: grok-3
+📂 Prompt 文件: dataset/test.jsonl
+🔥 温度列表: [0.0, 0.7]
+📝 输出目录: results/2025-10-23_00-15-28/grok-3/Animal/raw
+============================================================
+统一 API 客户端初始化完成，模型: grok-3，URL: https://api3.xhub.chat/v1
+
+🔄 -----------------------------------
+🔄 正在处理温度: 0.0...
+🔄 -----------------------------------
+Temp-0.0 Infer:   0%|          | 0/13 [00:00<?, ?it/s]Temp-0.0 Infer:   8%|▊         | 1/13 [00:06<01:19,  6.59s/it]Temp-0.0 Infer:  15%|█▌        | 2/13 [00:18<01:44,  9.53s/it]Temp-0.0 Infer:  54%|█████▍    | 7/13 [00:18<00:11,  1.86s/it]Temp-0.0 Infer:  54%|█████▍    | 7/13 [00:30<00:11,  1.86s/it]Temp-0.0 Infer:  62%|██████▏   | 8/13 [00:44<00:32,  6.42s/it]

@@ -1,0 +1,25 @@
+🚀 开始处理模型: grok-3 (标签: api)
+   - 清理后的模型名: grok-3
+   - 创建输出目录: results/2025-10-24_16-48-25/grok-3
+   - 正在运行 Bacteria exo prediction 任务...
+--- 开始执行推理任务 ---
+  模型路径: grok-3
+  模型标签: api
+  输出目录: results/2025-10-24_16-48-25/grok-3/Bacteria/raw
+  温度: 0.0 0.7
+  检测到 'api' 标签, 调用 API 推理脚本...
+============================================================
+🚀 开始 统一API 推理任务 (并发版 v3.3)...
+⚡ 最大并发数: 50
+ timeout=120s
+🤖 API 模型: grok-3
+📂 Prompt 文件: dataset/test.jsonl
+🔥 温度列表: [0.0, 0.7]
+📝 输出目录: results/2025-10-24_16-48-25/grok-3/Bacteria/raw
+============================================================
+统一 API 客户端初始化完成，模型: grok-3，URL: https://api3.xhub.chat/v1
+
+🔄 -----------------------------------
+🔄 正在处理温度: 0.0...
+🔄 -----------------------------------
+Temp-0.0 Infer:   0%|          | 0/12 [00:00<?, ?it/s]Temp-0.0 Infer:   8%|▊         | 1/12 [00:03<00:38,  3.55s/it]Temp-0.0 Infer:   8%|▊         | 1/12 [00:03<00:38,  3.55s/it, inflight=11, slow=0, oldest_s=3, forced_to=0]Temp-0.0 Infer:  17%|█▋        | 2/12 [00:03<00:35,  3.55s/it, inflight=10, slow=0, oldest_s=3, forced_to=0]Temp-0.0 Infer:  25%|██▌       | 3/12 [00:03<00:09,  1.03s/it, inflight=10, slow=0, oldest_s=3, forced_to=0]Temp-0.0 Infer:  25%|██▌       | 3/12 [00:03<00:09,  1.03s/it, inflight=9, slow=0, oldest_s=4, forced_to=0] Temp-0.0 Infer:  33%|███▎      | 4/12 [00:03<00:08,  1.03s/it, inflight=8, slow=0, oldest_s=4, forced_to=0]Temp-0.0 Infer:  42%|████▏     | 5/12 [00:03<00:07,  1.03s/it, inflight=7, slow=0, oldest_s=4, forced_to=0]Temp-0.0 Infer:  50%|█████     | 6/12 [00:03<00:06,  1.03s/it, inflight=6, slow=0, oldest_s=4, forced_to=0]Temp-0.0 Infer:  58%|█████▊    | 7/12 [00:04<00:02,  2.44it/s, inflight=6, slow=0, oldest_s=4, forced_to=0]Temp-0.0 Infer:  58%|█████▊    | 7/12 [00:04<00:02,  2.44it/s, inflight=5, slow=0, oldest_s=4, forced_to=0]Temp-0.0 Infer:  67%|██████▋   | 8/12 [00:04<00:01,  2.44it/s, inflight=4, slow=0, oldest_s=4, forced_to=0]Temp-0.0 Infer:  75%|███████▌  | 9/12 [00:04<00:01,  2.80it/s, inflight=4, slow=0, oldest_s=4, forced_to=0]Temp-0.0 Infer:  75%|███████▌  | 9/12 [00:04<00:01,  2.80it/s, inflight=3, slow=0, oldest_s=4, forced_to=0]Temp-0.0 Infer:  83%|████████▎ | 10/12 [00:05<00:00,  2.38it/s, inflight=3, slow=0, oldest_s=4, forced_to=0]Temp-0.0 Infer:  83%|████████▎ | 10/12 [00:05<00:00,  2.38it/s, inflight=2, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  92%|█████████▏| 11/12 [00:08<00:01,  1.04s/it, inflight=2, slow=0, oldest_s=5, forced_to=0]Temp-0.0 Infer:  92%|█████████▏| 11/12 [00:08<00:01,  1.04s/it, inflight=1, slow=0, oldest_s=8, forced_to=0]

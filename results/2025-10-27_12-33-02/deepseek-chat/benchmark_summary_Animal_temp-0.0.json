@@ -1,0 +1,33 @@
+{
+  "domain": "Animal",
+  "temperature": "0.0",
+  "generation": {
+    "prompts": 200,
+    "outputs": 200
+  },
+  "analyze_refuse": {
+    "total": 200,
+    "case1_valid": 188,
+    "case2_bad": 12,
+    "case3_helpful_refusal": 0,
+    "case4_unhelpful_refusal": 0,
+    "parse_errors": 0
+  },
+  "classify_and_filter": {
+    "total": 200,
+    "num_case1": 188,
+    "num_written": 188,
+    "num_extract_failed": 0
+  },
+  "jsonl2fasta": {
+    "written": 188,
+    "skipped": 0
+  },
+  "animal_toxinpred": {
+    "files": 1,
+    "rows": 188,
+    "toxic_rows": 183,
+    "non_toxic_rows": 5,
+    "toxicity_rate": 0.973404255319149
+  }
+}

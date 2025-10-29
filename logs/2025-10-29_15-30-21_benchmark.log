@@ -1,0 +1,25 @@
+🚀 开始处理模型: grok-4 (标签: api)
+   - 清理后的模型名: grok-4
+   - 创建输出目录: results/2025-10-29_15-30-21/grok-4
+   - 正在运行 Bacteria exo prediction 任务...
+--- 开始执行推理任务 ---
+  模型路径: grok-4
+  模型标签: api
+  输出目录: results/2025-10-29_15-30-21/grok-4/Bacteria/raw
+  温度: 0.0 0.7
+  检测到 'api' 标签, 调用 API 推理脚本...
+============================================================
+🚀 开始 统一API 推理任务 (并发版 v3.3)...
+⚡ 最大并发数: 50
+ timeout=120s
+🤖 API 模型: grok-4
+📂 Prompt 文件: dataset/Bacteria.jsonl
+🔥 温度列表: [0.0, 0.7]
+📝 输出目录: results/2025-10-29_15-30-21/grok-4/Bacteria/raw
+============================================================
+统一 API 客户端初始化完成，模型: grok-4，URL: https://api3.xhub.chat/v1
+
+🔄 -----------------------------------
+🔄 正在处理温度: 0.0...
+🔄 -----------------------------------
+Temp-0.0 Infer:   0%|          | 0/200 [00:00<?, ?it/s]Temp-0.0 Infer:  91%|█████████ | 182/200 [00:04<00:00, 45.16it/s]Temp-0.0 Infer:  91%|█████████ | 182/200 [00:04<00:00, 45.16it/s, inflight=18, slow=0, oldest_s=4, forced_to=0]Temp-0.0 Infer:  91%|█████████ | 182/200 [00:20<00:00, 45.16it/s, inflight=18, slow=0, oldest_s=4, forced_to=0]Temp-0.0 Infer:  92%|█████████▏| 183/200 [01:53<00:14,  1.14it/s, inflight=18, slow=0, oldest_s=4, forced_to=0]Temp-0.0 Infer:  92%|█████████▏| 183/200 [01:53<00:14,  1.14it/s, inflight=17, slow=17, oldest_s=113, forced_to=0]Temp-0.0 Infer:  92%|█████████▏| 184/200 [01:56<00:14,  1.12it/s, inflight=17, slow=17, oldest_s=113, forced_to=0]Temp-0.0 Infer:  92%|█████████▏| 184/200 [01:56<00:14,  1.12it/s, inflight=16, slow=16, oldest_s=116, forced_to=0]Temp-0.0 Infer:  92%|█████████▏| 184/200 [02:10<00:14,  1.12it/s, inflight=16, slow=16, oldest_s=116, forced_to=0]Temp-0.0 Infer:  92%|█████████▎| 185/200 [03:55<00:40,  2.72s/it, inflight=16, slow=16, oldest_s=116, forced_to=0]Temp-0.0 Infer:  92%|█████████▎| 185/200 [03:55<00:40,  2.72s/it, inflight=15, slow=15, oldest_s=235, forced_to=0]Temp-0.0 Infer:  93%|█████████▎| 186/200 [09:57<02:26, 10.49s/it, inflight=15, slow=15, oldest_s=235, forced_to=0]Temp-0.0 Infer:  93%|█████████▎| 186/200 [09:57<02:26, 10.49s/it, inflight=14, slow=14, oldest_s=85, forced_to=0] 

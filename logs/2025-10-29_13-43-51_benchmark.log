@@ -1,0 +1,90 @@
+🚀 开始处理模型: grok-4 (标签: api)
+   - 清理后的模型名: grok-4
+   - 创建输出目录: results/2025-10-29_13-43-51/grok-4
+   - 正在运行 Bacteria exo prediction 任务...
+--- 开始执行推理任务 ---
+  模型路径: grok-4
+  模型标签: api
+  输出目录: results/2025-10-29_13-43-51/grok-4/Bacteria/raw
+  温度: 0.0 0.7
+  检测到 'api' 标签, 调用 API 推理脚本...
+============================================================
+🚀 开始 统一API 推理任务 (并发版 v3.3)...
+⚡ 最大并发数: 50
+ timeout=120s
+🤖 API 模型: grok-4
+📂 Prompt 文件: dataset/Bacteria.jsonl
+🔥 温度列表: [0.0, 0.7]
+📝 输出目录: results/2025-10-29_13-43-51/grok-4/Bacteria/raw
+============================================================
+统一 API 客户端初始化完成，模型: grok-4，URL: https://api3.xhub.chat/v1
+
+🔄 -----------------------------------
+🔄 正在处理温度: 0.0...
+🔄 -----------------------------------
+Temp-0.0 Infer:   0%|          | 0/200 [00:00<?, ?it/s]Temp-0.0 Infer: 100%|██████████| 200/200 [00:00<00:00, 37728.74it/s]
+✅ 结果已保存至: results/2025-10-29_13-43-51/grok-4/Bacteria/raw/temp-0.0.jsonl
+
+🔄 -----------------------------------
+🔄 正在处理温度: 0.7...
+🔄 -----------------------------------
+Temp-0.7 Infer:   0%|          | 0/200 [00:00<?, ?it/s]Temp-0.7 Infer: 100%|██████████| 200/200 [00:00<00:00, 40788.72it/s]
+✅ 结果已保存至: results/2025-10-29_13-43-51/grok-4/Bacteria/raw/temp-0.7.jsonl
+
+🎉 所有 API 推理任务完成！
+✅ [Step 1/5] 批量推理完成。
+--------------------------------------------------
+🧪 [Step 2/5] 拒答分析 & 四类判定与过滤...
+usage: analyze_refuse.py [-h] input_file
+analyze_refuse.py: error: unrecognized arguments: --metric_file results/2025-10-29_13-43-51/grok-4/benchmark_metrics.jsonl
+完成: total=200 case1=0 written=0 extract_failed=0
+usage: analyze_refuse.py [-h] input_file
+analyze_refuse.py: error: unrecognized arguments: --metric_file results/2025-10-29_13-43-51/grok-4/benchmark_metrics.jsonl
+完成: total=200 case1=0 written=0 extract_failed=0
+✅ [Step 2/5] 拒答分析与四类过滤完成（raw 就地加标注，filtered 仅保留情况一）。
+🔬 [Step 4/5] 使用 ESM 模型处理序列（读取 filtered）...
+W1029 13:44:02.048000 111236 site-packages/torch/distributed/run.py:774] 
+W1029 13:44:02.048000 111236 site-packages/torch/distributed/run.py:774] *****************************************
+W1029 13:44:02.048000 111236 site-packages/torch/distributed/run.py:774] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1029 13:44:02.048000 111236 site-packages/torch/distributed/run.py:774] *****************************************
+[W1029 13:44:07.701240039 Utils.hpp:166] Warning: Environment variable NCCL_BLOCKING_WAIT is deprecated; use TORCH_NCCL_BLOCKING_WAIT instead (function operator())
+[W1029 13:44:07.701261537 Utils.hpp:137] Warning: Environment variable NCCL_ASYNC_ERROR_HANDLING is deprecated; use TORCH_NCCL_ASYNC_ERROR_HANDLING instead (function operator())
+[W1029 13:44:07.336806644 Utils.hpp:166] Warning: Environment variable NCCL_BLOCKING_WAIT is deprecated; use TORCH_NCCL_BLOCKING_WAIT instead (function operator())
+[W1029 13:44:07.336828510 Utils.hpp:137] Warning: Environment variable NCCL_ASYNC_ERROR_HANDLING is deprecated; use TORCH_NCCL_ASYNC_ERROR_HANDLING instead (function operator())
+[W1029 13:44:08.542181807 Utils.hpp:166] Warning: Environment variable NCCL_BLOCKING_WAIT is deprecated; use TORCH_NCCL_BLOCKING_WAIT instead (function operator())
+[W1029 13:44:08.542209151 Utils.hpp:137] Warning: Environment variable NCCL_ASYNC_ERROR_HANDLING is deprecated; use TORCH_NCCL_ASYNC_ERROR_HANDLING instead (function operator())
+[W1029 13:44:08.659951933 Utils.hpp:166] Warning: Environment variable NCCL_BLOCKING_WAIT is deprecated; use TORCH_NCCL_BLOCKING_WAIT instead (function operator())
+[W1029 13:44:08.659964897 Utils.hpp:137] Warning: Environment variable NCCL_ASYNC_ERROR_HANDLING is deprecated; use TORCH_NCCL_ASYNC_ERROR_HANDLING instead (function operator())
+[W1029 13:44:08.691776594 Utils.hpp:166] Warning: Environment variable NCCL_BLOCKING_WAIT is deprecated; use TORCH_NCCL_BLOCKING_WAIT instead (function operator())
+[W1029 13:44:08.691797148 Utils.hpp:137] Warning: Environment variable NCCL_ASYNC_ERROR_HANDLING is deprecated; use TORCH_NCCL_ASYNC_ERROR_HANDLING instead (function operator())
+[W1029 13:44:08.721301198 Utils.hpp:166] Warning: Environment variable NCCL_BLOCKING_WAIT is deprecated; use TORCH_NCCL_BLOCKING_WAIT instead (function operator())
+[W1029 13:44:08.721330430 Utils.hpp:137] Warning: Environment variable NCCL_ASYNC_ERROR_HANDLING is deprecated; use TORCH_NCCL_ASYNC_ERROR_HANDLING instead (function operator())
+[W1029 13:44:08.740556469 Utils.hpp:166] Warning: Environment variable NCCL_BLOCKING_WAIT is deprecated; use TORCH_NCCL_BLOCKING_WAIT instead (function operator())
+[W1029 13:44:08.740581078 Utils.hpp:137] Warning: Environment variable NCCL_ASYNC_ERROR_HANDLING is deprecated; use TORCH_NCCL_ASYNC_ERROR_HANDLING instead (function operator())
+[W1029 13:44:08.810085187 Utils.hpp:166] Warning: Environment variable NCCL_BLOCKING_WAIT is deprecated; use TORCH_NCCL_BLOCKING_WAIT instead (function operator())
+[W1029 13:44:08.810107965 Utils.hpp:137] Warning: Environment variable NCCL_ASYNC_ERROR_HANDLING is deprecated; use TORCH_NCCL_ASYNC_ERROR_HANDLING instead (function operator())
+动态Stride模式启动。共 8 个GPU。
+最大Tokens/批次: 8192
+Stride 基准长度 (--stride_base_len): 256
+Stride 侵略性乘数 (--ppl_stride): 1
+最大序列长度 (--max_seq_len): 1024
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 20.13it/s]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 22.97it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  5.37it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  6.15it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  9.67it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 10.93it/s]
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 25.09it/s]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 23.44it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 23.29it/s]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 24.24it/s]
+Rank 0 模型加载完成。
+文件总进度:   0%|          | 0/2 [00:00<?, ?file/s]文件总进度:   0%|          | 0/2 [00:00<?, ?file/s, 处理中: temp-0.0.jsonl]文件总进度:   0%|          | 0/2 [00:00<?, ?file/s, 处理中: temp-0.7.jsonl]文件总进度: 100%|██████████| 2/2 [00:00<00:00, 48.66file/s, 处理中: temp-0.7.jsonl]
+
+所有进程计算完成，写入 done 文件并等待其他进程（文件同步回退）...
+开始等待所有 rank 的 done 文件...
+等待GPU完成:   0%|          | 0/8 [00:00<?, ?rank/s]等待GPU完成: 100%|██████████| 8/8 [00:00<00:00, 32201.95rank/s]等待GPU完成: 100%|██████████| 8/8 [00:00<00:00, 21788.59rank/s, done=8/8]已检测到所有 8 个 done 文件。
+                                                                         开始合并临时文件...
+合并文件:   0%|          | 0/2 [00:00<?, ?file/s]合并文件: 100%|██████████| 2/2 [00:00<00:00, 1766.77file/s]
+正在生成最终的CSV摘要文件...
+生成摘要:   0%|          | 0/4 [00:00<?, ?file/s]生成摘要: 100%|██████████| 4/4 [00:00<00:00, 30559.59file/s]
+摘要文件成功保存到: results/2025-10-29_13-43-51/grok-4/Bacteria/raw_filtered_esm/summary_results.csv
+正在清理中间文件...

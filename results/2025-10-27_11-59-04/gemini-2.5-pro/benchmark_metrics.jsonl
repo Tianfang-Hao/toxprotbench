@@ -1,0 +1,1 @@
+{"step": "batch_inference_api", "timestamp": 1761537743.2542381, "model": "gemini-2.5-pro", "temperature": 0.0, "output_path": "results/2025-10-27_11-59-04/gemini-2.5-pro/Bacteria/raw/temp-0.0.jsonl", "num_prompts": 200, "num_outputs": 200, "forced_timeouts": 0}
